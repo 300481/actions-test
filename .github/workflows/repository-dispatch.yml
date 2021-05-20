@@ -2,7 +2,7 @@ name: dispatch
 
 on: 
   repository_dispatch:
-    types: [testevent]
+    types: [artifacthub]
 
 jobs:
   dispatch:
