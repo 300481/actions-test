@@ -10,4 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: show client_payload
-        run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+        run: |
+          'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+          'echo "name   : ${{ github.event.client_payload.data.package.name }}"'
+          'echo "version: ${{ github.event.client_payload.data.package.version }}"'
