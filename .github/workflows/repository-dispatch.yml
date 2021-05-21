@@ -9,7 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: show client_payload
+      - name: setup git config
         run: |
-          echo "name   : ${{ github.event.client_payload.data.package.name }}"
-          echo "version: ${{ github.event.client_payload.data.package.version }}"
+          git config user.name "GitHub Actions"
+          git config user.email "<>"
+      - name: show version
+        run: |
+          echo "${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }}:${{ github.event.client_payload.data.package.version }}"
+      - name: yq - update package version
+        uses: mikefarah/yq@v4.9.2
+        with:
+          # The Command which should be run
+          cmd: eval '.${{ github.event.client_payload.data.package.repository.name }}.package.name = "${{ github.event.client_payload.data.package.name }}" | .${{ github.event.client_payload.data.package.repository.name }}.package.version = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
+      - name: commit and push
+        run: |
+          # Stage the file, commit and push
+          git add current-chart-versions.yaml
+          git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}.${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
+          git push origin main
