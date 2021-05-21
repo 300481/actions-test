@@ -20,7 +20,7 @@ jobs:
         uses: mikefarah/yq@v4.9.2
         with:
           # The Command which should be run
-          cmd: eval '.${{ github.event.client_payload.data.package.repository.name }}.${{ github.event.client_payload.data.package.name }} = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
+          cmd: e '.${{ github.event.client_payload.data.package.repository.name }}.${{ github.event.client_payload.data.package.name }} = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
       - name: commit and push
         run: |
           # Stage the file, commit and push
