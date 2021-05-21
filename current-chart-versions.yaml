@@ -1,1 +1,3 @@
 ignore: this
+argo:
+  argo-cd: 3.5.0
