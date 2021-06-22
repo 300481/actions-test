@@ -5,4 +5,4 @@ argo:
 prometheus-community:
   kube-prometheus-stack: 16.10.0
 ingress-nginx:
-  ingress-nginx: 3.33.0
+  ingress-nginx: 3.34.0
