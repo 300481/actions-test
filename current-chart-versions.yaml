@@ -7,4 +7,4 @@ prometheus-community:
 ingress-nginx:
   ingress-nginx: 3.34.0
 dr300481:
-  seafile: 0.4.4
+  seafile: 0.5.0
