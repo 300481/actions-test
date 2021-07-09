@@ -1,6 +1,6 @@
 ignore: this
 argo:
-  argo-cd: 3.7.1
+  argo-cd: 3.8.0
   argocd-notifications: 1.4.1
 prometheus-community:
   kube-prometheus-stack: 16.12.1
