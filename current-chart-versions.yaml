@@ -5,7 +5,7 @@ argo:
 prometheus-community:
   kube-prometheus-stack: 17.1.0
 ingress-nginx:
-  ingress-nginx: 3.35.0
+  ingress-nginx: 4.0.0
 dr300481:
   seafile: 0.5.0
 longhorn:
