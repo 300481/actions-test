@@ -3,7 +3,7 @@ argo:
   argo-cd: 3.11.1
   argocd-notifications: 1.4.1
 prometheus-community:
-  kube-prometheus-stack: 17.1.0
+  kube-prometheus-stack: 17.1.1
 ingress-nginx:
   ingress-nginx: 4.0.0
 dr300481:
