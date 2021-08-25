@@ -1,7 +1,7 @@
 ignore: this
 argo:
   argo-cd: 3.15.0
-  argocd-notifications: 1.4.3
+  argocd-notifications: 1.4.4
 prometheus-community:
   kube-prometheus-stack: 18.0.1
 ingress-nginx:
