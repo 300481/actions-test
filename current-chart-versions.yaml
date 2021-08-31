@@ -9,4 +9,4 @@ ingress-nginx:
 dr300481:
   seafile: 0.5.0
 longhorn:
-  longhorn: 1.1.2
+  longhorn: 1.2.0
