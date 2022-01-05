@@ -32,6 +32,7 @@ jobs:
           commitChange: true
           updateFile: true
           message: add value ${{ github.event.inputs.value }} to ${{ github.event.inputs.propertyPath }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 #       - name: YAML Update Action
 #         # You may pin to the exact commit or the version.
 #         # uses: fjogeleit/yaml-update-action@b3f82c2159e29fda093df80a9383830b7ee25ddb
