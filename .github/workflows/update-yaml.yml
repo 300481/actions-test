@@ -31,8 +31,9 @@ jobs:
           value: ${{ github.event.inputs.value }}
           commitChange: false
           updateFile: true
-      - name: Github commit and push
-        uses: Smart-Transportation/push@v1.3
-        with:
-          message: add ${{ github.event.inputs.value }} to ${{ github.event.inputs.propertyPath }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push
+        run: |
+          git config --global user.name '300481'
+          git config --global user.email '300481@users.noreply.github.com'
+          git commit -am "add ${{ github.event.inputs.value }} to ${{ github.event.inputs.propertyPath }}"
+          git push
