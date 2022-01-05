@@ -35,3 +35,4 @@ jobs:
         uses: Smart-Transportation/push@v1.3
         with:
           message: add ${{ github.event.inputs.value }} to ${{ github.event.inputs.propertyPath }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
