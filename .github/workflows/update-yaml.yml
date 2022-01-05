@@ -1,0 +1,63 @@
+name: Update YAML
+
+on:
+  workflow_dispatch:
+    inputs:
+      propertyPath:
+        description: 'propertyPath'
+        required: true
+        default: 'foo'
+      value:
+        description: 'value'
+        required: true
+        default: 'bar'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  update-yaml:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: YAML Update Action
+        # You may pin to the exact commit or the version.
+        # uses: fjogeleit/yaml-update-action@b3f82c2159e29fda093df80a9383830b7ee25ddb
+        uses: fjogeleit/yaml-update-action@v0.6.1
+        with:
+          # YAML file which should be updated
+          valueFile: my-test.yaml
+          # Property Path - using dot for nesting: e.g. backend.version
+          propertyPath: ${{ github.event.inputs.propertyPath }}
+          # New property value
+          value: ${{ github.event.inputs.value }}
+          # Branch to commit the change, will be created if not exist
+          # branch: # optional, default is master
+          # Branch name of your master
+          # masterBranchName: # optional, default is master
+          # Target Branch for the created PullRequest
+          # targetBranch: # optional, default is master
+          # Create a PullRequest to the configured target branch
+          # createPR: # optional, default is false
+          # Commit the change "branch" with the given "message"
+          # commitChange: # optional, default is true
+          # Update the original File in your workflow
+          updateFile: true
+          # Commit message for the value update
+          # message: # optional, default is 
+          # Title of the created pull request
+          # title: # optional, default is 
+          # Description of the created pull request
+          # description: # optional, default is 
+          # Comma separated list of custom PR labels, e.g. "feature,yaml-updates"
+          labels: # optional, default is yaml-updates
+          # GitHub AuthToken for Authorization
+          token: # optional, default is ${{ github.token }}
+          # repository to update
+          repository: # optional, default is ${{ github.repository }}
+          # repository workspace location
+          workDir: # optional, default is .
