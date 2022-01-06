@@ -1,0 +1,13 @@
+name: test gh
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-gh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run gh version
+        run: |
+          gh version
+          
