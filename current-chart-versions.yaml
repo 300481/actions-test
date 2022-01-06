@@ -19,3 +19,6 @@ longhorn:
 ebrianne:
   local-path-provisioner:
     version: 0.0.20
+testrepo:
+  testchart:
+    version: 0.2.1
