@@ -24,6 +24,7 @@ jobs:
         id: repo-url
         uses: fjogeleit/http-request-action@master
         with:
+          method: GET
           url: "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=${{ steps.chart-info.outputs.publisher }}&org=${{ steps.chart-info.outputs.publisher }}&name=${{ steps.chart-info.outputs.repo }}"
       - name: show version
         run: |
