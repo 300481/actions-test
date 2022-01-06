@@ -13,9 +13,15 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "<>"
+      - name: chart info
+        id: chart-info
+        run: |
+          echo '::set-output name=repo::${{ github.event.client_payload.data.package.repository.name }}'
+          echo '::set-output name=chart::${{ github.event.client_payload.data.package.name }}'
+          echo '::set-output name=version::${{ github.event.client_payload.data.package.version }}'
       - name: show version
         run: |
-          echo "${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }}:${{ github.event.client_payload.data.package.version }}"
+          echo "${{ steps.chart-info.outputs.repo }}/${{ steps.chart-info.outputs.chart }}:${{ steps.chart-info.outputs.version }}"
       - name: yq - update package version
         uses: mikefarah/yq@v4.9.2
         with:
