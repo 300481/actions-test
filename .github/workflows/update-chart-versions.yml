@@ -17,11 +17,18 @@ jobs:
         id: chart-info
         run: |
           echo '::set-output name=repo::${{ github.event.client_payload.data.package.repository.name }}'
+          echo '::set-output name=publisher::${{ github.event.client_payload.data.package.repository.publisher }}'
           echo '::set-output name=chart::${{ github.event.client_payload.data.package.name }}'
           echo '::set-output name=version::${{ github.event.client_payload.data.package.version }}'
+      - name: get repo url
+        id: repo-url
+        uses: fjogeleit/http-request-action@master
+        with:
+          url: "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=${{ steps.chart-info.outputs.publisher }}&org=${{ steps.chart-info.outputs.publisher }}&name=${{ steps.chart-info.outputs.repo }}"
       - name: show version
         run: |
           echo "${{ steps.chart-info.outputs.repo }}/${{ steps.chart-info.outputs.chart }}:${{ steps.chart-info.outputs.version }}"
+          echo "${{ steps.repo-url.outputs.response }}"
       - name: yq - update package version
         uses: mikefarah/yq@v4.9.2
         with:
