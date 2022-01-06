@@ -1,11 +1,11 @@
-name: dispatch
+name: update chart versions
 
 on: 
   repository_dispatch:
     types: [artifacthub]
 
 jobs:
-  update_versions:
+  update_chart_versions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
       - name: yq - update package version
         uses: mikefarah/yq@v4.9.2
         with:
-          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.${{ github.event.client_payload.data.package.name }} = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
+          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.${{ github.event.client_payload.data.package.name }}.version = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
       - name: show content
         run: cat current-chart-versions.yaml
       - name: commit and push
