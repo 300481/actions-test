@@ -15,6 +15,7 @@ jobs:
           url: "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=300481&org=300481&name=testrepo"
       - name: echo output
         run: |
-          echo ${{ steps.repo-url.outputs.response[0].url }}
-          
-
+          echo test 1 ${{ steps.repo-url.outputs.response }}
+          echo test 2 ${{ steps.repo-url.outputs.response.url }}
+          echo test 3 ${{ steps.repo-url.outputs.response[0].url }}
+          echo test 4 ${{ steps.repo-url.outputs.response.url[0] }}
