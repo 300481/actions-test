@@ -26,14 +26,21 @@ jobs:
         with:
           method: GET
           url: "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=${{ steps.chart-info.outputs.publisher }}&org=${{ steps.chart-info.outputs.publisher }}&name=${{ steps.chart-info.outputs.repo }}"
+      - name: repo info
+        id: repo-info
+        run: echo '::set-output name=url::${{ fromJSON(steps.repo-url.outputs.response)[0].url }}'
       - name: show version
         run: |
           echo "${{ steps.chart-info.outputs.repo }}/${{ steps.chart-info.outputs.chart }}:${{ steps.chart-info.outputs.version }}"
-          echo "${{ steps.repo-url.outputs.response }}"
-      - name: yq - update package version
+          echo "${{ steps.repo-info.outputs.url }}"
+      - name: update package version
         uses: mikefarah/yq@v4.9.2
         with:
-          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.${{ github.event.client_payload.data.package.name }}.version = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
+          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.charts.${{ github.event.client_payload.data.package.name }}.version = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
+      - name: update repo url
+        uses: mikefarah/yq@v4.9.2
+        with:
+          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.url = "${{ steps.repo-info.outputs.url }}"' -i current-chart-versions.yaml
       - name: show content
         run: cat current-chart-versions.yaml
       - name: commit and push
