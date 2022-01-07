@@ -17,5 +17,5 @@ jobs:
         run: |
           echo test 1 ${{ steps.repo-url.outputs.response }}
           echo test 2 ${{ fromJSON(steps.repo-url.outputs.response)[0].url }}
-          echo test 3 ${{ fromJSON(steps.repo-url.outputs.response).url }}
+          echo test 3 ${{ fromJSON(steps.repo-url.outputs.response).*.url }}
           echo test 4 ${{ fromJSON(steps.repo-url.outputs.response) }}
