@@ -7,12 +7,14 @@ jobs:
   test-gh:
     runs-on: ubuntu-latest
     steps:
-      - name: run gh version
-        id: test-gh
-        run: |
-          gh version
-          echo "::set-output name=response::[{repository_id:b4578f8e-8314-43de-a11e-efb8701c7540,name:testrepo,display_name:testrepo,url:https://300481.github.io/artifacthub2github,kind:0,verified_publisher:true,official:false,disabled:false,scanner_disabled:true,digest:6cd5f5c7311ff7fec5d8ad6d98254a11303ab418be3fa9c6947038ae05ce65b9,last_tracking_ts:1641535237,user_alias:300481}]"
+      - name: get repo url
+        id: repo-url
+        uses: fjogeleit/http-request-action@master
+        with:
+          method: GET
+          url: "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=300481&org=300481&name=testrepo"
       - name: echo output
         run: |
-          echo ${{ fromJSON(steps.test-gh.outputs.response) }}
+          echo ${{ steps.repo-url.outputs.response[0].url }}
+          
 
