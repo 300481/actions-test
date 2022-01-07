@@ -4,7 +4,7 @@ argo:
     argo-cd:
       version: 3.29.4
     argocd-notifications:
-    version: 1.7.0
+      version: 1.7.0
 prometheus-community:
   charts:
     kube-prometheus-stack:
