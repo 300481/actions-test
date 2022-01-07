@@ -22,3 +22,7 @@ ebrianne:
 testrepo:
   testchart:
     version: 0.2.4
+  charts:
+    testchart:
+      version: 0.2.5
+  url: https://300481.github.io/artifacthub2github
