@@ -36,16 +36,16 @@ jobs:
       - name: update package version
         uses: mikefarah/yq@v4.9.2
         with:
-          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.charts.${{ github.event.client_payload.data.package.name }}.version = "${{ github.event.client_payload.data.package.version }}"' -i current-chart-versions.yaml
+          cmd: yq eval '.repos.${{ github.event.client_payload.data.package.repository.name }}.charts.${{ github.event.client_payload.data.package.name }}.version = "${{ github.event.client_payload.data.package.version }}"' -i helm-charts.yaml
       - name: update repo url
         uses: mikefarah/yq@v4.9.2
         with:
-          cmd: yq eval '.${{ github.event.client_payload.data.package.repository.name }}.url = "${{ steps.repo-info.outputs.url }}"' -i current-chart-versions.yaml
+          cmd: yq eval '.repos.${{ github.event.client_payload.data.package.repository.name }}.url = "${{ steps.repo-info.outputs.url }}"' -i helm-charts.yaml
       - name: show content
-        run: cat current-chart-versions.yaml
+        run: cat helm-charts.yaml
       - name: commit and push
         run: |
           # Stage the file, commit and push
-          git add current-chart-versions.yaml
+          git add helm-charts.yaml
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin main
