@@ -2,7 +2,7 @@ repos:
   argo:
     charts:
       argo-cd:
-        version: 3.30.1
+        version: 3.31.0
       argocd-notifications:
         version: 1.7.0
     url: https://argoproj.github.io/argo-helm
