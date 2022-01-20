@@ -16,8 +16,9 @@ jobs:
       - name: update chart
         run: |
           ./scripts/update-chart-versions.sh "{{ toJSON(github.event.client_payload) }}"
+          ./scripts/generate-helm-manifests.sh
       - name: commit and push
         run: |
-          git add helm-charts.yaml
+          git add helm-charts.yaml chart-manifests
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin main
