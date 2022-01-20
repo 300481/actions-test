@@ -10,3 +10,5 @@ jobs:
       - name: echo output
         run: |
           echo test: '${{ toJSON(github) }}'
+          yq --version
+          jq --version
