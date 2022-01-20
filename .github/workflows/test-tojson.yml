@@ -1,0 +1,12 @@
+name: test tojson
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-tojeson:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo output
+        run: |
+          echo test: ${{ toJSON(github) }}
