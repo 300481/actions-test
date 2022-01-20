@@ -11,41 +11,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: setup git config
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "<>"
-      - name: chart info
-        id: chart-info
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: update chart
         run: |
-          echo '::set-output name=repo::${{ github.event.client_payload.data.package.repository.name }}'
-          echo '::set-output name=publisher::${{ github.event.client_payload.data.package.repository.publisher }}'
-          echo '::set-output name=chart::${{ github.event.client_payload.data.package.name }}'
-          echo '::set-output name=version::${{ github.event.client_payload.data.package.version }}'
-      - name: get repo url
-        id: repo-url
-        uses: fjogeleit/http-request-action@master
-        with:
-          method: GET
-          url: "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=${{ steps.chart-info.outputs.publisher }}&org=${{ steps.chart-info.outputs.publisher }}&name=${{ steps.chart-info.outputs.repo }}"
-      - name: repo info
-        id: repo-info
-        run: echo '::set-output name=url::${{ fromJSON(steps.repo-url.outputs.response)[0].url }}'
-      - name: show version
-        run: |
-          echo "${{ steps.chart-info.outputs.repo }}/${{ steps.chart-info.outputs.chart }}:${{ steps.chart-info.outputs.version }}"
-          echo "${{ steps.repo-info.outputs.url }}"
-      - name: update package version
-        uses: mikefarah/yq@v4.9.2
-        with:
-          cmd: yq eval '.repos.${{ github.event.client_payload.data.package.repository.name }}.charts.${{ github.event.client_payload.data.package.name }}.version = "${{ github.event.client_payload.data.package.version }}"' -i helm-charts.yaml
-      - name: update repo url
-        uses: mikefarah/yq@v4.9.2
-        with:
-          cmd: yq eval '.repos.${{ github.event.client_payload.data.package.repository.name }}.url = "${{ steps.repo-info.outputs.url }}"' -i helm-charts.yaml
-      - name: show content
-        run: cat helm-charts.yaml
+          ./scripts/update-chart-versions.sh "{{ toJSON(github.event.client_payload) }}"
       - name: commit and push
         run: |
-          # Stage the file, commit and push
           git add helm-charts.yaml
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin main
