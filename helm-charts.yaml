@@ -1,33 +1,46 @@
 repos:
   argo:
     charts:
-      argo-cd:
-        version: 3.31.0
-      argocd-notifications:
+      argocd_notifications:
         version: 1.7.0
+        name: argocd-notifications
+      argo_cd:
+        version: 3.31.0
+        name: argo-cd
     url: https://argoproj.github.io/argo-helm
-  prometheus-community:
+    name: argo
+  prometheus_community:
+    name: prometheus-community
     charts:
-      kube-prometheus-stack:
+      kube_prometheus_stack:
         version: 30.1.0
+        name: kube-prometheus-stack
     url: https://prometheus-community.github.io/helm-charts
-  ingress-nginx:
+  ingress_nginx:
+    name: ingress-nginx
     charts:
-      ingress-nginx:
+      ingress_nginx:
         version: 4.0.13
+        name: ingress-nginx
     url: https://kubernetes.github.io/ingress-nginx
   dr300481:
+    name: dr300481
     charts:
       seafile:
         version: 0.5.0
+        name: seafile
     url: https://300481.github.io/charts/
   ebrianne:
+    name: ebrianne
     charts:
-      local-path-provisioner:
+      local_path_provisioner:
         version: 0.0.20
+        name: local-path-provisioner
     url: https://ebrianne.github.io/helm-charts
   testrepo:
+    name: testrepo
     charts:
       testchart:
         version: 0.2.5
+        name: testchart
     url: https://300481.github.io/artifacthub2github
