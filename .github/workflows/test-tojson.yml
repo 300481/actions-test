@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-tojeson:
+  test-tojson:
     runs-on: ubuntu-latest
     steps:
       - name: echo output
         run: |
-          echo test: ${{ toJSON(github) }}
+          echo test: "${{ toJSON(github) }}"
