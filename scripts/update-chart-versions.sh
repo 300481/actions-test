@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+: ${CONFIGFILE:=helm-charts.yaml}
+
 PAYLOAD="${1}"
 
 REPO_NAME=$(jq -r .data.package.repository.name <<< ${PAYLOAD})
@@ -19,10 +21,10 @@ Publisher:       ${PUBLISHER}
 "
 
 # update repo url
-yq eval '.repos.'${REPO}'.url = "'${REPO_URL}'"' -i helm-charts.yaml
+yq eval '.repos.'${REPO}'.url = "'${REPO_URL}'"' -i ${CONFIGFILE}
 # update repo name
-yq eval '.repos.'${REPO}'.name = "'${REPO_NAME}'"' -i helm-charts.yaml
+yq eval '.repos.'${REPO}'.name = "'${REPO_NAME}'"' -i ${CONFIGFILE}
 # update chart version
-yq eval '.repos.'${REPO}'.charts.'${CHART}'.version = "'${VERSION}'"' -i helm-charts.yaml
+yq eval '.repos.'${REPO}'.charts.'${CHART}'.version = "'${VERSION}'"' -i ${CONFIGFILE}
 # update chart name
-yq eval '.repos.'${REPO}'.charts.'${CHART}'.name = "'${CHART_NAME}'"' -i helm-charts.yaml
+yq eval '.repos.'${REPO}'.charts.'${CHART}'.name = "'${CHART_NAME}'"' -i ${CONFIGFILE}

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CONFIGFILE=helm-charts.yaml
+: ${CONFIGFILE:=helm-charts.yaml}
 
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
