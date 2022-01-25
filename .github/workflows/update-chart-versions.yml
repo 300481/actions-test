@@ -16,7 +16,7 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: update chart
         run: |
-          ./scripts/update-chart-versions.sh "{{ toJSON(github.event.client_payload) }}"
+          ./scripts/update-chart-versions.sh '{{ toJSON(github.event.client_payload) }}'
           ./scripts/generate-helm-manifests.sh
       - name: commit and push
         run: |
