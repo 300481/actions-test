@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-PAYLOAD=$1
+PAYLOAD="${1}"
+
+echo "${1}"
+echo "${PAYLOAD}"
+
+exit
 
 REPO_NAME=$(jq -r .data.package.repository.name <<< ${PAYLOAD})
 REPO=$(sed 's/-/_/g' <<< ${REPO_NAME})
