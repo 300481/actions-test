@@ -38,8 +38,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 data:
-  mariadb-root-password: "cjlGMXJZamp3Yw=="
-  mariadb-password: "dGwxV3pnUVMxNQ=="
+  mariadb-root-password: "azFEcE1qUWdybw=="
+  mariadb-password: "ZHJDTDBXY0t0ZQ=="
 ---
 # Source: seafile/charts/mariadb/templates/primary/configmap.yaml
 apiVersion: v1
