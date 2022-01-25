@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 : ${CONFIGFILE:=helm-charts.yaml}
+: ${CHART_ROOT:=.}
 
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
@@ -57,8 +58,8 @@ for repo in $(repos) ; do
         chart_name=$(chart_name ${repo} ${chart})
         echo "${repo_name} | ${repo_url} | ${chart_name} | ${chart_version}"
 
-        valuesdir="chart-values/${repo_name}/${chart_name}"
-        manifestdir="chart-manifests/${repo_name}/${chart_name}"
+        valuesdir="${CHART_ROOT}/chart-values/${repo_name}/${chart_name}"
+        manifestdir="${CHART_ROOT}/chart-manifests/${repo_name}/${chart_name}"
         [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
         [[ -d ${valuesdir} ]] || $(mkdir -p ${valuesdir} ; touch ${valuesdir}/default.yaml)
 
