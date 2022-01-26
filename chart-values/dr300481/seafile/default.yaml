@@ -1,0 +1,5 @@
+mariadb:
+  auth:
+    rootPassword: secret
+    username: secret
+    password: secret
