@@ -19,8 +19,8 @@ jobs:
           CONFIGFILE: artifacthub2github/helm-charts.yaml
           CHART_ROOT: artifacthub2github
         run: |
-          ./scripts/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
-          ./scripts/generate-helm-manifests.sh
+          ./artifacthub2github/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
+          ./artifacthub2github/generate-helm-manifests.sh
       - name: commit and push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
