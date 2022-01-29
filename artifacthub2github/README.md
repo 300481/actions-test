@@ -44,6 +44,10 @@ This folder contains the generated chart manifest files for the charts and its c
 
 This folder contains the information about deprecated Kubernetes API versions which are used by the chart.
 
+### [chart-cves](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-cves)
+
+This folder contains the information about found CVEs of the containers used in the chart.
+
 ### [example-payloads](https://github.com/300481/actions-test/tree/main/artifacthub2github/example-payloads)
 
 This folder contains some example payloads to test the proper
