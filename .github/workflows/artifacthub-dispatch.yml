@@ -37,6 +37,13 @@ jobs:
         run: |
           ./artifacthub2github/generate-list-of-deprecated-api-versions.sh
 
+      - name: generate list of cves
+        env:
+          CONFIGFILE: artifacthub2github/helm-charts.yaml
+          CHART_ROOT: artifacthub2github
+        run: |
+          ./artifacthub2github/generate-list-of-cves.sh
+
       - name: commit and push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
