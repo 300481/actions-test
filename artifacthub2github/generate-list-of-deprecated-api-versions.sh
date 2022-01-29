@@ -6,6 +6,7 @@
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
     local version=$(curl -s https://github.com/VirtusLab/render/releases/latest | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]')
+    cd /tmp
     wget -O render https://github.com/VirtusLab/render/releases/download/${version}/render-linux-amd64
     sudo install render /usr/local/bin/render
 }
