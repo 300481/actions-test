@@ -1,4 +1,4 @@
-name: update chart versions
+name: artifact hub dispatch
 
 on: 
   repository_dispatch:
