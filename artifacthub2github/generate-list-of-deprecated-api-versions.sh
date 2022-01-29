@@ -53,10 +53,12 @@ for repo in $(repos) ; do
     for chart in $(charts ${repo}) ; do
         chart_name=$(chart_name ${repo} ${chart})
         manifestdir="${CHART_ROOT}/chart-manifests/${repo_name}/${chart_name}"
+        deprecationsdir="${CHART_ROOT}/chart-deprecations/${repo_name}/${chart_name}"
         [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
+        [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
         for manifestfile in ${manifestdir}/* ; do
             echo ${repo} : ${chart} : ${manifestfile}
-            pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${manifestfile}-deprecations.md
+            pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${deprecationsdir}/api-deprecations.md
         done        
     done
 done
