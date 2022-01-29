@@ -15,6 +15,9 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: update chart
+        env:
+          CONFIGFILE: artifacthub2github/helm-charts.yaml
+          CHART_ROOT: artifacthub2github
         run: |
           ./scripts/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
           ./scripts/generate-helm-manifests.sh
