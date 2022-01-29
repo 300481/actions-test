@@ -59,7 +59,3 @@ function of the serverless function as of the worflow and scripts.
 ```bash
 curl -d @./example-payloads/argo-cd-payload.json -H "X-ArtifactHub-Secret: [YOUR-ARTIFACTHUB-SECRET]" https://[YOUR-GCP-PROJECT].cloudfunctions.net/[YOUR-FUNCTION-NAME]
 ```
-
-## TODOs
-
-* add implementation for [trivy](https://github.com/aquasecurity/trivy) to get information about CVEs for the used container images
