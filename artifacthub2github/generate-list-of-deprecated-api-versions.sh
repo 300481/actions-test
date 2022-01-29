@@ -9,6 +9,7 @@ install_render() {
     cd /tmp
     wget -O render https://github.com/VirtusLab/render/releases/download/${version}/render-linux-amd64
     sudo install render /usr/local/bin/render
+    cd -
 }
 
 repos() {

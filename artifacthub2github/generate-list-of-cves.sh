@@ -9,6 +9,7 @@ install_render() {
     cd /tmp
     wget -O render https://github.com/VirtusLab/render/releases/download/${version}/render-linux-amd64
     sudo install render /usr/local/bin/render
+    cd -
 }
 
 install_trivy() {
@@ -18,6 +19,7 @@ install_trivy() {
     wget -O trivy.tar.gz https://github.com/aquasecurity/trivy/releases/download/${version}/trivy_${version#v}_Linux-64bit.tar.gz
     tar xvzf trivy.tar.gz
     sudo install trivy /usr/local/bin/trivy
+    cd -
 }
 
 repos() {
