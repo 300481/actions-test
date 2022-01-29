@@ -14,20 +14,25 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-      - name: update chart
+      - name: update chart version
+        env:
+          CONFIGFILE: artifacthub2github/helm-charts.yaml
+        run: |
+          ./artifacthub2github/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
+      - name: generate helm manifests
         env:
           CONFIGFILE: artifacthub2github/helm-charts.yaml
           CHART_ROOT: artifacthub2github
         run: |
-          ./artifacthub2github/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
           ./artifacthub2github/generate-helm-manifests.sh
       - name: commit and push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }}-${{ github.event.client_payload.data.package.version }}
+          CHART_ROOT: artifacthub2github
         run: |
           git checkout -b ${BRANCH}
-          git add helm-charts.yaml chart-manifests
+          git add ${CHART_ROOT}
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin ${BRANCH}
           gh pr create --base main --fill
