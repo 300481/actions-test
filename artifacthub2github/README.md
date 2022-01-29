@@ -40,6 +40,10 @@ You can have multiple values files to generate multiple manifests, for example f
 
 This folder contains the generated chart manifest files for the charts and its corresponding values files.
 
+### [chart-deprecations](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-deprecations)
+
+This folder contains the information about deprecated Kubernetes API versions which are used by the chart.
+
 ### [example-payloads](https://github.com/300481/actions-test/tree/main/artifacthub2github/example-payloads)
 
 This folder contains some example payloads to test the proper
