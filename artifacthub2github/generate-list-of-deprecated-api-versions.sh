@@ -58,7 +58,7 @@ for repo in $(repos) ; do
         [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
         for manifestfile in ${manifestdir}/* ; do
             echo ${repo} : ${chart} : ${manifestfile}
-            pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${deprecationsdir}/api-deprecations.md
+            pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${deprecationsdir}/${manifestfile##*/}.api-deprecations.md
         done        
     done
 done
