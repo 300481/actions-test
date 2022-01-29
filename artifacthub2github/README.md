@@ -4,6 +4,8 @@ This folder contains an example implementation for the usage of the
 
 serverless function [artifacthub2github](https://github.com/300481/artifacthub2github).
 
+![](architecture.png)
+
 ## Files and Folders
 
 ### [.github/workflows/update-chart-versions.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/update-chart-versions.yml)
