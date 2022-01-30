@@ -30,6 +30,14 @@ The script which runs by the triggered workflow to update the helm-charts.yaml.
 
 The script which runs by the triggered workflow to generate the manifest-files.
 
+### [generate-list-of-deprecated-api-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-deprecated-api-versions.sh)
+
+The script which runs by the triggered workflow to generate the list of Kubernetes API deprecations.
+
+### [generate-list-of-cves.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-cves.sh)
+
+The script which runs by the triggered workflow to generate the list of CVEs of the containers of a chart.
+
 ### [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-values)
 
 This folder contains the Helm Values for the charts.
