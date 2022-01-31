@@ -7,7 +7,7 @@ on:
 env:
   CONFIGFILE: artifacthub2github/helm-charts.yaml
   VALUES_ROOT: artifacthub2github/argocd-example
-  MANIFESTS_ROOT: artifacthub2github/argocd-example
+  MANIFESTS_ROOT: artifacthub2github
   DEPRECATIONS_ROOT: artifacthub2github/argocd-example
   CVES_ROOT: artifacthub2github/argocd-example
 
