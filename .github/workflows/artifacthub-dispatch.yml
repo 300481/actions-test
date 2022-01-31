@@ -4,6 +4,13 @@ on:
   repository_dispatch:
     types: [artifacthub]
 
+env:
+  CONFIGFILE: artifacthub2github/helm-charts.yaml
+  VALUES_ROOT: artifacthub2github/argocd-example
+  MANIFESTS_ROOT: artifacthub2github/argocd-example
+  DEPRECATIONS_ROOT: artifacthub2github/argocd-example
+  CVES_ROOT: artifacthub2github/argocd-example
+
 jobs:
   update_chart_versions:
     runs-on: ubuntu-latest
@@ -18,32 +25,18 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: update chart version
-        env:
-          CONFIGFILE: artifacthub2github/helm-charts.yaml
         run: |
           ./artifacthub2github/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
 
       - name: generate helm manifests
-        env:
-          CONFIGFILE: artifacthub2github//helm-charts.yaml
-          VALUES_ROOT: artifacthub2github/argocd-example
-          MANIFESTS_ROOT: artifacthub2github/argocd-example
         run: |
           ./artifacthub2github/generate-helm-manifests.sh
 
       - name: generate list of deprecated api versions
-        env:
-          CONFIGFILE: artifacthub2github/helm-charts.yaml
-          MANIFESTS_ROOT: artifacthub2github/argocd-example
-          DEPRECATIONS_ROOT: artifacthub2github/argocd-example
         run: |
           ./artifacthub2github/generate-list-of-deprecated-api-versions.sh
 
       - name: generate list of cves
-        env:
-          CONFIGFILE: artifacthub2github/helm-charts.yaml
-          MANIFESTS_ROOT: artifacthub2github/argocd-example
-          CVES_ROOT: artifacthub2github/argocd-example
         run: |
           ./artifacthub2github/generate-list-of-cves.sh
 
@@ -51,10 +44,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }}-${{ github.event.client_payload.data.package.version }}
-          CHART_ROOT: artifacthub2github/argocd-example
         run: |
           git checkout -b ${BRANCH}
-          git add ${CHART_ROOT} helm-charts.yaml
+          git add ${CONFIGFILE} ${VALUES_ROOT} ${MANIFESTS_ROOT} ${DEPRECATIONS_ROOT} ${CVES_ROOT}
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin ${BRANCH}
           gh pr create --base main --fill
