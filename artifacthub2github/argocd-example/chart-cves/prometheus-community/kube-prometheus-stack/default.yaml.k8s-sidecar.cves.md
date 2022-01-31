@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>quay.io/kiwigrid/k8s-sidecar:1.15.1 (alpine 3.15.0) - Trivy Report - 2022-01-31 16:01:31.434865793 +0000 UTC m=+0.292193177 </title>
+    <title>quay.io/kiwigrid/k8s-sidecar:1.15.1 (alpine 3.15.0) - Trivy Report - 2022-01-31 19:31:16.613864331 +0000 UTC m=+0.315126925 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>quay.io/kiwigrid/k8s-sidecar:1.15.1 (alpine 3.15.0) - Trivy Report - 2022-01-31 16:01:31.434892494 +0000 UTC m=+0.292219878</h1>
+    <h1>quay.io/kiwigrid/k8s-sidecar:1.15.1 (alpine 3.15.0) - Trivy Report - 2022-01-31 19:31:16.613906831 +0000 UTC m=+0.315169325</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

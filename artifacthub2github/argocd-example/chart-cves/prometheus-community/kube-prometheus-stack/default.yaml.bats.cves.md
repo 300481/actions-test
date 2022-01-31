@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>bats/bats:v1.4.1 (alpine 3.12.7) - Trivy Report - 2022-01-31 16:01:39.14318708 +0000 UTC m=+0.847199706 </title>
+    <title>bats/bats:v1.4.1 (alpine 3.12.7) - Trivy Report - 2022-01-31 19:31:24.747755674 +0000 UTC m=+0.856906344 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>bats/bats:v1.4.1 (alpine 3.12.7) - Trivy Report - 2022-01-31 16:01:39.14322978 +0000 UTC m=+0.847242506</h1>
+    <h1>bats/bats:v1.4.1 (alpine 3.12.7) - Trivy Report - 2022-01-31 19:31:24.747784375 +0000 UTC m=+0.856934945</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr class="sub-header">

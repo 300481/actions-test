@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>docker.io/bitnami/postgresql:11.14.0-debian-10-r22 (debian 10.11) - Trivy Report - 2022-01-31 16:01:42.598861545 +0000 UTC m=+1.857464262 </title>
+    <title>docker.io/bitnami/postgresql:11.14.0-debian-10-r22 (debian 10.11) - Trivy Report - 2022-01-31 19:31:28.434573036 +0000 UTC m=+1.872710745 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>docker.io/bitnami/postgresql:11.14.0-debian-10-r22 (debian 10.11) - Trivy Report - 2022-01-31 16:01:42.598900945 +0000 UTC m=+1.857503662</h1>
+    <h1>docker.io/bitnami/postgresql:11.14.0-debian-10-r22 (debian 10.11) - Trivy Report - 2022-01-31 19:31:28.434611937 +0000 UTC m=+1.872749646</h1>
     <table>
       <tr class="group-header"><th colspan="6">debian</th></tr>
       <tr class="sub-header">

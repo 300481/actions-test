@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>bitnami/minideb-extras (debian 9.11) - Trivy Report - 2022-01-31 16:01:53.547690091 +0000 UTC m=+1.313079016 </title>
+    <title>bitnami/minideb-extras (debian 9.11) - Trivy Report - 2022-01-31 19:31:39.523844046 +0000 UTC m=+1.341061740 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>bitnami/minideb-extras (debian 9.11) - Trivy Report - 2022-01-31 16:01:53.547716991 +0000 UTC m=+1.313105816</h1>
+    <h1>bitnami/minideb-extras (debian 9.11) - Trivy Report - 2022-01-31 19:31:39.523869846 +0000 UTC m=+1.341087440</h1>
     <table>
       <tr class="group-header"><th colspan="6">debian</th></tr>
       <tr class="sub-header">

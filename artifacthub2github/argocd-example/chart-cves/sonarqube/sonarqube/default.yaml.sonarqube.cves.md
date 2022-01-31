@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31 16:01:51.384786366 +0000 UTC m=+7.446623675 </title>
+    <title>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31 19:31:37.402254647 +0000 UTC m=+7.720366230 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31 16:01:51.384810966 +0000 UTC m=+7.446648275</h1>
+    <h1>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31 19:31:37.402280347 +0000 UTC m=+7.720391930</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

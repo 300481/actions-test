@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-31 16:01:22.754089669 +0000 UTC m=+6.510569003 </title>
+    <title>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-31 19:31:08.035832666 +0000 UTC m=+6.735211464 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-31 16:01:22.754117269 +0000 UTC m=+6.510596503</h1>
+    <h1>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-31 19:31:08.035861367 +0000 UTC m=+6.735240165</h1>
     <table>
       <tr class="group-header"><th colspan="6">ubuntu</th></tr>
       <tr class="sub-header">
@@ -910,6 +910,7 @@
         <td class="pkg-version">2.2.5-3ubuntu0.2</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2022-23990">https://access.redhat.com/security/cve/CVE-2022-23990</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990</a>
           <a href="https://github.com/libexpat/libexpat/pull/551">https://github.com/libexpat/libexpat/pull/551</a>
         </td>
@@ -934,6 +935,7 @@
         <td class="pkg-version">2.2.5-3ubuntu0.2</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2022-23990">https://access.redhat.com/security/cve/CVE-2022-23990</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990</a>
           <a href="https://github.com/libexpat/libexpat/pull/551">https://github.com/libexpat/libexpat/pull/551</a>
         </td>
@@ -6109,6 +6111,7 @@
           <a href="https://github.com/advisories/GHSA-8vj2-vxx3-667w">https://github.com/advisories/GHSA-8vj2-vxx3-667w</a>
           <a href="https://lists.debian.org/debian-lts-announce/2022/01/msg00018.html">https://lists.debian.org/debian-lts-announce/2022/01/msg00018.html</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-22817">https://nvd.nist.gov/vuln/detail/CVE-2022-22817</a>
+          <a href="https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling">https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling</a>
           <a href="https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#restrict-builtins-available-to-imagemath-eval">https://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#restrict-builtins-available-to-imagemath-eval</a>
           <a href="https://ubuntu.com/security/notices/USN-5227-1">https://ubuntu.com/security/notices/USN-5227-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5227-2">https://ubuntu.com/security/notices/USN-5227-2</a>

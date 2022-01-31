@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>bin/node_exporter - Trivy Report - 2022-01-31 16:01:30.326241294 +0000 UTC m=+0.605915200 </title>
+    <title>bin/node_exporter - Trivy Report - 2022-01-31 19:31:15.461844829 +0000 UTC m=+0.615937244 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>bin/node_exporter - Trivy Report - 2022-01-31 16:01:30.326265894 +0000 UTC m=+0.605939800</h1>
+    <h1>bin/node_exporter - Trivy Report - 2022-01-31 19:31:15.461869529 +0000 UTC m=+0.615962044</h1>
     <table>
       <tr class="group-header"><th colspan="6">gobinary</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>docker.io/bitnami/memcached:1.6.9-debian-10-r189 (debian 10.10) - Trivy Report - 2022-01-31 16:01:13.572112157 +0000 UTC m=+1.251921888 </title>
+    <title>docker.io/bitnami/memcached:1.6.9-debian-10-r189 (debian 10.10) - Trivy Report - 2022-01-31 19:30:58.579158574 +0000 UTC m=+1.290572910 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>docker.io/bitnami/memcached:1.6.9-debian-10-r189 (debian 10.10) - Trivy Report - 2022-01-31 16:01:13.572156357 +0000 UTC m=+1.251966188</h1>
+    <h1>docker.io/bitnami/memcached:1.6.9-debian-10-r189 (debian 10.10) - Trivy Report - 2022-01-31 19:30:58.579183674 +0000 UTC m=+1.290598010</h1>
     <table>
       <tr class="group-header"><th colspan="6">debian</th></tr>
       <tr class="sub-header">

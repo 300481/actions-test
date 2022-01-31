@@ -12,7 +12,7 @@ metadata:
   namespace: default
 type: Opaque
 data:
-  postgresql-postgres-password: "bVZ4RzJQOEpNSQ=="
+  postgresql-postgres-password: "dUVDcUpQVk1VZg=="
   postgresql-password: "c29uYXJQYXNz"
 ---
 # Source: sonarqube/templates/secret.yaml

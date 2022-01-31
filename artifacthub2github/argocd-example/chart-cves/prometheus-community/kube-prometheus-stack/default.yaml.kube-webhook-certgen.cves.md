@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.0@sha256:f3b6b39a6062328c095337b4cadcefd1612348fdd5190b1dcbcb9b9e90bd8068 (debian 10.10) - Trivy Report - 2022-01-31 16:01:40.710580958 +0000 UTC m=+0.459530566 </title>
+    <title>k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.0@sha256:f3b6b39a6062328c095337b4cadcefd1612348fdd5190b1dcbcb9b9e90bd8068 (debian 10.10) - Trivy Report - 2022-01-31 19:31:26.534635754 +0000 UTC m=+0.669775315 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.0@sha256:f3b6b39a6062328c095337b4cadcefd1612348fdd5190b1dcbcb9b9e90bd8068 (debian 10.10) - Trivy Report - 2022-01-31 16:01:40.710633758 +0000 UTC m=+0.459583466</h1>
+    <h1>k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.0@sha256:f3b6b39a6062328c095337b4cadcefd1612348fdd5190b1dcbcb9b9e90bd8068 (debian 10.10) - Trivy Report - 2022-01-31 19:31:26.534678554 +0000 UTC m=+0.669818215</h1>
     <table>
       <tr class="group-header"><th colspan="6">debian</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

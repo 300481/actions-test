@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>rancher/local-path-provisioner:v0.0.20 (alpine 3.14.0) - Trivy Report - 2022-01-31 16:01:24.018211019 +0000 UTC m=+0.729400961 </title>
+    <title>rancher/local-path-provisioner:v0.0.20 (alpine 3.14.0) - Trivy Report - 2022-01-31 19:31:09.257161402 +0000 UTC m=+0.693443369 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>rancher/local-path-provisioner:v0.0.20 (alpine 3.14.0) - Trivy Report - 2022-01-31 16:01:24.018236119 +0000 UTC m=+0.729426061</h1>
+    <h1>rancher/local-path-provisioner:v0.0.20 (alpine 3.14.0) - Trivy Report - 2022-01-31 19:31:09.257186302 +0000 UTC m=+0.693468369</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr class="sub-header">
