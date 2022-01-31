@@ -1,16 +1,16 @@
 {
     "specversion": "1.0",
-    "id": "37ee267d-cf29-4b61-80cd-4b3ea8b7c9fd",
+    "id": "a55c99e4-2a98-4f76-921f-da7325329d8d",
     "source": "https://artifacthub.io",
     "type": "io.artifacthub.package.new-release",
     "datacontenttype": "application/json",
     "data": {
         "package": {
             "name": "argo-cd",
-            "version": "3.31.1",
-            "url": "https://artifacthub.io/packages/helm/argo/argo-cd/3.31.1",
+            "version": "3.33.1",
+            "url": "https://artifacthub.io/packages/helm/argo/argo-cd/3.33.1",
             "changes": [
-                "[Changed]: Consistent .helmignore"
+                "[Fixed]: Consistent annotation quoting across all manifests"
             ],
             "containsSecurityUpdates": false,
             "prerelease": false,
