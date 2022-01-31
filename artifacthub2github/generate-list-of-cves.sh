@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 : ${CONFIGFILE:=helm-charts.yaml}
-: ${CHART_ROOT:=.}
+: ${MANIFESTS_ROOT:=.}
+: ${CVES_ROOT:=.}
 
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
@@ -65,8 +66,8 @@ for repo in $(repos) ; do
     repo_name=$(repo_name ${repo})
     for chart in $(charts ${repo}) ; do
         chart_name=$(chart_name ${repo} ${chart})
-        manifestdir="${CHART_ROOT}/chart-manifests/${repo_name}/${chart_name}"
-        cvedir="${CHART_ROOT}/chart-cves/${repo_name}/${chart_name}"
+        manifestdir="${MANIFESTS_ROOT}/chart-manifests/${repo_name}/${chart_name}"
+        cvedir="${CVES_ROOT}/chart-cves/${repo_name}/${chart_name}"
         [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
         [[ -d ${cvedir} ]] || mkdir -p ${cvedir}
         for manifestfile in ${manifestdir}/*.yaml ; do

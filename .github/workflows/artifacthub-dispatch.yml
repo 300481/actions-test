@@ -42,7 +42,8 @@ jobs:
       - name: generate list of cves
         env:
           CONFIGFILE: artifacthub2github/helm-charts.yaml
-          CHART_ROOT: artifacthub2github/argocd-example
+          MANIFESTS_ROOT: artifacthub2github/argocd-example
+          CVES_ROOT: artifacthub2github/argocd-example
         run: |
           ./artifacthub2github/generate-list-of-cves.sh
 
