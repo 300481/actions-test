@@ -34,7 +34,8 @@ jobs:
       - name: generate list of deprecated api versions
         env:
           CONFIGFILE: artifacthub2github/helm-charts.yaml
-          CHART_ROOT: artifacthub2github/argocd-example
+          VALUES_ROOT: artifacthub2github/argocd-example
+          DEPRECATIONS_ROOT: artifacthub2github/argocd-example
         run: |
           ./artifacthub2github/generate-list-of-deprecated-api-versions.sh
 

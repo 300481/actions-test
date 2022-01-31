@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 : ${CONFIGFILE:=helm-charts.yaml}
-: ${CHART_ROOT:=.}
+: ${VALUES_ROOT:=.}
+: ${DEPRECATIONS_ROOT:=.}
 
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
@@ -54,8 +55,8 @@ for repo in $(repos) ; do
     repo_name=$(repo_name ${repo})
     for chart in $(charts ${repo}) ; do
         chart_name=$(chart_name ${repo} ${chart})
-        manifestdir="${CHART_ROOT}/chart-manifests/${repo_name}/${chart_name}"
-        deprecationsdir="${CHART_ROOT}/chart-deprecations/${repo_name}/${chart_name}"
+        manifestdir="${VALUES_ROOT}/chart-manifests/${repo_name}/${chart_name}"
+        deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${repo_name}/${chart_name}"
         [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
         [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
         for manifestfile in ${manifestdir}/* ; do
