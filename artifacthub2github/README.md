@@ -1,4 +1,4 @@
-# artifacthub2github example usage implementation
+# artifacthub2github example usage implementation with Argo CD
 
 This folder contains an example implementation for the usage of the
 
@@ -42,21 +42,21 @@ The script which runs by the triggered workflow to generate the list of Kubernet
 
 The script which runs by the triggered workflow to generate the list of CVEs of the containers of a chart.
 
-### [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-values)
+### [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-values)
 
 This folder contains the Helm Values for the charts.
 
 You can have multiple values files to generate multiple manifests, for example for *`DEV`*, *`TEST`*, *`STAGING`* and *`PRODUCTION`*.
 
-### [chart-manifests](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-manifests)
+### [chart-manifests](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-manifests)
 
 This folder contains the generated chart manifest files for the charts and its corresponding values files.
 
-### [chart-deprecations](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-deprecations)
+### [chart-deprecations](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-deprecations)
 
 This folder contains the information about deprecated Kubernetes API versions which are used by the chart.
 
-### [chart-cves](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-cves)
+### [chart-cves](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-cves)
 
 This folder contains the information about found CVEs of the containers used in the chart.
 
@@ -91,4 +91,4 @@ Adjust it to your needs.
 
 ### The chart values if needed
 
-* [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-values)
+* [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-values)
