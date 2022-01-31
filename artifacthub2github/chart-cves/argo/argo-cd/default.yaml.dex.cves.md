@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>ghcr.io/dexidp/dex:v2.30.0 (alpine 3.14.0) - Trivy Report - 2022-01-29T16:24:09.099034956Z</title>
+    <title>ghcr.io/dexidp/dex:v2.30.0 (alpine 3.14.0) - Trivy Report - 2022-01-31T14:31:24.690673589Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>ghcr.io/dexidp/dex:v2.30.0 (alpine 3.14.0) - Trivy Report - 2022-01-29T16:24:09.099054658Z</h1>
+    <h1>ghcr.io/dexidp/dex:v2.30.0 (alpine 3.14.0) - Trivy Report - 2022-01-31T14:31:24.690689489Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr class="sub-header">

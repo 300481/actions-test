@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-29T16:24:23.321858318Z</title>
+    <title>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-31T14:31:36.657140198Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-29T16:24:23.321878119Z</h1>
+    <h1>docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) - Trivy Report - 2022-01-31T14:31:36.657158999Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">ubuntu</th></tr>
       <tr class="sub-header">
@@ -1845,6 +1845,22 @@
         </td>
       </tr>
       <tr class="severity-MEDIUM">
+        <td class="pkg-name">libpython3.6</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
         <td class="pkg-name">libpython3.6-dev</td>
         <td>CVE-2021-3733</td>
         <td class="severity">MEDIUM</td>
@@ -1897,6 +1913,22 @@
           <a href="https://ubuntu.com/security/notices/USN-5199-1">https://ubuntu.com/security/notices/USN-5199-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5200-1">https://ubuntu.com/security/notices/USN-5200-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5201-1">https://ubuntu.com/security/notices/USN-5201-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">libpython3.6-dev</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
         </td>
       </tr>
       <tr class="severity-MEDIUM">
@@ -1955,6 +1987,22 @@
         </td>
       </tr>
       <tr class="severity-MEDIUM">
+        <td class="pkg-name">libpython3.6-minimal</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
         <td class="pkg-name">libpython3.6-stdlib</td>
         <td>CVE-2021-3733</td>
         <td class="severity">MEDIUM</td>
@@ -2007,6 +2055,22 @@
           <a href="https://ubuntu.com/security/notices/USN-5199-1">https://ubuntu.com/security/notices/USN-5199-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5200-1">https://ubuntu.com/security/notices/USN-5200-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5201-1">https://ubuntu.com/security/notices/USN-5201-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">libpython3.6-stdlib</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
         </td>
       </tr>
       <tr class="severity-MEDIUM">
@@ -4061,6 +4125,22 @@
         </td>
       </tr>
       <tr class="severity-MEDIUM">
+        <td class="pkg-name">python3.6</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
         <td class="pkg-name">python3.6-dev</td>
         <td>CVE-2021-3733</td>
         <td class="severity">MEDIUM</td>
@@ -4116,6 +4196,22 @@
         </td>
       </tr>
       <tr class="severity-MEDIUM">
+        <td class="pkg-name">python3.6-dev</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
         <td class="pkg-name">python3.6-minimal</td>
         <td>CVE-2021-3733</td>
         <td class="severity">MEDIUM</td>
@@ -4168,6 +4264,22 @@
           <a href="https://ubuntu.com/security/notices/USN-5199-1">https://ubuntu.com/security/notices/USN-5199-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5200-1">https://ubuntu.com/security/notices/USN-5200-1</a>
           <a href="https://ubuntu.com/security/notices/USN-5201-1">https://ubuntu.com/security/notices/USN-5201-1</a>
+        </td>
+      </tr>
+      <tr class="severity-MEDIUM">
+        <td class="pkg-name">python3.6-minimal</td>
+        <td>CVE-2021-4189</td>
+        <td class="severity">MEDIUM</td>
+        <td class="pkg-version">3.6.9-1~18.04ubuntu1.4</td>
+        <td></td>
+        <td class="links" data-more-links="off">
+          <a href="https://bugs.python.org/issue43285">https://bugs.python.org/issue43285</a>
+          <a href="https://bugzilla.redhat.com/show_bug.cgi?id=2036020">https://bugzilla.redhat.com/show_bug.cgi?id=2036020</a>
+          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189</a>
+          <a href="https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)">https://github.com/python/cpython/commit/0ab152c6b5d95caa2dc1a30fa96e10258b5f188e (master)</a>
+          <a href="https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)">https://github.com/python/cpython/commit/4134f154ae2f621f25c5d698cc0f1748035a1b88 (v3.6.14)</a>
+          <a href="https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)">https://github.com/python/cpython/commit/79373951b3eab585d42e0f0ab83718cbe1d0ee33 (v3.7.11)</a>
+          <a href="https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)">https://github.com/python/cpython/commit/7dcb4baa4f0fde3aef5122a8e9f6a41853ec9335 (v3.9.3)</a>
         </td>
       </tr>
       <tr class="severity-MEDIUM">

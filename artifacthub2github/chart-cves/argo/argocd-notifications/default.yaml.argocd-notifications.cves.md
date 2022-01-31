@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>app/argocd-notifications - Trivy Report - 2022-01-29T16:24:11.163035272Z</title>
+    <title>app/argocd-notifications - Trivy Report - 2022-01-31T14:31:26.601379635Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>app/argocd-notifications - Trivy Report - 2022-01-29T16:24:11.163051073Z</h1>
+    <h1>app/argocd-notifications - Trivy Report - 2022-01-31T14:31:26.601395536Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">gobinary</th></tr>
       <tr class="sub-header">

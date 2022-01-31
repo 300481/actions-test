@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>rancher/local-path-provisioner:v0.0.20 (alpine 3.14.0) - Trivy Report - 2022-01-31T14:31:37.718675001Z</title>
+    <title>curlimages/curl:7.76.1 (alpine 3.12.6) - Trivy Report - 2022-01-31T14:31:55.091001398Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>rancher/local-path-provisioner:v0.0.20 (alpine 3.14.0) - Trivy Report - 2022-01-31T14:31:37.718690601Z</h1>
+    <h1>curlimages/curl:7.76.1 (alpine 3.12.6) - Trivy Report - 2022-01-31T14:31:55.091018698Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr class="sub-header">
@@ -96,8 +96,8 @@
         <td class="pkg-name">apk-tools</td>
         <td>CVE-2021-36159</td>
         <td class="severity">CRITICAL</td>
-        <td class="pkg-version">2.12.5-r1</td>
-        <td>2.12.6-r0</td>
+        <td class="pkg-version">2.10.5-r1</td>
+        <td>2.10.7-r0</td>
         <td class="links" data-more-links="off">
           <a href="https://github.com/freebsd/freebsd-src/commits/main/lib/libfetch">https://github.com/freebsd/freebsd-src/commits/main/lib/libfetch</a>
           <a href="https://gitlab.alpinelinux.org/alpine/apk-tools/-/issues/10749">https://gitlab.alpinelinux.org/alpine/apk-tools/-/issues/10749</a>
@@ -108,11 +108,22 @@
         </td>
       </tr>
       <tr class="severity-HIGH">
+        <td class="pkg-name">apk-tools</td>
+        <td>CVE-2021-30139</td>
+        <td class="severity">HIGH</td>
+        <td class="pkg-version">2.10.5-r1</td>
+        <td>2.10.6-r0</td>
+        <td class="links" data-more-links="off">
+          <a href="https://gitlab.alpinelinux.org/alpine/apk-tools/-/issues/10741">https://gitlab.alpinelinux.org/alpine/apk-tools/-/issues/10741</a>
+          <a href="https://gitlab.alpinelinux.org/alpine/aports/-/issues/12606">https://gitlab.alpinelinux.org/alpine/aports/-/issues/12606</a>
+        </td>
+      </tr>
+      <tr class="severity-HIGH">
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42378</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -126,8 +137,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42379</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -141,8 +152,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42380</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -156,8 +167,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42381</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -171,8 +182,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42382</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -186,8 +197,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42383</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
           <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/</a>
@@ -199,8 +210,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42384</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -214,8 +225,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42385</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -229,8 +240,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42386</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -244,8 +255,8 @@
         <td class="pkg-name">busybox</td>
         <td>CVE-2021-42374</td>
         <td class="severity">MEDIUM</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r4</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -253,19 +264,6 @@
           <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/</a>
           <a href="https://security.netapp.com/advisory/ntap-20211223-0002/">https://security.netapp.com/advisory/ntap-20211223-0002/</a>
           <a href="https://ubuntu.com/security/notices/USN-5179-1">https://ubuntu.com/security/notices/USN-5179-1</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">busybox</td>
-        <td>CVE-2021-42375</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r5</td>
-        <td class="links" data-more-links="off">
-          <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/</a>
-          <a href="https://security.netapp.com/advisory/ntap-20211223-0002/">https://security.netapp.com/advisory/ntap-20211223-0002/</a>
         </td>
       </tr>
       <tr class="severity-CRITICAL">
@@ -378,8 +376,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42378</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42378</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -393,8 +391,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42379</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42379</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -408,8 +406,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42380</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42380</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -423,8 +421,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42381</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42381</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -438,8 +436,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42382</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42382</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -453,8 +451,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42383</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
           <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/</a>
@@ -466,8 +464,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42384</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42384</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -481,8 +479,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42385</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42385</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -496,8 +494,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42386</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r6</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42386</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -511,8 +509,8 @@
         <td class="pkg-name">ssl_client</td>
         <td>CVE-2021-42374</td>
         <td class="severity">MEDIUM</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r4</td>
+        <td class="pkg-version">1.31.1-r20</td>
+        <td>1.31.1-r21</td>
         <td class="links" data-more-links="off">
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42374</a>
           <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
@@ -520,57 +518,6 @@
           <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/</a>
           <a href="https://security.netapp.com/advisory/ntap-20211223-0002/">https://security.netapp.com/advisory/ntap-20211223-0002/</a>
           <a href="https://ubuntu.com/security/notices/USN-5179-1">https://ubuntu.com/security/notices/USN-5179-1</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">ssl_client</td>
-        <td>CVE-2021-42375</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">1.33.1-r2</td>
-        <td>1.33.1-r5</td>
-        <td class="links" data-more-links="off">
-          <a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/</a>
-          <a href="https://security.netapp.com/advisory/ntap-20211223-0002/">https://security.netapp.com/advisory/ntap-20211223-0002/</a>
-        </td>
-      </tr>
-      <tr><th colspan="6">No Misconfigurations found</th></tr>
-      <tr class="group-header"><th colspan="6">gobinary</th></tr>
-      <tr class="sub-header">
-        <th>Package</th>
-        <th>Vulnerability ID</th>
-        <th>Severity</th>
-        <th>Installed Version</th>
-        <th>Fixed Version</th>
-        <th>Links</th>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">gopkg.in/yaml.v2</td>
-        <td>CVE-2019-11254</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">v2.2.4</td>
-        <td>2.2.8</td>
-        <td class="links" data-more-links="off">
-          <a href="https://github.com/kubernetes/kubernetes/issues/89535">https://github.com/kubernetes/kubernetes/issues/89535</a>
-          <a href="https://groups.google.com/d/msg/kubernetes-announce/ALL9s73E5ck/4yHe8J-PBAAJ">https://groups.google.com/d/msg/kubernetes-announce/ALL9s73E5ck/4yHe8J-PBAAJ</a>
-          <a href="https://groups.google.com/forum/#!topic/kubernetes-security-announce/wuwEwZigXBc">https://groups.google.com/forum/#!topic/kubernetes-security-announce/wuwEwZigXBc</a>
-          <a href="https://linux.oracle.com/cve/CVE-2019-11254.html">https://linux.oracle.com/cve/CVE-2019-11254.html</a>
-          <a href="https://linux.oracle.com/errata/ELSA-2020-5653.html">https://linux.oracle.com/errata/ELSA-2020-5653.html</a>
-          <a href="https://security.netapp.com/advisory/ntap-20200413-0003/">https://security.netapp.com/advisory/ntap-20200413-0003/</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">k8s.io/client-go</td>
-        <td>CVE-2020-8565</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">v0.17.1</td>
-        <td>0.20.0-alpha.2</td>
-        <td class="links" data-more-links="off">
-          <a href="https://github.com/kubernetes/kubernetes/issues/95623">https://github.com/kubernetes/kubernetes/issues/95623</a>
-          <a href="https://groups.google.com/g/kubernetes-announce/c/ScdmyORnPDk">https://groups.google.com/g/kubernetes-announce/c/ScdmyORnPDk</a>
-          <a href="https://groups.google.com/g/kubernetes-security-discuss/c/vm-HcrFUOCs/m/36utxAM5CwAJ">https://groups.google.com/g/kubernetes-security-discuss/c/vm-HcrFUOCs/m/36utxAM5CwAJ</a>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-8565">https://nvd.nist.gov/vuln/detail/CVE-2020-8565</a>
         </td>
       </tr>
       <tr><th colspan="6">No Misconfigurations found</th></tr>

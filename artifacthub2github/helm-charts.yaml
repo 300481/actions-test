@@ -44,3 +44,10 @@ repos:
         version: 0.2.5
         name: testchart
     url: https://300481.github.io/artifacthub2github
+  sonarqube:
+    url: https://SonarSource.github.io/helm-chart-sonarqube
+    name: sonarqube
+    charts:
+      sonarqube:
+        version: 2.0.0+233
+        name: sonarqube

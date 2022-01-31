@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>bin/alertmanager - Trivy Report - 2022-01-29T16:24:37.943532445Z</title>
+    <title>bin/alertmanager - Trivy Report - 2022-01-31T14:31:48.608703052Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>bin/alertmanager - Trivy Report - 2022-01-29T16:24:37.943551446Z</h1>
+    <h1>bin/alertmanager - Trivy Report - 2022-01-31T14:31:48.608719152Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">gobinary</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

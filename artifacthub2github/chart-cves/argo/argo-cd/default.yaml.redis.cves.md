@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>redis:6.2.4-alpine (alpine 3.14.0) - Trivy Report - 2022-01-29T16:24:09.91060931Z</title>
+    <title>redis:6.2.4-alpine (alpine 3.14.0) - Trivy Report - 2022-01-31T14:31:25.367884245Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>redis:6.2.4-alpine (alpine 3.14.0) - Trivy Report - 2022-01-29T16:24:09.910627512Z</h1>
+    <h1>redis:6.2.4-alpine (alpine 3.14.0) - Trivy Report - 2022-01-31T14:31:25.367902345Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr class="sub-header">
