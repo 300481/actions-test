@@ -3,7 +3,7 @@
 : ${CONFIGFILE:=helm-charts.yaml}
 : ${MANIFESTS_ROOT:=.}
 : ${CVES_ROOT:=.}
-: ${TRIVY_TEMPLATE:=.}
+: ${TRIVY_TEMPLATE:=markdown.tpl}
 
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
