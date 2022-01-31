@@ -18,6 +18,10 @@ It will:
 
 * generate the chart manifests
 
+* generate a list with deprecated Kubernetes API versions for each chart
+
+* generate a list of CVEs of the containers for each chart
+
 * create a branch for the updated files
 
 * create a pull request against the main branch
