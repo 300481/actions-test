@@ -1,4 +1,6 @@
-# Trivy Vulnerability Report## Target: docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) --- Class: os-pkgs
+# Trivy Vulnerability Report
+
+## Target: docker.io/300481/seafile:8.0.5-20210627 (ubuntu 18.04) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2020-13844|cpp|1.176ubuntu2.3||
@@ -284,11 +286,9 @@
 |MEDIUM|CVE-2022-0361|xxd|2:8.0.1453-1ubuntu1.4||
 |MEDIUM|CVE-2022-0368|xxd|2:8.0.1453-1ubuntu1.4||
 
-
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-
 
 ## Target: Python --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -318,5 +318,3 @@
 |HIGH|CVE-2021-43818|lxml|4.6.3|4.6.5|
 |HIGH|CVE-2021-32839|sqlparse|0.4.1|0.4.2|
 |HIGH|CVE-2021-33503|urllib3|1.26.4|1.26.5|
-
-

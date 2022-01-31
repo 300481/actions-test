@@ -1,4 +1,6 @@
-# Trivy Vulnerability Report## Target: bitnami/minideb-extras (debian 9.11) --- Class: os-pkgs
+# Trivy Vulnerability Report
+
+## Target: bitnami/minideb-extras (debian 9.11) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2020-27350|apt|1.4.9|1.4.11|
@@ -260,7 +262,6 @@
 |MEDIUM|CVE-2018-20482|tar|1.29b-1.1|1.29b-1.1+deb9u1|
 |HIGH|CVE-2016-2779|util-linux|2.29.2-1+deb9u1||
 
-
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
@@ -288,5 +289,3 @@
 |MEDIUM|CVE-2021-3664|url-parse|1.4.3|1.5.2|
 |MEDIUM|CVE-2021-32640|ws|5.2.2|5.2.3, 6.2.2, 7.4.6|
 |MEDIUM|CVE-2021-32796|xmldom|0.1.27|0.7.0|
-
-

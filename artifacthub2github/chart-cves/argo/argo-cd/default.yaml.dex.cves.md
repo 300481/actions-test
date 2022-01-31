@@ -1,4 +1,6 @@
-# Trivy Vulnerability Report## Target: ghcr.io/dexidp/dex:v2.30.0 (alpine 3.14.0) --- Class: os-pkgs
+# Trivy Vulnerability Report
+
+## Target: ghcr.io/dexidp/dex:v2.30.0 (alpine 3.14.0) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |CRITICAL|CVE-2021-36159|apk-tools|2.12.5-r1|2.12.6-r0|
@@ -31,14 +33,10 @@
 |MEDIUM|CVE-2021-42374|ssl_client|1.33.1-r2|1.33.1-r4|
 |MEDIUM|CVE-2021-42375|ssl_client|1.33.1-r2|1.33.1-r5|
 
-
 ## Target: usr/local/bin/dex --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-
 ## Target: usr/local/bin/gomplate --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-
-

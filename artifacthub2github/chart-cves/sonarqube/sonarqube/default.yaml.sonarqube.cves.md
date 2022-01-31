@@ -1,7 +1,8 @@
-# Trivy Vulnerability Report## Target: sonarqube:9.3.0-community (alpine 3.14.3) --- Class: os-pkgs
+# Trivy Vulnerability Report
+
+## Target: sonarqube:9.3.0-community (alpine 3.14.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -15,5 +16,3 @@
 |MEDIUM|CVE-2021-37137|io.netty:netty-codec|4.1.66.Final|4.1.68.Final|
 |MEDIUM|CVE-2021-43797|io.netty:netty-codec-http|4.1.66.Final|4.1.71.Final|
 |MEDIUM|CVE-2020-13697|org.nanohttpd:nanohttpd|2.3.1||
-
-

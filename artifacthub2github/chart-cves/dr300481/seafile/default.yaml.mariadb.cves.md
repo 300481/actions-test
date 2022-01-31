@@ -1,4 +1,6 @@
-# Trivy Vulnerability Report## Target: docker.io/bitnami/mariadb:10.5.11-debian-10-r0 (debian 10.10) --- Class: os-pkgs
+# Trivy Vulnerability Report
+
+## Target: docker.io/bitnami/mariadb:10.5.11-debian-10-r0 (debian 10.10) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -67,9 +69,6 @@
 |HIGH|CVE-2021-3712|openssl|1.1.1d-0+deb10u6|1.1.1d-0+deb10u7|
 |HIGH|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
-
 ## Target: opt/bitnami/common/bin/gosu --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-
-

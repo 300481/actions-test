@@ -1,4 +1,6 @@
-# Trivy Vulnerability Report## Target: bats/bats:1.2.1 (alpine 3.11.3) --- Class: os-pkgs
+# Trivy Vulnerability Report
+
+## Target: bats/bats:1.2.1 (alpine 3.11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |CRITICAL|CVE-2021-36159|apk-tools|2.10.4-r3|2.10.7-r0|
@@ -44,9 +46,6 @@
 |HIGH|CVE-2021-42386|ssl_client|1.31.1-r9|1.31.1-r11|
 |MEDIUM|CVE-2021-42374|ssl_client|1.31.1-r9|1.31.1-r11|
 
-
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-
-
