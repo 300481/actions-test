@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-31T14:31:46.195501933Z</title>
+    <title>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-31 16:01:34.297128691 +0000 UTC m=+2.858730575 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-31T14:31:46.195517633Z</h1>
+    <h1>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-31 16:01:34.297151891 +0000 UTC m=+2.858753775</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>
@@ -103,6 +103,7 @@
         <td>v2.7.1</td>
         <td class="links" data-more-links="off">
           <a href="https://access.redhat.com/errata/RHBA-2019:0327">https://access.redhat.com/errata/RHBA-2019:0327</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2019-3826">https://access.redhat.com/security/cve/CVE-2019-3826</a>
           <a href="https://advisory.checkmarx.net/advisory/CX-2019-4297">https://advisory.checkmarx.net/advisory/CX-2019-4297</a>
           <a href="https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826">https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3826">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3826</a>
@@ -144,6 +145,7 @@
         <td>v2.7.1</td>
         <td class="links" data-more-links="off">
           <a href="https://access.redhat.com/errata/RHBA-2019:0327">https://access.redhat.com/errata/RHBA-2019:0327</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2019-3826">https://access.redhat.com/security/cve/CVE-2019-3826</a>
           <a href="https://advisory.checkmarx.net/advisory/CX-2019-4297">https://advisory.checkmarx.net/advisory/CX-2019-4297</a>
           <a href="https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826">https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3826">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3826</a>

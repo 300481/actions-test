@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>app/argocd-notifications - Trivy Report - 2022-01-31T14:31:26.601379635Z</title>
+    <title>app/argocd-notifications - Trivy Report - 2022-01-31 16:01:12.291072638 +0000 UTC m=+1.163870985 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>app/argocd-notifications - Trivy Report - 2022-01-31T14:31:26.601395536Z</h1>
+    <h1>app/argocd-notifications - Trivy Report - 2022-01-31 16:01:12.291100038 +0000 UTC m=+1.163898485</h1>
     <table>
       <tr class="group-header"><th colspan="6">gobinary</th></tr>
       <tr class="sub-header">
@@ -99,7 +99,11 @@
         <td class="pkg-version">v3.2.0+incompatible</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-26160">https://access.redhat.com/security/cve/CVE-2020-26160</a>
+          <a href="https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab">https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab</a>
+          <a href="https://github.com/dgrijalva/jwt-go/issues/422">https://github.com/dgrijalva/jwt-go/issues/422</a>
           <a href="https://github.com/dgrijalva/jwt-go/pull/426">https://github.com/dgrijalva/jwt-go/pull/426</a>
+          <a href="https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2020-0017.yaml">https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2020-0017.yaml</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-26160">https://nvd.nist.gov/vuln/detail/CVE-2020-26160</a>
           <a href="https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMDGRIJALVAJWTGO-596515">https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMDGRIJALVAJWTGO-596515</a>
         </td>
@@ -111,6 +115,7 @@
         <td class="pkg-version">v1.21.0</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-8554">https://access.redhat.com/security/cve/CVE-2020-8554</a>
           <a href="https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/">https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/97076">https://github.com/kubernetes/kubernetes/issues/97076</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8">https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8</a>
@@ -130,6 +135,7 @@
         <td class="pkg-version">v1.21.0</td>
         <td>1.18.19, 1.19.10, 1.20.7, 1.21.1</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-25737">https://access.redhat.com/security/cve/CVE-2021-25737</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/102106">https://github.com/kubernetes/kubernetes/issues/102106</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/xAiN3924thY">https://groups.google.com/g/kubernetes-security-announce/c/xAiN3924thY</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-25737">https://nvd.nist.gov/vuln/detail/CVE-2021-25737</a>
@@ -153,7 +159,11 @@
         <td class="pkg-version">v3.2.0+incompatible</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-26160">https://access.redhat.com/security/cve/CVE-2020-26160</a>
+          <a href="https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab">https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab</a>
+          <a href="https://github.com/dgrijalva/jwt-go/issues/422">https://github.com/dgrijalva/jwt-go/issues/422</a>
           <a href="https://github.com/dgrijalva/jwt-go/pull/426">https://github.com/dgrijalva/jwt-go/pull/426</a>
+          <a href="https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2020-0017.yaml">https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2020-0017.yaml</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-26160">https://nvd.nist.gov/vuln/detail/CVE-2020-26160</a>
           <a href="https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMDGRIJALVAJWTGO-596515">https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMDGRIJALVAJWTGO-596515</a>
         </td>
@@ -165,6 +175,7 @@
         <td class="pkg-version">v1.21.0</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-8554">https://access.redhat.com/security/cve/CVE-2020-8554</a>
           <a href="https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/">https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/97076">https://github.com/kubernetes/kubernetes/issues/97076</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8">https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8</a>
@@ -184,6 +195,7 @@
         <td class="pkg-version">v1.21.0</td>
         <td>1.18.19, 1.19.10, 1.20.7, 1.21.1</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-25737">https://access.redhat.com/security/cve/CVE-2021-25737</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/102106">https://github.com/kubernetes/kubernetes/issues/102106</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/xAiN3924thY">https://groups.google.com/g/kubernetes-security-announce/c/xAiN3924thY</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-25737">https://nvd.nist.gov/vuln/detail/CVE-2021-25737</a>
