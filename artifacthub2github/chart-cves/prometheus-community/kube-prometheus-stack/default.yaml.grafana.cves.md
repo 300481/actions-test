@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-29T16:24:35.070866412Z</title>
+    <title>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-31T14:31:46.195501933Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-29T16:24:35.070884213Z</h1>
+    <h1>grafana/grafana:8.3.4 (alpine 3.15.0) - Trivy Report - 2022-01-31T14:31:46.195517633Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

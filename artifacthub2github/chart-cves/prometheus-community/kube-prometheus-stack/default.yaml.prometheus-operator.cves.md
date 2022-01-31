@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>bin/operator - Trivy Report - 2022-01-29T16:24:37.057123303Z</title>
+    <title>bin/operator - Trivy Report - 2022-01-31T14:31:47.923214045Z</title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>bin/operator - Trivy Report - 2022-01-29T16:24:37.057140904Z</h1>
+    <h1>bin/operator - Trivy Report - 2022-01-31T14:31:47.923230045Z</h1>
     <table>
       <tr class="group-header"><th colspan="6">gobinary</th></tr>
       <tr class="sub-header">
