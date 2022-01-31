@@ -1,5 +1,6 @@
 # Trivy Vulnerability Report
 
+
 {{- range . -}}
 ## Target: {{ .Target }} --- Class: {{ .Class }}
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
