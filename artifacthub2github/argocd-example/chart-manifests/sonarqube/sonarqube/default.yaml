@@ -1,22 +1,19 @@
 ---
-# Source: sonarqube/charts/postgresql/templates/secrets.yaml
+# Source: sonarqube/templates/secret.yaml
 apiVersion: v1
 kind: Secret
 metadata:
-  name: sonarqube-postgresql
+  name: sonarqube-sonarqube
   labels:
-    app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.15.0
-    app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/managed-by: Helm
-  namespace: default
+    app: sonarqube
+    chart: sonarqube-2.0.0_233
+    release: sonarqube
+    heritage: Helm
 type: Opaque
 data:
-  postgresql-postgres-password: "dUVDcUpQVk1VZg=="
-  postgresql-password: "c29uYXJQYXNz"
+  jdbc-password: "c29uYXJQYXNz"
 ---
 # Source: sonarqube/templates/secret.yaml
----
 apiVersion: v1
 kind: Secret
 metadata:
@@ -110,8 +107,8 @@ metadata:
     release: sonarqube
     heritage: Helm
 data:
-  SONAR_JDBC_USERNAME: "sonarUser"
-  SONAR_JDBC_URL: "jdbc:postgresql://sonarqube-postgresql:5432/sonarDB"
+  SONAR_JDBC_USERNAME: sonarUser
+  SONAR_JDBC_URL: "jdbc:postgresql://%!s(<nil>):5432/sonarDB"
 ---
 # Source: sonarqube/templates/prometheus-ce-config.yaml
 apiVersion: v1
@@ -159,60 +156,6 @@ data:
       curl --connect-timeout 5 --retry 12 --retry-delay 1 --retry-max-time 60 sonarqube-sonarqube:9000/api/system/status
     }
 ---
-# Source: sonarqube/charts/postgresql/templates/svc-headless.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: sonarqube-postgresql-headless
-  labels:
-    app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.15.0
-    app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/managed-by: Helm
-    # Use this annotation in addition to the actual publishNotReadyAddresses
-    # field below because the annotation will stop being respected soon but the
-    # field is broken in some versions of Kubernetes:
-    # https://github.com/kubernetes/kubernetes/issues/58662
-    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
-  namespace: default
-spec:
-  type: ClusterIP
-  clusterIP: None
-  # We want all pods in the StatefulSet to have their addresses published for
-  # the sake of the other Postgresql pods even before they're ready, since they
-  # have to be able to talk to each other in order to become ready.
-  publishNotReadyAddresses: true
-  ports:
-    - name: tcp-postgresql
-      port: 5432
-      targetPort: tcp-postgresql
-  selector:
-    app.kubernetes.io/name: postgresql
-    app.kubernetes.io/instance: sonarqube
----
-# Source: sonarqube/charts/postgresql/templates/svc.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: sonarqube-postgresql
-  labels:
-    app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.15.0
-    app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/managed-by: Helm
-  annotations:
-  namespace: default
-spec:
-  type: ClusterIP
-  ports:
-    - name: tcp-postgresql
-      port: 5432
-      targetPort: tcp-postgresql
-  selector:
-    app.kubernetes.io/name: postgresql
-    app.kubernetes.io/instance: sonarqube
-    role: primary
----
 # Source: sonarqube/templates/service.yaml
 apiVersion: v1
 kind: Service
@@ -234,160 +177,6 @@ spec:
   selector:
     app: sonarqube
     release: sonarqube
----
-# Source: sonarqube/charts/postgresql/templates/statefulset.yaml
-apiVersion: apps/v1
-kind: StatefulSet
-metadata:
-  name: sonarqube-postgresql
-  labels:
-    app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.15.0
-    app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/component: primary
-  annotations:
-  namespace: default
-spec:
-  serviceName: sonarqube-postgresql-headless
-  replicas: 1
-  updateStrategy:
-    type: RollingUpdate
-  selector:
-    matchLabels:
-      app.kubernetes.io/name: postgresql
-      app.kubernetes.io/instance: sonarqube
-      role: primary
-  template:
-    metadata:
-      name: sonarqube-postgresql
-      labels:
-        app.kubernetes.io/name: postgresql
-        helm.sh/chart: postgresql-10.15.0
-        app.kubernetes.io/instance: sonarqube
-        app.kubernetes.io/managed-by: Helm
-        role: primary
-        app.kubernetes.io/component: primary
-    spec:      
-      affinity:
-        podAffinity:
-          
-        podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-            - podAffinityTerm:
-                labelSelector:
-                  matchLabels:
-                    app.kubernetes.io/name: postgresql
-                    app.kubernetes.io/instance: sonarqube
-                    app.kubernetes.io/component: primary
-                namespaces:
-                  - "default"
-                topologyKey: kubernetes.io/hostname
-              weight: 1
-        nodeAffinity:
-          
-      securityContext:
-        fsGroup: 1001
-      automountServiceAccountToken: false
-      containers:
-        - name: sonarqube-postgresql
-          image: docker.io/bitnami/postgresql:11.14.0-debian-10-r22
-          imagePullPolicy: "IfNotPresent"
-          resources:
-            limits:
-              cpu: 2
-              memory: 2Gi
-            requests:
-              cpu: 100m
-              memory: 200Mi
-          securityContext:
-            runAsUser: 1001
-          env:
-            - name: BITNAMI_DEBUG
-              value: "false"
-            - name: POSTGRESQL_PORT_NUMBER
-              value: "5432"
-            - name: POSTGRESQL_VOLUME_DIR
-              value: "/bitnami/postgresql"
-            - name: PGDATA
-              value: "/bitnami/postgresql/data"
-            - name: POSTGRES_POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: sonarqube-postgresql
-                  key: postgresql-postgres-password
-            - name: POSTGRES_USER
-              value: "sonarUser"
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: sonarqube-postgresql
-                  key: postgresql-password
-            - name: POSTGRES_DB
-              value: "sonarDB"
-            - name: POSTGRESQL_ENABLE_LDAP
-              value: "no"
-            - name: POSTGRESQL_ENABLE_TLS
-              value: "no"
-            - name: POSTGRESQL_LOG_HOSTNAME
-              value: "false"
-            - name: POSTGRESQL_LOG_CONNECTIONS
-              value: "false"
-            - name: POSTGRESQL_LOG_DISCONNECTIONS
-              value: "false"
-            - name: POSTGRESQL_PGAUDIT_LOG_CATALOG
-              value: "off"
-            - name: POSTGRESQL_CLIENT_MIN_MESSAGES
-              value: "error"
-            - name: POSTGRESQL_SHARED_PRELOAD_LIBRARIES
-              value: "pgaudit"
-          ports:
-            - name: tcp-postgresql
-              containerPort: 5432
-          livenessProbe:
-            exec:
-              command:
-                - /bin/sh
-                - -c
-                - exec pg_isready -U "sonarUser" -d "dbname=sonarDB" -h 127.0.0.1 -p 5432
-            initialDelaySeconds: 30
-            periodSeconds: 10
-            timeoutSeconds: 5
-            successThreshold: 1
-            failureThreshold: 6
-          readinessProbe:
-            exec:
-              command:
-                - /bin/sh
-                - -c
-                - -e
-                - |
-                  exec pg_isready -U "sonarUser" -d "dbname=sonarDB" -h 127.0.0.1 -p 5432
-                  [ -f /opt/bitnami/postgresql/tmp/.initialized ] || [ -f /bitnami/postgresql/.initialized ]
-            initialDelaySeconds: 5
-            periodSeconds: 10
-            timeoutSeconds: 5
-            successThreshold: 1
-            failureThreshold: 6
-          volumeMounts:
-            - name: dshm
-              mountPath: /dev/shm
-            - name: data
-              mountPath: /bitnami/postgresql
-              subPath: 
-      volumes:
-        - name: dshm
-          emptyDir:
-            medium: Memory
-  volumeClaimTemplates:
-    - metadata:
-        name: data
-      spec:
-        accessModes:
-          - "ReadWriteOnce"
-        resources:
-          requests:
-            storage: "20Gi"
 ---
 # Source: sonarqube/templates/sonarqube-sts.yaml
 apiVersion: apps/v1
@@ -422,19 +211,13 @@ spec:
         checksum/init-fs: a80c6ec2b9b1830e4b34f2b3856f04b0f98e0a78156e7c25715866e00991e743
         checksum/plugins: 43d1471f8e360ac6387ae1f45a79b78afefee8f3a2614292722f39c9f46786f3
         checksum/config: 13e8cd6a795eecdecc1eaab9ee42b8ef80c024bffa8719b9c26a39e769715954
-        checksum/secret: 475f62fd624d7caf53dfd592231c2cb6c1fb44e9c4e84b60e2852d5880361a84
+        checksum/secret: 8298f19429c91364212b62bf9663ab4db322848fe6fb9904878b810d23b8c5f4
         checksum/prometheus-config: 1e146e5335da0952a946bf1b60d6cf3bc96b7da484f9a80769428cbc584e5468
         checksum/prometheus-ce-config: 4dc6b8583ec36816ef5ed38f41d9865ca0496c7c1825b8626df56d988e54e2d8
     spec:
       securityContext:
         fsGroup: 1000
       initContainers:
-        - name: "wait-for-db"
-          image: busybox:1.32
-          imagePullPolicy: IfNotPresent
-          resources:
-            {}
-          command: ["/bin/sh", "-c", "for i in $(seq 1 200); do nc -z -w3 sonarqube-postgresql 5432 && exit 0 || sleep 2; done; exit 1"]
         - name: init-sysctl
           image: busybox:1.32
           imagePullPolicy: IfNotPresent
@@ -498,8 +281,8 @@ spec:
             - name: SONAR_JDBC_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: sonarqube-postgresql
-                  key: postgresql-password
+                  name: sonarqube-sonarqube
+                  key: jdbc-password
             - name: SONAR_WEB_SYSTEMPASSCODE
               valueFrom:
                 secretKeyRef:

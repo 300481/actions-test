@@ -51,7 +51,7 @@ jobs:
           CHART_ROOT: artifacthub2github/argocd-example
         run: |
           git checkout -b ${BRANCH}
-          git add ${CHART_ROOT}
+          git add ${CHART_ROOT} helm-charts.yaml
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin ${BRANCH}
           gh pr create --base main --fill
