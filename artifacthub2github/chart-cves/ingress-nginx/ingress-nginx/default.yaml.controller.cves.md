@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>k8s.gcr.io/ingress-nginx/controller:v1.1.0@sha256:f766669fdcf3dc26347ed273a55e754b427eb4411ee075a53f30718b4499076a (alpine 3.14.2) - Trivy Report - 2022-01-31T14:31:40.332654363Z</title>
+    <title>k8s.gcr.io/ingress-nginx/controller:v1.1.0@sha256:f766669fdcf3dc26347ed273a55e754b427eb4411ee075a53f30718b4499076a (alpine 3.14.2) - Trivy Report - 2022-01-31 16:01:26.842999731 +0000 UTC m=+2.792432402 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>k8s.gcr.io/ingress-nginx/controller:v1.1.0@sha256:f766669fdcf3dc26347ed273a55e754b427eb4411ee075a53f30718b4499076a (alpine 3.14.2) - Trivy Report - 2022-01-31T14:31:40.332671863Z</h1>
+    <h1>k8s.gcr.io/ingress-nginx/controller:v1.1.0@sha256:f766669fdcf3dc26347ed273a55e754b427eb4411ee075a53f30718b4499076a (alpine 3.14.2) - Trivy Report - 2022-01-31 16:01:26.843024831 +0000 UTC m=+2.792457402</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

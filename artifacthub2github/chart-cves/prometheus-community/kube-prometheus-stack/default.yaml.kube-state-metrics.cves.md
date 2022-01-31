@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0 (debian 11.1) - Trivy Report - 2022-01-31T14:31:47.098823904Z</title>
+    <title>k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0 (debian 11.1) - Trivy Report - 2022-01-31 16:01:35.18730201 +0000 UTC m=+0.883564671 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0 (debian 11.1) - Trivy Report - 2022-01-31T14:31:47.098840304Z</h1>
+    <h1>k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0 (debian 11.1) - Trivy Report - 2022-01-31 16:01:35.18732941 +0000 UTC m=+0.883591971</h1>
     <table>
       <tr class="group-header"><th colspan="6">debian</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

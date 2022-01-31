@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31T14:32:02.334223807Z</title>
+    <title>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31 16:01:51.384786366 +0000 UTC m=+7.446623675 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31T14:32:02.334240207Z</h1>
+    <h1>sonarqube:9.3.0-community (alpine 3.14.3) - Trivy Report - 2022-01-31 16:01:51.384810966 +0000 UTC m=+7.446648275</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>
@@ -104,6 +104,7 @@
         <td class="links" data-more-links="off">
           <a href="http://www.openwall.com/lists/oss-security/2022/01/12/4">http://www.openwall.com/lists/oss-security/2022/01/12/4</a>
           <a href="http://www.openwall.com/lists/oss-security/2022/01/12/7">http://www.openwall.com/lists/oss-security/2022/01/12/7</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2021-22569">https://access.redhat.com/security/cve/CVE-2021-22569</a>
           <a href="https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39330">https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39330</a>
           <a href="https://cloud.google.com/support/bulletins#gcp-2022-001">https://cloud.google.com/support/bulletins#gcp-2022-001</a>
           <a href="https://github.com/advisories/GHSA-wrvw-hg22-4m67">https://github.com/advisories/GHSA-wrvw-hg22-4m67</a>
@@ -114,11 +115,28 @@
       </tr>
       <tr class="severity-CRITICAL">
         <td class="pkg-name">com.h2database:h2</td>
+        <td>CVE-2021-23463</td>
+        <td class="severity">CRITICAL</td>
+        <td class="pkg-version">1.4.199</td>
+        <td>2.0.202</td>
+        <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-23463">https://access.redhat.com/security/cve/CVE-2021-23463</a>
+          <a href="https://github.com/advisories/GHSA-7rpj-hg47-cx62">https://github.com/advisories/GHSA-7rpj-hg47-cx62</a>
+          <a href="https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3">https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3</a>
+          <a href="https://github.com/h2database/h2database/issues/3195">https://github.com/h2database/h2database/issues/3195</a>
+          <a href="https://github.com/h2database/h2database/pull/3199">https://github.com/h2database/h2database/pull/3199</a>
+          <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23463">https://nvd.nist.gov/vuln/detail/CVE-2021-23463</a>
+          <a href="https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238">https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238</a>
+        </td>
+      </tr>
+      <tr class="severity-CRITICAL">
+        <td class="pkg-name">com.h2database:h2</td>
         <td>CVE-2021-42392</td>
         <td class="severity">CRITICAL</td>
         <td class="pkg-version">1.4.199</td>
         <td>2.0.206</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-42392">https://access.redhat.com/security/cve/CVE-2021-42392</a>
           <a href="https://github.com/advisories/GHSA-h376-j262-vhq6">https://github.com/advisories/GHSA-h376-j262-vhq6</a>
           <a href="https://github.com/h2database/h2database/releases/tag/version-2.0.206">https://github.com/h2database/h2database/releases/tag/version-2.0.206</a>
           <a href="https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6">https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6</a>
@@ -136,26 +154,12 @@
         <td class="links" data-more-links="off">
           <a href="http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html">http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html</a>
           <a href="http://seclists.org/fulldisclosure/2022/Jan/39">http://seclists.org/fulldisclosure/2022/Jan/39</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-23221">https://access.redhat.com/security/cve/CVE-2022-23221</a>
           <a href="https://github.com/advisories/GHSA-45hx-wfhj-473x">https://github.com/advisories/GHSA-45hx-wfhj-473x</a>
           <a href="https://github.com/h2database/h2database/releases/tag/version-2.1.210">https://github.com/h2database/h2database/releases/tag/version-2.1.210</a>
           <a href="https://github.com/h2database/h2database/security/advisories">https://github.com/h2database/h2database/security/advisories</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-23221">https://nvd.nist.gov/vuln/detail/CVE-2022-23221</a>
           <a href="https://twitter.com/d0nkey_man/status/1483824727936450564">https://twitter.com/d0nkey_man/status/1483824727936450564</a>
-        </td>
-      </tr>
-      <tr class="severity-HIGH">
-        <td class="pkg-name">com.h2database:h2</td>
-        <td>CVE-2021-23463</td>
-        <td class="severity">HIGH</td>
-        <td class="pkg-version">1.4.199</td>
-        <td>2.0.202</td>
-        <td class="links" data-more-links="off">
-          <a href="https://github.com/advisories/GHSA-7rpj-hg47-cx62">https://github.com/advisories/GHSA-7rpj-hg47-cx62</a>
-          <a href="https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3">https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3</a>
-          <a href="https://github.com/h2database/h2database/issues/3195">https://github.com/h2database/h2database/issues/3195</a>
-          <a href="https://github.com/h2database/h2database/pull/3199">https://github.com/h2database/h2database/pull/3199</a>
-          <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23463">https://nvd.nist.gov/vuln/detail/CVE-2021-23463</a>
-          <a href="https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238">https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238</a>
         </td>
       </tr>
       <tr class="severity-CRITICAL">
@@ -176,6 +180,7 @@
         <td class="pkg-version">4.1.66.Final</td>
         <td>4.1.68.Final</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-37136">https://access.redhat.com/security/cve/CVE-2021-37136</a>
           <a href="https://github.com/advisories/GHSA-grg4-wf29-r9vv">https://github.com/advisories/GHSA-grg4-wf29-r9vv</a>
           <a href="https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/Bzip2Decoder.java#L294">https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/Bzip2Decoder.java#L294</a>
           <a href="https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/Bzip2Decoder.java#L305">https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/Bzip2Decoder.java#L305</a>
@@ -198,6 +203,7 @@
         <td class="pkg-version">4.1.66.Final</td>
         <td>4.1.68.Final</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-37137">https://access.redhat.com/security/cve/CVE-2021-37137</a>
           <a href="https://github.com/advisories/GHSA-9vjp-v76f-g363">https://github.com/advisories/GHSA-9vjp-v76f-g363</a>
           <a href="https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/SnappyFrameDecoder.java#L171">https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/SnappyFrameDecoder.java#L171</a>
           <a href="https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/SnappyFrameDecoder.java#L185">https://github.com/netty/netty/blob/4.1/codec/src/main/java/io/netty/handler/codec/compression/SnappyFrameDecoder.java#L185</a>
@@ -221,6 +227,7 @@
         <td class="pkg-version">4.1.66.Final</td>
         <td>4.1.71.Final</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-43797">https://access.redhat.com/security/cve/CVE-2021-43797</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43797">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43797</a>
           <a href="https://github.com/advisories/GHSA-wx5j-54mm-rqqq">https://github.com/advisories/GHSA-wx5j-54mm-rqqq</a>
           <a href="https://github.com/netty/netty/commit/07aa6b5938a8b6ed7a6586e066400e2643897323">https://github.com/netty/netty/commit/07aa6b5938a8b6ed7a6586e066400e2643897323</a>

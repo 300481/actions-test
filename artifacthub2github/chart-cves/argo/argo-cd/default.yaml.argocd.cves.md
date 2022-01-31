@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>quay.io/argoproj/argocd:v2.2.2 (ubuntu 21.04) - Trivy Report - 2022-01-31T14:31:23.700537557Z</title>
+    <title>quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) - Trivy Report - 2022-01-31 16:01:09.28334038 +0000 UTC m=+0.268413070 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>quay.io/argoproj/argocd:v2.2.2 (ubuntu 21.04) - Trivy Report - 2022-01-31T14:31:23.700553357Z</h1>
+    <h1>quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) - Trivy Report - 2022-01-31 16:01:09.28338198 +0000 UTC m=+0.268454670</h1>
     <table>
       <tr class="group-header"><th colspan="6">ubuntu</th></tr>
       <tr class="sub-header">
@@ -92,72 +92,16 @@
         <th>Fixed Version</th>
         <th>Links</th>
       </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">libsystemd0</td>
-        <td>CVE-2021-3997</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">247.3-3ubuntu3.6</td>
-        <td>247.3-3ubuntu3.7</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3997">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3997</a>
-          <a href="https://ubuntu.com/security/notices/USN-5226-1">https://ubuntu.com/security/notices/USN-5226-1</a>
-          <a href="https://www.openwall.com/lists/oss-security/2022/01/10/2">https://www.openwall.com/lists/oss-security/2022/01/10/2</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">libudev1</td>
-        <td>CVE-2021-3997</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">247.3-3ubuntu3.6</td>
-        <td>247.3-3ubuntu3.7</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3997">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3997</a>
-          <a href="https://ubuntu.com/security/notices/USN-5226-1">https://ubuntu.com/security/notices/USN-5226-1</a>
-          <a href="https://www.openwall.com/lists/oss-security/2022/01/10/2">https://www.openwall.com/lists/oss-security/2022/01/10/2</a>
-        </td>
-      </tr>
-      <tr class="severity-HIGH">
-        <td class="pkg-name">linux-libc-dev</td>
-        <td>CVE-2021-4002</td>
-        <td class="severity">HIGH</td>
-        <td class="pkg-version">5.11.0-41.45</td>
-        <td>5.11.0-44.48</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4002">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4002</a>
-          <a href="https://git.kernel.org/linus/a4a118f2eead1d6c49e00765de89878288d4b890">https://git.kernel.org/linus/a4a118f2eead1d6c49e00765de89878288d4b890</a>
-          <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=13e4ad2ce8df6e058ef482a31fdd81c725b0f7ea">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=13e4ad2ce8df6e058ef482a31fdd81c725b0f7ea</a>
-          <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a4a118f2eead1d6c49e00765de89878288d4b890">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a4a118f2eead1d6c49e00765de89878288d4b890</a>
-          <a href="https://ubuntu.com/security/notices/USN-5206-1">https://ubuntu.com/security/notices/USN-5206-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5207-1">https://ubuntu.com/security/notices/USN-5207-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5208-1">https://ubuntu.com/security/notices/USN-5208-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5209-1">https://ubuntu.com/security/notices/USN-5209-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5210-1">https://ubuntu.com/security/notices/USN-5210-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5211-1">https://ubuntu.com/security/notices/USN-5211-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5218-1">https://ubuntu.com/security/notices/USN-5218-1</a>
-          <a href="https://www.openwall.com/lists/oss-security/2021/11/25/1">https://www.openwall.com/lists/oss-security/2021/11/25/1</a>
-        </td>
-      </tr>
-      <tr class="severity-HIGH">
-        <td class="pkg-name">linux-libc-dev</td>
-        <td>CVE-2021-4204</td>
-        <td class="severity">HIGH</td>
-        <td class="pkg-version">5.11.0-41.45</td>
-        <td>5.11.0-46.51</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4204">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4204</a>
-          <a href="https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/impish/commit/?id=53fb7741ff9d546174dbb585957b4f8b6afbdb83">https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/impish/commit/?id=53fb7741ff9d546174dbb585957b4f8b6afbdb83</a>
-          <a href="https://ubuntu.com/security/notices/USN-5217-1">https://ubuntu.com/security/notices/USN-5217-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5218-1">https://ubuntu.com/security/notices/USN-5218-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5219-1">https://ubuntu.com/security/notices/USN-5219-1</a>
-        </td>
-      </tr>
       <tr class="severity-HIGH">
         <td class="pkg-name">linux-libc-dev</td>
         <td>CVE-2022-0185</td>
         <td class="severity">HIGH</td>
-        <td class="pkg-version">5.11.0-41.45</td>
+        <td class="pkg-version">5.11.0-46.51</td>
         <td>5.11.0-49.55</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4155.json">https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4155.json</a>
+          <a href="https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0185.json">https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0185.json</a>
+          <a href="https://access.redhat.com/security/cve/CVE-2022-0185">https://access.redhat.com/security/cve/CVE-2022-0185</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0185">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0185</a>
           <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=722d94847de2">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=722d94847de2</a>
           <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=722d94847de29310e8aa03fcbdb41fc92c521756">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=722d94847de29310e8aa03fcbdb41fc92c521756</a>
@@ -167,89 +111,6 @@
           <a href="https://ubuntu.com/security/notices/USN-5240-1">https://ubuntu.com/security/notices/USN-5240-1</a>
           <a href="https://www.openwall.com/lists/oss-security/2022/01/18/7">https://www.openwall.com/lists/oss-security/2022/01/18/7</a>
           <a href="https://www.willsroot.io/2022/01/cve-2022-0185.html">https://www.willsroot.io/2022/01/cve-2022-0185.html</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">linux-libc-dev</td>
-        <td>CVE-2021-20321</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">5.11.0-41.45</td>
-        <td>5.11.0-44.48</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20321">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20321</a>
-          <a href="https://git.kernel.org/linus/a295aef603e109a47af355477326bd41151765b6 (5.15-rc5)">https://git.kernel.org/linus/a295aef603e109a47af355477326bd41151765b6 (5.15-rc5)</a>
-          <a href="https://linux.oracle.com/cve/CVE-2021-20321.html">https://linux.oracle.com/cve/CVE-2021-20321.html</a>
-          <a href="https://linux.oracle.com/errata/ELSA-2021-5227.html">https://linux.oracle.com/errata/ELSA-2021-5227.html</a>
-          <a href="https://lore.kernel.org/all/20211011134508.748956131@linuxfoundation.org/">https://lore.kernel.org/all/20211011134508.748956131@linuxfoundation.org/</a>
-          <a href="https://ubuntu.com/security/notices/USN-5208-1">https://ubuntu.com/security/notices/USN-5208-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5209-1">https://ubuntu.com/security/notices/USN-5209-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5210-1">https://ubuntu.com/security/notices/USN-5210-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5218-1">https://ubuntu.com/security/notices/USN-5218-1</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">linux-libc-dev</td>
-        <td>CVE-2021-3760</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">5.11.0-41.45</td>
-        <td>5.11.0-44.48</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3760">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3760</a>
-          <a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=1b1499a817c90fd1ce9453a2c98d2a01cca0e775">https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=1b1499a817c90fd1ce9453a2c98d2a01cca0e775</a>
-          <a href="https://ubuntu.com/security/notices/USN-5139-1">https://ubuntu.com/security/notices/USN-5139-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5165-1">https://ubuntu.com/security/notices/USN-5165-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5208-1">https://ubuntu.com/security/notices/USN-5208-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5209-1">https://ubuntu.com/security/notices/USN-5209-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5210-1">https://ubuntu.com/security/notices/USN-5210-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5218-1">https://ubuntu.com/security/notices/USN-5218-1</a>
-          <a href="https://www.openwall.com/lists/oss-security/2021/10/26/2">https://www.openwall.com/lists/oss-security/2021/10/26/2</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">linux-libc-dev</td>
-        <td>CVE-2021-43056</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">5.11.0-41.45</td>
-        <td>5.11.0-44.48</td>
-        <td class="links" data-more-links="off">
-          <a href="http://www.openwall.com/lists/oss-security/2021/10/28/1">http://www.openwall.com/lists/oss-security/2021/10/28/1</a>
-          <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.15">https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.15</a>
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43056">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43056</a>
-          <a href="https://git.kernel.org/linus/cdeb5d7d890e14f3b70e8087e745c4a6a7d9f337">https://git.kernel.org/linus/cdeb5d7d890e14f3b70e8087e745c4a6a7d9f337</a>
-          <a href="https://git.kernel.org/linus/cdeb5d7d890e14f3b70e8087e745c4a6a7d9f337 (5.15-rc6)">https://git.kernel.org/linus/cdeb5d7d890e14f3b70e8087e745c4a6a7d9f337 (5.15-rc6)</a>
-          <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=cdeb5d7d890e14f3b70e8087e745c4a6a7d9f337">https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=cdeb5d7d890e14f3b70e8087e745c4a6a7d9f337</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AA7EAPPKWG4LMTQQLNNSKATY6ST2KQFE/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AA7EAPPKWG4LMTQQLNNSKATY6ST2KQFE/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BBM4FP3IT3JZ2O7EBS7TEOG657N4ZGRE/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BBM4FP3IT3JZ2O7EBS7TEOG657N4ZGRE/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RRAIS3PG4EV5WFLYESR6FXWM4BJJGWVA/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RRAIS3PG4EV5WFLYESR6FXWM4BJJGWVA/</a>
-          <a href="https://lore.kernel.org/linuxppc-dev/87pmrtbbdt.fsf@mpe.ellerman.id.au/T/#u">https://lore.kernel.org/linuxppc-dev/87pmrtbbdt.fsf@mpe.ellerman.id.au/T/#u</a>
-          <a href="https://ubuntu.com/security/notices/USN-5139-1">https://ubuntu.com/security/notices/USN-5139-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5165-1">https://ubuntu.com/security/notices/USN-5165-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5208-1">https://ubuntu.com/security/notices/USN-5208-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5210-1">https://ubuntu.com/security/notices/USN-5210-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5218-1">https://ubuntu.com/security/notices/USN-5218-1</a>
-        </td>
-      </tr>
-      <tr class="severity-MEDIUM">
-        <td class="pkg-name">linux-libc-dev</td>
-        <td>CVE-2021-43267</td>
-        <td class="severity">MEDIUM</td>
-        <td class="pkg-version">5.11.0-41.45</td>
-        <td>5.11.0-44.48</td>
-        <td class="links" data-more-links="off">
-          <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.16">https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.14.16</a>
-          <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43267">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43267</a>
-          <a href="https://git.kernel.org/linus/fa40d9734a57bcbfa79a280189799f76c88f7bb0 (5.15)">https://git.kernel.org/linus/fa40d9734a57bcbfa79a280189799f76c88f7bb0 (5.15)</a>
-          <a href="https://github.com/torvalds/linux/commit/fa40d9734a57bcbfa79a280189799f76c88f7bb0">https://github.com/torvalds/linux/commit/fa40d9734a57bcbfa79a280189799f76c88f7bb0</a>
-          <a href="https://linux.oracle.com/cve/CVE-2021-43267.html">https://linux.oracle.com/cve/CVE-2021-43267.html</a>
-          <a href="https://linux.oracle.com/errata/ELSA-2021-4647.html">https://linux.oracle.com/errata/ELSA-2021-4647.html</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CVWL7HZV5T5OEKJPO2D67RMFMKBBXGGB/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CVWL7HZV5T5OEKJPO2D67RMFMKBBXGGB/</a>
-          <a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDDEW4APTYKJK365HC2JZIVXYUV7ZRN7/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RDDEW4APTYKJK365HC2JZIVXYUV7ZRN7/</a>
-          <a href="https://security.netapp.com/advisory/ntap-20211125-0002/">https://security.netapp.com/advisory/ntap-20211125-0002/</a>
-          <a href="https://ubuntu.com/security/notices/USN-5165-1">https://ubuntu.com/security/notices/USN-5165-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5207-1">https://ubuntu.com/security/notices/USN-5207-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5208-1">https://ubuntu.com/security/notices/USN-5208-1</a>
-          <a href="https://ubuntu.com/security/notices/USN-5218-1">https://ubuntu.com/security/notices/USN-5218-1</a>
-          <a href="https://www.sentinelone.com/labs/tipc-remote-linux-kernel-heap-overflow-allows-arbitrary-code-execution/">https://www.sentinelone.com/labs/tipc-remote-linux-kernel-heap-overflow-allows-arbitrary-code-execution/</a>
         </td>
       </tr>
       <tr><th colspan="6">No Misconfigurations found</th></tr>
@@ -269,6 +130,7 @@
         <td class="pkg-version">5.3.1</td>
         <td>5.4</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-14343">https://access.redhat.com/security/cve/CVE-2020-14343</a>
           <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1860466">https://bugzilla.redhat.com/show_bug.cgi?id=1860466</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14343">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14343</a>
           <a href="https://github.com/advisories/GHSA-8q59-q68h-6hv4">https://github.com/advisories/GHSA-8q59-q68h-6hv4</a>
@@ -289,6 +151,7 @@
         <td class="pkg-version">3.4.2</td>
         <td>4.1</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-13757">https://access.redhat.com/security/cve/CVE-2020-13757</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13757">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13757</a>
           <a href="https://github.com/advisories/GHSA-537h-rv9q-vvph">https://github.com/advisories/GHSA-537h-rv9q-vvph</a>
           <a href="https://github.com/sybrenstuvel/python-rsa/issues/146">https://github.com/sybrenstuvel/python-rsa/issues/146</a>
@@ -307,6 +170,7 @@
         <td class="pkg-version">3.4.2</td>
         <td>4.7</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-25658">https://access.redhat.com/security/cve/CVE-2020-25658</a>
           <a href="https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-25658">https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-25658</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25658">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25658</a>
           <a href="https://github.com/advisories/GHSA-xrx6-fmxq-rjj2">https://github.com/advisories/GHSA-xrx6-fmxq-rjj2</a>
@@ -325,6 +189,7 @@
         <td class="pkg-version">1.25.11</td>
         <td>1.26.5</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-33503">https://access.redhat.com/security/cve/CVE-2021-33503</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33503">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33503</a>
           <a href="https://github.com/advisories/GHSA-q2q7-5pp4-w6pg">https://github.com/advisories/GHSA-q2q7-5pp4-w6pg</a>
           <a href="https://github.com/urllib3/urllib3/commit/2d4a3fee6de2fa45eb82169361918f759269b4ec">https://github.com/urllib3/urllib3/commit/2d4a3fee6de2fa45eb82169361918f759269b4ec</a>
@@ -355,7 +220,13 @@
         <td class="pkg-version">v1.1.1</td>
         <td>1.5.1</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-20329">https://access.redhat.com/security/cve/CVE-2021-20329</a>
+          <a href="https://github.com/advisories/GHSA-f6mq-5m25-4r72">https://github.com/advisories/GHSA-f6mq-5m25-4r72</a>
+          <a href="https://github.com/mongodb/mongo-go-driver/commit/2aca31d5986a9e1c65a92264736de9fdc3b9b4ca">https://github.com/mongodb/mongo-go-driver/commit/2aca31d5986a9e1c65a92264736de9fdc3b9b4ca</a>
+          <a href="https://github.com/mongodb/mongo-go-driver/pull/622">https://github.com/mongodb/mongo-go-driver/pull/622</a>
           <a href="https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1">https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1</a>
+          <a href="https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2021-0112.yaml">https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2021-0112.yaml</a>
+          <a href="https://jira.mongodb.org/browse/GODRIVER-1923">https://jira.mongodb.org/browse/GODRIVER-1923</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-20329">https://nvd.nist.gov/vuln/detail/CVE-2021-20329</a>
         </td>
       </tr>
@@ -366,6 +237,7 @@
         <td class="pkg-version">v1.22.2</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-8554">https://access.redhat.com/security/cve/CVE-2020-8554</a>
           <a href="https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/">https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/97076">https://github.com/kubernetes/kubernetes/issues/97076</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8">https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8</a>
@@ -395,7 +267,13 @@
         <td class="pkg-version">v1.1.1</td>
         <td>1.5.1</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-20329">https://access.redhat.com/security/cve/CVE-2021-20329</a>
+          <a href="https://github.com/advisories/GHSA-f6mq-5m25-4r72">https://github.com/advisories/GHSA-f6mq-5m25-4r72</a>
+          <a href="https://github.com/mongodb/mongo-go-driver/commit/2aca31d5986a9e1c65a92264736de9fdc3b9b4ca">https://github.com/mongodb/mongo-go-driver/commit/2aca31d5986a9e1c65a92264736de9fdc3b9b4ca</a>
+          <a href="https://github.com/mongodb/mongo-go-driver/pull/622">https://github.com/mongodb/mongo-go-driver/pull/622</a>
           <a href="https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1">https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1</a>
+          <a href="https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2021-0112.yaml">https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2021-0112.yaml</a>
+          <a href="https://jira.mongodb.org/browse/GODRIVER-1923">https://jira.mongodb.org/browse/GODRIVER-1923</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-20329">https://nvd.nist.gov/vuln/detail/CVE-2021-20329</a>
         </td>
       </tr>
@@ -406,6 +284,7 @@
         <td class="pkg-version">v1.22.2</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-8554">https://access.redhat.com/security/cve/CVE-2020-8554</a>
           <a href="https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/">https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/97076">https://github.com/kubernetes/kubernetes/issues/97076</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8">https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8</a>
@@ -435,7 +314,13 @@
         <td class="pkg-version">v1.1.1</td>
         <td>1.5.1</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-20329">https://access.redhat.com/security/cve/CVE-2021-20329</a>
+          <a href="https://github.com/advisories/GHSA-f6mq-5m25-4r72">https://github.com/advisories/GHSA-f6mq-5m25-4r72</a>
+          <a href="https://github.com/mongodb/mongo-go-driver/commit/2aca31d5986a9e1c65a92264736de9fdc3b9b4ca">https://github.com/mongodb/mongo-go-driver/commit/2aca31d5986a9e1c65a92264736de9fdc3b9b4ca</a>
+          <a href="https://github.com/mongodb/mongo-go-driver/pull/622">https://github.com/mongodb/mongo-go-driver/pull/622</a>
           <a href="https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1">https://github.com/mongodb/mongo-go-driver/releases/tag/v1.5.1</a>
+          <a href="https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2021-0112.yaml">https://go.googlesource.com/vulndb/+/refs/heads/master/reports/GO-2021-0112.yaml</a>
+          <a href="https://jira.mongodb.org/browse/GODRIVER-1923">https://jira.mongodb.org/browse/GODRIVER-1923</a>
           <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-20329">https://nvd.nist.gov/vuln/detail/CVE-2021-20329</a>
         </td>
       </tr>
@@ -446,6 +331,7 @@
         <td class="pkg-version">v1.22.2</td>
         <td></td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2020-8554">https://access.redhat.com/security/cve/CVE-2020-8554</a>
           <a href="https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/">https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/</a>
           <a href="https://github.com/kubernetes/kubernetes/issues/97076">https://github.com/kubernetes/kubernetes/issues/97076</a>
           <a href="https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8">https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8</a>
@@ -475,6 +361,7 @@
         <td class="pkg-version">v20.10.7+incompatible</td>
         <td>v20.10.9</td>
         <td class="links" data-more-links="off">
+          <a href="https://access.redhat.com/security/cve/CVE-2021-41092">https://access.redhat.com/security/cve/CVE-2021-41092</a>
           <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41092">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41092</a>
           <a href="https://github.com/docker/cli/commit/893e52cf4ba4b048d72e99748e0f86b2767c6c6b">https://github.com/docker/cli/commit/893e52cf4ba4b048d72e99748e0f86b2767c6c6b</a>
           <a href="https://github.com/docker/cli/security/advisories/GHSA-99pg-grm5-qq3v">https://github.com/docker/cli/security/advisories/GHSA-99pg-grm5-qq3v</a>
