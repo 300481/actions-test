@@ -1,0 +1,34 @@
+{{- $repoURL := .Values.repos.ingress_nginx.url -}}
+{{- $chart := .Values.repos.ingress_nginx.charts.ingress_nginx.name -}}
+{{- $targetRevision := .Values.repos.ingress_nginx.charts.ingress_nginx.version -}}
+{{- $valuesPath := "chart-values/ingress-nginx/ingress-nginx" -}}
+{{- $valuesFile := printf "%s/%s.yaml" $valuesPath .Values.environment -}}
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  name: ingress-nginx
+  namespace: argocd
+spec:
+  destination:
+    namespace: ingress-nginx
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: {{ $repoURL }}
+    targetRevision: {{ $targetRevision }}
+    chart: {{ $chart }}
+    helm:
+      version: "v3"
+      values: |-
+      {{- .Files.Get $valuesFile | nindent 8 }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

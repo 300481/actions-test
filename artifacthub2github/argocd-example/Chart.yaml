@@ -1,0 +1,6 @@
+apiVersion: v2
+name: argocd-example
+description: A Helm chart for App of Apps in ArgoCD
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
