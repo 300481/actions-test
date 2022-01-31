@@ -10,6 +10,7 @@ env:
   MANIFESTS_ROOT: artifacthub2github
   DEPRECATIONS_ROOT: artifacthub2github
   CVES_ROOT: artifacthub2github
+  TRIVY_TEMPLATE: artifacthub2github/markdown.tpl
 
 jobs:
   update_chart_versions:

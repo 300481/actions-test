@@ -3,6 +3,7 @@
 : ${CONFIGFILE:=helm-charts.yaml}
 : ${MANIFESTS_ROOT:=.}
 : ${CVES_ROOT:=.}
+: ${TRIVY_TEMPLATE:=.}
 
 install_render() {
     [[ -f /usr/local/bin/render ]] && return
@@ -75,7 +76,7 @@ for repo in $(repos) ; do
                 echo ${image}
                 image_without_repo=${image##*/}
                 image_without_tag=${image_without_repo/:*/}
-                trivy image --format template --template "@/tmp/contrib/html.tpl" --output ${cvedir}/${manifestfile##*/}.${image_without_tag}.cves.md --severity "MEDIUM,HIGH,CRITICAL" "${image}"
+                trivy image --format template --template "@${TRIVY_TEMPLATE}" --output ${cvedir}/${manifestfile##*/}.${image_without_tag}.cves.md --severity "MEDIUM,HIGH,CRITICAL" "${image}"
             done
         done        
     done
