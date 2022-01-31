@@ -42,6 +42,10 @@ The script which runs by the triggered workflow to generate the list of Kubernet
 
 The script which runs by the triggered workflow to generate the list of CVEs of the containers of a chart.
 
+### [markdown.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/markdown.tpl)
+
+This file is a template for templating a markdown file for the vulnerability reports of Trivy.
+
 ### [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-values)
 
 This folder contains the Helm Values for the charts.
@@ -92,3 +96,7 @@ Adjust it to your needs.
 ### The chart values if needed
 
 * [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-values)
+
+### The vulnerability report template if needed 
+
+* [markdown.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/markdown.tpl)
