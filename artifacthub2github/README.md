@@ -71,3 +71,24 @@ function of the serverless function as of the worflow and scripts.
 ```bash
 curl -d @./example-payloads/argo-cd-payload.json -H "X-ArtifactHub-Secret: [YOUR-ARTIFACTHUB-SECRET]" https://[YOUR-GCP-PROJECT].cloudfunctions.net/[YOUR-FUNCTION-NAME]
 ```
+
+## Files you need to adopt this functionality
+
+### The workflow file
+
+[.github/workflows/update-chart-versions.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/update-chart-versions.yml)
+
+Adjust it to your needs.
+
+### The scripts
+
+* [update-chart-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-versions.sh)
+
+* [generate-helm-manifests.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-helm-manifests.sh)
+* [generate-list-of-deprecated-api-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-deprecated-api-versions.sh)
+
+* [generate-list-of-cves.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-cves.sh)
+
+### The chart values if needed
+
+* [chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-values)
