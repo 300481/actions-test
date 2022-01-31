@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>curlimages/curl:7.76.1 (alpine 3.12.6) - Trivy Report - 2022-01-31 16:01:43.928895226 +0000 UTC m=+0.493532082 </title>
+    <title>curlimages/curl:7.76.1 (alpine 3.12.6) - Trivy Report - 2022-01-31 19:31:29.672971808 +0000 UTC m=+0.469845233 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>curlimages/curl:7.76.1 (alpine 3.12.6) - Trivy Report - 2022-01-31 16:01:43.928922027 +0000 UTC m=+0.493558983</h1>
+    <h1>curlimages/curl:7.76.1 (alpine 3.12.6) - Trivy Report - 2022-01-31 19:31:29.673015908 +0000 UTC m=+0.469889233</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr class="sub-header">

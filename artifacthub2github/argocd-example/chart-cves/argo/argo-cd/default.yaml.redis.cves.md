@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>redis:6.2.6-alpine (alpine 3.15.0) - Trivy Report - 2022-01-31 16:01:11.112748839 +0000 UTC m=+0.775444287 </title>
+    <title>redis:6.2.6-alpine (alpine 3.15.0) - Trivy Report - 2022-01-31 19:30:56.146549058 +0000 UTC m=+0.713497163 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>redis:6.2.6-alpine (alpine 3.15.0) - Trivy Report - 2022-01-31 16:01:11.112774639 +0000 UTC m=+0.775470187</h1>
+    <h1>redis:6.2.6-alpine (alpine 3.15.0) - Trivy Report - 2022-01-31 19:30:56.146575759 +0000 UTC m=+0.713523964</h1>
     <table>
       <tr class="group-header"><th colspan="6">alpine</th></tr>
       <tr><th colspan="6">No Vulnerabilities found</th></tr>

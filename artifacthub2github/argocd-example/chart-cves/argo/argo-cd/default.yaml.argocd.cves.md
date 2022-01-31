@@ -51,7 +51,7 @@
       }
       a.toggle-more-links { cursor: pointer; }
     </style>
-    <title>quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) - Trivy Report - 2022-01-31 16:01:09.28334038 +0000 UTC m=+0.268413070 </title>
+    <title>quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) - Trivy Report - 2022-01-31 19:30:54.313894744 +0000 UTC m=+0.282686184 </title>
     <script>
       window.onload = function() {
         document.querySelectorAll('td.links').forEach(function(linkCell) {
@@ -81,7 +81,7 @@
     </script>
   </head>
   <body>
-    <h1>quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) - Trivy Report - 2022-01-31 16:01:09.28338198 +0000 UTC m=+0.268454670</h1>
+    <h1>quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) - Trivy Report - 2022-01-31 19:30:54.313922245 +0000 UTC m=+0.282713585</h1>
     <table>
       <tr class="group-header"><th colspan="6">ubuntu</th></tr>
       <tr class="sub-header">
