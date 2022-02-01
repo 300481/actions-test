@@ -1,0 +1,131 @@
+---
+# Source: nexus-repository-manager/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: nexus-repository-manager
+  labels:
+    helm.sh/chart: nexus-repository-manager-37.3.1
+    app.kubernetes.io/name: nexus-repository-manager
+    app.kubernetes.io/instance: nexus-repository-manager
+    app.kubernetes.io/version: "3.37.3"
+    app.kubernetes.io/managed-by: Helm
+---
+# Source: nexus-repository-manager/templates/pvc.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: nexus-repository-manager-data
+  labels:
+    helm.sh/chart: nexus-repository-manager-37.3.1
+    app.kubernetes.io/name: nexus-repository-manager
+    app.kubernetes.io/instance: nexus-repository-manager
+    app.kubernetes.io/version: "3.37.3"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  accessModes:
+    - "ReadWriteOnce"
+  resources:
+    requests:
+      storage: "8Gi"
+---
+# Source: nexus-repository-manager/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nexus-repository-manager
+  labels:
+    helm.sh/chart: nexus-repository-manager-37.3.1
+    app.kubernetes.io/name: nexus-repository-manager
+    app.kubernetes.io/instance: nexus-repository-manager
+    app.kubernetes.io/version: "3.37.3"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8081
+      protocol: TCP
+      name: nexus-ui
+  selector:
+    app.kubernetes.io/name: nexus-repository-manager
+    app.kubernetes.io/instance: nexus-repository-manager
+---
+# Source: nexus-repository-manager/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nexus-repository-manager
+  labels:
+    helm.sh/chart: nexus-repository-manager-37.3.1
+    app.kubernetes.io/name: nexus-repository-manager
+    app.kubernetes.io/instance: nexus-repository-manager
+    app.kubernetes.io/version: "3.37.3"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: nexus-repository-manager
+      app.kubernetes.io/instance: nexus-repository-manager      
+  template:
+    metadata:
+      annotations:
+        checksum/configmap-properties: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      labels:
+        app.kubernetes.io/name: nexus-repository-manager
+        app.kubernetes.io/instance: nexus-repository-manager
+    spec:
+      serviceAccountName: nexus-repository-manager
+      terminationGracePeriodSeconds: 120
+      containers:
+        - name: nexus-repository-manager
+          image: "sonatype/nexus3:3.37.3"
+          imagePullPolicy: IfNotPresent
+
+          lifecycle:
+          env:
+            
+            - name: INSTALL4J_ADD_VM_PARAMS
+              value: -Xms1200M -Xmx1200M -XX:MaxDirectMemorySize=2G -XX:+UnlockExperimentalVMOptions
+                -XX:+UseCGroupMemoryLimitForHeap
+            - name: NEXUS_SECURITY_RANDOMPASSWORD
+              value: "true"
+          envFrom:
+            
+            null
+          resources:
+            
+            {}
+          ports:
+            - name: nexus-ui
+              containerPort: 8081
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8081
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            failureThreshold: 6
+            timeoutSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8081
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            failureThreshold: 6
+            timeoutSeconds: 10
+          volumeMounts:
+            - mountPath: /nexus-data	
+              name: nexus-repository-manager-data
+      securityContext:
+        
+        fsGroup: 200
+        runAsGroup: 200
+        runAsUser: 200
+      volumes:
+        - name: nexus-repository-manager-data
+          persistentVolumeClaim:
+            claimName: nexus-repository-manager-data
