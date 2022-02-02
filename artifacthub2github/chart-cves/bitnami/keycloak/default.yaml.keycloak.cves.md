@@ -61,6 +61,7 @@
 |CRITICAL|CVE-2021-42392|com.h2database:h2|1.4.197|2.0.206|
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
 |MEDIUM|CVE-2020-13947|org.apache.activemq:artemis-server|2.19.0||
+|HIGH|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.3.2, 42.2.25|
 |MEDIUM|CVE-2022-23437|xerces:xercesImpl|2.12.0.SP03|2.12.2|
 
 ## Target: opt/bitnami/common/bin/gosu --- Class: lang-pkgs
