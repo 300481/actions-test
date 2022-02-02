@@ -58,3 +58,10 @@ repos:
       nexus_repository_manager:
         version: 37.3.1
         name: nexus-repository-manager
+  bitnami:
+    url: https://charts.bitnami.com/bitnami
+    name: bitnami
+    charts:
+      keycloak:
+        version: 6.1.2
+        name: keycloak
