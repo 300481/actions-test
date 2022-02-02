@@ -119,3 +119,4 @@
 |MEDIUM|CVE-2021-22135|org.elasticsearch:elasticsearch|2.4.3|6.8.15, 7.11.2|
 |MEDIUM|CVE-2021-22144|org.elasticsearch:elasticsearch|2.4.3|7.13.3, 6.8.17|
 |MEDIUM|CVE-2020-25633|org.jboss.resteasy:resteasy-client|3.15.2.Final|4.5.7.Final|
+|HIGH|CVE-2022-21724|org.postgresql:postgresql|42.2.20|42.3.2, 42.2.25|
