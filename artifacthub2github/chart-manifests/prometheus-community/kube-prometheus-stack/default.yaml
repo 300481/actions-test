@@ -38893,9 +38893,9 @@ spec:
   clusterIP: None
   ports:
     - name: http-metrics
-      port: 10257
+      port: 10252
       protocol: TCP
-      targetPort: 10257
+      targetPort: 10252
   selector:
     component: kube-controller-manager
   type: ClusterIP
@@ -38977,9 +38977,9 @@ spec:
   clusterIP: None
   ports:
     - name: http-metrics
-      port: 10259
+      port: 10251
       protocol: TCP
-      targetPort: 10259
+      targetPort: 10251
   selector:
     component: kube-scheduler
   type: ClusterIP
@@ -42911,10 +42911,6 @@ spec:
   endpoints:
   - port: http-metrics
     bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
-    scheme: https
-    tlsConfig:
-      caFile: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-      insecureSkipVerify: true
 ---
 # Source: kube-prometheus-stack/templates/exporters/kube-etcd/servicemonitor.yaml
 apiVersion: monitoring.coreos.com/v1
@@ -43002,10 +42998,6 @@ spec:
   endpoints:
   - port: http-metrics
     bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
-    scheme: https
-    tlsConfig:
-      caFile: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-      insecureSkipVerify: true
 ---
 # Source: kube-prometheus-stack/templates/exporters/kubelet/servicemonitor.yaml
 apiVersion: monitoring.coreos.com/v1

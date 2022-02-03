@@ -1,0 +1,8 @@
+kubeControllerManager:
+  service:
+    port: 10252
+    targetPort: 10252
+kubeScheduler:
+  service:
+    port: 10251
+    targetPort: 10251
