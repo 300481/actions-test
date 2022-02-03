@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r0 (debian 10.11) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r11 (debian 10.11) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2021-22946|curl|7.64.0-4+deb10u2||
