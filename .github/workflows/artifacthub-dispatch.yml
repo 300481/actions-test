@@ -26,8 +26,10 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: update chart version
+        env:
+          CLIENT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
         run: |
-          ./artifacthub2github/update-chart-versions.sh '${{ toJSON(github.event.client_payload) }}'
+          ./artifacthub2github/update-chart-versions.sh "${CLIENT_PAYLOAD}"
 
       - name: generate helm manifests
         run: |
