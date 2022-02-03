@@ -12,6 +12,5 @@ jobs:
         env:
           JSON: ${{ toJSON(github.event.repository) }}
         run: |
-          ./scripts/testjson.sh ${JSON}
           ./scripts/testjson.sh "${JSON}"
 
