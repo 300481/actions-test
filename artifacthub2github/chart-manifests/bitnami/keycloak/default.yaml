@@ -26,8 +26,8 @@ metadata:
   namespace: default
 type: Opaque
 data:
-  postgresql-postgres-password: "RVJUbTI4VEZBMw=="
-  postgresql-password: "Qk9Kcm05ZHBBMQ=="
+  postgresql-postgres-password: "Um13d01lQjhUbQ=="
+  postgresql-password: "OXl1NUNxTlRzUg=="
 ---
 # Source: keycloak/templates/secrets.yaml
 apiVersion: v1
@@ -43,8 +43,8 @@ metadata:
     app.kubernetes.io/component: keycloak
 type: Opaque
 data:
-  admin-password: "MHhjaFBLaGJ0UQ=="
-  management-password: "TndsWVY2UExrbg=="
+  admin-password: "U3htMHA2YUNGdw=="
+  management-password: "WkVVa2ZZTDZqbA=="
 ---
 # Source: keycloak/templates/configmap-env-vars.yaml
 apiVersion: v1
@@ -363,7 +363,7 @@ spec:
     metadata:
       annotations:
         checksum/configmap-env-vars: d3f476c52f206666e4984eb188c7f45f381a90d5ccbaf7d4e9d57e15b3f4b96e
-        checksum/secrets: 2c1bef07895f46071524fd7c8d4d5094731ae089cd4907595141bc67a678b2ef
+        checksum/secrets: a05488510ac8d0e73a6037ce3db5abee656c383b87e8a3fdd72b958ea6f8b538
       labels:
         app.kubernetes.io/name: keycloak
         helm.sh/chart: keycloak-6.1.4
