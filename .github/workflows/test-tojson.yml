@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo output
+        env:
+          JSON: ${{ toJSON(github) }}
         run: |
-          echo test: '${{ toJSON(github) }}'
-          yq --version
-          jq --version
+          echo "${JSON}"
