@@ -13,39 +13,6 @@ metadata:
     app.kubernetes.io/component: keycloak
 automountServiceAccountToken: false
 ---
-# Source: keycloak/charts/postgresql/templates/secrets.yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: keycloak-postgresql
-  labels:
-    app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.16.2
-    app.kubernetes.io/instance: keycloak
-    app.kubernetes.io/managed-by: Helm
-  namespace: default
-type: Opaque
-data:
-  postgresql-postgres-password: "Um13d01lQjhUbQ=="
-  postgresql-password: "OXl1NUNxTlRzUg=="
----
-# Source: keycloak/templates/secrets.yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: keycloak
-  namespace: default
-  labels:
-    app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-6.1.4
-    app.kubernetes.io/instance: keycloak
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/component: keycloak
-type: Opaque
-data:
-  admin-password: "U3htMHA2YUNGdw=="
-  management-password: "WkVVa2ZZTDZqbA=="
----
 # Source: keycloak/templates/configmap-env-vars.yaml
 apiVersion: v1
 kind: ConfigMap
@@ -261,14 +228,14 @@ spec:
             - name: POSTGRES_POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: keycloak-postgresql
+                  name: postgresql-passwords
                   key: postgresql-postgres-password
             - name: POSTGRES_USER
               value: "bn_keycloak"
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: keycloak-postgresql
+                  name: postgresql-passwords
                   key: postgresql-password
             - name: POSTGRES_DB
               value: "bitnami_keycloak"
@@ -363,7 +330,6 @@ spec:
     metadata:
       annotations:
         checksum/configmap-env-vars: d3f476c52f206666e4984eb188c7f45f381a90d5ccbaf7d4e9d57e15b3f4b96e
-        checksum/secrets: a05488510ac8d0e73a6037ce3db5abee656c383b87e8a3fdd72b958ea6f8b538
       labels:
         app.kubernetes.io/name: keycloak
         helm.sh/chart: keycloak-6.1.4
@@ -409,17 +375,17 @@ spec:
             - name: KEYCLOAK_ADMIN_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: keycloak
+                  name: passwords
                   key: admin-password
             - name: KEYCLOAK_MANAGEMENT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: keycloak
+                  name: passwords
                   key: management-password
             - name: KEYCLOAK_DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: keycloak-postgresql
+                  name: postgresql-passwords
                   key: "postgresql-password"
           envFrom:
             - configMapRef:
