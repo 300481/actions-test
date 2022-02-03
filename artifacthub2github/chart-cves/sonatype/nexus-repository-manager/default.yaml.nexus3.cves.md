@@ -4,7 +4,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-3468|avahi-libs|0.7-20.el8||
-|MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8||
+|MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8|2.3.3-4.el8_5.1|
 |MEDIUM|CVE-2021-45960|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-46143|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22822|expat|2.2.5-4.el8||
@@ -74,19 +74,19 @@
 |MEDIUM|CVE-2020-12401|nss-util|3.67.0-7.el8_5||
 |MEDIUM|CVE-2021-23841|openssl-libs|1:1.1.1k-5.el8_5||
 |MEDIUM|CVE-2021-3712|openssl-libs|1:1.1.1k-5.el8_5||
-|MEDIUM|CVE-2021-3521|python3-rpm|4.14.3-19.el8||
+|MEDIUM|CVE-2021-3521|python3-rpm|4.14.3-19.el8|4.14.3-19.el8_5.2|
 |MEDIUM|CVE-2021-35937|python3-rpm|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35938|python3-rpm|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35939|python3-rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-3521|rpm|4.14.3-19.el8||
+|MEDIUM|CVE-2021-3521|rpm|4.14.3-19.el8|4.14.3-19.el8_5.2|
 |MEDIUM|CVE-2021-35937|rpm|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35938|rpm|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35939|rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-3521|rpm-build-libs|4.14.3-19.el8||
+|MEDIUM|CVE-2021-3521|rpm-build-libs|4.14.3-19.el8|4.14.3-19.el8_5.2|
 |MEDIUM|CVE-2021-35937|rpm-build-libs|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35938|rpm-build-libs|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35939|rpm-build-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2021-3521|rpm-libs|4.14.3-19.el8||
+|MEDIUM|CVE-2021-3521|rpm-libs|4.14.3-19.el8|4.14.3-19.el8_5.2|
 |MEDIUM|CVE-2021-35937|rpm-libs|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35938|rpm-libs|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35939|rpm-libs|4.14.3-19.el8||
@@ -96,13 +96,15 @@
 |MEDIUM|CVE-2021-3997|systemd-libs|239-51.el8_5.2||
 |MEDIUM|CVE-2018-20839|systemd-pam|239-51.el8_5.2||
 |MEDIUM|CVE-2005-2541|tar|2:1.30-5.el8||
-|MEDIUM|CVE-2021-3872|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2021-3984|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2021-4019|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2021-4192|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2021-4193|vim-minimal|2:8.0.1763-16.el8||
+|MEDIUM|CVE-2021-3872|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
+|MEDIUM|CVE-2021-3984|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
+|MEDIUM|CVE-2021-4019|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
+|MEDIUM|CVE-2021-4192|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
+|MEDIUM|CVE-2021-4193|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
 |MEDIUM|CVE-2022-0318|vim-minimal|2:8.0.1763-16.el8||
+|MEDIUM|CVE-2022-0319|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8||
+|MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8||
 
 ## Target: Java --- Class: lang-pkgs
