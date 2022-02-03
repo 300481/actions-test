@@ -1,16 +1,16 @@
 {
     "specversion": "1.0",
-    "id": "a55c99e4-2a98-4f76-921f-da7325329d8d",
+    "id": "71419853-2f0d-41ef-ba6b-3a34367673d3",
     "source": "https://artifacthub.io",
     "type": "io.artifacthub.package.new-release",
     "datacontenttype": "application/json",
     "data": {
         "package": {
             "name": "argo-cd",
-            "version": "3.33.1",
-            "url": "https://artifacthub.io/packages/helm/argo/argo-cd/3.33.1",
+            "version": "3.33.2",
+            "url": "https://artifacthub.io/packages/helm/argo/argo-cd/3.33.2",
             "changes": [
-                "[Fixed]: Consistent annotation quoting across all manifests"
+                "[Changed]: Convert manifests of 'kind: List' to dashes separated documents."
             ],
             "containsSecurityUpdates": false,
             "prerelease": false,
