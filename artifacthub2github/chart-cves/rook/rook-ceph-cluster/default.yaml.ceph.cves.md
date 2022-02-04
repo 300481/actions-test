@@ -89,6 +89,7 @@
 |MEDIUM|CVE-2022-0318|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0319|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8_5.4||
 
