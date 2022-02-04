@@ -1,9 +1,8 @@
 # Trivy Vulnerability Report
 
-## Target: quay.io/argoproj/argocd:v2.2.3 (ubuntu 21.04) --- Class: os-pkgs
+## Target: quay.io/argoproj/argocd:v2.2.4 (ubuntu 21.04) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|HIGH|CVE-2022-0185|linux-libc-dev|5.11.0-46.51|5.11.0-49.55|
 
 ## Target: Python --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
