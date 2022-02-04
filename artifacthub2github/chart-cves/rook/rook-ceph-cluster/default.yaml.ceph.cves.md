@@ -90,9 +90,13 @@
 |MEDIUM|CVE-2022-0319|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8_5.4||
 <<<<<<< HEAD
+<<<<<<< HEAD
 |MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
 =======
 >>>>>>> b62c03a (update version of rook/rook-ceph-cluster to 1.8.4)
+=======
+|MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
+>>>>>>> 61362d3 (update version of argo/argo-cd to 3.33.3)
 |MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8_5.4||
 
