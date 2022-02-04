@@ -4,11 +4,13 @@ repos:
       argocd_notifications:
         enabled: true
         namespace: argocd
+        syncWave: "5"
         version: 1.8.0
         name: argocd-notifications
       argo_cd:
         enabled: true
         namespace: argocd
+        syncWave: "5"
         version: 3.33.3
         name: argo-cd
     url: https://argoproj.github.io/argo-helm
@@ -26,6 +28,7 @@ repos:
       ingress_nginx:
         enabled: true
         namespace: ingress-nginx
+        syncWave: "10"
         version: 4.0.13
         name: ingress-nginx
     url: https://kubernetes.github.io/ingress-nginx
