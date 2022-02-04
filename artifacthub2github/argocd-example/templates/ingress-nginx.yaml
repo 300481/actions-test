@@ -1,9 +1,8 @@
-{{- $repoURL := .Values.repos.ingress_nginx.url -}}
-{{- $chart := .Values.repos.ingress_nginx.charts.ingress_nginx.name -}}
-{{- $targetRevision := .Values.repos.ingress_nginx.charts.ingress_nginx.version -}}
-{{- $valuesPath := "chart-values/ingress-nginx/ingress-nginx" -}}
-{{- $valuesFile := printf "%s/%s.yaml" $valuesPath .Values.environment -}}
-
+{{- range $r, $repo := .Values.repos }}
+  {{- range $c, $chart := $repo.charts }}
+    {{- if $chart.enabled }}
+      {{ $chartValues := printf "chart-values/%s/%s/%s.yaml" $repo.name $chart.name  $.Values.environment }}
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -11,24 +10,27 @@ metadata:
     argocd.argoproj.io/sync-wave: "10"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-  name: ingress-nginx
-  namespace: argocd
+  name: {{ $chart.name }}
+  namespace: {{ $.Values.applicationNamespace }}
 spec:
   destination:
-    namespace: ingress-nginx
+    namespace: {{ $chart.namespace }}
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: {{ $repoURL }}
-    targetRevision: {{ $targetRevision }}
-    chart: {{ $chart }}
+    repoURL: {{ $repo.url }}
+    targetRevision: {{ $chart.version }}
+    chart: {{ $chart.name }}
     helm:
       version: "v3"
       values: |-
-      {{- .Files.Get $valuesFile | nindent 8 }}
+      {{- $.Files.Get $chartValues | nindent 8 }}
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
     - CreateNamespace=true
+    {{- end }}
+  {{- end }}
+{{ end }}
