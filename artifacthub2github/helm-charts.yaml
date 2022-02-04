@@ -65,3 +65,10 @@ repos:
       keycloak:
         version: 6.1.4
         name: keycloak
+  rook:
+    url: https://charts.rook.io/release
+    name: rook
+    charts:
+      rook_ceph_cluster:
+        version: 1.8.4
+        name: rook-ceph-cluster
