@@ -79,3 +79,10 @@ repos:
       gitlab:
         version: 5.7.1
         name: gitlab
+  rook:
+    url: https://charts.rook.io/release
+    name: rook
+    charts:
+      rook_ceph_cluster:
+        version: 1.8.4
+        name: rook-ceph-cluster
