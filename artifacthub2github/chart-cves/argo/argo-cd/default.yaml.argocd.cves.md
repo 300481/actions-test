@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: quay.io/argoproj/argocd:v2.2.4 (ubuntu 21.04) --- Class: os-pkgs
+## Target: quay.io/argoproj/argocd:v2.2.5 (ubuntu 21.04) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
@@ -33,6 +33,7 @@
 ## Target: usr/local/bin/helm --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|CRITICAL|CVE-2021-43816|github.com/containerd/containerd|v1.5.7|1.5.9|
 |HIGH|CVE-2021-41092|github.com/docker/cli|v20.10.7+incompatible|v20.10.9|
 
 ## Target: usr/local/bin/kustomize --- Class: lang-pkgs
