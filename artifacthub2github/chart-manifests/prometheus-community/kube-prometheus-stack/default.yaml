@@ -72,9 +72,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -91,9 +91,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -110,9 +110,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -145,9 +145,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -239,9 +239,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -270,9 +270,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -879,9 +879,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -2650,9 +2650,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -4531,9 +4531,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -5720,9 +5720,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -6835,9 +6835,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -7470,9 +7470,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -9004,9 +9004,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -12091,9 +12091,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -14887,9 +14887,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -15912,9 +15912,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -18380,9 +18380,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -20403,9 +20403,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -22591,9 +22591,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -24844,9 +24844,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -26307,9 +26307,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -28042,9 +28042,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -29104,9 +29104,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -30192,9 +30192,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -31182,9 +31182,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -31768,9 +31768,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -32995,9 +32995,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -34229,9 +34229,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -35499,9 +35499,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -36610,9 +36610,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -37537,9 +37537,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -39137,9 +39137,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -39224,9 +39224,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -39301,9 +39301,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -39325,9 +39325,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -39464,9 +39464,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -39491,9 +39491,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39518,9 +39518,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39546,9 +39546,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39574,9 +39574,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39602,9 +39602,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39630,9 +39630,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -39657,9 +39657,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -39721,8 +39721,8 @@ spec:
             - --path.sysfs=/host/sys
             - --path.rootfs=/host/root
             - --web.listen-address=$(HOST_IP):9100
-            - --collector.filesystem.ignored-mount-points=^/(dev|proc|sys|var/lib/docker/.+|var/lib/kubelet/.+)($|/)
-            - --collector.filesystem.ignored-fs-types=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+            - --collector.filesystem.mount-points-exclude=^/(dev|proc|sys|var/lib/docker/.+|var/lib/kubelet/.+)($|/)
+            - --collector.filesystem.fs-types-exclude=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
           env:
           - name: HOST_IP
             value: 0.0.0.0
@@ -40000,9 +40000,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40018,9 +40018,9 @@ spec:
         
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "32.0.0"
+        app.kubernetes.io/version: "32.0.1"
         app.kubernetes.io/part-of: kube-prometheus-stack
-        chart: kube-prometheus-stack-32.0.0
+        chart: kube-prometheus-stack-32.0.1
         release: "kube-prometheus-stack"
         heritage: "Helm"
     spec:
@@ -40077,9 +40077,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40112,9 +40112,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 webhooks:
@@ -40149,9 +40149,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40213,9 +40213,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40356,9 +40356,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40388,9 +40388,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40522,9 +40522,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40590,9 +40590,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40757,9 +40757,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40887,9 +40887,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41209,9 +41209,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41252,9 +41252,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41329,9 +41329,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41681,9 +41681,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41706,9 +41706,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41739,9 +41739,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41796,9 +41796,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41865,9 +41865,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41898,9 +41898,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42144,9 +42144,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42267,9 +42267,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42339,9 +42339,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42411,9 +42411,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42441,9 +42441,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42471,9 +42471,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42612,9 +42612,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42642,9 +42642,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42685,9 +42685,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42768,9 +42768,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43016,9 +43016,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43046,9 +43046,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43091,9 +43091,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43175,9 +43175,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43495,9 +43495,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43524,9 +43524,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43553,9 +43553,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43587,9 +43587,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43620,9 +43620,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43649,9 +43649,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43678,9 +43678,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43710,9 +43710,9 @@ metadata:
     app: kube-prometheus-stack-kubelet    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43772,9 +43772,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43808,9 +43808,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43835,9 +43835,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 webhooks:
@@ -43874,9 +43874,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -43892,9 +43892,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -43919,9 +43919,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -43946,9 +43946,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -43973,9 +43973,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -44031,9 +44031,9 @@ metadata:
     app: kube-prometheus-stack-admission-create    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -44044,9 +44044,9 @@ spec:
         app: kube-prometheus-stack-admission-create        
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "32.0.0"
+        app.kubernetes.io/version: "32.0.1"
         app.kubernetes.io/part-of: kube-prometheus-stack
-        chart: kube-prometheus-stack-32.0.0
+        chart: kube-prometheus-stack-32.0.1
         release: "kube-prometheus-stack"
         heritage: "Helm"
     spec:
@@ -44081,9 +44081,9 @@ metadata:
     app: kube-prometheus-stack-admission-patch    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.0.0"
+    app.kubernetes.io/version: "32.0.1"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.0.0
+    chart: kube-prometheus-stack-32.0.1
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -44094,9 +44094,9 @@ spec:
         app: kube-prometheus-stack-admission-patch        
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "32.0.0"
+        app.kubernetes.io/version: "32.0.1"
         app.kubernetes.io/part-of: kube-prometheus-stack
-        chart: kube-prometheus-stack-32.0.0
+        chart: kube-prometheus-stack-32.0.1
         release: "kube-prometheus-stack"
         heritage: "Helm"
     spec:
