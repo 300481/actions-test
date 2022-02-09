@@ -16,8 +16,8 @@
 |CRITICAL|CVE-2021-42392|com.h2database:h2|1.4.199|2.0.206|
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.199|2.1.210|
 |CRITICAL|GHSA-v57x-gxfj-484q|com.hazelcast:hazelcast|4.2.2|4.2.4, 4.1.8, 4.0.5, 5.0.2|
-|MEDIUM|CVE-2021-37136|io.netty:netty-codec|4.1.66.Final|4.1.68.Final|
-|MEDIUM|CVE-2021-37137|io.netty:netty-codec|4.1.66.Final|4.1.68.Final|
+|HIGH|CVE-2021-37136|io.netty:netty-codec|4.1.66.Final|4.1.68.Final|
+|HIGH|CVE-2021-37137|io.netty:netty-codec|4.1.66.Final|4.1.68.Final|
 |MEDIUM|CVE-2021-43797|io.netty:netty-codec-http|4.1.66.Final|4.1.71.Final|
 |MEDIUM|CVE-2020-13697|org.nanohttpd:nanohttpd|2.3.1||
 |HIGH|CVE-2022-21724|org.postgresql:postgresql|42.3.1|42.3.2, 42.2.25|
