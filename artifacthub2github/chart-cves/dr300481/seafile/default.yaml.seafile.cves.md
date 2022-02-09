@@ -132,6 +132,7 @@
 |HIGH|CVE-2021-3653|linux-libc-dev|4.15.0-147.151|4.15.0-156.163|
 |HIGH|CVE-2021-3656|linux-libc-dev|4.15.0-147.151|4.15.0-156.163|
 |HIGH|CVE-2021-4002|linux-libc-dev|4.15.0-147.151|4.15.0-166.174|
+|HIGH|CVE-2022-0492|linux-libc-dev|4.15.0-147.151||
 |MEDIUM|CVE-2013-7445|linux-libc-dev|4.15.0-147.151||
 |MEDIUM|CVE-2015-8553|linux-libc-dev|4.15.0-147.151||
 |MEDIUM|CVE-2016-8660|linux-libc-dev|4.15.0-147.151||

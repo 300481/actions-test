@@ -95,3 +95,10 @@ repos:
       artifact_hub:
         version: 1.6.0
         name: artifact-hub
+  jenkinsci:
+    url: https://charts.jenkins.io/
+    name: jenkinsci
+    charts:
+      jenkins:
+        version: 3.11.4
+        name: jenkins
