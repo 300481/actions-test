@@ -11,7 +11,7 @@
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|HIGH|CVE-2021-22569|com.google.protobuf:protobuf-java|3.15.8|3.19.2, 3.18.2, 3.16.1|
+|MEDIUM|CVE-2021-22569|com.google.protobuf:protobuf-java|3.15.8|3.16.1, 3.18.2, 3.19.2|
 |CRITICAL|CVE-2021-23463|com.h2database:h2|1.4.199|2.0.202|
 |CRITICAL|CVE-2021-42392|com.h2database:h2|1.4.199|2.0.206|
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.199|2.1.210|

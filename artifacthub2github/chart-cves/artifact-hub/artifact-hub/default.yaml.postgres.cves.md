@@ -51,3 +51,4 @@
 ## Target: usr/local/bin/gosu --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|MEDIUM|CVE-2021-43784|github.com/opencontainers/runc|v1.0.1|v1.0.3|

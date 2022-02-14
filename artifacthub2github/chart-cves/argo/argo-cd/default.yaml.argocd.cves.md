@@ -17,24 +17,28 @@
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-20329|go.mongodb.org/mongo-driver|v1.1.1|1.5.1|
 |MEDIUM|CVE-2020-8554|k8s.io/kubernetes|v1.22.2||
+|MEDIUM|CVE-2020-8561|k8s.io/kubernetes|v1.22.2||
 
 ## Target: usr/local/bin/argocd-darwin-amd64 --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-20329|go.mongodb.org/mongo-driver|v1.1.1|1.5.1|
 |MEDIUM|CVE-2020-8554|k8s.io/kubernetes|v1.22.2||
+|MEDIUM|CVE-2020-8561|k8s.io/kubernetes|v1.22.2||
 
 ## Target: usr/local/bin/argocd-windows-amd64.exe --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-20329|go.mongodb.org/mongo-driver|v1.1.1|1.5.1|
 |MEDIUM|CVE-2020-8554|k8s.io/kubernetes|v1.22.2||
+|MEDIUM|CVE-2020-8561|k8s.io/kubernetes|v1.22.2||
 
 ## Target: usr/local/bin/helm --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |CRITICAL|CVE-2021-43816|github.com/containerd/containerd|v1.5.7|1.5.9|
 |HIGH|CVE-2021-41092|github.com/docker/cli|v20.10.7+incompatible|v20.10.9|
+|MEDIUM|CVE-2021-43784|github.com/opencontainers/runc|v1.0.2|v1.0.3|
 
 ## Target: usr/local/bin/kustomize --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
