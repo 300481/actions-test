@@ -267,8 +267,12 @@
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|MEDIUM|CVE-2020-15366|ajv|5.5.2|6.12.3|
 |CRITICAL|CVE-2019-19919|handlebars|4.0.12|4.3.0|
 |CRITICAL|CVE-2021-23369|handlebars|4.0.12|4.7.7|
+|CRITICAL|CVE-2021-23383|handlebars|4.0.12|4.7.7|
+|HIGH|CVE-2019-20920|handlebars|4.0.12|4.5.3, 3.0.8|
+|HIGH|CVE-2019-20922|handlebars|4.0.12|4.4.5|
 |HIGH|GHSA-2cf5-4w76-r9qv|handlebars|4.0.12|4.5.2, 3.0.8|
 |HIGH|GHSA-g9r4-xpmj-mj65|handlebars|4.0.12|4.5.3, 3.0.8|
 |HIGH|GHSA-q2c6-c6pm-g3gh|handlebars|4.0.12|4.5.3, 3.0.8|
