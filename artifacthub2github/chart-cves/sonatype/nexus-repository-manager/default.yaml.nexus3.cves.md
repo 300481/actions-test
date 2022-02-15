@@ -52,6 +52,8 @@
 |MEDIUM|CVE-2020-21674|libarchive|3.3.3-1.el8||
 |MEDIUM|CVE-2021-23177|libarchive|3.3.3-1.el8||
 |MEDIUM|CVE-2021-31566|libarchive|3.3.3-1.el8||
+|MEDIUM|CVE-2022-0563|libblkid|2.32.1-28.el8||
+|MEDIUM|CVE-2022-0563|libfdisk|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libgcc|8.5.0-4.el8_5||
 |MEDIUM|CVE-2021-42694|libgcc|8.5.0-4.el8_5||
 |MEDIUM|CVE-2021-46195|libgcc|8.5.0-4.el8_5||
@@ -60,9 +62,12 @@
 |MEDIUM|CVE-2019-2201|libjpeg-turbo|1.5.3-12.el8||
 |MEDIUM|CVE-2020-13790|libjpeg-turbo|1.5.3-12.el8||
 |MEDIUM|CVE-2020-17541|libjpeg-turbo|1.5.3-12.el8||
+|MEDIUM|CVE-2022-0563|libmount|2.32.1-28.el8||
+|MEDIUM|CVE-2022-0563|libsmartcols|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libstdc++|8.5.0-4.el8_5||
 |MEDIUM|CVE-2021-42694|libstdc++|8.5.0-4.el8_5||
 |MEDIUM|CVE-2021-46195|libstdc++|8.5.0-4.el8_5||
+|MEDIUM|CVE-2022-0563|libuuid|2.32.1-28.el8||
 |MEDIUM|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
 |MEDIUM|CVE-2021-39537|ncurses-base|6.1-9.20180224.el8||
 |MEDIUM|CVE-2021-39537|ncurses-libs|6.1-9.20180224.el8||
@@ -96,6 +101,8 @@
 |MEDIUM|CVE-2021-3997|systemd-libs|239-51.el8_5.2||
 |MEDIUM|CVE-2018-20839|systemd-pam|239-51.el8_5.2||
 |MEDIUM|CVE-2005-2541|tar|2:1.30-5.el8||
+|MEDIUM|CVE-2022-0563|util-linux|2.32.1-28.el8||
+|HIGH|CVE-2022-0572|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2021-3872|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
 |MEDIUM|CVE-2021-3984|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
 |MEDIUM|CVE-2021-4019|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|

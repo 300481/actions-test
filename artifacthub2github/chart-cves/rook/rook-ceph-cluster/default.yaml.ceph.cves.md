@@ -30,6 +30,8 @@
 |MEDIUM|CVE-2020-21674|libarchive|3.3.3-3.el8_5||
 |MEDIUM|CVE-2021-23177|libarchive|3.3.3-3.el8_5||
 |MEDIUM|CVE-2021-31566|libarchive|3.3.3-3.el8_5||
+|MEDIUM|CVE-2022-0563|libblkid|2.32.1-28.el8||
+|MEDIUM|CVE-2022-0563|libfdisk|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libgcc|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libgcc|8.5.0-8.el8||
 |MEDIUM|CVE-2021-46195|libgcc|8.5.0-8.el8||
@@ -38,12 +40,15 @@
 |MEDIUM|CVE-2018-20673|libgfortran|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libgfortran|8.5.0-8.el8||
 |MEDIUM|CVE-2021-46195|libgfortran|8.5.0-8.el8||
+|MEDIUM|CVE-2022-0563|libmount|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libquadmath|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libquadmath|8.5.0-8.el8||
 |MEDIUM|CVE-2021-46195|libquadmath|8.5.0-8.el8||
+|MEDIUM|CVE-2022-0563|libsmartcols|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libstdc++|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libstdc++|8.5.0-8.el8||
 |MEDIUM|CVE-2021-46195|libstdc++|8.5.0-8.el8||
+|MEDIUM|CVE-2022-0563|libuuid|2.32.1-28.el8||
 |MEDIUM|CVE-2021-20316|libwbclient|4.15.4-0.el8||
 |MEDIUM|CVE-2016-4607|libxslt|1.1.32-6.el8||
 |MEDIUM|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
@@ -88,6 +93,8 @@
 |MEDIUM|CVE-2018-20839|systemd-pam|239-56.el8||
 |MEDIUM|CVE-2018-20839|systemd-udev|239-56.el8||
 |MEDIUM|CVE-2005-2541|tar|2:1.30-5.el8||
+|MEDIUM|CVE-2022-0563|util-linux|2.32.1-28.el8||
+|HIGH|CVE-2022-0572|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0318|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
