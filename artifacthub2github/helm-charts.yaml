@@ -86,7 +86,7 @@ repos:
     name: gitlab
     charts:
       gitlab:
-        version: 5.7.1
+        version: 5.7.3
         name: gitlab
   artifact_hub:
     url: https://artifacthub.github.io/helm-charts/

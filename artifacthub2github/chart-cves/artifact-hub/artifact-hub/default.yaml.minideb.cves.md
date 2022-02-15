@@ -4,9 +4,11 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2016-2779|bsdutils|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|bsdutils|2.29.2-1+deb9u1||
 |HIGH|CVE-2018-12886|gcc-6-base|6.3.0-18+deb9u1||
 |HIGH|CVE-2018-1000858|gpgv|2.1.18-8~deb9u4||
 |HIGH|CVE-2016-2779|libblkid1|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|libblkid1|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2019-12900|libbz2-1.0|1.0.6-8.1||
 |CRITICAL|CVE-2018-6485|libc-bin|2.24-11+deb9u4||
 |CRITICAL|CVE-2018-6551|libc-bin|2.24-11+deb9u4||
@@ -47,12 +49,15 @@
 |MEDIUM|CVE-2020-27618|libc6|2.24-11+deb9u4||
 |MEDIUM|CVE-2021-3998|libc6|2.24-11+deb9u4||
 |HIGH|CVE-2016-2779|libfdisk1|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|libfdisk1|2.29.2-1+deb9u1||
 |HIGH|CVE-2018-12886|libgcc1|6.3.0-18+deb9u1||
 |HIGH|CVE-2021-33560|libgcrypt20|1.7.6-2+deb9u4||
 |MEDIUM|CVE-2019-13627|libgcrypt20|1.7.6-2+deb9u4||
 |HIGH|CVE-2016-2779|libmount1|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|libmount1|2.29.2-1+deb9u1||
 |MEDIUM|CVE-2020-14155|libpcre3|2:8.39-3||
 |HIGH|CVE-2016-2779|libsmartcols1|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|libsmartcols1|2.29.2-1+deb9u1||
 |HIGH|CVE-2018-12886|libstdc++6|6.3.0-18+deb9u1||
 |HIGH|CVE-2019-3843|libsystemd0|232-25+deb9u13||
 |HIGH|CVE-2019-3844|libsystemd0|232-25+deb9u13||
@@ -63,7 +68,9 @@
 |HIGH|CVE-2020-1712|libudev1|232-25+deb9u13||
 |MEDIUM|CVE-2021-3997|libudev1|232-25+deb9u13||
 |HIGH|CVE-2016-2779|libuuid1|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|libuuid1|2.29.2-1+deb9u1||
 |HIGH|CVE-2016-2779|mount|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|mount|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2018-6485|multiarch-support|2.24-11+deb9u4||
 |CRITICAL|CVE-2018-6551|multiarch-support|2.24-11+deb9u4||
 |CRITICAL|CVE-2019-9169|multiarch-support|2.24-11+deb9u4||
@@ -85,3 +92,4 @@
 |MEDIUM|CVE-2021-3998|multiarch-support|2.24-11+deb9u4||
 |HIGH|CVE-2020-16156|perl-base|5.24.1-3+deb9u7||
 |HIGH|CVE-2016-2779|util-linux|2.29.2-1+deb9u1||
+|MEDIUM|CVE-2022-0563|util-linux|2.29.2-1+deb9u1||
