@@ -6,7 +6,6 @@
 |MEDIUM|CVE-2020-27350|apt|1.4.9|1.4.11|
 |MEDIUM|CVE-2020-3810|apt|1.4.9|1.4.10|
 |HIGH|CVE-2016-2779|bsdutils|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|bsdutils|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2019-5481|curl|7.52.1-5+deb9u9|7.52.1-5+deb9u10|
 |CRITICAL|CVE-2019-5482|curl|7.52.1-5+deb9u9|7.52.1-5+deb9u10|
 |HIGH|CVE-2019-5436|curl|7.52.1-5+deb9u9|7.52.1-5+deb9u10|
@@ -25,7 +24,6 @@
 |MEDIUM|CVE-2020-27350|libapt-pkg5.0|1.4.9|1.4.11|
 |MEDIUM|CVE-2020-3810|libapt-pkg5.0|1.4.9|1.4.10|
 |HIGH|CVE-2016-2779|libblkid1|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|libblkid1|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2019-12900|libbz2-1.0|1.0.6-8.1||
 |CRITICAL|CVE-2018-6485|libc-bin|2.24-11+deb9u4||
 |CRITICAL|CVE-2018-6551|libc-bin|2.24-11+deb9u4||
@@ -96,7 +94,6 @@
 |MEDIUM|CVE-2021-22876|libcurl3|7.52.1-5+deb9u9|7.52.1-5+deb9u14|
 |MEDIUM|CVE-2021-22947|libcurl3|7.52.1-5+deb9u9|7.52.1-5+deb9u16|
 |HIGH|CVE-2016-2779|libfdisk1|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|libfdisk1|2.29.2-1+deb9u1||
 |HIGH|CVE-2018-12886|libgcc1|6.3.0-18+deb9u1||
 |HIGH|CVE-2021-33560|libgcrypt20|1.7.6-2+deb9u3||
 |MEDIUM|CVE-2019-13627|libgcrypt20|1.7.6-2+deb9u3||
@@ -160,7 +157,6 @@
 |HIGH|CVE-2021-27212|libldap-common|2.4.44+dfsg-5+deb9u3|2.4.44+dfsg-5+deb9u8|
 |CRITICAL|CVE-2021-3520|liblz4-1|0.0~r131-2|0.0~r131-2+deb9u1|
 |HIGH|CVE-2016-2779|libmount1|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|libmount1|2.29.2-1+deb9u1||
 |HIGH|CVE-2021-20305|libnettle6|3.3-1|3.3-1+deb9u1|
 |HIGH|CVE-2021-3580|libnettle6|3.3-1|3.3-1+deb9u1|
 |MEDIUM|CVE-2018-16869|libnettle6|3.3-1||
@@ -172,7 +168,6 @@
 |HIGH|CVE-2019-19906|libsasl2-2|2.1.27~101-g0780600+dfsg-3|2.1.27~101-g0780600+dfsg-3+deb9u1|
 |HIGH|CVE-2019-19906|libsasl2-modules-db|2.1.27~101-g0780600+dfsg-3|2.1.27~101-g0780600+dfsg-3+deb9u1|
 |HIGH|CVE-2016-2779|libsmartcols1|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|libsmartcols1|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2019-8457|libsqlite3-0|3.16.2-5+deb9u1||
 |HIGH|CVE-2018-20346|libsqlite3-0|3.16.2-5+deb9u1|3.16.2-5+deb9u2|
 |HIGH|CVE-2018-20506|libsqlite3-0|3.16.2-5+deb9u1|3.16.2-5+deb9u2|
@@ -211,7 +206,6 @@
 |MEDIUM|CVE-2021-33910|libudev1|232-25+deb9u12|232-25+deb9u13|
 |MEDIUM|CVE-2021-3997|libudev1|232-25+deb9u12||
 |HIGH|CVE-2016-2779|libuuid1|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|libuuid1|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2018-6485|locales|2.24-11+deb9u4||
 |CRITICAL|CVE-2018-6551|locales|2.24-11+deb9u4||
 |CRITICAL|CVE-2019-9169|locales|2.24-11+deb9u4||
@@ -234,7 +228,6 @@
 |CRITICAL|CVE-2017-12424|login|1:4.4-4.1|1:4.4-4.1+deb9u1|
 |HIGH|CVE-2017-20002|login|1:4.4-4.1|1:4.4-4.1+deb9u1|
 |HIGH|CVE-2016-2779|mount|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|mount|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2018-6485|multiarch-support|2.24-11+deb9u4||
 |CRITICAL|CVE-2018-6551|multiarch-support|2.24-11+deb9u4||
 |CRITICAL|CVE-2019-9169|multiarch-support|2.24-11+deb9u4||
@@ -270,7 +263,6 @@
 |HIGH|CVE-2021-3156|sudo|1.8.19p1-2.1|1.8.19p1-2.1+deb9u3|
 |MEDIUM|CVE-2018-20482|tar|1.29b-1.1|1.29b-1.1+deb9u1|
 |HIGH|CVE-2016-2779|util-linux|2.29.2-1+deb9u1||
-|MEDIUM|CVE-2022-0563|util-linux|2.29.2-1+deb9u1||
 
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

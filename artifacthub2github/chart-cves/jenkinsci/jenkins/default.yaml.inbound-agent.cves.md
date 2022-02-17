@@ -5,10 +5,8 @@
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-3995|bsdutils|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|bsdutils|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|bsdutils|2.36.1-8||
 |MEDIUM|CVE-2021-3995|libblkid1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libblkid1|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|libblkid1|2.36.1-8||
 |CRITICAL|CVE-2021-33574|libc-bin|2.31-13+deb11u2||
 |CRITICAL|CVE-2022-23218|libc-bin|2.31-13+deb11u2||
 |CRITICAL|CVE-2022-23219|libc-bin|2.31-13+deb11u2||
@@ -38,20 +36,16 @@
 |HIGH|CVE-2021-33560|libgcrypt20|1.8.7-6||
 |MEDIUM|CVE-2021-3995|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libmount1|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|libmount1|2.36.1-8||
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
 |MEDIUM|CVE-2021-3995|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|libsmartcols1|2.36.1-8||
 |MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1||
 |MEDIUM|CVE-2021-3997|libsystemd0|247.3-6||
 |MEDIUM|CVE-2021-3997|libudev1|247.3-6||
 |MEDIUM|CVE-2021-3995|libuuid1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libuuid1|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|libuuid1|2.36.1-8||
 |MEDIUM|CVE-2021-3995|mount|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|mount|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|mount|2.36.1-8||
 |HIGH|CVE-2021-41617|openssh-client|1:8.4p1-5||
 |MEDIUM|CVE-2021-4160|openssl|1.1.1k-1+deb11u1||
 |HIGH|CVE-2020-16156|perl|5.32.1-4+deb11u2||
@@ -59,7 +53,6 @@
 |HIGH|CVE-2020-16156|perl-modules-5.32|5.32.1-4+deb11u2||
 |MEDIUM|CVE-2021-3995|util-linux|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|util-linux|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2022-0563|util-linux|2.36.1-8||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

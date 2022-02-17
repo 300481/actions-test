@@ -7,6 +7,7 @@
 |CRITICAL|CVE-2022-23990|expat|2.4.3-r0|2.4.4-r0|
 |MEDIUM|CVE-2021-3995|libuuid|2.37.2-r1|2.37.3-r0|
 |MEDIUM|CVE-2021-3996|libuuid|2.37.2-r1|2.37.3-r0|
+|MEDIUM|CVE-2022-0563|libuuid|2.37.2-r1|2.37.4-r0|
 
 ## Target: Python --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

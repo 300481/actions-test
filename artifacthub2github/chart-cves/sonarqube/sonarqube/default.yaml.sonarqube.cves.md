@@ -7,6 +7,7 @@
 |CRITICAL|CVE-2022-23990|expat|2.4.3-r0|2.4.4-r0|
 |MEDIUM|CVE-2021-3995|libuuid|2.37.2-r0|2.37.3-r0|
 |MEDIUM|CVE-2021-3996|libuuid|2.37.2-r0|2.37.3-r0|
+|MEDIUM|CVE-2022-0563|libuuid|2.37.2-r0|2.37.4-r0|
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -21,3 +22,4 @@
 |MEDIUM|CVE-2021-43797|io.netty:netty-codec-http|4.1.66.Final|4.1.71.Final|
 |MEDIUM|CVE-2020-13697|org.nanohttpd:nanohttpd|2.3.1||
 |HIGH|CVE-2022-21724|org.postgresql:postgresql|42.3.1|42.3.2, 42.2.25|
+|MEDIUM|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.3.1|42.3.3|
