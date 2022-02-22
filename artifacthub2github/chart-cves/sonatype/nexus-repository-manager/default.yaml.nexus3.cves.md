@@ -5,6 +5,7 @@
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-3468|avahi-libs|0.7-20.el8||
 |MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8|2.3.3-4.el8_5.1|
+|HIGH|CVE-2022-25315|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-45960|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-46143|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22822|expat|2.2.5-4.el8||
@@ -14,6 +15,10 @@
 |MEDIUM|CVE-2022-22826|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22827|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-23852|expat|2.2.5-4.el8||
+|MEDIUM|CVE-2022-25235|expat|2.2.5-4.el8||
+|MEDIUM|CVE-2022-25236|expat|2.2.5-4.el8||
+|MEDIUM|CVE-2022-25313|expat|2.2.5-4.el8||
+|MEDIUM|CVE-2022-25314|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-3999|glibc|2.28-164.el8||
 |MEDIUM|CVE-2022-23218|glibc|2.28-164.el8||
 |MEDIUM|CVE-2022-23219|glibc|2.28-164.el8||
