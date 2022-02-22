@@ -291,6 +291,7 @@
 |HIGH|CVE-2021-23354|printf|0.2.5|0.6.1|
 |HIGH|CVE-2021-23358|underscore|1.6.0|1.12.1|
 |HIGH|CVE-2021-27515|url-parse|1.4.3|1.5.0|
+|HIGH|CVE-2022-0512|url-parse|1.4.3|1.5.6|
 |MEDIUM|CVE-2020-8124|url-parse|1.4.3|1.4.5|
 |MEDIUM|CVE-2021-3664|url-parse|1.4.3|1.5.2|
 |MEDIUM|CVE-2021-32640|ws|5.2.2|5.2.3, 6.2.2, 7.4.6|

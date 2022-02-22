@@ -32,6 +32,11 @@
 |HIGH|CVE-2022-22825|libexpat1|2.2.10-2|2.2.10-2+deb11u1|
 |HIGH|CVE-2022-22826|libexpat1|2.2.10-2|2.2.10-2+deb11u1|
 |HIGH|CVE-2022-22827|libexpat1|2.2.10-2|2.2.10-2+deb11u1|
+|HIGH|CVE-2022-25315|libexpat1|2.2.10-2||
+|MEDIUM|CVE-2022-25235|libexpat1|2.2.10-2||
+|MEDIUM|CVE-2022-25236|libexpat1|2.2.10-2||
+|MEDIUM|CVE-2022-25313|libexpat1|2.2.10-2||
+|MEDIUM|CVE-2022-25314|libexpat1|2.2.10-2||
 |HIGH|CVE-2021-33560|libgcrypt20|1.8.7-6||
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
 |MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1||
@@ -42,6 +47,8 @@
 |HIGH|CVE-2020-16156|perl|5.32.1-4+deb11u2||
 |HIGH|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
 |HIGH|CVE-2020-16156|perl-modules-5.32|5.32.1-4+deb11u2||
+|HIGH|CVE-2022-0529|unzip|6.0-26||
+|HIGH|CVE-2022-0530|unzip|6.0-26||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -55,4 +62,3 @@
 ## Target: usr/local/bin/git-lfs --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|HIGH|CVE-2020-29652|golang.org/x/crypto|v0.0.0-20201112155050-0c6587e931a9|v0.0.0-20201216223049-8b5274cf687f|
