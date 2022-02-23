@@ -39,6 +39,9 @@
 |HIGH|CVE-2022-25314|libexpat1|2.2.10-2|2.2.10-2+deb11u2|
 |HIGH|CVE-2021-33560|libgcrypt20|1.8.7-6||
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
+|HIGH|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1||
+|HIGH|CVE-2022-24407|libsasl2-modules|2.1.27+dfsg-2.1||
+|HIGH|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1||
 |MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1||
 |MEDIUM|CVE-2021-3997|libsystemd0|247.3-6||
 |MEDIUM|CVE-2021-3997|libudev1|247.3-6||

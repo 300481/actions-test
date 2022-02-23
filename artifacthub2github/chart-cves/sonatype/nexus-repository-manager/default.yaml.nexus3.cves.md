@@ -5,6 +5,8 @@
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-3468|avahi-libs|0.7-20.el8||
 |MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8|2.3.3-4.el8_5.1|
+|HIGH|CVE-2022-25235|expat|2.2.5-4.el8||
+|HIGH|CVE-2022-25236|expat|2.2.5-4.el8||
 |HIGH|CVE-2022-25315|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-45960|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-46143|expat|2.2.5-4.el8||
@@ -15,8 +17,6 @@
 |MEDIUM|CVE-2022-22826|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22827|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-23852|expat|2.2.5-4.el8||
-|MEDIUM|CVE-2022-25235|expat|2.2.5-4.el8||
-|MEDIUM|CVE-2022-25236|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-25313|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-25314|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-3999|glibc|2.28-164.el8||
@@ -79,6 +79,7 @@
 |MEDIUM|CVE-2018-20673|libstdc++|8.5.0-4.el8_5||
 |MEDIUM|CVE-2021-42694|libstdc++|8.5.0-4.el8_5||
 |MEDIUM|CVE-2022-0563|libuuid|2.32.1-28.el8||
+|MEDIUM|CVE-2022-23308|libxml2|2.9.7-9.el8_4.2||
 |MEDIUM|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
 |MEDIUM|CVE-2021-39537|ncurses-base|6.1-9.20180224.el8||
 |MEDIUM|CVE-2021-39537|ncurses-libs|6.1-9.20180224.el8||
@@ -90,6 +91,7 @@
 |MEDIUM|CVE-2020-12401|nss-util|3.67.0-7.el8_5||
 |MEDIUM|CVE-2021-23841|openssl-libs|1:1.1.1k-5.el8_5||
 |MEDIUM|CVE-2021-3712|openssl-libs|1:1.1.1k-5.el8_5||
+|MEDIUM|CVE-2022-23308|python3-libxml2|2.9.7-9.el8_4.2||
 |MEDIUM|CVE-2021-3521|python3-rpm|4.14.3-19.el8|4.14.3-19.el8_5.2|
 |MEDIUM|CVE-2021-35937|python3-rpm|4.14.3-19.el8||
 |MEDIUM|CVE-2021-35938|python3-rpm|4.14.3-19.el8||
