@@ -68,6 +68,14 @@
 |MEDIUM|CVE-2020-17541|libjpeg-turbo|1.5.3-12.el8||
 |MEDIUM|CVE-2022-0563|libmount|2.32.1-28.el8||
 |MEDIUM|CVE-2022-0563|libsmartcols|2.32.1-28.el8||
+|MEDIUM|CVE-2021-44569|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44570|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44571|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44573|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44574|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44575|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44576|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44577|libsolv|0.7.19-1.el8||
 |MEDIUM|CVE-2018-20673|libstdc++|8.5.0-4.el8_5||
 |MEDIUM|CVE-2021-42694|libstdc++|8.5.0-4.el8_5||
 |MEDIUM|CVE-2022-0563|libuuid|2.32.1-28.el8||
