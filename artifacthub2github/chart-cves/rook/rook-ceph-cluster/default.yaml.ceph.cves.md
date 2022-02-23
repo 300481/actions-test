@@ -6,6 +6,8 @@
 |MEDIUM|CVE-2021-3468|avahi-libs|0.7-20.el8||
 |MEDIUM|CVE-2021-4122|cryptsetup|2.3.3-4.el8|2.3.3-4.el8_5.1|
 |MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8|2.3.3-4.el8_5.1|
+|HIGH|CVE-2022-25235|expat|2.2.5-4.el8||
+|HIGH|CVE-2022-25236|expat|2.2.5-4.el8||
 |HIGH|CVE-2022-25315|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-45960|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-46143|expat|2.2.5-4.el8||
@@ -16,8 +18,6 @@
 |MEDIUM|CVE-2022-22826|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22827|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-23852|expat|2.2.5-4.el8||
-|MEDIUM|CVE-2022-25235|expat|2.2.5-4.el8||
-|MEDIUM|CVE-2022-25236|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-25313|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-25314|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2020-0256|gdisk|1.0.3-8.el8||
@@ -59,6 +59,7 @@
 |MEDIUM|CVE-2021-42694|libstdc++|8.5.0-8.el8||
 |MEDIUM|CVE-2022-0563|libuuid|2.32.1-28.el8||
 |MEDIUM|CVE-2021-20316|libwbclient|4.15.4-0.el8||
+|MEDIUM|CVE-2022-23308|libxml2|2.9.7-11.el8||
 |MEDIUM|CVE-2016-4607|libxslt|1.1.32-6.el8||
 |MEDIUM|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
 |MEDIUM|CVE-2021-39537|ncurses-base|6.1-9.20180224.el8||
@@ -72,6 +73,7 @@
 |MEDIUM|CVE-2021-41617|openssh-clients|8.0p1-12.el8||
 |MEDIUM|CVE-2021-23841|openssl-libs|1:1.1.1k-5.el8_5||
 |MEDIUM|CVE-2021-3712|openssl-libs|1:1.1.1k-5.el8_5||
+|MEDIUM|CVE-2022-23308|python3-libxml2|2.9.7-11.el8||
 |MEDIUM|CVE-2018-19787|python3-lxml|4.2.3-4.el8||
 |MEDIUM|CVE-2021-35937|python3-rpm|4.14.3-21.el8||
 |MEDIUM|CVE-2021-35938|python3-rpm|4.14.3-21.el8||
