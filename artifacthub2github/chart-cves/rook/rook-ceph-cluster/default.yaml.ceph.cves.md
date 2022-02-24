@@ -6,9 +6,7 @@
 |MEDIUM|CVE-2021-3468|avahi-libs|0.7-20.el8||
 |MEDIUM|CVE-2021-4122|cryptsetup|2.3.3-4.el8|2.3.3-4.el8_5.1|
 |MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8|2.3.3-4.el8_5.1|
-|HIGH|CVE-2022-25235|expat|2.2.5-4.el8||
-|HIGH|CVE-2022-25236|expat|2.2.5-4.el8||
-|HIGH|CVE-2022-25315|expat|2.2.5-4.el8||
+|HIGH|CVE-2022-24407|cyrus-sasl-lib|2.1.27-5.el8|2.1.27-6.el8_5|
 |MEDIUM|CVE-2021-45960|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-46143|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22822|expat|2.2.5-4.el8||
@@ -18,8 +16,6 @@
 |MEDIUM|CVE-2022-22826|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22827|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-23852|expat|2.2.5-4.el8||
-|MEDIUM|CVE-2022-25313|expat|2.2.5-4.el8||
-|MEDIUM|CVE-2022-25314|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2020-0256|gdisk|1.0.3-8.el8||
 |MEDIUM|CVE-2021-0308|gdisk|1.0.3-8.el8||
 |MEDIUM|CVE-2021-3999|glibc|2.28-184.el8||
@@ -47,6 +43,7 @@
 |MEDIUM|CVE-2018-20673|libquadmath|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libquadmath|8.5.0-8.el8||
 |MEDIUM|CVE-2022-0563|libsmartcols|2.32.1-28.el8||
+|HIGH|CVE-2021-44568|libsolv|0.7.20-1.el8||
 |MEDIUM|CVE-2021-44569|libsolv|0.7.20-1.el8||
 |MEDIUM|CVE-2021-44570|libsolv|0.7.20-1.el8||
 |MEDIUM|CVE-2021-44571|libsolv|0.7.20-1.el8||
@@ -110,6 +107,7 @@
 |MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0714|vim-minimal|2:8.0.1763-16.el8_5.4||
 
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
