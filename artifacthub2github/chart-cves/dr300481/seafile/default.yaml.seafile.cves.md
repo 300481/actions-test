@@ -49,6 +49,7 @@
 |MEDIUM|CVE-2022-22827|libexpat1|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
 |MEDIUM|CVE-2022-23852|libexpat1|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
 |MEDIUM|CVE-2022-23990|libexpat1|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
+|MEDIUM|CVE-2022-25314|libexpat1|2.2.5-3ubuntu0.2||
 |HIGH|CVE-2022-25235|libexpat1-dev|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
 |HIGH|CVE-2022-25236|libexpat1-dev|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
 |MEDIUM|CVE-2021-46143|libexpat1-dev|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
@@ -60,6 +61,7 @@
 |MEDIUM|CVE-2022-22827|libexpat1-dev|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
 |MEDIUM|CVE-2022-23852|libexpat1-dev|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
 |MEDIUM|CVE-2022-23990|libexpat1-dev|2.2.5-3ubuntu0.2|2.2.5-3ubuntu0.4|
+|MEDIUM|CVE-2022-25314|libexpat1-dev|2.2.5-3ubuntu0.2||
 |MEDIUM|CVE-2020-13844|libgcc-7-dev|7.5.0-3ubuntu1~18.04||
 |MEDIUM|CVE-2020-13844|libgcc1|8.4.0-1ubuntu1~18.04||
 |MEDIUM|CVE-2021-40528|libgcrypt20|1.8.1-4ubuntu1.2|1.8.1-4ubuntu1.3|

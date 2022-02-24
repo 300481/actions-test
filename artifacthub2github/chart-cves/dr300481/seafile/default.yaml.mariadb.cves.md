@@ -50,8 +50,8 @@
 |MEDIUM|CVE-2021-37750|libkrb5support0|1.17-3+deb10u1|1.17-3+deb10u3|
 |HIGH|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |MEDIUM|CVE-2020-14155|libpcre3|2:8.39-12||
-|HIGH|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1||
-|HIGH|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-1+deb10u1||
+|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1||
+|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-1+deb10u1||
 |HIGH|CVE-2019-13115|libssh2-1|1.8.0-2.1||
 |CRITICAL|CVE-2021-3711|libssl1.1|1.1.1d-0+deb10u6|1.1.1d-0+deb10u7|
 |HIGH|CVE-2021-3712|libssl1.1|1.1.1d-0+deb10u6|1.1.1d-0+deb10u7|

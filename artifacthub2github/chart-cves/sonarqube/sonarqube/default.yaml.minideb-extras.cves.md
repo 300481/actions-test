@@ -165,10 +165,10 @@
 |HIGH|CVE-2020-29361|libp11-kit0|0.23.3-2|0.23.3-2+deb9u1|
 |MEDIUM|CVE-2020-29362|libp11-kit0|0.23.3-2|0.23.3-2+deb9u1|
 |MEDIUM|CVE-2020-14155|libpcre3|2:8.39-3||
+|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27~101-g0780600+dfsg-3||
 |HIGH|CVE-2019-19906|libsasl2-2|2.1.27~101-g0780600+dfsg-3|2.1.27~101-g0780600+dfsg-3+deb9u1|
-|HIGH|CVE-2022-24407|libsasl2-2|2.1.27~101-g0780600+dfsg-3||
+|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27~101-g0780600+dfsg-3||
 |HIGH|CVE-2019-19906|libsasl2-modules-db|2.1.27~101-g0780600+dfsg-3|2.1.27~101-g0780600+dfsg-3+deb9u1|
-|HIGH|CVE-2022-24407|libsasl2-modules-db|2.1.27~101-g0780600+dfsg-3||
 |HIGH|CVE-2016-2779|libsmartcols1|2.29.2-1+deb9u1||
 |CRITICAL|CVE-2019-8457|libsqlite3-0|3.16.2-5+deb9u1||
 |HIGH|CVE-2018-20346|libsqlite3-0|3.16.2-5+deb9u1|3.16.2-5+deb9u2|
@@ -184,6 +184,7 @@
 |MEDIUM|CVE-2019-16168|libsqlite3-0|3.16.2-5+deb9u1|3.16.2-5+deb9u2|
 |MEDIUM|CVE-2020-13434|libsqlite3-0|3.16.2-5+deb9u1|3.16.2-5+deb9u2|
 |MEDIUM|CVE-2020-13632|libsqlite3-0|3.16.2-5+deb9u1|3.16.2-5+deb9u2|
+|MEDIUM|CVE-2021-45346|libsqlite3-0|3.16.2-5+deb9u1||
 |HIGH|CVE-2019-13115|libssh2-1|1.7.0-1+deb9u1|1.7.0-1+deb9u2|
 |HIGH|CVE-2019-17498|libssh2-1|1.7.0-1+deb9u1|1.7.0-1+deb9u2|
 |HIGH|CVE-2021-23840|libssl1.0.2|1.0.2t-1~deb9u1|1.0.2u-1~deb9u4|
