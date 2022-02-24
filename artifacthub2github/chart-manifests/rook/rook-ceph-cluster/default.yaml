@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.4"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
 
   
 # imagePullSecrets:
@@ -31,7 +31,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.4"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
 
   
 # imagePullSecrets:
@@ -50,7 +50,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.4"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
 
   
 # imagePullSecrets:
@@ -280,7 +280,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.4"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
