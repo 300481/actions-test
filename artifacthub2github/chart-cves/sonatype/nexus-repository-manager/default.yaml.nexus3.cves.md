@@ -15,6 +15,7 @@
 |MEDIUM|CVE-2022-22826|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22827|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-23852|expat|2.2.5-4.el8||
+|MEDIUM|CVE-2022-25314|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-3999|glibc|2.28-164.el8||
 |MEDIUM|CVE-2022-23218|glibc|2.28-164.el8||
 |MEDIUM|CVE-2022-23219|glibc|2.28-164.el8||
@@ -122,8 +123,6 @@
 |MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0714|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0729|vim-minimal|2:8.0.1763-16.el8||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
