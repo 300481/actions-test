@@ -4,10 +4,10 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
   name: kube-prometheus-stack-grafana
   namespace: default
@@ -17,10 +17,10 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
   name: kube-prometheus-stack-grafana-test
   namespace: default
@@ -30,13 +30,13 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   labels:    
-    helm.sh/chart: kube-state-metrics-4.4.3
+    helm.sh/chart: kube-state-metrics-4.7.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: metrics
     app.kubernetes.io/part-of: kube-state-metrics
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "2.3.0"
+    app.kubernetes.io/version: "2.4.1"
     release: kube-prometheus-stack
   name: kube-prometheus-stack-kube-state-metrics
   namespace: default
@@ -51,7 +51,7 @@ metadata:
   namespace: default
   labels:
     app: prometheus-node-exporter
-    chart: prometheus-node-exporter-2.5.0
+    chart: prometheus-node-exporter-3.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
   annotations:
@@ -72,9 +72,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -91,9 +91,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -110,9 +110,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -123,10 +123,10 @@ metadata:
   name: kube-prometheus-stack-grafana
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 data:
@@ -145,9 +145,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -158,10 +158,10 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
   name: kube-prometheus-stack-grafana-config-dashboards
   namespace: default
@@ -187,10 +187,10 @@ metadata:
   name: kube-prometheus-stack-grafana
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 data:
   grafana.ini: |
@@ -213,10 +213,10 @@ metadata:
   name: kube-prometheus-stack-grafana-test
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 data:
   run.sh: |-
@@ -239,9 +239,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -270,9 +270,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -879,9 +879,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -2650,9 +2650,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -4531,9 +4531,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -5720,9 +5720,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -6835,9 +6835,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -7470,9 +7470,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -9004,9 +9004,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -11536,7 +11536,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "ceil(sum by(namespace) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval])))",
+                                "expr": "ceil(sum by(namespace) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval])))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "{{namespace}}",
@@ -11625,7 +11625,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "{{namespace}}",
@@ -11886,7 +11886,7 @@ data:
                         ],
                         "targets": [
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -11895,7 +11895,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -11904,7 +11904,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -11913,7 +11913,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -11922,7 +11922,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -11931,7 +11931,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(namespace) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\"}[$__rate_interval]))",
+                                "expr": "sum by(namespace) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace!=\"\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -12091,9 +12091,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -14305,7 +14305,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "ceil(sum by(pod) (rate(container_fs_reads_total{container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_total{container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval])))",
+                                "expr": "ceil(sum by(pod) (rate(container_fs_reads_total{container!=\"\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_total{container!=\"\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval])))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "{{pod}}",
@@ -14394,7 +14394,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{container!=\"\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{container!=\"\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "{{pod}}",
@@ -14655,7 +14655,7 @@ data:
                         ],
                         "targets": [
                             {
-                                "expr": "sum by(pod) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -14664,7 +14664,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(pod) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -14673,7 +14673,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(pod) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -14682,7 +14682,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -14691,7 +14691,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(pod) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -14700,7 +14700,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -14887,9 +14887,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -15912,9 +15912,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -17564,7 +17564,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "ceil(sum by(pod) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval])))",
+                                "expr": "ceil(sum by(pod) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval])))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "Reads",
@@ -17572,7 +17572,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "ceil(sum by(pod) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval])))",
+                                "expr": "ceil(sum by(pod) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval])))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "Writes",
@@ -17661,7 +17661,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval]))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "Reads",
@@ -17669,7 +17669,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(pod) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(pod) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=~\"$pod\"}[$__rate_interval]))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "Writes",
@@ -17771,7 +17771,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "ceil(sum by(container) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval])))",
+                                "expr": "ceil(sum by(container) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval])))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "{{container}}",
@@ -17860,7 +17860,7 @@ data:
                         "steppedLine": false,
                         "targets": [
                             {
-                                "expr": "sum by(container) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "time_series",
                                 "intervalFactor": 2,
                                 "legendFormat": "{{container}}",
@@ -18121,7 +18121,7 @@ data:
                         ],
                         "targets": [
                             {
-                                "expr": "sum by(container) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -18130,7 +18130,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(container) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\",device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -18139,7 +18139,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(container) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_reads_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -18148,7 +18148,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(container) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -18157,7 +18157,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(container) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -18166,7 +18166,7 @@ data:
                                 "step": 10
                             },
                             {
-                                "expr": "sum by(container) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", container!=\"\", cluster=\"$cluster\",namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
+                                "expr": "sum by(container) (rate(container_fs_reads_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]) + rate(container_fs_writes_bytes_total{job=\"kubelet\", metrics_path=\"/metrics/cadvisor\", device=~\"mmcblk.p.+|nvme.+|rbd.+|sd.+|vd.+|xvd.+|dm-.+|dasd.+\", container!=\"\", cluster=\"$cluster\", namespace=\"$namespace\", pod=\"$pod\"}[$__rate_interval]))",
                                 "format": "table",
                                 "instant": true,
                                 "intervalFactor": 2,
@@ -18380,9 +18380,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -20403,9 +20403,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -22591,9 +22591,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -24775,7 +24775,7 @@ data:
                     "datasource": "$datasource",
                     "hide": 0,
                     "includeAll": true,
-                    "label": "Data Source",
+                    "label": "instance",
                     "multi": false,
                     "name": "instance",
                     "options": [
@@ -24844,9 +24844,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -26307,9 +26307,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -28042,9 +28042,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -29104,9 +29104,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -30192,9 +30192,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -31182,9 +31182,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -31768,9 +31768,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -32995,9 +32995,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -34229,9 +34229,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -35499,9 +35499,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -36610,9 +36610,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -37537,9 +37537,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 data:
@@ -38965,10 +38965,10 @@ kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
   name: kube-prometheus-stack-grafana-clusterrole
 rules:
@@ -38981,13 +38981,13 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   labels:    
-    helm.sh/chart: kube-state-metrics-4.4.3
+    helm.sh/chart: kube-state-metrics-4.7.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: metrics
     app.kubernetes.io/part-of: kube-state-metrics
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "2.3.0"
+    app.kubernetes.io/version: "2.4.1"
     release: kube-prometheus-stack
   name: kube-prometheus-stack-kube-state-metrics
 rules:
@@ -39137,9 +39137,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -39224,9 +39224,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -39254,10 +39254,10 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: kube-prometheus-stack-grafana-clusterrolebinding
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 subjects:
   - kind: ServiceAccount
@@ -39273,13 +39273,13 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   labels:    
-    helm.sh/chart: kube-state-metrics-4.4.3
+    helm.sh/chart: kube-state-metrics-4.7.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: metrics
     app.kubernetes.io/part-of: kube-state-metrics
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "2.3.0"
+    app.kubernetes.io/version: "2.4.1"
     release: kube-prometheus-stack
   name: kube-prometheus-stack-kube-state-metrics
 roleRef:
@@ -39301,9 +39301,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -39325,9 +39325,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -39346,10 +39346,10 @@ metadata:
   name: kube-prometheus-stack-grafana
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 rules: []
 ---
@@ -39360,10 +39360,10 @@ metadata:
   name: kube-prometheus-stack-grafana
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -39381,10 +39381,10 @@ metadata:
   name: kube-prometheus-stack-grafana
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
@@ -39405,13 +39405,13 @@ metadata:
   name: kube-prometheus-stack-kube-state-metrics
   namespace: default
   labels:    
-    helm.sh/chart: kube-state-metrics-4.4.3
+    helm.sh/chart: kube-state-metrics-4.7.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: metrics
     app.kubernetes.io/part-of: kube-state-metrics
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "2.3.0"
+    app.kubernetes.io/version: "2.4.1"
     release: kube-prometheus-stack
   annotations:
     prometheus.io/scrape: 'true'
@@ -39439,7 +39439,7 @@ metadata:
     app: prometheus-node-exporter
     heritage: Helm
     release: kube-prometheus-stack
-    chart: prometheus-node-exporter-2.5.0
+    chart: prometheus-node-exporter-3.0.0
     jobLabel: node-exporter
 spec:
   type: ClusterIP
@@ -39464,9 +39464,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -39491,9 +39491,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39518,9 +39518,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39546,9 +39546,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39574,9 +39574,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39602,9 +39602,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
   namespace: kube-system
@@ -39630,9 +39630,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -39657,9 +39657,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -39683,7 +39683,7 @@ metadata:
     app: prometheus-node-exporter
     heritage: Helm
     release: kube-prometheus-stack
-    chart: prometheus-node-exporter-2.5.0
+    chart: prometheus-node-exporter-3.0.0
     jobLabel: node-exporter
 spec:
   selector:
@@ -39700,7 +39700,7 @@ spec:
         app: prometheus-node-exporter
         heritage: Helm
         release: kube-prometheus-stack
-        chart: prometheus-node-exporter-2.5.0
+        chart: prometheus-node-exporter-3.0.0
         jobLabel: node-exporter
       annotations:
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
@@ -39774,10 +39774,10 @@ metadata:
   name: kube-prometheus-stack-grafana
   namespace: default
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
@@ -39794,10 +39794,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: kube-prometheus-stack
       annotations:
-        checksum/config: 3f12ab199e55986b2d412d4111a2e85e1948fd1b1cbd71fb1df1a6b4d8390cb1
+        checksum/config: b3b5d1564f9b51984b2e91fa04fe9bdd95bd8e11fc1cc3c8ab2d0183c2b8e594
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/sc-dashboard-provider-config: 75d01e397245b8d1319e9082abe24eb9dafee7ae2115810cefabcee3164c7e5f
-        checksum/secret: a8fc31a3f8c7bf0cb3b98bd1733aa45c3167457d5c4c71d0e83fb11282bd4a40
+        checksum/sc-dashboard-provider-config: a65ed05eaac343a04fb8aa55d692e78c578394bc50ceb541f2769950bb48202b
+        checksum/secret: bfcd48153e5b0411e7b4536738d7f82ec57c03d85eea7bd6d740afc8ee56c400
     spec:
       
       serviceAccountName: kube-prometheus-stack-grafana
@@ -39809,7 +39809,7 @@ spec:
       enableServiceLinks: true
       containers:
         - name: grafana-sc-dashboard
-          image: "quay.io/kiwigrid/k8s-sidecar:1.15.1"
+          image: "quay.io/kiwigrid/k8s-sidecar:1.15.6"
           imagePullPolicy: IfNotPresent
           env:
             - name: METHOD
@@ -39828,7 +39828,7 @@ spec:
             - name: sc-dashboard-volume
               mountPath: "/tmp/dashboards"
         - name: grafana-sc-datasources
-          image: "quay.io/kiwigrid/k8s-sidecar:1.15.1"
+          image: "quay.io/kiwigrid/k8s-sidecar:1.15.6"
           imagePullPolicy: IfNotPresent
           env:
             - name: METHOD
@@ -39861,7 +39861,7 @@ spec:
             - name: sc-datasources-volume
               mountPath: "/etc/grafana/provisioning/datasources"
         - name: grafana
-          image: "grafana/grafana:8.3.5"
+          image: "grafana/grafana:8.3.6"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: config
@@ -39937,13 +39937,13 @@ metadata:
   name: kube-prometheus-stack-kube-state-metrics
   namespace: default
   labels:    
-    helm.sh/chart: kube-state-metrics-4.4.3
+    helm.sh/chart: kube-state-metrics-4.7.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: metrics
     app.kubernetes.io/part-of: kube-state-metrics
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "2.3.0"
+    app.kubernetes.io/version: "2.4.1"
     release: kube-prometheus-stack
 spec:
   selector:
@@ -39954,13 +39954,13 @@ spec:
   template:
     metadata:
       labels:        
-        helm.sh/chart: kube-state-metrics-4.4.3
+        helm.sh/chart: kube-state-metrics-4.7.0
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: metrics
         app.kubernetes.io/part-of: kube-state-metrics
         app.kubernetes.io/name: kube-state-metrics
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "2.3.0"
+        app.kubernetes.io/version: "2.4.1"
         release: kube-prometheus-stack
     spec:
       hostNetwork: false
@@ -39976,7 +39976,7 @@ spec:
         - --resources=certificatesigningrequests,configmaps,cronjobs,daemonsets,deployments,endpoints,horizontalpodautoscalers,ingresses,jobs,limitranges,mutatingwebhookconfigurations,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,replicasets,replicationcontrollers,resourcequotas,secrets,services,statefulsets,storageclasses,validatingwebhookconfigurations,volumeattachments
         - --telemetry-port=8081
         imagePullPolicy: IfNotPresent
-        image: "k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0"
+        image: "k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.4.1"
         ports:
         - containerPort: 8080
           name: "http"
@@ -40004,9 +40004,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40022,20 +40022,20 @@ spec:
         
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "32.3.0"
+        app.kubernetes.io/version: "33.0.0"
         app.kubernetes.io/part-of: kube-prometheus-stack
-        chart: kube-prometheus-stack-32.3.0
+        chart: kube-prometheus-stack-33.0.0
         release: "kube-prometheus-stack"
         heritage: "Helm"
     spec:
       containers:
         - name: kube-prometheus-stack
-          image: "quay.io/prometheus-operator/prometheus-operator:v0.54.0"
+          image: "quay.io/prometheus-operator/prometheus-operator:v0.54.1"
           imagePullPolicy: "IfNotPresent"
           args:
             - --kubelet-service=kube-system/kube-prometheus-stack-kubelet
             - --localhost=127.0.0.1
-            - --prometheus-config-reloader=quay.io/prometheus-operator/prometheus-config-reloader:v0.54.0
+            - --prometheus-config-reloader=quay.io/prometheus-operator/prometheus-config-reloader:v0.54.1
             - --config-reloader-cpu-request=100m
             - --config-reloader-cpu-limit=100m
             - --config-reloader-memory-request=50Mi
@@ -40081,9 +40081,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40116,9 +40116,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 webhooks:
@@ -40153,9 +40153,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40166,8 +40166,8 @@ spec:
         port: http-web
         pathPrefix: "/"
         apiVersion: v2
-  image: "quay.io/prometheus/prometheus:v2.33.1"
-  version: v2.33.1
+  image: "quay.io/prometheus/prometheus:v2.33.4"
+  version: v2.33.4
   externalUrl: http://kube-prometheus-stack-prometheus.default:9090
   paused: false
   replicas: 1
@@ -40217,9 +40217,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40360,9 +40360,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40392,9 +40392,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40526,9 +40526,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40594,9 +40594,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40761,9 +40761,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40891,9 +40891,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -40968,9 +40968,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41320,9 +41320,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41345,9 +41345,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41364,7 +41364,7 @@ spec:
       record: instance:node_cpu:ratio
     - expr: sum(rate(node_cpu_seconds_total{mode!="idle",mode!="iowait",mode!="steal"}[5m]))
       record: cluster:node_cpu:sum_rate5m
-    - expr: cluster:node_cpu_seconds_total:rate5m / count(sum(node_cpu_seconds_total) BY (instance, cpu))
+    - expr: cluster:node_cpu:sum_rate5m / count(sum(node_cpu_seconds_total) BY (instance, cpu))
       record: cluster:node_cpu:ratio
 ---
 # Source: kube-prometheus-stack/templates/prometheus/rules-1.14/kube-scheduler.rules.yaml
@@ -41378,9 +41378,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41435,9 +41435,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41504,24 +41504,24 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
   groups:
   - name: kubelet.rules
     rules:
-    - expr: histogram_quantile(0.99, sum(rate(kubelet_pleg_relist_duration_seconds_bucket[5m])) by (instance, le) * on(instance) group_left(node) kubelet_node_name{job="kubelet", metrics_path="/metrics"})
+    - expr: histogram_quantile(0.99, sum(rate(kubelet_pleg_relist_duration_seconds_bucket[5m])) by (cluster, instance, le) * on(cluster, instance) group_left(node) kubelet_node_name{job="kubelet", metrics_path="/metrics"})
       labels:
         quantile: '0.99'
       record: node_quantile:kubelet_pleg_relist_duration_seconds:histogram_quantile
-    - expr: histogram_quantile(0.9, sum(rate(kubelet_pleg_relist_duration_seconds_bucket[5m])) by (instance, le) * on(instance) group_left(node) kubelet_node_name{job="kubelet", metrics_path="/metrics"})
+    - expr: histogram_quantile(0.9, sum(rate(kubelet_pleg_relist_duration_seconds_bucket[5m])) by (cluster, instance, le) * on(cluster, instance) group_left(node) kubelet_node_name{job="kubelet", metrics_path="/metrics"})
       labels:
         quantile: '0.9'
       record: node_quantile:kubelet_pleg_relist_duration_seconds:histogram_quantile
-    - expr: histogram_quantile(0.5, sum(rate(kubelet_pleg_relist_duration_seconds_bucket[5m])) by (instance, le) * on(instance) group_left(node) kubelet_node_name{job="kubelet", metrics_path="/metrics"})
+    - expr: histogram_quantile(0.5, sum(rate(kubelet_pleg_relist_duration_seconds_bucket[5m])) by (cluster, instance, le) * on(cluster, instance) group_left(node) kubelet_node_name{job="kubelet", metrics_path="/metrics"})
       labels:
         quantile: '0.5'
       record: node_quantile:kubelet_pleg_relist_duration_seconds:histogram_quantile
@@ -41537,9 +41537,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41783,9 +41783,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41906,9 +41906,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -41978,9 +41978,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42050,9 +42050,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42080,9 +42080,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42110,9 +42110,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42251,9 +42251,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42281,9 +42281,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42324,9 +42324,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42407,9 +42407,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42655,9 +42655,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42685,9 +42685,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42730,9 +42730,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -42814,9 +42814,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43054,10 +43054,10 @@ kind: ServiceMonitor
 metadata:
   name: kube-prometheus-stack-grafana
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
 spec:
   endpoints:
@@ -43082,13 +43082,13 @@ metadata:
   name: kube-prometheus-stack-kube-state-metrics
   namespace: default
   labels:    
-    helm.sh/chart: kube-state-metrics-4.4.3
+    helm.sh/chart: kube-state-metrics-4.7.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: metrics
     app.kubernetes.io/part-of: kube-state-metrics
     app.kubernetes.io/name: kube-state-metrics
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "2.3.0"
+    app.kubernetes.io/version: "2.4.1"
     release: kube-prometheus-stack
 spec:
   jobLabel: app.kubernetes.io/name
@@ -43110,7 +43110,7 @@ metadata:
     app: prometheus-node-exporter
     heritage: Helm
     release: kube-prometheus-stack
-    chart: prometheus-node-exporter-2.5.0
+    chart: prometheus-node-exporter-3.0.0
     jobLabel: node-exporter
 spec:
   jobLabel: jobLabel
@@ -43133,9 +43133,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43162,9 +43162,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43191,9 +43191,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43225,9 +43225,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43258,9 +43258,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43287,9 +43287,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43316,9 +43316,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43348,9 +43348,9 @@ metadata:
     app: kube-prometheus-stack-kubelet    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43410,9 +43410,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43446,9 +43446,9 @@ metadata:
     
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43473,9 +43473,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 webhooks:
@@ -43512,9 +43512,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 ---
@@ -43530,9 +43530,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -43557,9 +43557,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -43584,9 +43584,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 rules:
@@ -43611,9 +43611,9 @@ metadata:
     app: kube-prometheus-stack-admission    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 roleRef:
@@ -43631,10 +43631,10 @@ kind: Pod
 metadata:
   name: kube-prometheus-stack-grafana-test
   labels:
-    helm.sh/chart: grafana-6.21.5
+    helm.sh/chart: grafana-6.22.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "8.3.5"
+    app.kubernetes.io/version: "8.3.6"
     app.kubernetes.io/managed-by: Helm
   annotations:
     "helm.sh/hook": test-success
@@ -43669,9 +43669,9 @@ metadata:
     app: kube-prometheus-stack-admission-create    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43682,15 +43682,15 @@ spec:
         app: kube-prometheus-stack-admission-create        
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "32.3.0"
+        app.kubernetes.io/version: "33.0.0"
         app.kubernetes.io/part-of: kube-prometheus-stack
-        chart: kube-prometheus-stack-32.3.0
+        chart: kube-prometheus-stack-33.0.0
         release: "kube-prometheus-stack"
         heritage: "Helm"
     spec:
       containers:
         - name: create
-          image: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.0@sha256:f3b6b39a6062328c095337b4cadcefd1612348fdd5190b1dcbcb9b9e90bd8068
+          image: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
           imagePullPolicy: IfNotPresent
           args:
             - create
@@ -43719,9 +43719,9 @@ metadata:
     app: kube-prometheus-stack-admission-patch    
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: kube-prometheus-stack
-    app.kubernetes.io/version: "32.3.0"
+    app.kubernetes.io/version: "33.0.0"
     app.kubernetes.io/part-of: kube-prometheus-stack
-    chart: kube-prometheus-stack-32.3.0
+    chart: kube-prometheus-stack-33.0.0
     release: "kube-prometheus-stack"
     heritage: "Helm"
 spec:
@@ -43732,15 +43732,15 @@ spec:
         app: kube-prometheus-stack-admission-patch        
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/instance: kube-prometheus-stack
-        app.kubernetes.io/version: "32.3.0"
+        app.kubernetes.io/version: "33.0.0"
         app.kubernetes.io/part-of: kube-prometheus-stack
-        chart: kube-prometheus-stack-32.3.0
+        chart: kube-prometheus-stack-33.0.0
         release: "kube-prometheus-stack"
         heritage: "Helm"
     spec:
       containers:
         - name: patch
-          image: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.0@sha256:f3b6b39a6062328c095337b4cadcefd1612348fdd5190b1dcbcb9b9e90bd8068
+          image: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
           imagePullPolicy: IfNotPresent
           args:
             - patch

@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: grafana/grafana:8.3.5 (alpine 3.15.0) --- Class: os-pkgs
+## Target: grafana/grafana:8.3.6 (alpine 3.15.0) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
