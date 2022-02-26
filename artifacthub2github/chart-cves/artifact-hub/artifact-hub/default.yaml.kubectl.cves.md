@@ -42,8 +42,6 @@
 |HIGH|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |HIGH|CVE-2019-20454|libpcre2-8-0|10.32-5||
 |MEDIUM|CVE-2020-14155|libpcre3|2:8.39-12||
-|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1||
-|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-1+deb10u1||
 |HIGH|CVE-2019-13115|libssh2-1|1.8.0-2.1||
 |MEDIUM|CVE-2021-4160|libssl1.1|1.1.1d-0+deb10u7||
 |HIGH|CVE-2018-12886|libstdc++6|8.3.0-6||

@@ -27,8 +27,8 @@
 |MEDIUM|CVE-2021-3995|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
-|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1||
-|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1||
+|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
 |MEDIUM|CVE-2021-3995|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-45346|libsqlite3-0|3.34.1-3||
@@ -37,6 +37,7 @@
 |MEDIUM|CVE-2021-3997|libudev1|247.3-6||
 |MEDIUM|CVE-2021-3995|libuuid1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libuuid1|2.36.1-8|2.36.1-8+deb11u1|
+|HIGH|CVE-2022-23308|libxml2|2.9.10+dfsg-6.7||
 |CRITICAL|CVE-2021-33574|locales|2.31-13+deb11u2||
 |CRITICAL|CVE-2022-23218|locales|2.31-13+deb11u2||
 |CRITICAL|CVE-2022-23219|locales|2.31-13+deb11u2||
