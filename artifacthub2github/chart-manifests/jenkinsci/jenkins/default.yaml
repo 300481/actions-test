@@ -26,7 +26,7 @@ metadata:
     "app.kubernetes.io/component": "jenkins-controller"
 type: Opaque
 data:
-  jenkins-admin-password: "TnMxR2RvaTM5WXNvZXI1UWczWWFRWQ=="
+  jenkins-admin-password: "SUJ4VXJiWEpZMG43RkdSc1F6S1dtMA=="
   jenkins-admin-user: "YWRtaW4="
 ---
 # Source: jenkins/templates/config.yaml
@@ -524,7 +524,7 @@ data:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-jneaf"
+  name: "jenkins-ui-test-hkr4l"
   namespace: default
   annotations:
     "helm.sh/hook": test-success
