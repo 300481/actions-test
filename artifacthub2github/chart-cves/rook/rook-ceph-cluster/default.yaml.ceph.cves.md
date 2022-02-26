@@ -32,18 +32,14 @@
 |MEDIUM|CVE-2020-21674|libarchive|3.3.3-3.el8_5||
 |MEDIUM|CVE-2021-23177|libarchive|3.3.3-3.el8_5||
 |MEDIUM|CVE-2021-31566|libarchive|3.3.3-3.el8_5||
-|MEDIUM|CVE-2022-0563|libblkid|2.32.1-28.el8||
-|MEDIUM|CVE-2022-0563|libfdisk|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libgcc|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libgcc|8.5.0-8.el8||
 |MEDIUM|CVE-2019-12904|libgcrypt|1.8.5-6.el8||
 |MEDIUM|CVE-2021-40528|libgcrypt|1.8.5-6.el8||
 |MEDIUM|CVE-2018-20673|libgfortran|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libgfortran|8.5.0-8.el8||
-|MEDIUM|CVE-2022-0563|libmount|2.32.1-28.el8||
 |MEDIUM|CVE-2018-20673|libquadmath|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libquadmath|8.5.0-8.el8||
-|MEDIUM|CVE-2022-0563|libsmartcols|2.32.1-28.el8||
 |HIGH|CVE-2021-44568|libsolv|0.7.20-1.el8||
 |MEDIUM|CVE-2021-44569|libsolv|0.7.20-1.el8||
 |MEDIUM|CVE-2021-44570|libsolv|0.7.20-1.el8||
@@ -55,7 +51,6 @@
 |MEDIUM|CVE-2021-44577|libsolv|0.7.20-1.el8||
 |MEDIUM|CVE-2018-20673|libstdc++|8.5.0-8.el8||
 |MEDIUM|CVE-2021-42694|libstdc++|8.5.0-8.el8||
-|MEDIUM|CVE-2022-0563|libuuid|2.32.1-28.el8||
 |MEDIUM|CVE-2021-20316|libwbclient|4.15.4-0.el8||
 |MEDIUM|CVE-2022-23308|libxml2|2.9.7-11.el8||
 |MEDIUM|CVE-2016-4607|libxslt|1.1.32-6.el8||
@@ -102,12 +97,12 @@
 |MEDIUM|CVE-2018-20839|systemd-pam|239-56.el8||
 |MEDIUM|CVE-2018-20839|systemd-udev|239-56.el8||
 |MEDIUM|CVE-2005-2541|tar|2:1.30-5.el8||
-|MEDIUM|CVE-2022-0563|util-linux|2.32.1-28.el8||
 |MEDIUM|CVE-2022-0318|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8_5.4||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0554|vim-minimal|2:8.0.1763-16.el8_5.4||
 
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

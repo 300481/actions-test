@@ -53,8 +53,8 @@
 |HIGH|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
 |HIGH|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |MEDIUM|CVE-2020-14155|libpcre3|2:8.39-12||
-|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1||
-|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-1+deb10u1||
+|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1|2.1.27+dfsg-1+deb10u2|
+|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-1+deb10u1|2.1.27+dfsg-1+deb10u2|
 |HIGH|CVE-2019-19603|libsqlite3-0|3.27.2-3+deb10u1||
 |MEDIUM|CVE-2019-19645|libsqlite3-0|3.27.2-3+deb10u1||
 |MEDIUM|CVE-2019-19924|libsqlite3-0|3.27.2-3+deb10u1||
@@ -71,6 +71,7 @@
 |HIGH|CVE-2019-3844|libudev1|241-7~deb10u8||
 |MEDIUM|CVE-2021-3997|libudev1|241-7~deb10u8||
 |HIGH|CVE-2017-16932|libxml2|2.9.4+dfsg1-7+deb10u2||
+|HIGH|CVE-2022-23308|libxml2|2.9.4+dfsg1-7+deb10u2||
 |MEDIUM|CVE-2016-9318|libxml2|2.9.4+dfsg1-7+deb10u2||
 |CRITICAL|CVE-2021-33574|locales|2.28-10||
 |CRITICAL|CVE-2021-35942|locales|2.28-10||
