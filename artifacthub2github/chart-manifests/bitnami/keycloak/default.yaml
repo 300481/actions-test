@@ -7,11 +7,28 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-6.2.5
+    helm.sh/chart: keycloak-7.0.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
 automountServiceAccountToken: false
+---
+# Source: keycloak/charts/postgresql/templates/secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: keycloak-postgresql
+  namespace: default
+  labels:
+    app.kubernetes.io/name: postgresql
+    helm.sh/chart: postgresql-11.1.3
+    app.kubernetes.io/instance: keycloak
+    app.kubernetes.io/managed-by: Helm
+type: Opaque
+data:
+  postgres-password: "QWpXNlpESkJrQg=="
+  password: "U0hRdTRSRnBTaQ=="
+  # We don't auto-generate LDAP password when it's not provided as we do for other passwords
 ---
 # Source: keycloak/templates/configmap-env-vars.yaml
 apiVersion: v1
@@ -21,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-6.2.5
+    helm.sh/chart: keycloak-7.0.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -40,22 +57,23 @@ data:
   KEYCLOAK_AUTH_CACHE_OWNERS_COUNT: "1"
   KEYCLOAK_ENABLE_TLS: "false"
 ---
-# Source: keycloak/charts/postgresql/templates/svc-headless.yaml
+# Source: keycloak/charts/postgresql/templates/primary/svc-headless.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: keycloak-postgresql-headless
+  name: keycloak-postgresql-hl
+  namespace: default
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.16.2
+    helm.sh/chart: postgresql-11.1.3
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: primary
     # Use this annotation in addition to the actual publishNotReadyAddresses
     # field below because the annotation will stop being respected soon but the
     # field is broken in some versions of Kubernetes:
     # https://github.com/kubernetes/kubernetes/issues/58662
     service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
-  namespace: default
 spec:
   type: ClusterIP
   clusterIP: None
@@ -70,29 +88,32 @@ spec:
   selector:
     app.kubernetes.io/name: postgresql
     app.kubernetes.io/instance: keycloak
+    app.kubernetes.io/component: primary
 ---
-# Source: keycloak/charts/postgresql/templates/svc.yaml
+# Source: keycloak/charts/postgresql/templates/primary/svc.yaml
 apiVersion: v1
 kind: Service
 metadata:
   name: keycloak-postgresql
+  namespace: default
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.16.2
+    helm.sh/chart: postgresql-11.1.3
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: primary
   annotations:
-  namespace: default
 spec:
   type: ClusterIP
   ports:
     - name: tcp-postgresql
       port: 5432
       targetPort: tcp-postgresql
+      nodePort: null
   selector:
     app.kubernetes.io/name: postgresql
     app.kubernetes.io/instance: keycloak
-    role: primary
+    app.kubernetes.io/component: primary
 ---
 # Source: keycloak/templates/headless-service.yaml
 apiVersion: v1
@@ -102,7 +123,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-6.2.5
+    helm.sh/chart: keycloak-7.0.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -128,7 +149,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-6.2.5
+    helm.sh/chart: keycloak-7.0.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -152,40 +173,43 @@ spec:
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/component: keycloak
 ---
-# Source: keycloak/charts/postgresql/templates/statefulset.yaml
+# Source: keycloak/charts/postgresql/templates/primary/statefulset.yaml
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: keycloak-postgresql
+  namespace: default
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-10.16.2
+    helm.sh/chart: postgresql-11.1.3
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
   annotations:
-  namespace: default
 spec:
-  serviceName: keycloak-postgresql-headless
   replicas: 1
+  serviceName: keycloak-postgresql-hl
   updateStrategy:
+    rollingUpdate: {}
     type: RollingUpdate
   selector:
     matchLabels:
       app.kubernetes.io/name: postgresql
       app.kubernetes.io/instance: keycloak
-      role: primary
+      app.kubernetes.io/component: primary
   template:
     metadata:
       name: keycloak-postgresql
       labels:
         app.kubernetes.io/name: postgresql
-        helm.sh/chart: postgresql-10.16.2
+        helm.sh/chart: postgresql-11.1.3
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
-        role: primary
         app.kubernetes.io/component: primary
-    spec:      
+      annotations:
+    spec:
+      serviceAccountName: default
+      
       affinity:
         podAffinity:
           
@@ -205,15 +229,13 @@ spec:
           
       securityContext:
         fsGroup: 1001
-      automountServiceAccountToken: false
+      hostNetwork: false
+      hostIPC: false
+      initContainers:
       containers:
-        - name: keycloak-postgresql
-          image: docker.io/bitnami/postgresql:11.14.0-debian-10-r28
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:14.2.0-debian-10-r14
           imagePullPolicy: "IfNotPresent"
-          resources:
-            requests:
-              cpu: 250m
-              memory: 256Mi
           securityContext:
             runAsUser: 1001
           env:
@@ -225,24 +247,31 @@ spec:
               value: "/bitnami/postgresql"
             - name: PGDATA
               value: "/bitnami/postgresql/data"
+            # Authentication
+            - name: POSTGRES_USER
+              value: "bn_keycloak"
             - name: POSTGRES_POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgresql-passwords
-                  key: postgresql-postgres-password
-            - name: POSTGRES_USER
-              value: "bn_keycloak"
+                  name: keycloak-postgresql
+                  key: postgres-password
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgresql-passwords
-                  key: postgresql-password
+                  name: keycloak-postgresql
+                  key: password
             - name: POSTGRES_DB
               value: "bitnami_keycloak"
+            # Replication
+            # Initdb
+            # Standby
+            # LDAP
             - name: POSTGRESQL_ENABLE_LDAP
               value: "no"
+            # TLS
             - name: POSTGRESQL_ENABLE_TLS
               value: "no"
+            # Audit
             - name: POSTGRESQL_LOG_HOSTNAME
               value: "false"
             - name: POSTGRESQL_LOG_CONNECTIONS
@@ -251,6 +280,7 @@ spec:
               value: "false"
             - name: POSTGRESQL_PGAUDIT_LOG_CATALOG
               value: "off"
+            # Others
             - name: POSTGRESQL_CLIENT_MIN_MESSAGES
               value: "error"
             - name: POSTGRESQL_SHARED_PRELOAD_LIBRARIES
@@ -259,36 +289,41 @@ spec:
             - name: tcp-postgresql
               containerPort: 5432
           livenessProbe:
+            failureThreshold: 6
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
             exec:
               command:
                 - /bin/sh
                 - -c
                 - exec pg_isready -U "bn_keycloak" -d "dbname=bitnami_keycloak" -h 127.0.0.1 -p 5432
-            initialDelaySeconds: 30
-            periodSeconds: 10
-            timeoutSeconds: 5
-            successThreshold: 1
-            failureThreshold: 6
           readinessProbe:
+            failureThreshold: 6
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
             exec:
               command:
                 - /bin/sh
                 - -c
                 - -e
+                
                 - |
                   exec pg_isready -U "bn_keycloak" -d "dbname=bitnami_keycloak" -h 127.0.0.1 -p 5432
                   [ -f /opt/bitnami/postgresql/tmp/.initialized ] || [ -f /bitnami/postgresql/.initialized ]
-            initialDelaySeconds: 5
-            periodSeconds: 10
-            timeoutSeconds: 5
-            successThreshold: 1
-            failureThreshold: 6
+          resources:
+            limits: {}
+            requests:
+              cpu: 250m
+              memory: 256Mi
           volumeMounts:
             - name: dshm
               mountPath: /dev/shm
             - name: data
               mountPath: /bitnami/postgresql
-              subPath: 
       volumes:
         - name: dshm
           emptyDir:
@@ -311,7 +346,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-6.2.5
+    helm.sh/chart: keycloak-7.0.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -329,10 +364,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: cc8c47086620c65611583f156318f90db8ef74c19b5211158d687cc2f7fb9682
+        checksum/configmap-env-vars: e8b08930b78ff3b2bb93aa949e8f3bbbb9defec1bb58aa387e3440be93ceea78
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-6.2.5
+        helm.sh/chart: keycloak-7.0.0
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
@@ -359,7 +394,7 @@ spec:
         fsGroup: 1001
       containers:
         - name: keycloak
-          image: docker.io/bitnami/keycloak:16.1.1-debian-10-r33
+          image: docker.io/bitnami/keycloak:16.1.1-debian-10-r36
           imagePullPolicy: IfNotPresent
           securityContext:
             runAsNonRoot: true
@@ -385,8 +420,8 @@ spec:
             - name: KEYCLOAK_DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgresql-passwords
-                  key: "postgresql-password"
+                  name: keycloak-postgresql
+                  key: "password"
           envFrom:
             - configMapRef:
                 name: keycloak-env-vars
