@@ -32,9 +32,9 @@
 |MEDIUM|CVE-2021-3995|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
-|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
-|CRITICAL|CVE-2022-24407|libsasl2-modules|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
-|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|HIGH|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|HIGH|CVE-2022-24407|libsasl2-modules|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|HIGH|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
 |MEDIUM|CVE-2021-3995|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1||

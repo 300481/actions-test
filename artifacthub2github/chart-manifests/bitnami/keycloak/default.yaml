@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.0.0
+    helm.sh/chart: keycloak-7.0.1
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -26,8 +26,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 data:
-  postgres-password: "QWpXNlpESkJrQg=="
-  password: "U0hRdTRSRnBTaQ=="
+  postgres-password: "R3RvUGZhYUw4Yw=="
+  password: "YXVZZTA2bWlzeQ=="
   # We don't auto-generate LDAP password when it's not provided as we do for other passwords
 ---
 # Source: keycloak/templates/configmap-env-vars.yaml
@@ -38,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.0.0
+    helm.sh/chart: keycloak-7.0.1
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -123,7 +123,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.0.0
+    helm.sh/chart: keycloak-7.0.1
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -149,7 +149,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.0.0
+    helm.sh/chart: keycloak-7.0.1
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -346,7 +346,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.0.0
+    helm.sh/chart: keycloak-7.0.1
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -364,10 +364,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: e8b08930b78ff3b2bb93aa949e8f3bbbb9defec1bb58aa387e3440be93ceea78
+        checksum/configmap-env-vars: e89feea4065c4719f519cff8d4d652ffb2c7da51eadb34c6a6549b782d3b214e
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-7.0.0
+        helm.sh/chart: keycloak-7.0.1
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
