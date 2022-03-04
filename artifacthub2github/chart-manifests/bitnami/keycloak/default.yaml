@@ -26,8 +26,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 data:
-  postgres-password: "R3RvUGZhYUw4Yw=="
-  password: "YXVZZTA2bWlzeQ=="
+  postgres-password: "UnNhaHRXQ0ZyYQ=="
+  password: "ZU9OUjZLOWs5NA=="
   # We don't auto-generate LDAP password when it's not provided as we do for other passwords
 ---
 # Source: keycloak/templates/configmap-env-vars.yaml
