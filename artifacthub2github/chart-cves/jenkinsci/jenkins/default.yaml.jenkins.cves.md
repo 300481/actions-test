@@ -39,9 +39,9 @@
 |MEDIUM|CVE-2022-25313|libexpat1|2.2.10-2|2.2.10-2+deb11u2|
 |HIGH|CVE-2021-33560|libgcrypt20|1.8.7-6||
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
-|CRITICAL|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
-|CRITICAL|CVE-2022-24407|libsasl2-modules|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
-|CRITICAL|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|HIGH|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|HIGH|CVE-2022-24407|libsasl2-modules|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
+|HIGH|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
 |MEDIUM|CVE-2021-45346|libsqlite3-0|3.34.1-3||
 |MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1||
 |MEDIUM|CVE-2021-3997|libsystemd0|247.3-6||

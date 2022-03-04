@@ -61,7 +61,7 @@
 |MEDIUM|CVE-2019-2201|libjpeg-turbo|1.5.3-12.el8||
 |MEDIUM|CVE-2020-13790|libjpeg-turbo|1.5.3-12.el8||
 |MEDIUM|CVE-2020-17541|libjpeg-turbo|1.5.3-12.el8||
-|HIGH|CVE-2021-44568|libsolv|0.7.19-1.el8||
+|MEDIUM|CVE-2021-44568|libsolv|0.7.19-1.el8||
 |MEDIUM|CVE-2021-44569|libsolv|0.7.19-1.el8||
 |MEDIUM|CVE-2021-44570|libsolv|0.7.19-1.el8||
 |MEDIUM|CVE-2021-44571|libsolv|0.7.19-1.el8||
@@ -117,7 +117,6 @@
 |MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8||
 |MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0554|vim-minimal|2:8.0.1763-16.el8||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
