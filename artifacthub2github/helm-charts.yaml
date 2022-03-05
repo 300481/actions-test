@@ -50,7 +50,7 @@ repos:
     name: testrepo
     charts:
       testchart:
-        version: 0.2.5
+        version: 0.2.7
         name: testchart
     url: https://300481.github.io/artifacthub2github
   sonarqube:
