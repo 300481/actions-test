@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 
+. ./shared-functions.sh
+
 : ${CONFIGFILE:=helm-charts.yaml}
 
 PAYLOAD="${1}"
 
-REPO_NAME=$(jq -r .data.package.repository.name <<< ${PAYLOAD})
-REPO=$(sed 's/-/_/g' <<< ${REPO_NAME})
-PUBLISHER=$(jq -r .data.package.repository.publisher <<< ${PAYLOAD})
-CHART_NAME=$(jq -r .data.package.name <<< ${PAYLOAD})
-CHART=$(sed 's/-/_/g' <<< ${CHART_NAME})
-VERSION=$(jq -r .data.package.version <<< ${PAYLOAD})
-REPO_URL=$(curl -s "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=${PUBLISHER}&org=${PUBLISHER}&name=${REPO_NAME}" | jq -r .[0].url)
+REPO_NAME=$(repo_name "${PAYLOAD}")
+REPO=$(yaml_compatible_name "${REPO_NAME}")
+PUBLISHER=$(publisher "${PAYLOAD}")
+CHART_NAME=$(chart_name "${PAYLOAD}")
+CHART=$(yaml_compatible_name "${CHART_NAME}")
+VERSION=$(version "${PAYLOAD}")
+REPO_URL=$(repo_url "${PAYLOAD}")
 
 echo "
 Repository Name: ${REPO_NAME}
