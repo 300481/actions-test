@@ -8,7 +8,7 @@ serverless function [artifacthub2github](https://github.com/300481/artifacthub2g
 
 ## Files and Folders
 
-### [.github/workflows/update-chart-versions.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/update-chart-versions.yml)
+### [.github/workflows/artifacthub-dispatch.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/artifacthub-dispatch.yml)
 
 This file is the workflow, which is triggered by the serverless function.
 
@@ -18,9 +18,9 @@ It will:
 
 * generate the chart manifests
 
-* generate a list with deprecated Kubernetes API versions for each chart
+* generate a list with deprecated Kubernetes API versions for the chart
 
-* generate a list of CVEs of the containers for each chart
+* generate a list of CVEs of the containers for the chart
 
 * create a branch for the updated files
 
