@@ -8,10 +8,7 @@
 : ${TRIVY_TEMPLATE:=markdown.tpl}
 
 REPO_NAME=$(repo_name "${PAYLOAD}")
-PUBLISHER=$(publisher "${PAYLOAD}")
 CHART_NAME=$(chart_name "${PAYLOAD}")
-VERSION=$(version "${PAYLOAD}")
-REPO_URL=$(repo_url "${PAYLOAD}")
 
 install_render
 install_trivy
