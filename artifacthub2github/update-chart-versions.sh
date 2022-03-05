@@ -4,7 +4,13 @@
 
 : ${CONFIGFILE:=helm-charts.yaml}
 
-PAYLOAD="${1}"
+die(){
+    RC=$1 ; shift
+    echo $@
+    exit $RC
+}
+
+[[ -z "${PAYLOAD}" ]] && die 2 "ERROR: empty payload"
 
 REPO_NAME=$(repo_name "${PAYLOAD}")
 REPO=$(yaml_compatible_name "${REPO_NAME}")
