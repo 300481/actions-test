@@ -6,19 +6,19 @@
 : ${MANIFESTS_ROOT:=.}
 : ${DEPRECATIONS_ROOT:=.}
 
+REPO_NAME=$(repo_name "${PAYLOAD}")
+PUBLISHER=$(publisher "${PAYLOAD}")
+CHART_NAME=$(chart_name "${PAYLOAD}")
+VERSION=$(version "${PAYLOAD}")
+REPO_URL=$(repo_url "${PAYLOAD}")
+
 install_render
 
-for repo in $(repos) ; do
-    repo_name=$(repo_name ${repo})
-    for chart in $(charts ${repo}) ; do
-        chart_name=$(chart_name ${repo} ${chart})
-        manifestdir="${MANIFESTS_ROOT}/chart-manifests/${repo_name}/${chart_name}"
-        deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${repo_name}/${chart_name}"
-        [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
-        [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
-        for manifestfile in ${manifestdir}/* ; do
-            echo ${repo} : ${chart} : ${manifestfile}
-            pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${deprecationsdir}/${manifestfile##*/}.api-deprecations.md
-        done        
-    done
+manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
+deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
+[[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
+[[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
+for manifestfile in ${manifestdir}/* ; do
+    echo ${REPO_NAME} : ${CHART_NAME} : ${manifestfile}
+    pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${deprecationsdir}/${manifestfile##*/}.api-deprecations.md
 done
