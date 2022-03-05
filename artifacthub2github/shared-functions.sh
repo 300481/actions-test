@@ -40,6 +40,17 @@ install_render() {
     cd -
 }
 
+# install_trivy installs the trivy program
+install_trivy() {
+    [[ -f /usr/local/bin/trivy ]] && return
+    local version=$(curl -s https://github.com/aquasecurity/trivy/releases/latest | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]')
+    cd /tmp
+    wget -O trivy.tar.gz https://github.com/aquasecurity/trivy/releases/download/${version}/trivy_${version#v}_Linux-64bit.tar.gz
+    tar xvzf trivy.tar.gz
+    sudo install trivy /usr/local/bin/trivy
+    cd -
+}
+
 repos() {
     local repo_template='{{ range $repo, $values := .repos }}{{ $repo }} {{ end }}'
     echo ${repo_template} | render -s --config ${CONFIGFILE}
