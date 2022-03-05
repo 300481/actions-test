@@ -50,38 +50,3 @@ install_trivy() {
     sudo install trivy /usr/local/bin/trivy
     cd -
 }
-
-repos() {
-    local repo_template='{{ range $repo, $values := .repos }}{{ $repo }} {{ end }}'
-    echo ${repo_template} | render -s --config ${CONFIGFILE}
-}
-
-charts() {
-    local repo=$1
-    local chart_template='{{ range $chart, $values := .repos.'${repo}'.charts }}{{ $chart }} {{ end }}'
-    echo ${chart_template} | render -s --config ${CONFIGFILE}
-}
-
-version() {
-    local repo=$1 ; shift ; local chart=$1
-    local version_template="{{ .repos.${repo}.charts.${chart}.version }}"
-    echo ${version_template} | render -s --config ${CONFIGFILE}
-}
-
-chart_name() {
-    local repo=$1 ; shift ; local chart=$1
-    local chart_name_template="{{ .repos.${repo}.charts.${chart}.name }}"
-    echo ${chart_name_template} | render -s --config ${CONFIGFILE}
-}
-
-repo_name() {
-    local repo=$1
-    local repo_name_template="{{ .repos.${repo}.name }}"
-    echo ${repo_name_template} | render -s --config ${CONFIGFILE}
-}
-
-repo_url() {
-    local repo=$1
-    local url_template="{{ .repos.${repo}.url }}"
-    echo ${url_template} | render -s --config ${CONFIGFILE}
-}
