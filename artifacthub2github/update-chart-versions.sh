@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. ./shared-functions.sh
+. ./artifacthub2github/shared-functions.sh
 
 : ${CONFIGFILE:=helm-charts.yaml}
 
