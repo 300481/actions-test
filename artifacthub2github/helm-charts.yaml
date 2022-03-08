@@ -102,3 +102,10 @@ repos:
       jenkins:
         version: 3.11.5
         name: jenkins
+  elastic:
+    url: https://helm.elastic.co
+    name: elastic
+    charts:
+      logstash:
+        version: 7.17.1
+        name: logstash
