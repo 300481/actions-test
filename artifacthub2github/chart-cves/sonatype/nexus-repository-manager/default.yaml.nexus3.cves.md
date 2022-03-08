@@ -1,11 +1,9 @@
 # Trivy Vulnerability Report
 
-## Target: sonatype/nexus3:3.37.3 (redhat 8.5) --- Class: os-pkgs
+## Target: sonatype/nexus3:3.38.0 (redhat 8.5) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |MEDIUM|CVE-2021-3468|avahi-libs|0.7-20.el8||
-|MEDIUM|CVE-2021-4122|cryptsetup-libs|2.3.3-4.el8|2.3.3-4.el8_5.1|
-|HIGH|CVE-2022-24407|cyrus-sasl-lib|2.1.27-5.el8|2.1.27-6.el8_5|
 |MEDIUM|CVE-2021-45960|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2021-46143|expat|2.2.5-4.el8||
 |MEDIUM|CVE-2022-22822|expat|2.2.5-4.el8||
@@ -85,38 +83,29 @@
 |MEDIUM|CVE-2021-23841|openssl-libs|1:1.1.1k-5.el8_5||
 |MEDIUM|CVE-2021-3712|openssl-libs|1:1.1.1k-5.el8_5||
 |MEDIUM|CVE-2022-23308|python3-libxml2|2.9.7-9.el8_4.2||
-|MEDIUM|CVE-2021-3521|python3-rpm|4.14.3-19.el8|4.14.3-19.el8_5.2|
-|MEDIUM|CVE-2021-35937|python3-rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35938|python3-rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35939|python3-rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-3521|rpm|4.14.3-19.el8|4.14.3-19.el8_5.2|
-|MEDIUM|CVE-2021-35937|rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35938|rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35939|rpm|4.14.3-19.el8||
-|MEDIUM|CVE-2021-3521|rpm-build-libs|4.14.3-19.el8|4.14.3-19.el8_5.2|
-|MEDIUM|CVE-2021-35937|rpm-build-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35938|rpm-build-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35939|rpm-build-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2021-3521|rpm-libs|4.14.3-19.el8|4.14.3-19.el8_5.2|
-|MEDIUM|CVE-2021-35937|rpm-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35938|rpm-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2021-35939|rpm-libs|4.14.3-19.el8||
-|MEDIUM|CVE-2018-20839|systemd|239-51.el8_5.2||
-|MEDIUM|CVE-2021-3997|systemd|239-51.el8_5.2||
-|MEDIUM|CVE-2018-20839|systemd-libs|239-51.el8_5.2||
-|MEDIUM|CVE-2021-3997|systemd-libs|239-51.el8_5.2||
-|MEDIUM|CVE-2018-20839|systemd-pam|239-51.el8_5.2||
+|MEDIUM|CVE-2021-35937|python3-rpm|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35938|python3-rpm|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35939|python3-rpm|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35937|rpm|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35938|rpm|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35939|rpm|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35937|rpm-build-libs|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35938|rpm-build-libs|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35939|rpm-build-libs|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35937|rpm-libs|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35938|rpm-libs|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2021-35939|rpm-libs|4.14.3-19.el8_5.2||
+|MEDIUM|CVE-2018-20839|systemd|239-51.el8_5.3||
+|MEDIUM|CVE-2021-3997|systemd|239-51.el8_5.3||
+|MEDIUM|CVE-2018-20839|systemd-libs|239-51.el8_5.3||
+|MEDIUM|CVE-2021-3997|systemd-libs|239-51.el8_5.3||
+|MEDIUM|CVE-2018-20839|systemd-pam|239-51.el8_5.3||
 |MEDIUM|CVE-2005-2541|tar|2:1.30-5.el8||
-|MEDIUM|CVE-2021-3872|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
-|MEDIUM|CVE-2021-3984|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
-|MEDIUM|CVE-2021-4019|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
-|MEDIUM|CVE-2021-4192|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
-|MEDIUM|CVE-2021-4193|vim-minimal|2:8.0.1763-16.el8|2:8.0.1763-16.el8_5.4|
-|MEDIUM|CVE-2022-0318|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8||
-|MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8||
+|MEDIUM|CVE-2022-0318|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0359|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0361|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0392|vim-minimal|2:8.0.1763-16.el8_5.4||
+|MEDIUM|CVE-2022-0413|vim-minimal|2:8.0.1763-16.el8_5.4||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -125,12 +114,8 @@
 |CRITICAL|CVE-2021-42392|com.h2database:h2|1.4.200|2.0.206|
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.200|2.1.210|
 |CRITICAL|GHSA-v57x-gxfj-484q|com.hazelcast:hazelcast|3.12.11|4.2.4, 4.1.8, 4.0.5, 5.0.2|
-|HIGH|CVE-2021-43859|com.thoughtworks.xstream:xstream|1.4.18|1.4.19|
-|MEDIUM|CVE-2021-29425|commons-io:commons-io|2.6|2.7|
-|MEDIUM|CVE-2020-13956|org.apache.httpcomponents:httpclient|4.5.6|4.5.13|
 |MEDIUM|CVE-2020-17521|org.codehaus.groovy:groovy-all|2.4.17|2.4.21, 2.5.14, 3.0.7|
 |MEDIUM|CVE-2021-22135|org.elasticsearch:elasticsearch|2.4.3|6.8.15|
 |MEDIUM|CVE-2021-22144|org.elasticsearch:elasticsearch|2.4.3|6.8.17, 7.13.3|
-|MEDIUM|CVE-2020-25633|org.jboss.resteasy:resteasy-client|3.15.2.Final|4.5.7.Final|
-|CRITICAL|CVE-2022-21724|org.postgresql:postgresql|42.2.20|42.2.25, 42.3.2|
-|MEDIUM|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.20|42.3.3|
+|MEDIUM|CVE-2020-25633|org.jboss.resteasy:resteasy-client|3.15.3.Final|4.5.7.Final|
+|MEDIUM|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.25|42.3.3|
