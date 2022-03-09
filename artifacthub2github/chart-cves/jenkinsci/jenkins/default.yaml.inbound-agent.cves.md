@@ -29,6 +29,7 @@
 |HIGH|CVE-2022-25314|libexpat1|2.2.10-2+deb11u1|2.2.10-2+deb11u2|
 |MEDIUM|CVE-2022-25313|libexpat1|2.2.10-2+deb11u1|2.2.10-2+deb11u2|
 |HIGH|CVE-2021-33560|libgcrypt20|1.8.7-6||
+|MEDIUM|CVE-2021-4209|libgnutls30|3.7.1-5||
 |MEDIUM|CVE-2021-3995|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libmount1|2.36.1-8|2.36.1-8+deb11u1|
 |HIGH|CVE-2020-16156|libperl5.32|5.32.1-4+deb11u2||
