@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.7"
 
   
 # imagePullSecrets:
@@ -31,7 +31,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.7"
 
   
 # imagePullSecrets:
@@ -50,7 +50,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.7"
 
   
 # imagePullSecrets:
@@ -79,6 +79,7 @@ provisioner: rook-ceph.rbd.csi.ceph.com
 parameters:
   pool: ceph-blockpool
   clusterID: default
+
   csi.storage.k8s.io/controller-expand-secret-name: rook-csi-rbd-provisioner
   csi.storage.k8s.io/controller-expand-secret-namespace: rook-ceph
   csi.storage.k8s.io/fstype: ext4
@@ -88,6 +89,7 @@ parameters:
   csi.storage.k8s.io/provisioner-secret-namespace: rook-ceph
   imageFeatures: layering
   imageFormat: "2"
+
 reclaimPolicy: Delete
 allowVolumeExpansion: true
 ---
@@ -103,6 +105,7 @@ parameters:
   fsName: ceph-filesystem
   pool: ceph-filesystem-data0
   clusterID: default
+
   csi.storage.k8s.io/controller-expand-secret-name: rook-csi-cephfs-provisioner
   csi.storage.k8s.io/controller-expand-secret-namespace: rook-ceph
   csi.storage.k8s.io/fstype: ext4
@@ -110,6 +113,7 @@ parameters:
   csi.storage.k8s.io/node-stage-secret-namespace: rook-ceph
   csi.storage.k8s.io/provisioner-secret-name: rook-csi-cephfs-provisioner
   csi.storage.k8s.io/provisioner-secret-namespace: rook-ceph
+
 reclaimPolicy: Delete
 allowVolumeExpansion: true
 ---
@@ -123,6 +127,7 @@ reclaimPolicy: Delete
 parameters:
   objectStoreName: ceph-objectstore
   objectStoreNamespace: default
+
   region: us-east-1
 ---
 # Source: rook-ceph-cluster/templates/rbac.yaml
@@ -266,7 +271,7 @@ rules:
     verbs: ["get", "list", "delete" ]
   - apiGroups: [""]
     resources: ["persistentvolumeclaims"]
-    verbs: ["get", "update", "delete"]
+    verbs: ["get", "update", "delete", "list"]
 ---
 # Source: rook-ceph-cluster/templates/rbac.yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -280,7 +285,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.6"
+    helm.sh/chart: "rook-ceph-cluster-v1.8.7"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -518,6 +523,7 @@ metadata:
 spec:
   dataPools:
   - failureDomain: host
+    name: data0
     replicated:
       size: 3
   metadataPool:
