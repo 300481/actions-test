@@ -63,6 +63,7 @@
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
 |HIGH|CVE-2022-23913|org.apache.activemq:artemis-commons|2.19.0|2.19.1|
 |MEDIUM|CVE-2020-13947|org.apache.activemq:artemis-server|2.19.0||
+|HIGH|CVE-2022-0839|org.liquibase:liquibase-core|3.5.5|4.8.0|
 |CRITICAL|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.2.25, 42.3.2|
 |MEDIUM|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.14|42.3.3|
 |MEDIUM|CVE-2022-23437|xerces:xercesImpl|2.12.0.SP03|2.12.2|
