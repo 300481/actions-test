@@ -112,3 +112,6 @@ repos:
       logstash:
         version: 7.17.1
         name: logstash
+      kibana:
+        version: 7.17.1
+        name: kibana
