@@ -11,7 +11,7 @@ repos:
         enabled: true
         namespace: argocd
         syncWave: "5"
-        version: 3.35.1
+        version: 3.35.3
         name: argo-cd
     url: https://argoproj.github.io/argo-helm
     name: argo
@@ -72,7 +72,7 @@ repos:
     name: bitnami
     charts:
       keycloak:
-        version: 7.1.0
+        version: 7.1.1
         name: keycloak
   rook:
     url: https://charts.rook.io/release
