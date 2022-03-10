@@ -102,6 +102,7 @@ repos:
       jenkins:
         version: 3.11.5
         name: jenkins
+<<<<<<< HEAD
   elastic:
     url: https://helm.elastic.co
     name: elastic
@@ -115,3 +116,12 @@ repos:
       kibana:
         version: 7.17.1
         name: kibana
+=======
+  gitea:
+    url: https://dl.gitea.io/charts
+    name: gitea
+    charts:
+      gitea:
+        version: 5.0.2
+        name: gitea
+>>>>>>> 849d13f (update version of gitea/gitea to 5.0.2)
