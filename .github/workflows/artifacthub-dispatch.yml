@@ -17,7 +17,10 @@ jobs:
   update_chart_versions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          ref: uat
+
       - uses: azure/setup-helm@v1
       - uses: FairwindsOps/pluto/github-action@master
 
@@ -51,4 +54,4 @@ jobs:
           git add ${CONFIGFILE} ${VALUES_ROOT} ${MANIFESTS_ROOT} ${DEPRECATIONS_ROOT} ${CVES_ROOT}
           git commit -m "update version of ${{ github.event.client_payload.data.package.repository.name }}/${{ github.event.client_payload.data.package.name }} to ${{ github.event.client_payload.data.package.version }}"
           git push origin ${BRANCH}
-          gh pr create --base main --fill
+          gh pr create --base uat --fill
