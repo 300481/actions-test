@@ -1,4 +1,6 @@
 auth:
   existingSecret: "passwords"
 postgresql:
-  existingSecret: "postgresql-passwords"
+  auth:
+    password: "verysecret"
+    postgresPassword: "verysecret"
