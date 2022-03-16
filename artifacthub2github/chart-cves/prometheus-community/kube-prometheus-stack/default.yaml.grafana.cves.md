@@ -1,8 +1,11 @@
 # Trivy Vulnerability Report
 
-## Target: grafana/grafana:8.3.6 (alpine 3.15.0) --- Class: os-pkgs
+## Target: grafana/grafana:8.4.2 (alpine 3.15.0) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|HIGH|CVE-2022-0778|libcrypto1.1|1.1.1l-r7|1.1.1n-r0|
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1l-r7|1.1.1n-r0|
+|HIGH|CVE-2022-0778|openssl|1.1.1m-r2|1.1.1n-r0|
 
 ## Target: usr/share/grafana/bin/grafana-cli --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
