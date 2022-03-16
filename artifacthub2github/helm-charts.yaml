@@ -120,5 +120,5 @@ repos:
     name: gitea
     charts:
       gitea:
-        version: 5.0.2
+        version: 5.0.3
         name: gitea
