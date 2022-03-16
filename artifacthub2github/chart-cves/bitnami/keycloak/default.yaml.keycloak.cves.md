@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r49 (debian 10.11) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r50 (debian 10.11) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -43,7 +43,6 @@
 |HIGH|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |MEDIUM|CVE-2020-14155|libpcre3|2:8.39-12||
 |HIGH|CVE-2019-13115|libssh2-1|1.8.0-2.1||
-|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1d-0+deb10u7||
 |HIGH|CVE-2018-12886|libstdc++6|8.3.0-6||
 |HIGH|CVE-2019-15847|libstdc++6|8.3.0-6||
 |HIGH|CVE-2019-3843|libsystemd0|241-7~deb10u8||
@@ -52,7 +51,6 @@
 |HIGH|CVE-2019-3843|libudev1|241-7~deb10u8||
 |HIGH|CVE-2019-3844|libudev1|241-7~deb10u8||
 |MEDIUM|CVE-2021-3997|libudev1|241-7~deb10u8||
-|MEDIUM|CVE-2021-4160|openssl|1.1.1d-0+deb10u7||
 |HIGH|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
 ## Target: Java --- Class: lang-pkgs
