@@ -17,10 +17,13 @@
 |MEDIUM|CVE-2021-42375|busybox|1.33.1-r2|1.33.1-r5|
 |CRITICAL|CVE-2021-3711|libcrypto1.1|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2021-3712|libcrypto1.1|1.1.1k-r0|1.1.1l-r0|
+|HIGH|CVE-2022-0778|libcrypto1.1|1.1.1k-r0|1.1.1n-r0|
 |CRITICAL|CVE-2021-3711|libssl1.1|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2021-3712|libssl1.1|1.1.1k-r0|1.1.1l-r0|
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1k-r0|1.1.1n-r0|
 |CRITICAL|CVE-2021-3711|openssl|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2021-3712|openssl|1.1.1k-r0|1.1.1l-r0|
+|HIGH|CVE-2022-0778|openssl|1.1.1k-r0|1.1.1n-r0|
 |HIGH|CVE-2021-42378|ssl_client|1.33.1-r2|1.33.1-r6|
 |HIGH|CVE-2021-42379|ssl_client|1.33.1-r2|1.33.1-r6|
 |HIGH|CVE-2021-42380|ssl_client|1.33.1-r2|1.33.1-r6|
