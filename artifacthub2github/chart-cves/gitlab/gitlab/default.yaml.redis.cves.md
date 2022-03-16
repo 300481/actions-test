@@ -114,11 +114,12 @@
 |CRITICAL|CVE-2021-3711|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u7|
 |HIGH|CVE-2021-23840|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u5|
 |HIGH|CVE-2021-3712|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u7|
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u8|
 |MEDIUM|CVE-2019-1551|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u5|
 |MEDIUM|CVE-2020-1971|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u4|
 |MEDIUM|CVE-2021-23841|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u5|
 |MEDIUM|CVE-2021-3449|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u6|
-|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1d-0+deb10u3||
+|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1d-0+deb10u3|1.1.1d-0+deb10u8|
 |HIGH|CVE-2018-12886|libstdc++6|8.3.0-6||
 |HIGH|CVE-2019-15847|libstdc++6|8.3.0-6||
 |HIGH|CVE-2019-3843|libsystemd0|241-7~deb10u4||
@@ -134,9 +135,10 @@
 |CRITICAL|CVE-2021-3711|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u7|
 |HIGH|CVE-2021-23840|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u5|
 |HIGH|CVE-2021-3712|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u7|
+|HIGH|CVE-2022-0778|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u8|
 |MEDIUM|CVE-2019-1551|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u5|
 |MEDIUM|CVE-2020-1971|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u4|
 |MEDIUM|CVE-2021-23841|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u5|
 |MEDIUM|CVE-2021-3449|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u6|
-|MEDIUM|CVE-2021-4160|openssl|1.1.1d-0+deb10u3||
+|MEDIUM|CVE-2021-4160|openssl|1.1.1d-0+deb10u3|1.1.1d-0+deb10u8|
 |HIGH|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||

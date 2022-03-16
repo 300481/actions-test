@@ -14,7 +14,10 @@
 |HIGH|CVE-2021-42386|busybox|1.33.1-r3|1.33.1-r6|
 |MEDIUM|CVE-2021-42374|busybox|1.33.1-r3|1.33.1-r4|
 |MEDIUM|CVE-2021-42375|busybox|1.33.1-r3|1.33.1-r5|
+|HIGH|CVE-2022-0778|libcrypto1.1|1.1.1l-r0|1.1.1n-r0|
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1l-r0|1.1.1n-r0|
 |HIGH|CVE-2022-23308|libxml2|2.9.12-r1|2.9.13-r0|
+|HIGH|CVE-2022-0778|openssl|1.1.1l-r0|1.1.1n-r0|
 |HIGH|CVE-2021-42378|ssl_client|1.33.1-r3|1.33.1-r6|
 |HIGH|CVE-2021-42379|ssl_client|1.33.1-r3|1.33.1-r6|
 |HIGH|CVE-2021-42380|ssl_client|1.33.1-r3|1.33.1-r6|
