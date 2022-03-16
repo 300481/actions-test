@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.3
+    chart: gitaly-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -26,7 +26,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -45,7 +45,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.3
+    chart: sidekiq-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -66,7 +66,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -467,7 +467,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.3
+    chart: gitaly-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -546,7 +546,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.8.3
+    chart: gitlab-exporter-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -636,7 +636,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -796,7 +796,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -856,7 +856,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -871,7 +871,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-5.8.3
+    chart: migrations-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -961,7 +961,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.3
+    chart: sidekiq-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -1267,7 +1267,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-5.8.3
+    chart: toolbox-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -1583,7 +1583,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -1883,7 +1883,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -2727,13 +2727,13 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
 data:
-  gitlabVersion: "14.8.3"
-  gitlabChartVersion: "5.8.3"
+  gitlabVersion: "14.8.4"
+  gitlabChartVersion: "5.8.4"
 ---
 # Source: gitlab/templates/initdb-configmap.yaml
 apiVersion: v1
@@ -2743,7 +2743,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20035,7 +20035,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.3
+    chart: gitaly-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20061,7 +20061,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.8.3
+    chart: gitlab-exporter-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20087,7 +20087,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20113,7 +20113,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20792,7 +20792,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.8.3
+    chart: gitlab-exporter-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20809,13 +20809,13 @@ spec:
     metadata:
       labels:
         app: gitlab-exporter
-        chart: gitlab-exporter-5.8.3
+        chart: gitlab-exporter-5.8.4
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 79345d8452f5107426af7cffb5815a2660bf3a04f565f11639d68795cc116510
+        checksum/config: c765b1c9574bae5da19a2c24734b0dd5999f7392f20d2ed548636a72f03aebf1
         gitlab.com/prometheus_path: /metrics
         gitlab.com/prometheus_port: "9168"
         gitlab.com/prometheus_scrape: "true"
@@ -20977,7 +20977,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -20993,14 +20993,14 @@ spec:
     metadata:
       labels:
         app: gitlab-shell
-        chart: gitlab-shell-5.8.3
+        chart: gitlab-shell-5.8.4
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 968a4356bdb8f783e1c29e544d00e209902ab26460280cf808c8caeaad6573dc
-        checksum/config-sshd: ce8fc449400153ffd5a91f0bb2e93a2bbfd4faa45aa8c264457d805ef08d8d72
+        checksum/config: 9753933d697ea7ea4762185b887a0fb51c37a26d004eb876cdab276bf980723c
+        checksum/config-sshd: 5eff6dc94f34592c13625fd0fbd04e9deccf9799ead147f6b0dcba6ea3dd8941
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       initContainers:
@@ -21140,7 +21140,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.3
+    chart: sidekiq-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -21158,14 +21158,14 @@ spec:
     metadata:
       labels:
         app: sidekiq
-        chart: sidekiq-5.8.3
+        chart: sidekiq-5.8.4
         release: gitlab
         heritage: Helm
         
         
         queue-pod-name: all-in-1
       annotations:
-        checksum/configmap: f09533284f981196a5512119f7d0a47ace2e2ad0c72a97508dff08f3f2e0d2e0
+        checksum/configmap: 503723eacef0fb73081ee79729c088fe6d3f5e5efacd4473a77243d0727f64da
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
         gitlab.com/prometheus_port: "3807"
         gitlab.com/prometheus_scrape: "true"
@@ -21224,7 +21224,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.4"          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21263,7 +21263,7 @@ spec:
       containers:
         
         - name: sidekiq
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.4"          
           env:
             - name: prometheus_multiproc_dir
               value: /metrics
@@ -21436,7 +21436,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-5.8.3
+    chart: toolbox-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -21455,13 +21455,13 @@ spec:
     metadata:
       labels:
         app: toolbox
-        chart: toolbox-5.8.3
+        chart: toolbox-5.8.4
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: e8948748c4521876cb22dd82a40dd16acaaa9396733a3337fef6e79cdfa1ef3c
+        checksum/config: e5ac72a562e5e0e0865b2bbaa1f4c7a277df35ca8c451e84ddab88fd1e97ebdb
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       securityContext:
@@ -21519,7 +21519,7 @@ spec:
             - /bin/bash
             - -c
             - cp -v -r -L /etc/gitlab/.s3cfg $HOME/.s3cfg && while sleep 3600; do :; done # alpine sleep has no infinity
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.8.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.8.4"          
           env:
             - name: ARTIFACTS_BUCKET_NAME
               value: gitlab-artifacts
@@ -21665,7 +21665,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -21686,7 +21686,7 @@ spec:
     metadata:
       labels:
         app: webservice
-        chart: webservice-5.8.3
+        chart: webservice-5.8.4
         release: gitlab
         heritage: Helm
         gitlab.com/webservice-name: default
@@ -21694,7 +21694,7 @@ spec:
         
         
       annotations:
-        checksum/config: 4a661a25dccfe3b261f41f95071ef0c497b7df1943a6f3365368fb8a8ff6842a
+        checksum/config: 6c3f738a90257036d667871ce4bcc1681ad1061a2607cdadc55c1515d9da2111
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
         gitlab.com/prometheus_path: /-/metrics
         gitlab.com/prometheus_port: "8080"
@@ -21765,7 +21765,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.3          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.4          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21800,7 +21800,7 @@ spec:
       containers:
         
         - name: webservice
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.3          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.4          
           ports:
             - containerPort: 8080
               name: webservice
@@ -21893,7 +21893,7 @@ spec:
               cpu: 300m
               memory: 2.5G
         - name: gitlab-workhorse
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v14.8.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v14.8.4"          
           ports:
             - containerPort: 8181
               name: workhorse
@@ -22587,7 +22587,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.3
+    chart: gitlab-shell-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -22612,7 +22612,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.3
+    chart: sidekiq-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -22637,7 +22637,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -22688,7 +22688,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.3
+    chart: gitaly-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -22705,13 +22705,13 @@ spec:
     metadata:
       labels:
         app: gitaly
-        chart: gitaly-5.8.3
+        chart: gitaly-5.8.4
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 90b985350e510097905d5b0b1c5426ff73392dde95b56edf91f39612702a7e14
+        checksum/config: 3e8ef41c395296abca2c05af87f64fcdaba892bdf34df40e0d6371f35f49f5ff
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "9236"
         prometheus.io/scrape: "true"
@@ -22768,7 +22768,7 @@ spec:
       containers:
         
         - name: gitaly
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v14.8.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v14.8.4"          
           ports:
             - containerPort: 8075
               name: grcp-gitaly
@@ -23226,7 +23226,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-5.8.3
+    chart: migrations-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -23237,7 +23237,7 @@ spec:
     metadata:
       labels:
         app: migrations
-        chart: migrations-5.8.3
+        chart: migrations-5.8.4
         release: gitlab
         heritage: Helm
         
@@ -23285,7 +23285,7 @@ spec:
       containers:
         
         - name: migrations
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.8.3"
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.8.4"
           args:
             - /scripts/wait-for-deps
             - /scripts/db-migrate          
@@ -23454,7 +23454,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.3
+    chart: webservice-5.8.4
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -23691,7 +23691,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -23708,7 +23708,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -23747,7 +23747,7 @@ data:
     
       kubectl --namespace=$namespace label \
         --overwrite \
-        secret $secret_name app=gitlab chart=gitlab-5.8.3 release=gitlab heritage=Helm 
+        secret $secret_name app=gitlab chart=gitlab-5.8.4 release=gitlab heritage=Helm 
     }
     
     # Args: secretname, args
@@ -23897,7 +23897,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -24016,7 +24016,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-5.8.3
+    chart: shared-secrets-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -24064,7 +24064,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-5.8.3
+    chart: shared-secrets-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -24085,7 +24085,7 @@ subjects:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gitlab-webservice-test-runner-fwylp
+  name: gitlab-webservice-test-runner-1ah3c
   namespace: default
   annotations:
     "helm.sh/hook": test
@@ -24093,7 +24093,7 @@ metadata:
 spec:
   containers:
   - name: test-runner
-    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.3
+    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.4
     command: ['sh', '/tests/test_login']
     volumeMounts:
       - name: tests
@@ -24164,11 +24164,11 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: gitlab-shared-secrets-1-rr2
+  name: gitlab-shared-secrets-1-0hh
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -24180,7 +24180,7 @@ spec:
     metadata:
       labels:
         app: gitlab
-        chart: gitlab-5.8.3
+        chart: gitlab-5.8.4
         release: gitlab
         heritage: Helm
         
@@ -24221,7 +24221,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.3
+    chart: gitlab-5.8.4
     release: gitlab
     heritage: Helm
     
@@ -24249,9 +24249,9 @@ spec:
           command: ['/bin/sh', '/scripts/runcheck']          
           env:
             - name: GITLAB_VERSION
-              value: '14.8.3'
+              value: '14.8.4'
             - name: CHART_VERSION
-              value: '5.8.3'
+              value: '5.8.4'
           volumeMounts:
             - name: chart-info
               mountPath: /chart-info
