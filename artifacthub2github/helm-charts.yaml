@@ -11,7 +11,7 @@ repos:
         enabled: true
         namespace: argocd
         syncWave: "5"
-        version: 3.35.4
+        version: 4.0.0
         name: argo-cd
     url: https://argoproj.github.io/argo-helm
     name: argo
