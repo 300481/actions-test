@@ -16,10 +16,12 @@
 |HIGH|CVE-2021-42385|busybox|1.31.1-r16|1.31.1-r21|
 |HIGH|CVE-2021-42386|busybox|1.31.1-r16|1.31.1-r21|
 |MEDIUM|CVE-2021-42374|busybox|1.31.1-r16|1.31.1-r21|
+|HIGH|CVE-2021-40330|git|2.26.3-r0|2.26.3-r1|
 |CRITICAL|CVE-2021-3711|libcrypto1.1|1.1.1g-r0|1.1.1l-r0|
 |HIGH|CVE-2021-23840|libcrypto1.1|1.1.1g-r0|1.1.1j-r0|
 |HIGH|CVE-2021-3450|libcrypto1.1|1.1.1g-r0|1.1.1k-r0|
 |HIGH|CVE-2021-3712|libcrypto1.1|1.1.1g-r0|1.1.1l-r0|
+|HIGH|CVE-2022-0778|libcrypto1.1|1.1.1g-r0|1.1.1n-r0|
 |MEDIUM|CVE-2020-1971|libcrypto1.1|1.1.1g-r0|1.1.1i-r0|
 |MEDIUM|CVE-2021-23841|libcrypto1.1|1.1.1g-r0|1.1.1j-r0|
 |MEDIUM|CVE-2021-3449|libcrypto1.1|1.1.1g-r0|1.1.1k-r0|
@@ -27,6 +29,7 @@
 |HIGH|CVE-2021-23840|libssl1.1|1.1.1g-r0|1.1.1j-r0|
 |HIGH|CVE-2021-3450|libssl1.1|1.1.1g-r0|1.1.1k-r0|
 |HIGH|CVE-2021-3712|libssl1.1|1.1.1g-r0|1.1.1l-r0|
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1g-r0|1.1.1n-r0|
 |MEDIUM|CVE-2020-1971|libssl1.1|1.1.1g-r0|1.1.1i-r0|
 |MEDIUM|CVE-2021-23841|libssl1.1|1.1.1g-r0|1.1.1j-r0|
 |MEDIUM|CVE-2021-3449|libssl1.1|1.1.1g-r0|1.1.1k-r0|
