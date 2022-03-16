@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.3
+    helm.sh/chart: keycloak-7.1.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -38,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.3
+    helm.sh/chart: keycloak-7.1.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -123,7 +123,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.3
+    helm.sh/chart: keycloak-7.1.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -149,7 +149,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.3
+    helm.sh/chart: keycloak-7.1.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -344,7 +344,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.3
+    helm.sh/chart: keycloak-7.1.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -363,10 +363,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: 75a47cb6f72d20c3e0633302a898e080b68c8b4b1544d81d53575b758194b66c
+        checksum/configmap-env-vars: f2852cb8c447be467a72b2e3b2a5c96569dd4d5a484a767006c7ea81c8330ac7
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-7.1.3
+        helm.sh/chart: keycloak-7.1.4
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
@@ -393,7 +393,7 @@ spec:
         fsGroup: 1001
       containers:
         - name: keycloak
-          image: docker.io/bitnami/keycloak:16.1.1-debian-10-r49
+          image: docker.io/bitnami/keycloak:16.1.1-debian-10-r50
           imagePullPolicy: IfNotPresent
           securityContext:
             runAsNonRoot: true

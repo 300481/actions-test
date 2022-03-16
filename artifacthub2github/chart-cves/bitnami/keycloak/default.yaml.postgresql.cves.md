@@ -60,7 +60,8 @@
 |MEDIUM|CVE-2020-13631|libsqlite3-0|3.27.2-3+deb10u1||
 |MEDIUM|CVE-2021-45346|libsqlite3-0|3.27.2-3+deb10u1||
 |HIGH|CVE-2019-13115|libssh2-1|1.8.0-2.1||
-|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1d-0+deb10u7||
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1d-0+deb10u7|1.1.1d-0+deb10u8|
+|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1d-0+deb10u7|1.1.1d-0+deb10u8|
 |HIGH|CVE-2018-12886|libstdc++6|8.3.0-6||
 |HIGH|CVE-2019-15847|libstdc++6|8.3.0-6||
 |HIGH|CVE-2019-3843|libsystemd0|241-7~deb10u8||
@@ -84,7 +85,8 @@
 |MEDIUM|CVE-2020-10029|locales|2.28-10||
 |MEDIUM|CVE-2020-27618|locales|2.28-10||
 |MEDIUM|CVE-2021-3998|locales|2.28-10||
-|MEDIUM|CVE-2021-4160|openssl|1.1.1d-0+deb10u7||
+|HIGH|CVE-2022-0778|openssl|1.1.1d-0+deb10u7|1.1.1d-0+deb10u8|
+|MEDIUM|CVE-2021-4160|openssl|1.1.1d-0+deb10u7|1.1.1d-0+deb10u8|
 |HIGH|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
 ## Target: Java --- Class: lang-pkgs
