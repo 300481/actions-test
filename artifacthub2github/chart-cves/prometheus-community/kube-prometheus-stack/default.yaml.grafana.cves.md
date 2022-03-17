@@ -4,6 +4,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2022-0778|libcrypto1.1|1.1.1l-r7|1.1.1n-r0|
+|HIGH|CVE-2022-0778|libretls|3.3.4-r2|3.3.4-r3|
 |HIGH|CVE-2022-0778|libssl1.1|1.1.1l-r7|1.1.1n-r0|
 |HIGH|CVE-2022-0778|openssl|1.1.1m-r2|1.1.1n-r0|
 
