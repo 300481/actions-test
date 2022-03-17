@@ -6,6 +6,7 @@
 |MEDIUM|CVE-2020-16156|libperl5.32|5.32.1-3ubuntu3||
 |MEDIUM|CVE-2020-9794|libsqlite3-0|3.35.5-1||
 |HIGH|CVE-2022-0778|libssl1.1|1.1.1l-1ubuntu1.1|1.1.1l-1ubuntu1.2|
+|MEDIUM|CVE-2021-36368|openssh-client|1:8.4p1-6ubuntu2.1||
 |HIGH|CVE-2022-0778|openssl|1.1.1l-1ubuntu1.1|1.1.1l-1ubuntu1.2|
 |MEDIUM|CVE-2020-16156|perl|5.32.1-3ubuntu3||
 |MEDIUM|CVE-2020-16156|perl-base|5.32.1-3ubuntu3||
