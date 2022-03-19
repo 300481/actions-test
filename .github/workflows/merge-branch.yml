@@ -1,4 +1,4 @@
-name: merge branch
+name: Merge Branch
 
 on:
   workflow_dispatch:
@@ -19,6 +19,9 @@ jobs:
         run: |
           git remote -v
           git branch -va
+          
+      - name: Merge Branch
+        run: |
           git checkout ${{ github.event.inputs.destination }}
           git merge ${{ github.event.inputs.source }}
-          
+          git push origin ${{ github.event.inputs.destination }}
