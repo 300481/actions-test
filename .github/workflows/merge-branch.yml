@@ -10,17 +10,12 @@ jobs:
   merge-branch:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
-      - name: Show Repo Info
-        run: |
-          git remote -v
-          git branch -va
           
-      - name: Merge Branch
+      - name: merge branch and push
         run: |
           git checkout ${{ github.event.inputs.destination }}
           git merge ${{ github.event.inputs.source }}
