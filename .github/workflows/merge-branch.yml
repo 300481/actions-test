@@ -1,9 +1,13 @@
 name: merge branch
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+      destination:
 
 jobs: 
-  chart-test:
+  merge-branch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
