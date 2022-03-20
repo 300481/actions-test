@@ -38,7 +38,8 @@
 |HIGH|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-2.1|2.1.27+dfsg-2.1+deb11u1|
 |MEDIUM|CVE-2021-3995|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|libsmartcols1|2.36.1-8|2.36.1-8+deb11u1|
-|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1||
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1k-1+deb11u1|1.1.1k-1+deb11u2|
+|MEDIUM|CVE-2021-4160|libssl1.1|1.1.1k-1+deb11u1|1.1.1k-1+deb11u2|
 |MEDIUM|CVE-2021-3997|libsystemd0|247.3-6||
 |MEDIUM|CVE-2021-3997|libudev1|247.3-6||
 |MEDIUM|CVE-2021-3995|libuuid1|2.36.1-8|2.36.1-8+deb11u1|
@@ -46,7 +47,8 @@
 |MEDIUM|CVE-2021-3995|mount|2.36.1-8|2.36.1-8+deb11u1|
 |MEDIUM|CVE-2021-3996|mount|2.36.1-8|2.36.1-8+deb11u1|
 |HIGH|CVE-2021-41617|openssh-client|1:8.4p1-5||
-|MEDIUM|CVE-2021-4160|openssl|1.1.1k-1+deb11u1||
+|HIGH|CVE-2022-0778|openssl|1.1.1k-1+deb11u1|1.1.1k-1+deb11u2|
+|MEDIUM|CVE-2021-4160|openssl|1.1.1k-1+deb11u1|1.1.1k-1+deb11u2|
 |HIGH|CVE-2020-16156|perl|5.32.1-4+deb11u2||
 |HIGH|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
 |HIGH|CVE-2020-16156|perl-modules-5.32|5.32.1-4+deb11u2||

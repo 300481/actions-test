@@ -18,6 +18,9 @@
 |HIGH|CVE-2022-22827|expat|2.4.1-r0|2.4.3-r0|
 |HIGH|CVE-2022-25314|expat|2.4.1-r0|2.4.5-r0|
 |MEDIUM|CVE-2022-25313|expat|2.4.1-r0|2.4.5-r0|
+|HIGH|CVE-2022-0778|libcrypto1.1|1.1.1l-r7|1.1.1n-r0|
+|HIGH|CVE-2022-0778|libretls|3.3.4-r2|3.3.4-r3|
+|HIGH|CVE-2022-0778|libssl1.1|1.1.1l-r7|1.1.1n-r0|
 |MEDIUM|CVE-2021-3995|libuuid|2.37.2-r1|2.37.3-r0|
 |MEDIUM|CVE-2021-3996|libuuid|2.37.2-r1|2.37.3-r0|
 |MEDIUM|CVE-2022-0563|libuuid|2.37.2-r1|2.37.4-r0|
