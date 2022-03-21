@@ -18,5 +18,5 @@ jobs:
       - name: merge branch and push
         run: |
           git checkout ${{ github.event.inputs.destination }}
-          git merge ${{ github.event.inputs.source }}
+          git merge origin/${{ github.event.inputs.source }}
           git push origin ${{ github.event.inputs.destination }}
