@@ -5,7 +5,7 @@
 : ${CONFIGFILE:=helm-charts.yaml}
 : ${MANIFESTS_ROOT:=.}
 : ${CVES_ROOT:=.}
-: ${TRIVY_TEMPLATE:=markdown.tpl}
+: ${TRIVY_TEMPLATE:=templates/trivy.tpl}
 
 REPO_NAME=$(repo_name "${PAYLOAD}")
 CHART_NAME=$(chart_name "${PAYLOAD}")
