@@ -31,7 +31,7 @@ jobs:
 
       - name: update chart version
         run: |
-          ./artifacthub2github/update-chart-versions.sh
+          ./artifacthub2github/update-chart-version.sh
 
       - name: generate helm manifests
         run: |

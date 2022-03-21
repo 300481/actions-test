@@ -26,7 +26,7 @@ It will:
 
 * create a pull request against the main branch
 
-### [update-chart-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-versions.sh)
+### [update-chart-version.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-version.sh)
 
 The script which runs by the triggered workflow to update the helm-charts.yaml.
 
@@ -80,15 +80,16 @@ curl -d @./example-payloads/argo-cd-payload.json -H "X-ArtifactHub-Secret: [YOUR
 
 ### The workflow file
 
-[.github/workflows/update-chart-versions.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/update-chart-versions.yml)
+[.github/workflows/update-chart-version.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/update-chart-version.yml)
 
 Adjust it to your needs.
 
 ### The scripts
 
-* [update-chart-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-versions.sh)
+* [update-chart-version.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-version.sh)
 
 * [generate-helm-manifests.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-helm-manifests.sh)
+
 * [generate-list-of-deprecated-api-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-deprecated-api-versions.sh)
 
 * [generate-list-of-cves.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-cves.sh)
@@ -99,4 +100,4 @@ Adjust it to your needs.
 
 ### The vulnerability report template if needed 
 
-* [markdown.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/markdown.tpl)
+* [trivy.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/templates/trivy.tpl)
