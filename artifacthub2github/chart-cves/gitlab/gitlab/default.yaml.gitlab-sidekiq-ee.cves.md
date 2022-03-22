@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.4 (debian 11.2) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.9.0 (debian 11.2) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |CRITICAL|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -64,6 +64,15 @@
 |HIGH|CVE-2021-3864|linux-libc-dev|5.10.103-1||
 |HIGH|CVE-2021-39686|linux-libc-dev|5.10.103-1||
 |HIGH|CVE-2022-0500|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-0995|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-1011|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23036|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23037|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23038|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23039|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23040|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23041|linux-libc-dev|5.10.103-1||
+|HIGH|CVE-2022-23042|linux-libc-dev|5.10.103-1||
 |HIGH|CVE-2022-24958|linux-libc-dev|5.10.103-1||
 |HIGH|CVE-2022-26490|linux-libc-dev|5.10.103-1||
 |MEDIUM|CVE-2019-15213|linux-libc-dev|5.10.103-1||
@@ -89,6 +98,7 @@
 |MEDIUM|CVE-2022-0400|linux-libc-dev|5.10.103-1||
 |MEDIUM|CVE-2022-0480|linux-libc-dev|5.10.103-1||
 |MEDIUM|CVE-2022-0812|linux-libc-dev|5.10.103-1||
+|MEDIUM|CVE-2022-0854|linux-libc-dev|5.10.103-1||
 |MEDIUM|CVE-2022-23960|linux-libc-dev|5.10.103-1||
 |HIGH|CVE-2021-41617|openssh-client|1:8.4p1-5||
 |HIGH|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
