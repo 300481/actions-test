@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.4
+    chart: gitaly-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -26,7 +26,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -45,7 +45,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.4
+    chart: sidekiq-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -66,7 +66,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -467,7 +467,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.4
+    chart: gitaly-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -546,7 +546,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.8.4
+    chart: gitlab-exporter-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -636,7 +636,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -796,7 +796,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -856,7 +856,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -871,7 +871,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-5.8.4
+    chart: migrations-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -961,7 +961,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.4
+    chart: sidekiq-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -1046,6 +1046,7 @@ data:
         
         
         
+        
       artifacts:
         enabled: true
         object_store:
@@ -1124,6 +1125,14 @@ data:
         object_store:
           enabled: false
           remote_directory: gitlab-terraform-state
+          direct_upload: true
+          background_upload: false
+          proxy_download: true
+      ci_secure_files:
+        enabled: false
+        object_store:
+          enabled: false
+          remote_directory: gitlab-ci-secure-files
           direct_upload: true
           background_upload: false
           proxy_download: true
@@ -1267,7 +1276,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-5.8.4
+    chart: toolbox-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -1419,6 +1428,14 @@ data:
         object_store:
           enabled: false
           remote_directory: gitlab-terraform-state
+          direct_upload: true
+          background_upload: false
+          proxy_download: true
+      ci_secure_files:
+        enabled: false
+        object_store:
+          enabled: false
+          remote_directory: gitlab-ci-secure-files
           direct_upload: true
           background_upload: false
           proxy_download: true
@@ -1583,7 +1600,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -1668,6 +1685,7 @@ data:
         
         
         
+        
       artifacts:
         enabled: true
         object_store:
@@ -1746,6 +1764,14 @@ data:
         object_store:
           enabled: false
           remote_directory: gitlab-terraform-state
+          direct_upload: true
+          background_upload: false
+          proxy_download: true
+      ci_secure_files:
+        enabled: false
+        object_store:
+          enabled: false
+          remote_directory: gitlab-ci-secure-files
           direct_upload: true
           background_upload: false
           proxy_download: true
@@ -1836,7 +1862,7 @@ data:
         ip_whitelist:
           - 0.0.0.0/0
         web_exporter:
-          enabled: false
+          enabled: true
           address: 0.0.0.0
           port: 8083
         sidekiq_exporter:
@@ -1883,7 +1909,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -2075,6 +2101,7 @@ data:
     createBucket gitlab-pseudo none false
     createBucket gitlab-mr-diffs none false
     createBucket gitlab-terraform-state none false
+    createBucket gitlab-ci-secure-files none false
     createBucket gitlab-dependency-proxy none false
     createBucket gitlab-pages none false
     
@@ -2628,6 +2655,10 @@ data:
     if [ -f /config/database_password ] ; then
       sed -i -e 's@DB_PASSWORD_FILE@'"$(cat /config/database_password)"'@' /registry/config.yml
     fi
+     # Insert import notification secret, if migration is enabled
+    if [ -f /config/registry/notificationSecret ] ; then
+      sed -i -e 's@NOTIFICATION_SECRET@'"$(cat /config/registry/notificationSecret | tr -d '[]"')"'@' /registry/config.yml
+    fi
     # Copy the database TLS connection files to the expected location and set permissions
     if [ -d /config/ssl ]; then
       cp -r /config/ssl/ /registry/ssl
@@ -2710,6 +2741,7 @@ data:
       disabled: true
     migration:
       enabled: false
+      testslowimport: 0s
 
   # minimal configuration, in order to do database migrations
   migrations-config.yml: |
@@ -2727,13 +2759,13 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
 data:
-  gitlabVersion: "14.8.4"
-  gitlabChartVersion: "5.8.4"
+  gitlabVersion: "14.9.0"
+  gitlabChartVersion: "5.9.0"
 ---
 # Source: gitlab/templates/initdb-configmap.yaml
 apiVersion: v1
@@ -2743,7 +2775,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20035,7 +20067,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.4
+    chart: gitaly-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20049,6 +20081,9 @@ spec:
     - port: 8075
       name: gitaly
       targetPort: grcp-gitaly
+    - port: 9236
+      name: http-metrics
+      targetPort: http-metrics
   selector:
     app: gitaly
     release: gitlab
@@ -20061,7 +20096,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.8.4
+    chart: gitlab-exporter-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20072,9 +20107,9 @@ spec:
   type: ClusterIP
   ports:
     - port: 9168
-      targetPort: 9168
+      targetPort: http-metrics
       protocol: TCP
-      name: gitlab-exporter
+      name: http-metrics
   selector:
     app: gitlab-exporter
     release: gitlab
@@ -20087,7 +20122,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20113,7 +20148,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20125,13 +20160,17 @@ spec:
   type: ClusterIP
   ports:
     - port: 8080
-      targetPort: 8080
+      targetPort: http-webservice
       protocol: TCP
       name: http-webservice
     - port: 8181
-      targetPort: 8181
+      targetPort: http-workhorse
       protocol: TCP
       name: http-workhorse
+    - port: 8083
+      targetPort: http-metrics-ws
+      protocol: TCP
+      name: http-metrics-ws
   selector:
     app: webservice
     release: gitlab
@@ -20450,7 +20489,7 @@ spec:
   type: ClusterIP
   ports:
   - port: 5000
-    targetPort: 5000
+    targetPort: http
     protocol: TCP
     name: registry
   selector:
@@ -20792,7 +20831,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.8.4
+    chart: gitlab-exporter-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20809,19 +20848,19 @@ spec:
     metadata:
       labels:
         app: gitlab-exporter
-        chart: gitlab-exporter-5.8.4
+        chart: gitlab-exporter-5.9.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: c765b1c9574bae5da19a2c24734b0dd5999f7392f20d2ed548636a72f03aebf1
-        gitlab.com/prometheus_path: /metrics
-        gitlab.com/prometheus_port: "9168"
+        checksum/config: 5fdc2a955cb86f48231e4cd9bee7b381f8404fde8d13a5d64def82d1131c0e4c
         gitlab.com/prometheus_scrape: "true"
-        prometheus.io/path: /metrics
-        prometheus.io/port: "9168"
+        gitlab.com/prometheus_port: "9168"
+        gitlab.com/prometheus_path: /metrics
         prometheus.io/scrape: "true"
+        prometheus.io/port: "9168"
+        prometheus.io/path: /metrics
 
     spec:
       securityContext:
@@ -20842,7 +20881,7 @@ spec:
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           - name: MALLOC_CONF
@@ -20891,7 +20930,7 @@ spec:
       containers:
         
         - name: gitlab-exporter
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:11.11.0"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:11.12.0"          
           env:
             - name: CONFIG_TEMPLATE_DIRECTORY
               value: '/var/opt/gitlab-exporter/templates'
@@ -20908,7 +20947,7 @@ spec:
               value: "80000"
           ports:
           - containerPort: 9168
-            name: gitlab-exporter
+            name: http-metrics
           volumeMounts:
             - name: gitlab-exporter-config
               mountPath: /var/opt/gitlab-exporter/templates/gitlab-exporter.yml.erb
@@ -20977,7 +21016,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -20993,20 +21032,20 @@ spec:
     metadata:
       labels:
         app: gitlab-shell
-        chart: gitlab-shell-5.8.4
+        chart: gitlab-shell-5.9.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 9753933d697ea7ea4762185b887a0fb51c37a26d004eb876cdab276bf980723c
-        checksum/config-sshd: 5eff6dc94f34592c13625fd0fbd04e9deccf9799ead147f6b0dcba6ea3dd8941
+        checksum/config: a93b0a07251fbe9c5a0aaf6897c4679a8be7969bb610bb00dd2c9543de6bf843
+        checksum/config-sshd: 07f5b5ad2fb7181046a2ce8b4eae651828d4215ec239262020f79a51035c5162
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -21053,7 +21092,7 @@ spec:
       containers:
         
         - name: gitlab-shell
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v13.23.2"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v13.24.0"          
           ports:
             - containerPort: 2222
               name: ssh
@@ -21140,7 +21179,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.4
+    chart: sidekiq-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -21158,19 +21197,21 @@ spec:
     metadata:
       labels:
         app: sidekiq
-        chart: sidekiq-5.8.4
+        chart: sidekiq-5.9.0
         release: gitlab
         heritage: Helm
         
         
         queue-pod-name: all-in-1
       annotations:
-        checksum/configmap: 503723eacef0fb73081ee79729c088fe6d3f5e5efacd4473a77243d0727f64da
+        checksum/configmap: b885f249dfcff4a94fc68c9d7625aac61797cbdaf351248bc2a0232a00970522
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
-        gitlab.com/prometheus_port: "3807"
         gitlab.com/prometheus_scrape: "true"
-        prometheus.io/port: "3807"
+        gitlab.com/prometheus_port: "3807"
+        gitlab.com/prometheus_path: /metrics
         prometheus.io/scrape: "true"
+        prometheus.io/port: "3807"
+        prometheus.io/path: /metrics
     spec:
       securityContext:
         runAsUser: 1000
@@ -21191,7 +21232,7 @@ spec:
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -21224,7 +21265,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.4"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.9.0"          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21263,7 +21304,7 @@ spec:
       containers:
         
         - name: sidekiq
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.8.4"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.9.0"          
           env:
             - name: prometheus_multiproc_dir
               value: /metrics
@@ -21299,7 +21340,7 @@ spec:
             
           ports:
           - containerPort: 3807
-            name: metrics
+            name: http-metrics
           volumeMounts:
           
           
@@ -21415,6 +21456,7 @@ spec:
           # mount secret for packages
           # mount secret for external_diffs
           # mount secret for terraform_state
+          # mount secret for ci_secure_files
           # mount secret for dependency_proxy
           # mount secret for pages
           # mount secret for pseudonymizer
@@ -21436,7 +21478,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-5.8.4
+    chart: toolbox-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -21455,13 +21497,13 @@ spec:
     metadata:
       labels:
         app: toolbox
-        chart: toolbox-5.8.4
+        chart: toolbox-5.9.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: e5ac72a562e5e0e0865b2bbaa1f4c7a277df35ca8c451e84ddab88fd1e97ebdb
+        checksum/config: d6e203850e2d1bbce5a2d6914699a783db9a9238af715caf41bfd2c9f2fd9f2c
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       securityContext:
@@ -21471,7 +21513,7 @@ spec:
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -21519,7 +21561,7 @@ spec:
             - /bin/bash
             - -c
             - cp -v -r -L /etc/gitlab/.s3cfg $HOME/.s3cfg && while sleep 3600; do :; done # alpine sleep has no infinity
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.8.4"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.9.0"          
           env:
             - name: ARTIFACTS_BUCKET_NAME
               value: gitlab-artifacts
@@ -21535,6 +21577,8 @@ spec:
               value: gitlab-mr-diffs
             - name: TERRAFORM_STATE_BUCKET_NAME
               value: gitlab-terraform-state
+            - name: CI_SECURE_FILES_BUCKET_NAME
+              value: gitlab-ci-secure-files
             - name: BACKUP_BUCKET_NAME
               value: gitlab-backups
             - name: BACKUP_BACKEND
@@ -21644,6 +21688,7 @@ spec:
           # mount secret for packages
           # mount secret for external_diffs
           # mount secret for terraform_state
+          # mount secret for ci_secure_files
           # mount secret for dependency_proxy
           # mount secret for pages
           # mount secret for pseudonymizer
@@ -21665,7 +21710,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -21686,7 +21731,7 @@ spec:
     metadata:
       labels:
         app: webservice
-        chart: webservice-5.8.4
+        chart: webservice-5.9.0
         release: gitlab
         heritage: Helm
         gitlab.com/webservice-name: default
@@ -21694,14 +21739,14 @@ spec:
         
         
       annotations:
-        checksum/config: 6c3f738a90257036d667871ce4bcc1681ad1061a2607cdadc55c1515d9da2111
+        checksum/config: 8ea085c2ca08550947156343129f92c06f1bbdacea25e82e97c12d07e1fd0278
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
-        gitlab.com/prometheus_path: /-/metrics
-        gitlab.com/prometheus_port: "8080"
         gitlab.com/prometheus_scrape: "true"
-        prometheus.io/path: /-/metrics
-        prometheus.io/port: "8080"
+        gitlab.com/prometheus_port: "8080"
+        gitlab.com/prometheus_path: /metrics
         prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+        prometheus.io/path: /metrics
     spec:
       
       securityContext:
@@ -21723,7 +21768,7 @@ spec:
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -21765,7 +21810,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.4          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.9.0          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21800,10 +21845,12 @@ spec:
       containers:
         
         - name: webservice
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.4          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.9.0          
           ports:
             - containerPort: 8080
-              name: webservice
+              name: http-webservice
+            - containerPort: 8083
+              name: http-metrics-ws
           env:
             - name: GITLAB_WEBSERVER
               value: puma
@@ -21893,10 +21940,10 @@ spec:
               cpu: 300m
               memory: 2.5G
         - name: gitlab-workhorse
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v14.8.4"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v14.9.0"          
           ports:
             - containerPort: 8181
-              name: workhorse
+              name: http-workhorse
           env:
             - name: TMPDIR
               value: "/tmp/gitlab"
@@ -22030,6 +22077,7 @@ spec:
           # mount secret for packages
           # mount secret for external_diffs
           # mount secret for terraform_state
+          # mount secret for ci_secure_files
           # mount secret for dependency_proxy
           # mount secret for pages
           # mount secrets for LDAP
@@ -22468,7 +22516,7 @@ spec:
         
         
       annotations:
-        checksum/configmap: 17017ee47d63d77671458daa97a250bc293e7c9c5a72a7049a0faf5f37698b7b
+        checksum/configmap: 44ed1058329f3d916a7de95d4e3ba54907dc25dbb0d6c38c3b254fa5d19bf911
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       
@@ -22488,7 +22536,7 @@ spec:
       automountServiceAccountToken: false
       initContainers:
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -22513,7 +22561,7 @@ spec:
                 
       containers:
         - name: registry
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.27.1-gitlab"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.32.0-gitlab"          
           env:
           
           volumeMounts:
@@ -22523,10 +22571,15 @@ spec:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs/
             readOnly: true
+          ports:
+            - containerPort: 5000
+              name: http
+            - containerPort: 5001
+              name: debug
           livenessProbe:
             httpGet:
               path: /debug/health
-              port: 5001
+              port: debug
               scheme: HTTP
             initialDelaySeconds: 5
             periodSeconds: 10
@@ -22536,7 +22589,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /debug/health
-              port: 5001
+              port: debug
               scheme: HTTP
             initialDelaySeconds: 5
             periodSeconds: 5
@@ -22587,7 +22640,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.8.4
+    chart: gitlab-shell-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -22612,7 +22665,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.8.4
+    chart: sidekiq-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -22637,7 +22690,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -22688,7 +22741,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.8.4
+    chart: gitaly-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -22705,23 +22758,25 @@ spec:
     metadata:
       labels:
         app: gitaly
-        chart: gitaly-5.8.4
+        chart: gitaly-5.9.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 3e8ef41c395296abca2c05af87f64fcdaba892bdf34df40e0d6371f35f49f5ff
+        checksum/config: 9a8e6a43d91ace2c27e27c235b8079eeae11e99396da838349edee38c44be763
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "9236"
+        gitlab.com/prometheus_path: /metrics
         prometheus.io/scrape: "true"
         prometheus.io/port: "9236"
+        prometheus.io/path: /metrics
     spec:
       terminationGracePeriodSeconds: 30
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -22768,12 +22823,12 @@ spec:
       containers:
         
         - name: gitaly
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v14.8.4"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v14.9.0"          
           ports:
             - containerPort: 8075
               name: grcp-gitaly
             - containerPort: 9236
-              name: metrics
+              name: http-metrics
           env:
             - name: CONFIG_TEMPLATE_DIRECTORY
               value: '/etc/gitaly/templates'
@@ -23205,7 +23260,7 @@ spec:
       restartPolicy: OnFailure      
       containers:
         - name: create-issuer
-          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.16.15"
+          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:824750f20381facb70cb90d3cd41da075d7ffde5a14de6f14f7037285fe0ddb7"
           command: ['/bin/bash', '/scripts/create-issuer', '/scripts/issuer.yml']          
           volumeMounts:
             - name: scripts
@@ -23226,7 +23281,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-5.8.4
+    chart: migrations-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -23237,7 +23292,7 @@ spec:
     metadata:
       labels:
         app: migrations
-        chart: migrations-5.8.4
+        chart: migrations-5.9.0
         release: gitlab
         heritage: Helm
         
@@ -23250,7 +23305,7 @@ spec:
       initContainers:
         
         - name: certificates
-          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2"  
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:4678ac2a66f126b20362faddd333be907d4eded47a7fb8ea2653c1522ddbed49"  
           env:
           
           volumeMounts:
@@ -23285,7 +23340,7 @@ spec:
       containers:
         
         - name: migrations
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.8.4"
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.9.0"
           args:
             - /scripts/wait-for-deps
             - /scripts/db-migrate          
@@ -23454,7 +23509,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.8.4
+    chart: webservice-5.9.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -23691,7 +23746,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -23708,7 +23763,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -23733,7 +23788,8 @@ data:
     
     # Args: yaml file, search path
     function fetch_rails_value(){
-      local value=$(yq read $1 "${2}")
+      local value=$(yq ".${2}" $1)
+    
       # Don't return null values
       if [ "${value}" != "null" ]; then echo "${value}"; fi
     }
@@ -23747,7 +23803,7 @@ data:
     
       kubectl --namespace=$namespace label \
         --overwrite \
-        secret $secret_name app=gitlab chart=gitlab-5.8.4 release=gitlab heritage=Helm 
+        secret $secret_name app=gitlab chart=gitlab-5.9.0 release=gitlab heritage=Helm 
     }
     
     # Args: secretname, args
@@ -23897,7 +23953,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -24016,7 +24072,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-5.8.4
+    chart: shared-secrets-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -24064,7 +24120,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-5.8.4
+    chart: shared-secrets-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -24085,7 +24141,7 @@ subjects:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gitlab-webservice-test-runner-1ah3c
+  name: gitlab-webservice-test-runner-2dwtf
   namespace: default
   annotations:
     "helm.sh/hook": test
@@ -24093,7 +24149,7 @@ metadata:
 spec:
   containers:
   - name: test-runner
-    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.8.4
+    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.9.0
     command: ['sh', '/tests/test_login']
     volumeMounts:
       - name: tests
@@ -24164,11 +24220,11 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: gitlab-shared-secrets-1-0hh
+  name: gitlab-shared-secrets-1-qfr
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -24180,7 +24236,7 @@ spec:
     metadata:
       labels:
         app: gitlab
-        chart: gitlab-5.8.4
+        chart: gitlab-5.9.0
         release: gitlab
         heritage: Helm
         
@@ -24196,7 +24252,7 @@ spec:
       
       containers:
         - name: gitlab
-          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.16.15"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:824750f20381facb70cb90d3cd41da075d7ffde5a14de6f14f7037285fe0ddb7"          
           command: ['/bin/bash', '/scripts/generate-secrets']
           volumeMounts:
             - name: scripts
@@ -24221,7 +24277,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.8.4
+    chart: gitlab-5.9.0
     release: gitlab
     heritage: Helm
     
@@ -24249,9 +24305,9 @@ spec:
           command: ['/bin/sh', '/scripts/runcheck']          
           env:
             - name: GITLAB_VERSION
-              value: '14.8.4'
+              value: '14.9.0'
             - name: CHART_VERSION
-              value: '5.8.4'
+              value: '5.9.0'
           volumeMounts:
             - name: chart-info
               mountPath: /chart-info

@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/kubectl:1.16.15 (debian 11.2) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:824750f20381facb70cb90d3cd41da075d7ffde5a14de6f14f7037285fe0ddb7 (debian 11.2) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |CRITICAL|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
