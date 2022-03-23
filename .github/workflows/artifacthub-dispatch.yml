@@ -14,12 +14,17 @@ env:
   TRIVY_TEMPLATE: artifacthub2github/templates/trivy.tpl
 
 jobs:
-  update_chart_versions:
+  artifacthub_dispatch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           ref: uat
+
+      - name: setup git config
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
 
       - uses: azure/setup-helm@v1
       - uses: FairwindsOps/pluto/github-action@master
@@ -27,11 +32,6 @@ jobs:
       - name: install dependencies
         run: |
           ./artifacthub2github/process-artifacthub-dispatch.sh install_dependencies
-
-      - name: setup git config
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: update chart version
         run: |
