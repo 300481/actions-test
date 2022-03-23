@@ -47,7 +47,7 @@ jobs:
 
       - name: generate list of cves
         run: |
-          ./artifacthub2github/generate-list-of-cves.sh
+          ./artifacthub2github/process-artifacthub-dispatch.sh generate_list_of_cves
 
       - name: commit and push
         env:
