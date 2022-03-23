@@ -2,10 +2,6 @@
 
 . ./artifacthub2github/shared-functions.sh
 
-: ${MANIFESTS_ROOT:=.}
-: ${CVES_ROOT:=.}
-: ${TRIVY_TEMPLATE:=templates/trivy.tpl}
-
 REPO_NAME=$(repo_name "${PAYLOAD}")
 CHART_NAME=$(chart_name "${PAYLOAD}")
 

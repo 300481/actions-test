@@ -9,6 +9,8 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 [[ -z "${VALUES_ROOT}" ]] && die 2 "ERROR: please set VALUES_ROOT"
 [[ -z "${MANIFESTS_ROOT}" ]] && die 2 "ERROR: please set MANIFESTS_ROOT"
 [[ -z "${DEPRECATIONS_ROOT}" ]] && die 2 "ERROR: please set DEPRECATIONS_ROOT"
+[[ -z "${CVES_ROOT}" ]] && die 2 "ERROR: please set CVES_ROOT"
+[[ -z "${TRIVY_TEMPLATE}" ]] && die 2 "ERROR: please set TRIVY_TEMPLATE"
 
 install_dependencies(){
     install_render
