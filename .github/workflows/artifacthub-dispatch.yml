@@ -43,7 +43,7 @@ jobs:
 
       - name: generate list of deprecated api versions
         run: |
-          ./artifacthub2github/generate-list-of-deprecated-api-versions.sh
+          ./artifacthub2github/process-artifacthub-dispatch.sh generate_list_of_deprecated_api_versions
 
       - name: generate list of cves
         run: |
