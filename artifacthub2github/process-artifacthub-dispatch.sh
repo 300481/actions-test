@@ -6,6 +6,8 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 [[ -z "${PAYLOAD}" ]] && die 2 "ERROR: empty payload"
 [[ -z "${CONFIGFILE}" ]] && die 2 "ERROR: please set CONFIGFILE"
+[[ -z "${VALUES_ROOT}" ]] && die 2 "ERROR: please set VALUES_ROOT"
+[[ -z "${MANIFESTS_ROOT}" ]] && die 2 "ERROR: please set MANIFESTS_ROOT"
 
 install_dependencies(){
     install_render

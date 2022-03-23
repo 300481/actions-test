@@ -2,9 +2,6 @@
 
 . ./artifacthub2github/shared-functions.sh
 
-: ${VALUES_ROOT:=.}
-: ${MANIFESTS_ROOT:=.}
-
 REPO_NAME=$(repo_name "${PAYLOAD}")
 CHART_NAME=$(chart_name "${PAYLOAD}")
 VERSION=$(version "${PAYLOAD}")
