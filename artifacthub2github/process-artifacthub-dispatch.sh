@@ -8,6 +8,7 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 [[ -z "${CONFIGFILE}" ]] && die 2 "ERROR: please set CONFIGFILE"
 [[ -z "${VALUES_ROOT}" ]] && die 2 "ERROR: please set VALUES_ROOT"
 [[ -z "${MANIFESTS_ROOT}" ]] && die 2 "ERROR: please set MANIFESTS_ROOT"
+[[ -z "${DEPRECATIONS_ROOT}" ]] && die 2 "ERROR: please set DEPRECATIONS_ROOT"
 
 install_dependencies(){
     install_render
