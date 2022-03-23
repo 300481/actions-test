@@ -1,3 +1,10 @@
+# die exits the script with the given return code and echos the given message
+die(){
+    RC=$1 ; shift
+    echo $@
+    exit $RC
+}
+
 # compatible_name makes a name usable as YAML key
 yaml_compatible_name(){
     sed 's/-/_/g' <<< ${1}
