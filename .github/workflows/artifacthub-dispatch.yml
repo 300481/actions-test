@@ -24,6 +24,10 @@ jobs:
       - uses: azure/setup-helm@v1
       - uses: FairwindsOps/pluto/github-action@master
 
+      - name: install dependencies
+        run: |
+          ./artifacthub2github/process-artifacthub-dispatch.sh install_dependencies
+
       - name: setup git config
         run: |
           git config user.name 'github-actions[bot]'

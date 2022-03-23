@@ -9,8 +9,6 @@
 REPO_NAME=$(repo_name "${PAYLOAD}")
 CHART_NAME=$(chart_name "${PAYLOAD}")
 
-install_render
-
 manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
 deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
 [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}

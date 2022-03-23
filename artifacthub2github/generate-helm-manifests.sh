@@ -11,8 +11,6 @@ CHART_NAME=$(chart_name "${PAYLOAD}")
 VERSION=$(version "${PAYLOAD}")
 REPO_URL=$(repo_url "${PAYLOAD}")
 
-install_render
-
 echo "${REPO_NAME} | ${REPO_URL} | ${CHART_NAME} | ${VERSION}"
 
 helm repo add ${REPO_NAME} ${REPO_URL}

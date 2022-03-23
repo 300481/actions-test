@@ -10,9 +10,6 @@
 REPO_NAME=$(repo_name "${PAYLOAD}")
 CHART_NAME=$(chart_name "${PAYLOAD}")
 
-install_render
-install_trivy
-
 manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
 cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
 [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
