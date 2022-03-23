@@ -2,7 +2,6 @@
 
 . ./artifacthub2github/shared-functions.sh
 
-: ${CONFIGFILE:=helm-charts.yaml}
 : ${VALUES_ROOT:=.}
 : ${MANIFESTS_ROOT:=.}
 

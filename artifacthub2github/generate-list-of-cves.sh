@@ -2,7 +2,6 @@
 
 . ./artifacthub2github/shared-functions.sh
 
-: ${CONFIGFILE:=helm-charts.yaml}
 : ${MANIFESTS_ROOT:=.}
 : ${CVES_ROOT:=.}
 : ${TRIVY_TEMPLATE:=templates/trivy.tpl}

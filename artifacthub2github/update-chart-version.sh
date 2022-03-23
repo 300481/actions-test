@@ -2,8 +2,6 @@
 
 . ./artifacthub2github/shared-functions.sh
 
-: ${CONFIGFILE:=helm-charts.yaml}
-
 REPO_NAME=$(repo_name "${PAYLOAD}")
 REPO=$(yaml_compatible_name "${REPO_NAME}")
 PUBLISHER=$(publisher "${PAYLOAD}")
