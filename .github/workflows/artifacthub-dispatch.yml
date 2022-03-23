@@ -39,7 +39,7 @@ jobs:
 
       - name: generate helm manifests
         run: |
-          ./artifacthub2github/generate-helm-manifests.sh
+          ./artifacthub2github/process-artifacthub-dispatch.sh generate_helm_manifests
 
       - name: generate list of deprecated api versions
         run: |
