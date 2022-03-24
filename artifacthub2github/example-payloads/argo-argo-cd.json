@@ -13,7 +13,7 @@
         "publisher": "argoproj"
       },
       "url": "https://artifacthub.io/packages/helm/argo/argo-cd/3.33.2",
-      "version": "3.33.2"
+      "version": "4.2.2"
     }
   },
   "datacontenttype": "application/json",
