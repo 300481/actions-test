@@ -28,6 +28,12 @@ It will:
 
 * create a pull request against the main branch
 
+### [helm-charts.yaml](https://github.com/300481/actions-test/blob/main/artifacthub2github/helm-charts.yaml)
+
+This file contains the current versions of the specific helm charts.
+
+This file gets updated by the script triggered by the dispatch event.
+
 ### [process-artifacthub-dispatch.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/process-artifacthub-dispatch.sh)
 
 The script which runs by the triggered workflow to run the steps.
