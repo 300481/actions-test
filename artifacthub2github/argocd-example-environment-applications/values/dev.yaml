@@ -1,0 +1,104 @@
+environment: dev
+repos:
+  argo:
+    charts:
+      argocd_notifications:
+        enabled: true
+        namespace: argocd
+        syncWave: "10"
+      argo_cd:
+        enabled: true
+        namespace: argocd
+        syncWave: "10"
+  prometheus_community:
+    charts:
+      kube_prometheus_stack:
+        enabled: true
+        namespace: monitoring
+        syncWave: "10"
+  ingress_nginx:
+    charts:
+      ingress_nginx:
+        enabled: true
+        namespace: ingress-nginx
+        syncWave: "10"
+  dr300481:
+    charts:
+      seafile:
+        enabled: true
+        namespace: seafile
+        syncWave: "20"
+  ebrianne:
+    charts:
+      local_path_provisioner:
+        enabled: true
+        namespace: persistence
+        syncWave: "5"
+  testrepo:
+    charts:
+      testchart:
+        enabled: true
+        namespace: testchart
+        syncWave: "20"
+  sonarqube:
+    charts:
+      sonarqube:
+        enabled: true
+        namespace: sonarqube
+        syncWave: "20"
+  sonatype:
+    charts:
+      nexus_repository_manager:
+        enabled: true
+        namespace: nexus
+        syncWave: "20"
+  bitnami:
+    charts:
+      keycloak:
+        enabled: true
+        namespace: keycloak
+        syncWave: "10"
+  rook:
+    charts:
+      rook_ceph_cluster:
+        enabled: true
+        namespace: ceph
+        syncWave: "5"
+  gitlab:
+    charts:
+      gitlab:
+        enabled: true
+        namespace: gitlab
+        syncWave: "20"
+  artifact_hub:
+    charts:
+      artifact_hub:
+        enabled: true
+        namespace: artifact-hub
+        syncWave: "20"
+  jenkinsci:
+    charts:
+      jenkins:
+        enabled: true
+        namespace: jenkins
+        syncWave: "20"
+  elastic:
+    charts:
+      elasticsearch:
+        enabled: true
+        namespace: elastic
+        syncWave: "20"
+      logstash:
+        enabled: true
+        namespace: elastic
+        syncWave: "20"
+      kibana:
+        enabled: true
+        namespace: elastic
+        syncWave: "20"
+  gitea:
+    charts:
+      gitea:
+        enabled: true
+        namespace: gitea
+        syncWave: "20"
