@@ -8,7 +8,7 @@ env:
   PAYLOAD: ${{ toJSON(github.event.client_payload) }}
   PAYLOAD_DIR: artifacthub2github/example-payloads
   CONFIGFILE: artifacthub2github/helm-charts.yaml
-  VALUES_ROOT: artifacthub2github/argocd-example
+  VALUES_ROOT: artifacthub2github/argocd-example-chart
   MANIFESTS_ROOT: artifacthub2github
   DEPRECATIONS_ROOT: artifacthub2github
   CVES_ROOT: artifacthub2github
