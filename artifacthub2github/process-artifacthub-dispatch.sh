@@ -78,17 +78,21 @@ save_payload(){
     jq . <<< "${PAYLOAD}" > ${PAYLOAD_DIR}/${REPO_NAME}-${CHART_NAME}.json
 }
 
-REPO_NAME=$(repo_name "${PAYLOAD}")
-REPO=$(yaml_compatible_name "${REPO_NAME}")
-CHART_NAME=$(chart_name "${PAYLOAD}")
-CHART=$(yaml_compatible_name "${CHART_NAME}")
-VERSION=$(version "${PAYLOAD}")
-REPO_URL=$(repo_url "${PAYLOAD}")
-PUBLISHER=$(publisher "${PAYLOAD}")
+set_variables(){
+    REPO_NAME=$(repo_name "${PAYLOAD}")
+    REPO=$(yaml_compatible_name "${REPO_NAME}")
+    CHART_NAME=$(chart_name "${PAYLOAD}")
+    CHART=$(yaml_compatible_name "${CHART_NAME}")
+    VERSION=$(version "${PAYLOAD}")
+    REPO_URL=$(repo_url "${PAYLOAD}")
+    PUBLISHER=$(publisher "${PAYLOAD}")
 
-manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
-valuesdir="${VALUES_ROOT}/chart-values/${REPO_NAME}/${CHART_NAME}"
-deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
-cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
+    manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
+    valuesdir="${VALUES_ROOT}/chart-values/${REPO_NAME}/${CHART_NAME}"
+    deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
+    cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
+}
+
+set_variables
 
 ${1}
