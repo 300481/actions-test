@@ -43,9 +43,6 @@ generate_helm_manifests(){
     helm repo add ${REPO_NAME} ${REPO_URL}
     helm repo update
 
-    [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
-    [[ -d ${valuesdir} ]] || $(mkdir -p ${valuesdir} ; touch ${valuesdir}/default.yaml)
-
     for valuesfile in ${valuesdir}/* ; do
         manifestfile=${manifestdir}/$(basename ${valuesfile})
         helm template ${CHART_NAME} ${REPO_NAME}/${CHART_NAME} --version ${VERSION} --values ${valuesfile} > ${manifestfile}
@@ -53,8 +50,6 @@ generate_helm_manifests(){
 }
 
 generate_list_of_deprecated_api_versions(){
-    [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
-    [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
     for manifestfile in ${manifestdir}/* ; do
         echo ${REPO_NAME} : ${CHART_NAME} : ${manifestfile}
         pluto detect ${manifestfile} --output markdown --ignore-deprecations --ignore-removals > ${deprecationsdir}/${manifestfile##*/}.api-deprecations.md
@@ -62,8 +57,6 @@ generate_list_of_deprecated_api_versions(){
 }
 
 generate_list_of_cves(){
-    [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
-    [[ -d ${cvedir} ]] || mkdir -p ${cvedir}
     for manifestfile in ${manifestdir}/*.yaml ; do
         for image in $(grep -o 'image: .*$' ${manifestfile} | sed 's#image: ##g' | sed 's#"##g') ; do
             echo ${image}
@@ -93,6 +86,14 @@ set_variables(){
     cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
 }
 
+prepare_directory_structure(){
+    [[ -d ${valuesdir} ]] || $(mkdir -p ${valuesdir} ; touch ${valuesdir}/default.yaml)
+    [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
+    [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
+    [[ -d ${cvedir} ]] || mkdir -p ${cvedir}
+}
+
 set_variables
+prepare_directory_structure
 
 ${1}
