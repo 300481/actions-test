@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: artifacthub2github/argocd-example
+    path: artifacthub2github/argocd-example-chart
     repoURL: git@github.com:300481/actions-test.git
     targetRevision: master
     helm:
