@@ -15,10 +15,11 @@ spec:
   source:
     path: artifacthub2github/argocd-example-chart
     repoURL: git@github.com:300481/actions-test.git
-    targetRevision: master
+    targetRevision: main
     helm:
       valuesFiles:
       - artifacthub2github/helm-charts.yaml
+      - artifacthub2github/argocd-example-environment-applications/values/prod.yaml
   syncPolicy:
     automated:
       prune: true
