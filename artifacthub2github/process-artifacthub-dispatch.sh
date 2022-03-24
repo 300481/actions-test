@@ -5,6 +5,7 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 . ${SCRIPTPATH}/shared-functions.sh
 
 [[ -z "${PAYLOAD}" ]] && die 2 "ERROR: empty payload"
+[[ -z "${PAYLOAD_DIR}" ]] && die 2 "ERROR: please set PAYLOAD_DIR"
 [[ -z "${CONFIGFILE}" ]] && die 2 "ERROR: please set CONFIGFILE"
 [[ -z "${VALUES_ROOT}" ]] && die 2 "ERROR: please set VALUES_ROOT"
 [[ -z "${MANIFESTS_ROOT}" ]] && die 2 "ERROR: please set MANIFESTS_ROOT"
@@ -96,6 +97,12 @@ generate_list_of_cves(){
             trivy image --format template --template "@${TRIVY_TEMPLATE}" --output ${cvedir}/${manifestfile##*/}.${image_without_tag}.cves.md --severity "MEDIUM,HIGH,CRITICAL" "${image}"
         done
     done
+}
+
+save_payload(){
+    REPO_NAME=$(repo_name "${PAYLOAD}")
+    CHART_NAME=$(chart_name "${PAYLOAD}")
+    jq . <<< "${PAYLOAD}" > ${PAYLOAD_DIR}/${REPO_NAME}-${CHART_NAME}.json
 }
 
 ${1}
