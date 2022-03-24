@@ -14,6 +14,8 @@ This file is the workflow, which is triggered by the serverless function.
 
 It will:
 
+* save the payload
+
 * update the helm-charts.yaml file
 
 * generate the chart manifests
@@ -26,23 +28,14 @@ It will:
 
 * create a pull request against the main branch
 
-### [update-chart-version.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-version.sh)
+### [process-artifacthub-dispatch.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/process-artifacthub-dispatch.sh)
 
-The script which runs by the triggered workflow to update the helm-charts.yaml.
+The script which runs by the triggered workflow to run the steps.
 
-### [generate-helm-manifests.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-helm-manifests.sh)
+### [shared-functions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/shared-functions.sh)
 
-The script which runs by the triggered workflow to generate the manifest-files.
-
-### [generate-list-of-deprecated-api-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-deprecated-api-versions.sh)
-
-The script which runs by the triggered workflow to generate the list of Kubernetes API deprecations.
-
-### [generate-list-of-cves.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-cves.sh)
-
-The script which runs by the triggered workflow to generate the list of CVEs of the containers of a chart.
-
-### [markdown.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/markdown.tpl)
+The shared functions which are used by the processing script.
+### [trivy.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/templates/trivy.tpl)
 
 This file is a template for templating a markdown file for the vulnerability reports of Trivy.
 
@@ -66,7 +59,7 @@ This folder contains the information about found CVEs of the containers used in 
 
 ### [example-payloads](https://github.com/300481/actions-test/tree/main/artifacthub2github/example-payloads)
 
-This folder contains some example payloads to test the proper
+This folder contains the latest payloads and can be used to test the proper
 
 function of the serverless function as of the worflow and scripts.
 
@@ -80,19 +73,15 @@ curl -d @./example-payloads/argo-cd-payload.json -H "X-ArtifactHub-Secret: [YOUR
 
 ### The workflow file
 
-[.github/workflows/update-chart-version.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/update-chart-version.yml)
+[.github/workflows/artifacthub-dispatch.yml](https://github.com/300481/actions-test/blob/main/.github/workflows/artifacthub-dispatch.yml)
 
 Adjust it to your needs.
 
-### The scripts
+### The script
 
-* [update-chart-version.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/update-chart-version.sh)
+* [process-artifacthub-dispatch.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/process-artifacthub-dispatch.sh)
 
-* [generate-helm-manifests.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-helm-manifests.sh)
-
-* [generate-list-of-deprecated-api-versions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-deprecated-api-versions.sh)
-
-* [generate-list-of-cves.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/generate-list-of-cves.sh)
+* [shared-functions.sh](https://github.com/300481/actions-test/blob/main/artifacthub2github/shared-functions.sh)
 
 ### The chart values if needed
 
