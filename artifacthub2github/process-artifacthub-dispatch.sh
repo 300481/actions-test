@@ -19,14 +19,6 @@ install_dependencies(){
 }
 
 update_chart_version(){
-    REPO_NAME=$(repo_name "${PAYLOAD}")
-    REPO=$(yaml_compatible_name "${REPO_NAME}")
-    PUBLISHER=$(publisher "${PAYLOAD}")
-    CHART_NAME=$(chart_name "${PAYLOAD}")
-    CHART=$(yaml_compatible_name "${CHART_NAME}")
-    VERSION=$(version "${PAYLOAD}")
-    REPO_URL=$(repo_url "${PAYLOAD}")
-
     echo "
     Repository Name: ${REPO_NAME}
     Repository URL:  ${REPO_URL}
@@ -46,18 +38,11 @@ update_chart_version(){
 }
 
 generate_helm_manifests(){
-    REPO_NAME=$(repo_name "${PAYLOAD}")
-    CHART_NAME=$(chart_name "${PAYLOAD}")
-    VERSION=$(version "${PAYLOAD}")
-    REPO_URL=$(repo_url "${PAYLOAD}")
-
     echo "${REPO_NAME} | ${REPO_URL} | ${CHART_NAME} | ${VERSION}"
 
     helm repo add ${REPO_NAME} ${REPO_URL}
     helm repo update
 
-    valuesdir="${VALUES_ROOT}/chart-values/${REPO_NAME}/${CHART_NAME}"
-    manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
     [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
     [[ -d ${valuesdir} ]] || $(mkdir -p ${valuesdir} ; touch ${valuesdir}/default.yaml)
 
@@ -68,11 +53,6 @@ generate_helm_manifests(){
 }
 
 generate_list_of_deprecated_api_versions(){
-    REPO_NAME=$(repo_name "${PAYLOAD}")
-    CHART_NAME=$(chart_name "${PAYLOAD}")
-
-    manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
-    deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
     [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
     [[ -d ${deprecationsdir} ]] || mkdir -p ${deprecationsdir}
     for manifestfile in ${manifestdir}/* ; do
@@ -82,11 +62,6 @@ generate_list_of_deprecated_api_versions(){
 }
 
 generate_list_of_cves(){
-    REPO_NAME=$(repo_name "${PAYLOAD}")
-    CHART_NAME=$(chart_name "${PAYLOAD}")
-
-    manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
-    cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
     [[ -d ${manifestdir} ]] || mkdir -p ${manifestdir}
     [[ -d ${cvedir} ]] || mkdir -p ${cvedir}
     for manifestfile in ${manifestdir}/*.yaml ; do
@@ -100,9 +75,20 @@ generate_list_of_cves(){
 }
 
 save_payload(){
-    REPO_NAME=$(repo_name "${PAYLOAD}")
-    CHART_NAME=$(chart_name "${PAYLOAD}")
     jq . <<< "${PAYLOAD}" > ${PAYLOAD_DIR}/${REPO_NAME}-${CHART_NAME}.json
 }
+
+REPO_NAME=$(repo_name "${PAYLOAD}")
+REPO=$(yaml_compatible_name "${REPO_NAME}")
+CHART_NAME=$(chart_name "${PAYLOAD}")
+CHART=$(yaml_compatible_name "${CHART_NAME}")
+VERSION=$(version "${PAYLOAD}")
+REPO_URL=$(repo_url "${PAYLOAD}")
+PUBLISHER=$(publisher "${PAYLOAD}")
+
+manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
+valuesdir="${VALUES_ROOT}/chart-values/${REPO_NAME}/${CHART_NAME}"
+deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
+cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
 
 ${1}
