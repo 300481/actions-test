@@ -1,0 +1,24 @@
+{
+  "data": {
+    "package": {
+      "changes": [
+        "[Changed]: Convert manifests of 'kind: List' to dashes separated documents."
+      ],
+      "containsSecurityUpdates": false,
+      "name": "argo-cd",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "argo",
+        "publisher": "argoproj"
+      },
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/3.33.2",
+      "version": "3.33.2"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "71419853-2f0d-41ef-ba6b-3a34367673d3",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
