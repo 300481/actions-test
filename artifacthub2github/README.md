@@ -16,7 +16,7 @@ It will:
 
 * save the payload
 
-* update the helm-charts.yaml file
+* update the chart-versions.yaml file
 
 * generate the chart manifests
 
@@ -28,7 +28,7 @@ It will:
 
 * create a pull request against the main branch
 
-### [helm-charts.yaml](https://github.com/300481/actions-test/blob/main/artifacthub2github/helm-charts.yaml)
+### [chart-versions.yaml](https://github.com/300481/actions-test/blob/main/artifacthub2github/chart-versions.yaml)
 
 This file contains the current versions of the specific helm charts.
 
@@ -45,25 +45,25 @@ The shared functions which are used by the processing script.
 
 This file is a template for templating a markdown file for the vulnerability reports of Trivy.
 
-### [argocd-example/chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-values)
+### [argocd-example-chart/chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example-chart/chart-values)
 
 This folder contains the Helm Values for the charts.
 
 You can have multiple values files to generate multiple manifests, for example for *`DEV`*, *`TEST`*, *`STAGING`* and *`PRODUCTION`*.
 
-### [chart-manifests](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-manifests)
+### [manifests](https://github.com/300481/actions-test/tree/main/artifacthub2github/processing-data/manifests)
 
 This folder contains the generated chart manifest files for the charts and its corresponding values files.
 
-### [chart-deprecations](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-deprecations)
+### [deprecations](https://github.com/300481/actions-test/tree/main/artifacthub2github/processing-data/deprecations)
 
 This folder contains the information about deprecated Kubernetes API versions which are used by the chart.
 
-### [chart-cves](https://github.com/300481/actions-test/tree/main/artifacthub2github/chart-cves)
+### [cves](https://github.com/300481/actions-test/tree/main/artifacthub2github/processing-data/cves)
 
 This folder contains the information about found CVEs of the containers used in the chart.
 
-### [example-payloads](https://github.com/300481/actions-test/tree/main/artifacthub2github/example-payloads)
+### [last-payloads](https://github.com/300481/actions-test/tree/main/artifacthub2github/processing-data/last-payloads)
 
 This folder contains the latest payloads and can be used to test the proper
 
@@ -91,8 +91,8 @@ Adjust it to your needs.
 
 ### The chart values if needed
 
-* [argocd-example/chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example/chart-values)
+* [argocd-example-chart/chart-values](https://github.com/300481/actions-test/tree/main/artifacthub2github/argocd-example-chart/chart-values)
 
 ### The vulnerability report template if needed 
 
-* [trivy.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/templates/trivy.tpl)
+* [trivy.tpl](https://github.com/300481/actions-test/blob/main/artifacthub2github/processing-data/templates/trivy.tpl)
