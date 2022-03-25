@@ -6,7 +6,7 @@ on:
 
 env:
   PAYLOAD: ${{ toJSON(github.event.client_payload) }}
-  PAYLOAD_DIR: artifacthub2github/example-payloads
+  PAYLOAD_DIR: artifacthub2github/last-payloads
   CONFIGFILE: artifacthub2github/helm-charts.yaml
   VALUES_ROOT: artifacthub2github/argocd-example-chart
   MANIFESTS_ROOT: artifacthub2github
