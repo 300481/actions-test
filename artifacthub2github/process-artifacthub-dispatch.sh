@@ -6,7 +6,7 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 [[ -z "${PAYLOAD}" ]] && die 2 "ERROR: empty payload"
 [[ -z "${PAYLOAD_DIR}" ]] && die 2 "ERROR: please set PAYLOAD_DIR"
-[[ -z "${CONFIGFILE}" ]] && die 2 "ERROR: please set CONFIGFILE"
+[[ -z "${CHART_VERSIONS}" ]] && die 2 "ERROR: please set CHART_VERSIONS"
 [[ -z "${VALUES_ROOT}" ]] && die 2 "ERROR: please set VALUES_ROOT"
 [[ -z "${MANIFESTS_ROOT}" ]] && die 2 "ERROR: please set MANIFESTS_ROOT"
 [[ -z "${DEPRECATIONS_ROOT}" ]] && die 2 "ERROR: please set DEPRECATIONS_ROOT"
@@ -28,13 +28,13 @@ update_chart_version(){
     "
 
     # update repo url
-    yq eval '.repos.'${REPO}'.url = "'${REPO_URL}'"' -i ${CONFIGFILE}
+    yq eval '.repos.'${REPO}'.url = "'${REPO_URL}'"' -i ${CHART_VERSIONS}
     # update repo name
-    yq eval '.repos.'${REPO}'.name = "'${REPO_NAME}'"' -i ${CONFIGFILE}
+    yq eval '.repos.'${REPO}'.name = "'${REPO_NAME}'"' -i ${CHART_VERSIONS}
     # update chart version
-    yq eval '.repos.'${REPO}'.charts.'${CHART}'.version = "'${VERSION}'"' -i ${CONFIGFILE}
+    yq eval '.repos.'${REPO}'.charts.'${CHART}'.version = "'${VERSION}'"' -i ${CHART_VERSIONS}
     # update chart name
-    yq eval '.repos.'${REPO}'.charts.'${CHART}'.name = "'${CHART_NAME}'"' -i ${CONFIGFILE}
+    yq eval '.repos.'${REPO}'.charts.'${CHART}'.name = "'${CHART_NAME}'"' -i ${CHART_VERSIONS}
 }
 
 generate_helm_manifests(){
