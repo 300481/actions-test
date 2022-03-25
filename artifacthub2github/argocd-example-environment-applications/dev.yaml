@@ -18,7 +18,7 @@ spec:
     targetRevision: dev
     helm:
       valuesFiles:
-      - artifacthub2github/helm-charts.yaml
+      - artifacthub2github/chart-versions.yaml
       - artifacthub2github/argocd-example-environment-applications/values/dev.yaml
   syncPolicy:
     automated:
