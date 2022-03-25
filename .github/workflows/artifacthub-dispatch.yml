@@ -6,7 +6,7 @@ on:
 
 env:
   PAYLOAD: ${{ toJSON(github.event.client_payload) }}
-  PAYLOAD_DIR: artifacthub2github/last-payloads
+  PAYLOAD_DIR: artifacthub2github/processing-data/last-payloads
   CHART_VERSIONS: artifacthub2github/chart-versions.yaml
   VALUES_ROOT: artifacthub2github/argocd-example-chart
   MANIFESTS_ROOT: artifacthub2github/processing-data
