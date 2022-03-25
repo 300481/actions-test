@@ -9,10 +9,10 @@ env:
   PAYLOAD_DIR: artifacthub2github/last-payloads
   CONFIGFILE: artifacthub2github/helm-charts.yaml
   VALUES_ROOT: artifacthub2github/argocd-example-chart
-  MANIFESTS_ROOT: artifacthub2github
-  DEPRECATIONS_ROOT: artifacthub2github
-  CVES_ROOT: artifacthub2github
-  TRIVY_TEMPLATE: artifacthub2github/templates/trivy.tpl
+  MANIFESTS_ROOT: artifacthub2github/processing-data
+  DEPRECATIONS_ROOT: artifacthub2github/processing-data
+  CVES_ROOT: artifacthub2github/processing-data
+  TRIVY_TEMPLATE: artifacthub2github/processing-data/templates/trivy.tpl
 
 jobs:
   artifacthub-dispatch:

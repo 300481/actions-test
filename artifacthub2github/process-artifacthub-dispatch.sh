@@ -80,10 +80,10 @@ set_variables(){
     REPO_URL=$(repo_url "${PAYLOAD}")
     PUBLISHER=$(publisher "${PAYLOAD}")
 
-    manifestdir="${MANIFESTS_ROOT}/chart-manifests/${REPO_NAME}/${CHART_NAME}"
+    manifestdir="${MANIFESTS_ROOT}/manifests/${REPO_NAME}/${CHART_NAME}"
     valuesdir="${VALUES_ROOT}/chart-values/${REPO_NAME}/${CHART_NAME}"
-    deprecationsdir="${DEPRECATIONS_ROOT}/chart-deprecations/${REPO_NAME}/${CHART_NAME}"
-    cvedir="${CVES_ROOT}/chart-cves/${REPO_NAME}/${CHART_NAME}"
+    deprecationsdir="${DEPRECATIONS_ROOT}/deprecations/${REPO_NAME}/${CHART_NAME}"
+    cvedir="${CVES_ROOT}/cves/${REPO_NAME}/${CHART_NAME}"
 }
 
 prepare_directory_structure(){
