@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       source:
+        default: uat
       destination:
+        default: main
 
 jobs: 
   merge-branch:
