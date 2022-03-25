@@ -1,6 +1,6 @@
 # Trivy Vulnerability Report
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r50 (debian 10.11) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r59 (debian 10.11) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -56,12 +56,15 @@
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.14|
+|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.14|
+|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.3|2.14|
 |CRITICAL|CVE-2021-23463|com.h2database:h2|1.4.197|2.0.202|
 |CRITICAL|CVE-2021-42392|com.h2database:h2|1.4.197|2.0.206|
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
 |HIGH|CVE-2022-23913|org.apache.activemq:artemis-commons|2.19.0|2.19.1|
 |MEDIUM|CVE-2020-13947|org.apache.activemq:artemis-server|2.19.0||
-|HIGH|CVE-2022-0839|org.liquibase:liquibase-core|3.5.5|4.8.0|
+|CRITICAL|CVE-2022-0839|org.liquibase:liquibase-core|3.5.5|4.8.0|
 |CRITICAL|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.2.25, 42.3.2|
 |MEDIUM|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.14|42.3.3|
 |MEDIUM|CVE-2022-23437|xerces:xercesImpl|2.12.0.SP03|2.12.2|
