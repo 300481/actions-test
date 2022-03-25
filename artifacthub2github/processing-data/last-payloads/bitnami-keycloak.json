@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "keycloak",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "bitnami",
+        "publisher": "bitnami"
+      },
+      "url": "https://artifacthub.io/packages/helm/bitnami/keycloak/7.1.7",
+      "version": "7.1.7"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "7ec7ce11-f30f-49ee-8a44-a9482e6e2fe9",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
