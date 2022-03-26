@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "kube-prometheus-stack",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "prometheus-community",
+        "publisher": "prometheus"
+      },
+      "url": "https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack/34.2.0",
+      "version": "34.2.0"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "0479a1aa-b2a7-4994-ab11-92845cf58770",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
