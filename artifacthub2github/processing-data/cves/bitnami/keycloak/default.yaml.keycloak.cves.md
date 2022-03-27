@@ -1,43 +1,42 @@
 # Trivy Vulnerability Report
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r59 (debian 10.11) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r60 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |HIGH|CVE-2021-22946|curl|7.64.0-4+deb10u2||
 |MEDIUM|CVE-2021-22947|curl|7.64.0-4+deb10u2||
 |HIGH|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |HIGH|CVE-2019-15847|gcc-8-base|8.3.0-6||
-|CRITICAL|CVE-2021-33574|libc-bin|2.28-10||
-|CRITICAL|CVE-2021-35942|libc-bin|2.28-10||
-|CRITICAL|CVE-2022-23218|libc-bin|2.28-10||
-|CRITICAL|CVE-2022-23219|libc-bin|2.28-10||
-|HIGH|CVE-2020-1751|libc-bin|2.28-10||
-|HIGH|CVE-2020-1752|libc-bin|2.28-10||
-|HIGH|CVE-2021-3326|libc-bin|2.28-10||
-|HIGH|CVE-2021-3999|libc-bin|2.28-10||
-|MEDIUM|CVE-2019-25013|libc-bin|2.28-10||
-|MEDIUM|CVE-2020-10029|libc-bin|2.28-10||
-|MEDIUM|CVE-2020-27618|libc-bin|2.28-10||
-|MEDIUM|CVE-2021-3998|libc-bin|2.28-10||
-|CRITICAL|CVE-2021-33574|libc6|2.28-10||
-|CRITICAL|CVE-2021-35942|libc6|2.28-10||
-|CRITICAL|CVE-2022-23218|libc6|2.28-10||
-|CRITICAL|CVE-2022-23219|libc6|2.28-10||
-|HIGH|CVE-2020-1751|libc6|2.28-10||
-|HIGH|CVE-2020-1752|libc6|2.28-10||
-|HIGH|CVE-2021-3326|libc6|2.28-10||
-|HIGH|CVE-2021-3999|libc6|2.28-10||
-|MEDIUM|CVE-2019-25013|libc6|2.28-10||
-|MEDIUM|CVE-2020-10029|libc6|2.28-10||
-|MEDIUM|CVE-2020-27618|libc6|2.28-10||
-|MEDIUM|CVE-2021-3998|libc6|2.28-10||
+|CRITICAL|CVE-2021-33574|libc-bin|2.28-10+deb10u1||
+|CRITICAL|CVE-2021-35942|libc-bin|2.28-10+deb10u1||
+|CRITICAL|CVE-2022-23218|libc-bin|2.28-10+deb10u1||
+|CRITICAL|CVE-2022-23219|libc-bin|2.28-10+deb10u1||
+|HIGH|CVE-2020-1751|libc-bin|2.28-10+deb10u1||
+|HIGH|CVE-2020-1752|libc-bin|2.28-10+deb10u1||
+|HIGH|CVE-2021-3326|libc-bin|2.28-10+deb10u1||
+|HIGH|CVE-2021-3999|libc-bin|2.28-10+deb10u1||
+|MEDIUM|CVE-2019-25013|libc-bin|2.28-10+deb10u1||
+|MEDIUM|CVE-2020-10029|libc-bin|2.28-10+deb10u1||
+|MEDIUM|CVE-2020-27618|libc-bin|2.28-10+deb10u1||
+|MEDIUM|CVE-2021-3998|libc-bin|2.28-10+deb10u1||
+|CRITICAL|CVE-2021-33574|libc6|2.28-10+deb10u1||
+|CRITICAL|CVE-2021-35942|libc6|2.28-10+deb10u1||
+|CRITICAL|CVE-2022-23218|libc6|2.28-10+deb10u1||
+|CRITICAL|CVE-2022-23219|libc6|2.28-10+deb10u1||
+|HIGH|CVE-2020-1751|libc6|2.28-10+deb10u1||
+|HIGH|CVE-2020-1752|libc6|2.28-10+deb10u1||
+|HIGH|CVE-2021-3326|libc6|2.28-10+deb10u1||
+|HIGH|CVE-2021-3999|libc6|2.28-10+deb10u1||
+|MEDIUM|CVE-2019-25013|libc6|2.28-10+deb10u1||
+|MEDIUM|CVE-2020-10029|libc6|2.28-10+deb10u1||
+|MEDIUM|CVE-2020-27618|libc6|2.28-10+deb10u1||
+|MEDIUM|CVE-2021-3998|libc6|2.28-10+deb10u1||
 |HIGH|CVE-2021-22946|libcurl4|7.64.0-4+deb10u2||
 |MEDIUM|CVE-2021-22947|libcurl4|7.64.0-4+deb10u2||
 |HIGH|CVE-2018-12886|libgcc1|8.3.0-6||
 |HIGH|CVE-2019-15847|libgcc1|8.3.0-6||
 |HIGH|CVE-2021-33560|libgcrypt20|1.8.4-5+deb10u1||
 |MEDIUM|CVE-2019-13627|libgcrypt20|1.8.4-5+deb10u1||
-|HIGH|CVE-2021-43618|libgmp10|2:6.1.2+dfsg-4||
 |MEDIUM|CVE-2021-4209|libgnutls30|3.6.7-4+deb10u7||
 |HIGH|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
 |HIGH|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
@@ -52,13 +51,14 @@
 |HIGH|CVE-2019-3844|libudev1|241-7~deb10u8||
 |MEDIUM|CVE-2021-3997|libudev1|241-7~deb10u8||
 |HIGH|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
+|MEDIUM|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-1||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.14|
-|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.14|
-|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.3|2.14|
+|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.13.2.1|
+|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.13.2.1|
+|HIGH|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.3|2.13.2.1|
 |CRITICAL|CVE-2021-23463|com.h2database:h2|1.4.197|2.0.202|
 |CRITICAL|CVE-2021-42392|com.h2database:h2|1.4.197|2.0.206|
 |CRITICAL|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
