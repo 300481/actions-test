@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Correct ArgoCD notification subscriptions type"
+        "[Fixed]: Correct ArgoCD applicationset controller port"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.2.3",
-      "version": "4.2.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.2.4",
+      "version": "4.2.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "d9585545-d563-4ddd-852b-52d6596652da",
+  "id": "59a5de1c-b1d2-4a38-91a0-222dd3fb0954",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
