@@ -18,6 +18,7 @@
 |CRITICAL|CVE-2021-3711|libcrypto1.1|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2021-3712|libcrypto1.1|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2022-0778|libcrypto1.1|1.1.1k-r0|1.1.1n-r0|
+|HIGH|CVE-2022-0778|libretls|3.3.3-r0|3.3.3p1-r3|
 |CRITICAL|CVE-2021-3711|libssl1.1|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2021-3712|libssl1.1|1.1.1k-r0|1.1.1l-r0|
 |HIGH|CVE-2022-0778|libssl1.1|1.1.1k-r0|1.1.1n-r0|
