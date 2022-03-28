@@ -10,12 +10,12 @@
         "name": "prometheus-community",
         "publisher": "prometheus"
       },
-      "url": "https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack/34.2.0",
-      "version": "34.2.0"
+      "url": "https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack/34.3.0",
+      "version": "34.3.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "0479a1aa-b2a7-4994-ab11-92845cf58770",
+  "id": "b7811f87-1cac-42b4-9241-126b75a1866b",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

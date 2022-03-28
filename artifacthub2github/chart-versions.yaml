@@ -13,7 +13,7 @@ repos:
     name: prometheus-community
     charts:
       kube_prometheus_stack:
-        version: 34.2.0
+        version: 34.3.0
         name: kube-prometheus-stack
     url: https://prometheus-community.github.io/helm-charts
   ingress_nginx:
