@@ -1,5 +1,8 @@
 # Trivy Vulnerability Report
 
+
+
+
 ## Target: bin/alertmanager --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
