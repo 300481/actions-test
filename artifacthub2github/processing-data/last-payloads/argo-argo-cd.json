@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Correct ArgoCD applicationset controller port"
+        "[Removed]: Remove Argo CD notification default notifier"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.2.4",
-      "version": "4.2.4"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.3.0",
+      "version": "4.3.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "59a5de1c-b1d2-4a38-91a0-222dd3fb0954",
+  "id": "f0136c34-29b0-4b8a-8e50-07a7df500c52",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
