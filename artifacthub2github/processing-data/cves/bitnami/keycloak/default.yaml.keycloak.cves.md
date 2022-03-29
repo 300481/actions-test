@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r61 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r62 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -59,9 +59,9 @@
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.13.2.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.13.2.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.3|2.13.2.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.12.6.1, 2.13.2.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.12.6.1, 2.13.2.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.3|2.12.6.1, 2.13.2.1|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-23463|com.h2database:h2|1.4.197|2.0.202|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42392|com.h2database:h2|1.4.197|2.0.206|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
