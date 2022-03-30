@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "nexus-repository-manager",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "sonatype",
+        "publisher": "sonatype"
+      },
+      "url": "https://artifacthub.io/packages/helm/sonatype/nexus-repository-manager/38.1.0",
+      "version": "38.1.0"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "04381fc5-d2f9-4b0e-ad86-153519f1ba7b",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
