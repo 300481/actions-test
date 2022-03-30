@@ -3,7 +3,7 @@
 
 
 
-## Target: quay.io/argoproj/argocd:v2.3.2 (ubuntu 21.10) --- Class: os-pkgs
+## Target: quay.io/argoproj/argocd:v2.3.3 (ubuntu 21.10) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|libperl5.32|5.32.1-3ubuntu3||
