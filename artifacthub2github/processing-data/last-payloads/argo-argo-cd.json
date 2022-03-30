@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Removed]: Remove Argo CD notification default notifier"
+        "[Changed]: Update to Argo CD v2.3.3"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.3.0",
-      "version": "4.3.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.3.1",
+      "version": "4.3.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "f0136c34-29b0-4b8a-8e50-07a7df500c52",
+  "id": "b0613a7e-6231-4992-9df6-173410d7f390",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
