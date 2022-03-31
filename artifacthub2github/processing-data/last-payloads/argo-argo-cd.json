@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update to Argo CD v2.3.3"
+        "[Added]: Ability to use external/existing Redis (eg. a managed cloud service)"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.3.1",
-      "version": "4.3.1"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.4.0",
+      "version": "4.4.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "b0613a7e-6231-4992-9df6-173410d7f390",
+  "id": "3b280aef-a3d7-42de-b5ff-e2b2af2d4f9d",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

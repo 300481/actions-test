@@ -12,7 +12,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-base|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-modules-5.32|5.32.1-3ubuntu3||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-2ubuntu7||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-2ubuntu7|1:1.2.11.dfsg-2ubuntu7.1|
 
 ## Target: usr/local/bin/argocd --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
