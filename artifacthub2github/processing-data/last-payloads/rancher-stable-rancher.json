@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "rancher",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "rancher-stable",
+        "publisher": "helm"
+      },
+      "url": "https://artifacthub.io/packages/helm/rancher-stable/rancher/2.6.4",
+      "version": "2.6.4"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "ab10ec36-9fba-4cd9-b826-6ac3542a5663",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
