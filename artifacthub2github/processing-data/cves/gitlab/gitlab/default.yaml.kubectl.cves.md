@@ -1,30 +1,34 @@
 # Trivy Vulnerability Report
 
+
+
+
 ## Target: registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:824750f20381facb70cb90d3cd41da075d7ffde5a14de6f14f7037285fe0ddb7 (debian 11.2) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|CRITICAL|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
-|HIGH|CVE-2021-22946|curl|7.74.0-1.3+deb11u1||
-|MEDIUM|CVE-2021-22947|curl|7.74.0-1.3+deb11u1||
-|CRITICAL|CVE-2021-33574|libc-bin|2.31-13+deb11u2||
-|CRITICAL|CVE-2022-23218|libc-bin|2.31-13+deb11u2||
-|CRITICAL|CVE-2022-23219|libc-bin|2.31-13+deb11u2||
-|HIGH|CVE-2021-3999|libc-bin|2.31-13+deb11u2||
-|MEDIUM|CVE-2021-3998|libc-bin|2.31-13+deb11u2||
-|CRITICAL|CVE-2021-33574|libc6|2.31-13+deb11u2||
-|CRITICAL|CVE-2022-23218|libc6|2.31-13+deb11u2||
-|CRITICAL|CVE-2022-23219|libc6|2.31-13+deb11u2||
-|HIGH|CVE-2021-3999|libc6|2.31-13+deb11u2||
-|MEDIUM|CVE-2021-3998|libc6|2.31-13+deb11u2||
-|CRITICAL|CVE-2021-22945|libcurl4|7.74.0-1.3+deb11u1||
-|HIGH|CVE-2021-22946|libcurl4|7.74.0-1.3+deb11u1||
-|MEDIUM|CVE-2021-22947|libcurl4|7.74.0-1.3+deb11u1||
-|HIGH|CVE-2021-33560|libgcrypt20|1.8.7-6||
-|MEDIUM|CVE-2021-4209|libgnutls30|3.7.1-5||
-|MEDIUM|CVE-2021-3997|libsystemd0|247.3-6||
-|MEDIUM|CVE-2021-3997|libudev1|247.3-6||
-|HIGH|CVE-2021-41617|openssh-client|1:8.4p1-5||
-|HIGH|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-bin|2.31-13+deb11u2|2.31-13+deb11u3|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc-bin|2.31-13+deb11u2|2.31-13+deb11u3|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23219|libc-bin|2.31-13+deb11u2|2.31-13+deb11u3|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-3999|libc-bin|2.31-13+deb11u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc-bin|2.31-13+deb11u2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc6|2.31-13+deb11u2|2.31-13+deb11u3|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc6|2.31-13+deb11u2|2.31-13+deb11u3|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23219|libc6|2.31-13+deb11u2|2.31-13+deb11u3|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-3999|libc6|2.31-13+deb11u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc6|2.31-13+deb11u2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|libcurl4|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|libcurl4|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|libcurl4|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33560|libgcrypt20|1.8.7-6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.7.1-5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libsystemd0|247.3-6|247.3-7|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libudev1|247.3-6|247.3-7|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-41617|openssh-client|1:8.4p1-5||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-2||
 
 ## Target: usr/local/bin/yq --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
