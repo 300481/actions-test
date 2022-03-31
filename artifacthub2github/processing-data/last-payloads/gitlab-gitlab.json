@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "gitlab",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "gitlab",
+        "publisher": "gitlab"
+      },
+      "url": "https://artifacthub.io/packages/helm/gitlab/gitlab/5.9.2",
+      "version": "5.9.2"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "df884135-f486-4ac6-9594-6e2ba70c3ffd",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
