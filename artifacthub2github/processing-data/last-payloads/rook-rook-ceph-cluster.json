@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "rook-ceph-cluster",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "rook",
+        "publisher": "viceice"
+      },
+      "url": "https://artifacthub.io/packages/helm/rook/rook-ceph-cluster/1.8.8",
+      "version": "1.8.8"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "230886fd-55c8-46ff-b7f6-3d57d3e4226d",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
