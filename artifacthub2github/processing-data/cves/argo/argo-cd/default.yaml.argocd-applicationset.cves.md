@@ -49,7 +49,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-modules-5.32|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|util-linux|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|util-linux|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-2ubuntu7||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-2ubuntu7|1:1.2.11.dfsg-2ubuntu7.1|
 
 ## Target: usr/local/bin/applicationset-controller --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
