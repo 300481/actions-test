@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update to Argo CD v2.3.3"
+        "[Fixed]: Upgrade dex to v2.30.2"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.3.1",
-      "version": "4.3.1"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.3.2",
+      "version": "4.3.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "b0613a7e-6231-4992-9df6-173410d7f390",
+  "id": "4ac5b97f-fe1e-4ba7-b16c-3661ca65904d",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
