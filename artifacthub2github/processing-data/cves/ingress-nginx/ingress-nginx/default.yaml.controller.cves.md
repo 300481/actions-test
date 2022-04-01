@@ -1,6 +1,9 @@
 # Trivy Vulnerability Report
 
-## Target: k8s.gcr.io/ingress-nginx/controller:v1.1.2@sha256:28b11ce69e57843de44e3db6413e98d09de0f6688e33d4bd384002a44f78405c (alpine 3.14.2) --- Class: os-pkgs
+
+
+
+## Target: k8s.gcr.io/ingress-nginx/controller:v1.1.3@sha256:31f47c1e202b39fadecf822a9b76370bd4baed199a005b3e7d4d1455f4fd3fe2 (alpine 3.14.4) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
