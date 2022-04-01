@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.8"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.0-beta.0"
 
   
 # imagePullSecrets:
@@ -31,7 +31,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.8"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.0-beta.0"
 
   
 # imagePullSecrets:
@@ -50,7 +50,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.8"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.0-beta.0"
 
   
 # imagePullSecrets:
@@ -285,7 +285,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.8.8"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.0-beta.0"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -455,7 +455,7 @@ metadata:
   name: default
 spec:
   monitoring:
-    rulesNamespace: default
+    createPrometheusRules: false
     enabled: false
     rulesNamespaceOverride: null
 
@@ -501,7 +501,8 @@ spec:
       osd:
         disabled: false
   mgr:
-    count: 1
+    allowMultiplePerNode: false
+    count: 2
     modules:
     - enabled: true
       name: pg_autoscaler
@@ -509,6 +510,63 @@ spec:
     allowMultiplePerNode: false
     count: 3
   removeOSDsIfOutAndSafeToRemove: false
+  resources:
+    cleanup:
+      limits:
+        cpu: 500m
+        memory: 1Gi
+      requests:
+        cpu: 500m
+        memory: 100Mi
+    crashcollector:
+      limits:
+        cpu: 500m
+        memory: 60Mi
+      requests:
+        cpu: 100m
+        memory: 60Mi
+    logcollector:
+      limits:
+        cpu: 500m
+        memory: 1Gi
+      requests:
+        cpu: 100m
+        memory: 100Mi
+    mgr:
+      limits:
+        cpu: 1000m
+        memory: 1Gi
+      requests:
+        cpu: 500m
+        memory: 512Mi
+    mgr-sidecar:
+      limits:
+        cpu: 500m
+        memory: 100Mi
+      requests:
+        cpu: 100m
+        memory: 40Mi
+    mon:
+      limits:
+        cpu: 2000m
+        memory: 2Gi
+      requests:
+        cpu: 1000m
+        memory: 1Gi
+    osd:
+      limits:
+        cpu: 2000m
+        memory: 4Gi
+      requests:
+        cpu: 1000m
+        memory: 4Gi
+    prepareosd:
+      limits:
+        cpu: 500m
+        memory: 200Mi
+      requests:
+        cpu: 500m
+        memory: 50Mi
   skipUpgradeChecks: false
   storage:
     useAllDevices: true
@@ -532,6 +590,13 @@ spec:
   metadataServer:
     activeCount: 1
     activeStandby: true
+    resources:
+      limits:
+        cpu: 2000m
+        memory: 4Gi
+      requests:
+        cpu: 1000m
+        memory: 4Gi
 ---
 # Source: rook-ceph-cluster/templates/cephobjectstore.yaml
 apiVersion: ceph.rook.io/v1
@@ -547,6 +612,13 @@ spec:
   gateway:
     instances: 1
     port: 80
+    resources:
+      limits:
+        cpu: 2000m
+        memory: 2Gi
+      requests:
+        cpu: 1000m
+        memory: 1Gi
   healthCheck:
     bucket:
       interval: 60s
