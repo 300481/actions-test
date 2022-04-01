@@ -1,0 +1,27 @@
+{
+  "data": {
+    "package": {
+      "changes": [
+        "#8307 Nginx v1.19.10",
+        "#8386 Alpine 3.14.4",
+        "#8339 Patch OpenSSL CVE-2022-0778",
+        "#8321 Vulnerability CVE-2022-23308 for libxml2"
+      ],
+      "containsSecurityUpdates": false,
+      "name": "ingress-nginx",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "ingress-nginx",
+        "publisher": "kubernetes"
+      },
+      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.0.19",
+      "version": "4.0.19"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "54a06405-f21c-413a-80e6-a798f811f090",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
