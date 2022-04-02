@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r62 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r66 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -54,7 +54,6 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-1||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -67,6 +66,7 @@
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23913|org.apache.activemq:artemis-commons|2.19.0|2.19.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-13947|org.apache.activemq:artemis-server|2.19.0||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20323|org.keycloak:keycloak-core|16.1.1|17.0.0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-0839|org.liquibase:liquibase-core|3.5.5|4.8.0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.2.25, 42.3.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.14|42.3.3|

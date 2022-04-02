@@ -85,7 +85,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|locales|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|locales|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-1|1:1.2.11.dfsg-1+deb10u1|
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
