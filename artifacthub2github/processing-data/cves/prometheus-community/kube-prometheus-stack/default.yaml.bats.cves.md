@@ -36,7 +36,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42385|ssl_client|1.31.1-r20|1.31.1-r21|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42386|ssl_client|1.31.1-r20|1.31.1-r21|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42374|ssl_client|1.31.1-r20|1.31.1-r21|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib|1.2.11-r3|1.2.12-r0|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-r3|1.2.12-r0|
 
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
