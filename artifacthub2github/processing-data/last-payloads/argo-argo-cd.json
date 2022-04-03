@@ -2,8 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Set 'server.config.url' to empty string so logout function can calculate the right redirect URL",
-        "[Fixed]: Do not create slack service account when notifications controller is disabled"
+        "[Added]: New parameters to override Certificate duration and renewBefore"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -13,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.4.1",
-      "version": "4.4.1"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.0",
+      "version": "4.5.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "6eeaa2ed-2cba-445a-a691-3387860a8d6e",
+  "id": "ffcd37b7-5f11-430d-83cc-61ce90cf9013",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
