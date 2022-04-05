@@ -1,0 +1,30 @@
+{
+  "data": {
+    "package": {
+      "changes": [
+        "changed links to get a better overview of sources",
+        "Updated all instances of the caCerts enabled check",
+        "changed description of dependency postgresql chart",
+        "no longer automount service account token",
+        "secure admin password in k8s secret",
+        "Specify service account name in change admin password hook",
+        "Specify location of .netrc file when downloading plugins that require auth"
+      ],
+      "containsSecurityUpdates": false,
+      "name": "sonarqube",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "sonarqube",
+        "publisher": "sonarsource"
+      },
+      "url": "https://artifacthub.io/packages/helm/sonarqube/sonarqube/2.0.7+289",
+      "version": "2.0.7+289"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "845952f3-d384-4a81-8971-3d9c302073fa",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
