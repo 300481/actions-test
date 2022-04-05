@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -20,13 +20,13 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
 type: Opaque
 data:
-  jenkins-admin-password: "V1hNN0dyOVdGQUdVeDN6Rmx0cTU1Ng=="
+  jenkins-admin-password: "NFVVMEVwUTAxaDdCVE5GODBDYzRuaQ=="
   jenkins-admin-user: "YWRtaW4="
 ---
 # Source: jenkins/templates/config.yaml
@@ -65,7 +65,7 @@ data:
     kubernetes:1.31.3
     workflow-aggregator:2.6
     git:4.10.2
-    configuration-as-code:1.55.1
+    configuration-as-code:1414.v878271fc496f
 ---
 # Source: jenkins/templates/jcasc-config.yaml
 apiVersion: v1
@@ -75,7 +75,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": jenkins
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -168,7 +168,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -188,7 +188,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -210,7 +210,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -229,7 +229,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -250,7 +250,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -271,7 +271,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -293,7 +293,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -315,7 +315,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.11.8"
+    "helm.sh/chart": "jenkins-3.11.9"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -334,7 +334,7 @@ spec:
         "app.kubernetes.io/instance": "jenkins"
         "app.kubernetes.io/component": "jenkins-controller"
       annotations:
-        checksum/config: 57cc2219e9b68bf8c6a2765b9d13517a3f77d26d1a3fd4117fc30c90055d3475
+        checksum/config: fc1e9fdab975f5a4eab73dcc19c261343ec4e44841372979d099a800b59f91c9
     spec:
       securityContext:
     
@@ -522,7 +522,7 @@ data:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-ubdes"
+  name: "jenkins-ui-test-thj4l"
   namespace: default
   annotations:
     "helm.sh/hook": test-success
