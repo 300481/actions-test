@@ -49,7 +49,7 @@ repos:
     name: sonarqube
     charts:
       sonarqube:
-        version: 2.0.0+233
+        version: 2.0.7+289
         name: sonarqube
   sonatype:
     url: https://sonatype.github.io/helm3-charts/
