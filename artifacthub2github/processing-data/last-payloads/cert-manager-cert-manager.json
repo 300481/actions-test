@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "cert-manager",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "cert-manager",
+        "publisher": "cert-manager"
+      },
+      "url": "https://artifacthub.io/packages/helm/cert-manager/cert-manager/1.8.0",
+      "version": "1.8.0"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "5ad4f116-8933-4c3e-b7c8-c51c457053ec",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
