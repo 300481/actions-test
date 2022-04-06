@@ -10,12 +10,12 @@
         "name": "jenkinsci",
         "publisher": "jenkins"
       },
-      "url": "https://artifacthub.io/packages/helm/jenkinsci/jenkins/3.11.9",
-      "version": "3.11.9"
+      "url": "https://artifacthub.io/packages/helm/jenkinsci/jenkins/3.11.10",
+      "version": "3.11.10"
     }
   },
   "datacontenttype": "application/json",
-  "id": "59d7c3d3-efc0-401b-b3cc-0cdc8bfe804a",
+  "id": "d617f41e-288f-48e9-9a0f-d0a3217eac51",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
