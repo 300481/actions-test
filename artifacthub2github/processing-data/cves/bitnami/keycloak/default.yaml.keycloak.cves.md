@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r67 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r70 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -21,7 +21,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-25013|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|libc-bin|2.28-10+deb10u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc6|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|libc6|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc6|2.28-10+deb10u1||
@@ -33,7 +32,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-25013|libc6|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|libc6|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|libc6|2.28-10+deb10u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc6|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libgcc1|8.3.0-6||
