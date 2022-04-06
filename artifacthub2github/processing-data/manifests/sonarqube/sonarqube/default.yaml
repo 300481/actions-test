@@ -6,7 +6,7 @@ metadata:
   name: sonarqube-sonarqube
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 type: Opaque
@@ -20,7 +20,7 @@ metadata:
   name: sonarqube-sonarqube-monitoring-passcode
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 type: Opaque
@@ -34,7 +34,7 @@ metadata:
   name: sonarqube-sonarqube-config
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -46,7 +46,7 @@ metadata:
   name: sonarqube-sonarqube-init-fs
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -59,7 +59,7 @@ metadata:
   name: sonarqube-sonarqube-init-sysctl
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -90,7 +90,7 @@ metadata:
   name: sonarqube-sonarqube-install-plugins
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -103,7 +103,7 @@ metadata:
   name: sonarqube-sonarqube-jdbc-config
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -117,7 +117,7 @@ metadata:
   name: sonarqube-sonarqube-prometheus-ce-config
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -132,7 +132,7 @@ metadata:
   name: sonarqube-sonarqube-prometheus-config
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -147,7 +147,7 @@ metadata:
   name: sonarqube-sonarqube-tests
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 data:
@@ -163,7 +163,7 @@ metadata:
   name: sonarqube-sonarqube
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 
@@ -185,7 +185,7 @@ metadata:
   name: sonarqube-sonarqube
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
     app.kubernetes.io/name: sonarqube-sonarqube-sonarqube
@@ -193,7 +193,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: sonarqube
     app.kubernetes.io/component: sonarqube-sonarqube
-    app.kubernetes.io/version: "9.3.0-community"
+    app.kubernetes.io/version: "9.4.0-community"
 spec:
   replicas: 1
   serviceName: sonarqube-sonarqube
@@ -207,13 +207,13 @@ spec:
         app: sonarqube
         release: sonarqube
       annotations:
-        checksum/init-sysctl: e713ea2fd575918d908d01a4de22c2522a581eedc783e059ac061c4946db825b
-        checksum/init-fs: c3cf96661b22070cf712395a9884edfa36c617e2c10c822cdd51dd0a54c63e76
-        checksum/plugins: 1537e84b431ea062e6fdcc879d29dd49c61e65d1461c33f0bdee3809a663b2da
-        checksum/config: 9efbb990114080f46765d1592c802447b89cedc33abdc9775b86398a1f00560b
-        checksum/secret: f03e5707632764b3672593b3b0d12882ecf7a4e881d4c084bfbb31e280a2fa31
-        checksum/prometheus-config: 4cbb1c52907ea872e15c28f322b10501031801fa98908b1e4799b88468abd4c9
-        checksum/prometheus-ce-config: 50aa03c0ce906addc66e347d4cfabe761dc95baeb3bcb919144f1c1f1da09a06
+        checksum/init-sysctl: bc9b35f11506863a0612bc6087f2e2734067749f818d6d5cc309374db035550e
+        checksum/init-fs: 13c846fe7fd34c6f86c38285f013115e6186c1be7f7c78f7f26b030bcaca82ec
+        checksum/plugins: df5c035b0bcd5b1068d94aa42dfb0dd009df5d422a18210b2831e0bbf1c92bf9
+        checksum/config: c46aa6d50c89d921f62e190b629aca779500a11126eab4b3b37268e5d8aa0c1a
+        checksum/secret: ed862653e36e22edc1c416e80090680b98a2f54efa771204ac57eeb5409f0f26
+        checksum/prometheus-config: dca045c6ad435c4b22276a6ee576a77f12ba5cd430a360fb00692e9494cdc60a
+        checksum/prometheus-ce-config: c4881d459391eadbf4a5ca5e922d0117f367a32d030d8ad858371cff389587d7
     spec:
       securityContext:
         fsGroup: 1000
@@ -254,7 +254,7 @@ spec:
               value: 
       containers:
         - name: sonarqube
-          image: "sonarqube:9.3.0-community"
+          image: "sonarqube:9.4.0-community"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -395,7 +395,7 @@ metadata:
     "helm.sh/hook": test-success
   labels:
     app: sonarqube
-    chart: sonarqube-2.0.7_289
+    chart: sonarqube-3.0.0_296
     release: sonarqube
     heritage: Helm
 spec:

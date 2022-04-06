@@ -8,7 +8,8 @@
         "no longer automount service account token",
         "secure admin password in k8s secret",
         "Specify service account name in change admin password hook",
-        "Specify location of .netrc file when downloading plugins that require auth"
+        "Specify location of .netrc file when downloading plugins that require auth",
+        "updated SonarQube to 9.4.0"
       ],
       "containsSecurityUpdates": false,
       "name": "sonarqube",
@@ -18,12 +19,12 @@
         "name": "sonarqube",
         "publisher": "sonarsource"
       },
-      "url": "https://artifacthub.io/packages/helm/sonarqube/sonarqube/2.0.7+289",
-      "version": "2.0.7+289"
+      "url": "https://artifacthub.io/packages/helm/sonarqube/sonarqube/3.0.0+296",
+      "version": "3.0.0+296"
     }
   },
   "datacontenttype": "application/json",
-  "id": "845952f3-d384-4a81-8971-3d9c302073fa",
+  "id": "7045436c-906e-4e26-964d-98910d8a9a39",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
