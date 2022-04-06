@@ -14,12 +14,10 @@
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc-bin|2.31-13+deb11u2|2.31-13+deb11u3|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23219|libc-bin|2.31-13+deb11u2|2.31-13+deb11u3|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-3999|libc-bin|2.31-13+deb11u2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc-bin|2.31-13+deb11u2||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc6|2.31-13+deb11u2|2.31-13+deb11u3|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc6|2.31-13+deb11u2|2.31-13+deb11u3|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23219|libc6|2.31-13+deb11u2|2.31-13+deb11u3|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-3999|libc6|2.31-13+deb11u2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc6|2.31-13+deb11u2||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|libcurl3-gnutls|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|libcurl3-gnutls|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|libcurl3-gnutls|7.74.0-1.3+deb11u1||
