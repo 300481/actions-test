@@ -10,6 +10,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|gcc-8-base|8.3.0-6||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.9-3||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc-bin|2.28-10+deb10u1||
@@ -40,6 +41,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-13627|libgcrypt20|1.8.4-5+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.6.7-4+deb10u7||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|liblzma5|5.2.4-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-14155|libpcre3|2:8.39-12||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-13115|libssh2-1|1.8.0-2.1||
