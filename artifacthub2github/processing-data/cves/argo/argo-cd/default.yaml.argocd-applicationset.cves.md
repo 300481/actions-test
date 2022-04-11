@@ -8,6 +8,7 @@
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|bsdutils|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|bsdutils|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|gzip|1.10-4ubuntu1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|libblkid1|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|libblkid1|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc-bin|2.34-0ubuntu3|2.34-0ubuntu3.2|
