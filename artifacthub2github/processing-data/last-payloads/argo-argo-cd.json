@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: New parameters to override Certificate duration and renewBefore"
+        "[Fixed]: Removed status field from ApplicationSet CRD"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.0",
-      "version": "4.5.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.1",
+      "version": "4.5.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "ffcd37b7-5f11-430d-83cc-61ce90cf9013",
+  "id": "6d5bc9f2-7fdf-4b5d-8fe2-38dd2d994e31",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

@@ -6,6 +6,7 @@
 ## Target: quay.io/argoproj/argocd:v2.3.3 (ubuntu 21.10) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|gzip|1.10-4ubuntu1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|libperl5.32|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-9794|libsqlite3-0|3.35.5-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-36368|openssh-client|1:8.4p1-6ubuntu2.1||
@@ -23,6 +24,7 @@
 ## Target: usr/local/bin/helm --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23648|github.com/containerd/containerd|v1.5.9|1.4.13, 1.5.10, 1.6.1|
 
 ## Target: usr/local/bin/kustomize --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
