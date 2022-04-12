@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Removed status field from ApplicationSet CRD"
+        "[Feat]: Add ability to set Notification Services"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.1",
-      "version": "4.5.1"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.2",
+      "version": "4.5.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "6d5bc9f2-7fdf-4b5d-8fe2-38dd2d994e31",
+  "id": "2f19558c-6671-44a5-8b71-8eeb491624a2",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
