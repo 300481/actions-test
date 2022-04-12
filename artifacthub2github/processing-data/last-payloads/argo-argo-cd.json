@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Feat]: Add ability to set Notification Services"
+        "[Changed]: update comment to clarify usecase"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.2",
-      "version": "4.5.2"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.3",
+      "version": "4.5.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "2f19558c-6671-44a5-8b71-8eeb491624a2",
+  "id": "81e25be6-f16b-483a-820c-cbb25da46d48",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
