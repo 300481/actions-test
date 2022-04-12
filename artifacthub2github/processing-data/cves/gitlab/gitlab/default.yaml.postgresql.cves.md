@@ -10,6 +10,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|gcc-8-base|8.3.0-6||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.9-3||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-bin|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|libc-bin|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc-bin|2.28-10||
@@ -21,7 +22,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-25013|libc-bin|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|libc-bin|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|libc-bin|2.28-10||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc-bin|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-l10n|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|libc-l10n|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc-l10n|2.28-10||
@@ -33,7 +33,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-25013|libc-l10n|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|libc-l10n|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|libc-l10n|2.28-10||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc-l10n|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc6|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|libc6|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc6|2.28-10||
@@ -45,7 +44,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-25013|libc6|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|libc6|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|libc6|2.28-10||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|libc6|2.28-10||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|libcom-err2|1.44.5-1+deb10u3||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libgcc1|8.3.0-6||
@@ -60,6 +59,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libk5crypto3|1.17-3+deb10u2|1.17-3+deb10u3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libkrb5-3|1.17-3+deb10u2|1.17-3+deb10u3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libkrb5support0|1.17-3+deb10u2|1.17-3+deb10u3|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|liblzma5|5.2.4-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-14155|libpcre3|2:8.39-12||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1|2.1.27+dfsg-1+deb10u2|
@@ -96,13 +96,12 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-25013|locales|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|locales|2.28-10||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|locales|2.28-10||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3998|locales|2.28-10||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-3711|openssl|1.1.1d-0+deb10u6|1.1.1d-0+deb10u7|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-3712|openssl|1.1.1d-0+deb10u6|1.1.1d-0+deb10u7|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|openssl|1.1.1d-0+deb10u6|1.1.1d-0+deb10u8|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4160|openssl|1.1.1d-0+deb10u6|1.1.1d-0+deb10u8|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-1|1:1.2.11.dfsg-1+deb10u1|
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

@@ -33,6 +33,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42386|ssl_client|1.33.1-r3|1.33.1-r6|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42374|ssl_client|1.33.1-r3|1.33.1-r4|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42375|ssl_client|1.33.1-r3|1.33.1-r5|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|xz-libs|5.2.5-r0|5.2.5-r1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-r3|1.2.12-r0|
 
 ## Target: dbg --- Class: lang-pkgs
