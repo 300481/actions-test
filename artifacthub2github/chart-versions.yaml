@@ -5,7 +5,7 @@ repos:
         version: 1.8.0
         name: argocd-notifications
       argo_cd:
-        version: 4.5.2
+        version: 4.5.3
         name: argo-cd
     url: https://argoproj.github.io/argo-helm
     name: argo
