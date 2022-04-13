@@ -7,6 +7,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-36159|apk-tools|2.10.6-r0|2.10.7-r0|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|busybox|1.31.1-r20|1.31.1-r22|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42378|busybox|1.31.1-r20|1.31.1-r21|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42379|busybox|1.31.1-r20|1.31.1-r21|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42380|busybox|1.31.1-r20|1.31.1-r21|
@@ -26,6 +27,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-39537|ncurses|6.2_p20200523-r0|6.2_p20200523-r1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-39537|ncurses-libs|6.2_p20200523-r0|6.2_p20200523-r1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-39537|ncurses-terminfo-base|6.2_p20200523-r0|6.2_p20200523-r1|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|ssl_client|1.31.1-r20|1.31.1-r22|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42378|ssl_client|1.31.1-r20|1.31.1-r21|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42379|ssl_client|1.31.1-r20|1.31.1-r21|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42380|ssl_client|1.31.1-r20|1.31.1-r21|

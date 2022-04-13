@@ -6,6 +6,8 @@
 ## Target: grafana/grafana:8.4.5 (alpine 3.15.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|busybox|1.34.1-r4|1.34.1-r5|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|ssl_client|1.34.1-r4|1.34.1-r5|
 
 ## Target: usr/share/grafana/bin/grafana-cli --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
