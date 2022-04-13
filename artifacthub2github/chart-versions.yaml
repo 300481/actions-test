@@ -70,7 +70,7 @@ repos:
     name: rook
     charts:
       rook_ceph_cluster:
-        version: 1.8.8
+        version: 1.9.0
         name: rook-ceph-cluster
   gitlab:
     url: http://charts.gitlab.io/
