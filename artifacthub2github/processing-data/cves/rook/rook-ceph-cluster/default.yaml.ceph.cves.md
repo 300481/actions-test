@@ -7,6 +7,8 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3468|avahi-libs|0.7-20.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|e2fsprogs|1.45.6-4.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|e2fsprogs-libs|1.45.6-4.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-45960|expat|2.2.5-5.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-46143|expat|2.2.5-5.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22822|expat|2.2.5-5.el8||
@@ -18,16 +20,22 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-25314|expat|2.2.5-5.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-0256|gdisk|1.0.3-8.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-0308|gdisk|1.0.3-8.el8||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.9-12.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-17049|krb5-libs|1.18.2-14.el8||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-26280|libarchive|3.3.3-3.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-21674|libarchive|3.3.3-3.el8_5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libcom_err|1.45.6-4.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libgcc|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libgcc|8.5.0-10.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libgcc|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-12904|libgcrypt|1.8.5-6.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-40528|libgcrypt|1.8.5-6.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libgfortran|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libgfortran|8.5.0-10.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libgfortran|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libquadmath|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libquadmath|8.5.0-10.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libquadmath|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44568|libsolv|0.7.20-1.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44569|libsolv|0.7.20-1.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44570|libsolv|0.7.20-1.el8||
@@ -37,8 +45,10 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44575|libsolv|0.7.20-1.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44576|libsolv|0.7.20-1.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44577|libsolv|0.7.20-1.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libss|1.45.6-4.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libstdc++|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libstdc++|8.5.0-10.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libstdc++|8.5.0-10.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20316|libwbclient|4.15.5-4.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2016-4607|libxslt|1.1.32-6.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
@@ -84,7 +94,8 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20839|systemd-pam|239-58.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20839|systemd-udev|239-58.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2005-2541|tar|2:1.30-5.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib|1.2.11-17.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1154|vim-minimal|2:8.0.1763-16.el8_5.12||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-17.el8||
 
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
