@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: update comment to clarify usecase"
+        "[Added]: added ImagePullPolicy to repo server's init containers"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.3",
-      "version": "4.5.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.4",
+      "version": "4.5.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "81e25be6-f16b-483a-820c-cbb25da46d48",
+  "id": "13ed7eb7-2c1f-48a3-9d3f-03a87e147c05",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

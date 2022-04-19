@@ -6,7 +6,10 @@
 ## Target: quay.io/argoproj/argocd:v2.3.3 (ubuntu 21.10) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|gzip|1.10-4ubuntu1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24765|git|1:2.32.0-1ubuntu1|1:2.32.0-1ubuntu1.1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24765|git-man|1:2.32.0-1ubuntu1|1:2.32.0-1ubuntu1.1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|gzip|1.10-4ubuntu1|1.10-4ubuntu1.1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|liblzma5|5.2.5-2|5.2.5-2ubuntu0.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|libperl5.32|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-9794|libsqlite3-0|3.35.5-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-36368|openssh-client|1:8.4p1-6ubuntu2.1||
