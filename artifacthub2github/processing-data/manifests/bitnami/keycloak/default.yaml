@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.14
+    helm.sh/chart: keycloak-7.1.15
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -18,10 +18,10 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: keycloak-postgresql
-  namespace: default
+  namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.1.17
+    helm.sh/chart: postgresql-11.1.20
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
 type: Opaque
@@ -38,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.14
+    helm.sh/chart: keycloak-7.1.15
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -62,10 +62,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: keycloak-postgresql-hl
-  namespace: default
+  namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.1.17
+    helm.sh/chart: postgresql-11.1.20
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
@@ -95,10 +95,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: keycloak-postgresql
-  namespace: default
+  namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.1.17
+    helm.sh/chart: postgresql-11.1.20
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
@@ -123,7 +123,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.14
+    helm.sh/chart: keycloak-7.1.15
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -149,7 +149,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.14
+    helm.sh/chart: keycloak-7.1.15
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -179,10 +179,10 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: keycloak-postgresql
-  namespace: default
+  namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.1.17
+    helm.sh/chart: postgresql-11.1.20
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
@@ -203,7 +203,7 @@ spec:
       name: keycloak-postgresql
       labels:
         app.kubernetes.io/name: postgresql
-        helm.sh/chart: postgresql-11.1.17
+        helm.sh/chart: postgresql-11.1.20
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: primary
@@ -235,7 +235,7 @@ spec:
       initContainers:
       containers:
         - name: postgresql
-          image: docker.io/bitnami/postgresql:14.2.0-debian-10-r54
+          image: docker.io/bitnami/postgresql:14.2.0-debian-10-r67
           imagePullPolicy: "IfNotPresent"
           securityContext:
             runAsUser: 1001
@@ -347,7 +347,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-7.1.14
+    helm.sh/chart: keycloak-7.1.15
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -366,10 +366,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: 7bd9e38ddf5e9a5da801fbff5e2c4b4f12199244e15592076b6dcfe59428be39
+        checksum/configmap-env-vars: 6bd4daddda0213e9b3ff5223b6ec6927f5362bdf96f08ba4923206e5347e9c97
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-7.1.14
+        helm.sh/chart: keycloak-7.1.15
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
@@ -396,7 +396,7 @@ spec:
         fsGroup: 1001
       containers:
         - name: keycloak
-          image: docker.io/bitnami/keycloak:16.1.1-debian-10-r70
+          image: docker.io/bitnami/keycloak:16.1.1-debian-10-r82
           imagePullPolicy: IfNotPresent
           securityContext:
             runAsNonRoot: true
