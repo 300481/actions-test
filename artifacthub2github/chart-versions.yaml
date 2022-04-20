@@ -63,7 +63,7 @@ repos:
     name: bitnami
     charts:
       keycloak:
-        version: 7.1.15
+        version: 7.1.16
         name: keycloak
   rook:
     url: https://charts.rook.io/release

@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r82 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r83 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -41,6 +41,8 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-13627|libgcrypt20|1.8.4-5+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.6.7-4+deb10u7||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncurses6|6.1+20181013-2+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncursesw6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-14155|libpcre3|2:8.39-12||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-13115|libssh2-1|1.8.0-2.1||
@@ -49,9 +51,11 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libsystemd0|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libsystemd0|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libsystemd0|241-7~deb10u8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libtinfo6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libudev1|241-7~deb10u8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|ncurses-base|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
 ## Target: Java --- Class: lang-pkgs
