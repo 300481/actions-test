@@ -101,7 +101,7 @@ repos:
         version: 7.17.3
         name: elasticsearch
       logstash:
-        version: 7.17.1
+        version: 7.17.3
         name: logstash
       kibana:
         version: 7.17.3
