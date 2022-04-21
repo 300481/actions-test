@@ -6,6 +6,7 @@
 ## Target: kiwigrid/k8s-sidecar:1.15.0 (alpine 3.15.0) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|busybox|1.34.1-r3|1.34.1-r5|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-22822|expat|2.4.1-r0|2.4.3-r0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-22823|expat|2.4.1-r0|2.4.3-r0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-22824|expat|2.4.1-r0|2.4.3-r0|
@@ -28,6 +29,8 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|libuuid|2.37.2-r1|2.37.3-r0|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|libuuid|2.37.2-r1|2.37.3-r0|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0563|libuuid|2.37.2-r1|2.37.4-r0|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|ssl_client|1.34.1-r3|1.34.1-r5|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|xz-libs|5.2.5-r0|5.2.5-r1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-r3|1.2.12-r0|
 
 ## Target: Python --- Class: lang-pkgs
