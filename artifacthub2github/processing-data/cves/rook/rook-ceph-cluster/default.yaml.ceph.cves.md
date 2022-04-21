@@ -53,7 +53,9 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2016-4607|libxslt|1.1.32-6.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-39537|ncurses-base|6.1-9.20180224.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|ncurses-base|6.1-9.20180224.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-39537|ncurses-libs|6.1-9.20180224.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|ncurses-libs|6.1-9.20180224.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3580|nettle|3.4.1-7.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4048|openblas|0.3.15-3.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4048|openblas-threads|0.3.15-3.el8||
