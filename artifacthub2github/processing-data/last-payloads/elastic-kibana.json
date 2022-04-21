@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "kibana",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "elastic",
+        "publisher": "elastic"
+      },
+      "url": "https://artifacthub.io/packages/helm/elastic/kibana/7.17.3",
+      "version": "7.17.3"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "e8c08a5c-adcb-4a55-a32a-247828e4fe8d",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
