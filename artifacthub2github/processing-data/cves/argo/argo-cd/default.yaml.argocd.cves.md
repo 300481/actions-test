@@ -12,7 +12,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|liblzma5|5.2.5-2|5.2.5-2ubuntu0.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|libperl5.32|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-9794|libsqlite3-0|3.35.5-1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-36368|openssh-client|1:8.4p1-6ubuntu2.1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-base|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-modules-5.32|5.32.1-3ubuntu3||
@@ -22,12 +21,14 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20329|go.mongodb.org/mongo-driver|v1.1.2|1.5.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210817164053-32db794688a5|0.0.0-20220315160706-3147a52a75dd|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8554|k8s.io/kubernetes|v1.23.1||
 
 ## Target: usr/local/bin/helm --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23648|github.com/containerd/containerd|v1.5.9|1.4.13, 1.5.10, 1.6.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20211117183948-ae814b36b871|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/kustomize --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
