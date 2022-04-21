@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "elasticsearch",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "elastic",
+        "publisher": "elastic"
+      },
+      "url": "https://artifacthub.io/packages/helm/elastic/elasticsearch/7.17.3",
+      "version": "7.17.3"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "5edff81e-c256-4193-a932-9f603e8f261d",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
