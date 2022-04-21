@@ -104,7 +104,7 @@ repos:
         version: 7.17.1
         name: logstash
       kibana:
-        version: 7.17.1
+        version: 7.17.3
         name: kibana
   gitea:
     url: https://dl.gitea.io/charts
