@@ -86,7 +86,7 @@ spec:
             - ALL
           runAsNonRoot: true
           runAsUser: 1000
-        image: "docker.elastic.co/logstash/logstash:7.17.1"
+        image: "docker.elastic.co/logstash/logstash:7.17.3"
         imagePullPolicy: "IfNotPresent"
         livenessProbe:
           failureThreshold: 3

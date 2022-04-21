@@ -1,0 +1,22 @@
+{
+  "data": {
+    "package": {
+      "changes": [],
+      "containsSecurityUpdates": false,
+      "name": "logstash",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "elastic",
+        "publisher": "elastic"
+      },
+      "url": "https://artifacthub.io/packages/helm/elastic/logstash/7.17.3",
+      "version": "7.17.3"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "9336cace-1cdb-4a8d-88f0-f3f1b50b64ad",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
