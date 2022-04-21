@@ -123,7 +123,7 @@ spec:
         securityContext:
           runAsUser: 0
           privileged: true
-        image: "docker.elastic.co/elasticsearch/elasticsearch:7.17.1"
+        image: "docker.elastic.co/elasticsearch/elasticsearch:7.17.3"
         imagePullPolicy: "IfNotPresent"
         command: ["sysctl", "-w", "vm.max_map_count=262144"]
         resources:
@@ -137,7 +137,7 @@ spec:
             - ALL
           runAsNonRoot: true
           runAsUser: 1000
-        image: "docker.elastic.co/elasticsearch/elasticsearch:7.17.1"
+        image: "docker.elastic.co/elasticsearch/elasticsearch:7.17.3"
         imagePullPolicy: "IfNotPresent"
         readinessProbe:
           exec:
@@ -248,7 +248,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "elasticsearch-wwlkp-test"
+  name: "elasticsearch-gwgyf-test"
   annotations:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": hook-succeeded
@@ -257,8 +257,8 @@ spec:
     fsGroup: 1000
     runAsUser: 1000
   containers:
-  - name: "elasticsearch-ebtdr-test"
-    image: "docker.elastic.co/elasticsearch/elasticsearch:7.17.1"
+  - name: "elasticsearch-zoxta-test"
+    image: "docker.elastic.co/elasticsearch/elasticsearch:7.17.3"
     imagePullPolicy: "IfNotPresent"
     command:
       - "sh"
