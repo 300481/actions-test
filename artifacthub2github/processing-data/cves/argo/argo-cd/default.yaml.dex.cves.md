@@ -17,7 +17,9 @@
 ## Target: usr/local/bin/dex --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210322153248-0c34fe9e7dc2|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gomplate --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20201221181555-eec23a3978ad|0.0.0-20220315160706-3147a52a75dd|

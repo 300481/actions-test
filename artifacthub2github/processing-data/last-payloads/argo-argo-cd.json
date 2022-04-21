@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: added ImagePullPolicy to repo server's init containers"
+        "[Changed]: changed redis-exporter repository to docker hub as bitami migrated their images off quay"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.4",
-      "version": "4.5.4"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.5",
+      "version": "4.5.5"
     }
   },
   "datacontenttype": "application/json",
-  "id": "13ed7eb7-2c1f-48a3-9d3f-03a87e147c05",
+  "id": "5bac627b-6de9-486d-8deb-f4375b817958",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
