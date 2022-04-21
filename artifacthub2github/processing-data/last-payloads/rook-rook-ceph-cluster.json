@@ -10,12 +10,12 @@
         "name": "rook",
         "publisher": "viceice"
       },
-      "url": "https://artifacthub.io/packages/helm/rook/rook-ceph-cluster/1.9.0",
-      "version": "1.9.0"
+      "url": "https://artifacthub.io/packages/helm/rook/rook-ceph-cluster/1.9.1",
+      "version": "1.9.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "96471447-7272-44f3-ace2-1007c8e950ec",
+  "id": "42e3d68f-bce1-4346-bdb2-76ae0d1fdcd0",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
