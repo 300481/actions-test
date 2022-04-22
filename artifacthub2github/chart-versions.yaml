@@ -2,7 +2,7 @@ repos:
   argo:
     charts:
       argocd_notifications:
-        version: 1.8.0
+        version: 1.8.1
         name: argocd-notifications
       argo_cd:
         version: 4.5.7

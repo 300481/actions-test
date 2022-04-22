@@ -1,0 +1,24 @@
+{
+  "data": {
+    "package": {
+      "changes": [
+        "[Deprecated]: This chart is now deprecated and will be removed soon. Please upgrade to Argo CD 2.3+ (chart version 4.x) which includes Argo CD Notifications."
+      ],
+      "containsSecurityUpdates": false,
+      "name": "argocd-notifications",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "argo",
+        "publisher": "argoproj"
+      },
+      "url": "https://artifacthub.io/packages/helm/argo/argocd-notifications/1.8.1",
+      "version": "1.8.1"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "438dc82c-4682-41c9-9776-f1d6d5dc607e",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}
