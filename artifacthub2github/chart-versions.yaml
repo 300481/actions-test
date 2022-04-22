@@ -20,7 +20,7 @@ repos:
     name: ingress-nginx
     charts:
       ingress_nginx:
-        version: 4.0.19
+        version: 4.1.0
         name: ingress-nginx
     url: https://kubernetes.github.io/ingress-nginx
   dr300481:
