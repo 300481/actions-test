@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: added ImagePullPolicy to repo server's init containers"
+        "[Fixed]: applicationset resources were not included in aggregate argo cluster roles"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.4",
-      "version": "4.5.4"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.6",
+      "version": "4.5.6"
     }
   },
   "datacontenttype": "application/json",
-  "id": "13ed7eb7-2c1f-48a3-9d3f-03a87e147c05",
+  "id": "30f5f26e-f055-4577-b4ff-d0241ecc242b",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
