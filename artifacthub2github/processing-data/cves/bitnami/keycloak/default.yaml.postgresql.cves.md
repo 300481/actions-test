@@ -3,14 +3,13 @@
 
 
 
-## Target: docker.io/bitnami/postgresql:14.2.0-debian-10-r69 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/postgresql:14.2.0-debian-10-r70 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|gcc-8-base|8.3.0-6||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.9-3|1.9-3+deb10u1|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|libc-bin|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|libc-bin|2.28-10+deb10u1||
@@ -53,7 +52,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-13627|libgcrypt20|1.8.4-5+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.6.7-4+deb10u7||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|liblzma5|5.2.4-1|5.2.4-1+deb10u1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncurses6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncursesw6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
