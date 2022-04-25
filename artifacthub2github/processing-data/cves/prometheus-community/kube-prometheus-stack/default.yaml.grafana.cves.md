@@ -3,7 +3,7 @@
 
 
 
-## Target: grafana/grafana:8.4.5 (alpine 3.15.3) --- Class: os-pkgs
+## Target: grafana/grafana:8.4.6 (alpine 3.15.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|busybox|1.34.1-r4|1.34.1-r5|
@@ -13,9 +13,11 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-3826|github.com/prometheus/prometheus|v1.8.2-0.20211011171444-354d8d2ecfac|v2.7.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210616213533-5ff15b29337e|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/share/grafana/bin/grafana-server --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-36156|github.com/grafana/loki|v1.6.2-0.20211015002020-7832783b1caa|v2.3.0|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-3826|github.com/prometheus/prometheus|v1.8.2-0.20211011171444-354d8d2ecfac|v2.7.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210616213533-5ff15b29337e|0.0.0-20220315160706-3147a52a75dd|
