@@ -70,6 +70,8 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23913|org.apache.activemq:artemis-commons|2.19.0|2.19.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-13947|org.apache.activemq:artemis-server|2.19.0||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20323|org.keycloak:keycloak-core|16.1.1|17.0.0|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20323|org.keycloak:keycloak-services|16.1.1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1245|org.keycloak:keycloak-services|16.1.1|18.0.0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-0839|org.liquibase:liquibase-core|3.5.5|4.8.0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.2.25, 42.3.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.14|42.3.3|
@@ -81,5 +83,13 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-43784|github.com/opencontainers/runc|v1.0.1|v1.0.3|
 
 ## Target: opt/bitnami/common/bin/wait-for-port --- Class: lang-pkgs
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: opt/bitnami/keycloak/themes/keycloak.v2/admin/resources/index.js --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: opt/bitnami/keycloak/themes/keycloak.v2/admin/resources/index.js.map --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
