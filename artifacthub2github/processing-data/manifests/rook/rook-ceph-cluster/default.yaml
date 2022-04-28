@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.1"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
 
   
 # imagePullSecrets:
@@ -31,7 +31,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.1"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
 
   
 # imagePullSecrets:
@@ -50,7 +50,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.1"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
 
   
 # imagePullSecrets:
@@ -81,7 +81,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.1"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
 
   
 # imagePullSecrets:
@@ -206,7 +206,14 @@ metadata:
   namespace: default # namespace:cluster
 rules:
   # Placeholder role so the rgw service account will
-  # be generated in the csv
+  # be generated in the csv. Remove this role and role binding
+  # when fixing https://github.com/rook/rook/issues/10141.
+  - apiGroups:
+      - ""
+    resources:
+      - configmaps
+    verbs:
+      - get
 ---
 # Source: rook-ceph-cluster/templates/rbac.yaml
 # Aspects of ceph-mgr that operate within the cluster's namespace
@@ -314,7 +321,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.1"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
