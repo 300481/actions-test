@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Removed]: Drop unneeded static-files volume from argocd-server"
+        "[Added]: Document how to upgrade CRDs"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.7",
-      "version": "4.5.7"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.8",
+      "version": "4.5.8"
     }
   },
   "datacontenttype": "application/json",
-  "id": "d9c47cb5-020a-464c-8d47-58d4b14156dd",
+  "id": "c00d4f38-fff2-4c43-a7b6-05017cacd86c",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
