@@ -10,12 +10,12 @@
         "name": "gitlab",
         "publisher": "gitlab"
       },
-      "url": "https://artifacthub.io/packages/helm/gitlab/gitlab/5.10.0",
-      "version": "5.10.0"
+      "url": "https://artifacthub.io/packages/helm/gitlab/gitlab/5.10.1",
+      "version": "5.10.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "5261a1c0-f6a3-4452-9cc2-ee98b742007c",
+  "id": "40f28c2d-51c8-420d-8f07-335254b9b1e9",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
