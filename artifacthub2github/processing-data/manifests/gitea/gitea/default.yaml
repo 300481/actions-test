@@ -25,7 +25,7 @@ metadata:
   namespace: default
 type: Opaque
 data:
-  postgresql-postgres-password: "RGlxa1gySlZBdQ=="
+  postgresql-postgres-password: "UTdEVmx5U3V2ag=="
   postgresql-password: "Z2l0ZWE="
 ---
 # Source: gitea/templates/gitea/config.yaml
@@ -34,12 +34,12 @@ kind: Secret
 metadata:
   name: gitea-inline-config
   labels:
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 stringData:
@@ -74,12 +74,12 @@ kind: Secret
 metadata:
   name: gitea
   labels:
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 stringData:
@@ -239,12 +239,12 @@ kind: Secret
 metadata:
   name: gitea-init
   labels:
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
 type: Opaque
 stringData:
@@ -389,12 +389,12 @@ kind: Service
 metadata:
   name: gitea-http
   labels:
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
   annotations:
     null
@@ -415,12 +415,12 @@ kind: Service
 metadata:
   name: gitea-ssh
   labels:
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
   annotations:
     null
@@ -678,12 +678,12 @@ metadata:
   name: gitea
   annotations:
   labels:
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
@@ -695,21 +695,21 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config: 969a2707d55c4ced0314da6a757bb0e3e3551eee8b4b92b2c759034d2da85ca2
+        checksum/config: 177ad76b8cc9f0c4b7b7af8a825d1913cf8536817977f3b2ba0dcfd79567624d
       labels:
-        helm.sh/chart: gitea-5.0.6
+        helm.sh/chart: gitea-5.0.7
         app: gitea
         app.kubernetes.io/name: gitea
         app.kubernetes.io/instance: gitea
-        app.kubernetes.io/version: "1.16.6"
-        version: "1.16.6"
+        app.kubernetes.io/version: "1.16.7"
+        version: "1.16.7"
         app.kubernetes.io/managed-by: Helm
     spec:
       securityContext:
         fsGroup: 1000
       initContainers:
         - name: init-directories
-          image: "gitea/gitea:1.16.6"
+          image: "gitea/gitea:1.16.7"
           imagePullPolicy: Always
           command: ["/usr/sbin/init_directory_structure.sh"]
           env:
@@ -731,7 +731,7 @@ spec:
           securityContext:
             {}
         - name: init-app-ini
-          image: "gitea/gitea:1.16.6"
+          image: "gitea/gitea:1.16.7"
           imagePullPolicy: Always
           command: ["/usr/sbin/config_environment.sh"]
           env:
@@ -755,7 +755,7 @@ spec:
           securityContext:
             {}
         - name: configure-gitea
-          image: "gitea/gitea:1.16.6"
+          image: "gitea/gitea:1.16.7"
           command: ["/usr/sbin/configure_gitea.sh"]
           imagePullPolicy: Always
           securityContext:
@@ -783,7 +783,7 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
         - name: gitea
-          image: "gitea/gitea:1.16.6"
+          image: "gitea/gitea:1.16.7"
           imagePullPolicy: Always
           env:
             # SSH Port values have to be set here as well for openssh configuration
@@ -862,12 +862,12 @@ metadata:
   name: "gitea-test-connection"
   labels:
 
-    helm.sh/chart: gitea-5.0.6
+    helm.sh/chart: gitea-5.0.7
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
-    app.kubernetes.io/version: "1.16.6"
-    version: "1.16.6"
+    app.kubernetes.io/version: "1.16.7"
+    version: "1.16.7"
     app.kubernetes.io/managed-by: Helm
   annotations:
     "helm.sh/hook": test-success
