@@ -3,10 +3,11 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.10.0 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.10.1 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-28831|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42378|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42379|busybox|1:1.30.1-6||
@@ -20,6 +21,9 @@
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|curl|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|curl|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|e2fsprogs|1.46.2-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.10-4|1.10-4+deb11u1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-3999|libc-bin|2.31-13+deb11u3||
@@ -30,17 +34,22 @@
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|libcurl4|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|libcurl4|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|libcurl4|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl4|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl4|7.74.0-1.3+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl4|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|libext2fs2|1.46.2-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33560|libgcrypt20|1.8.7-6||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.7.1-5||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|liblzma5|5.2.5-2|5.2.5-2.1~deb11u1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncurses-dev|6.2+20201114-2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncurses6|6.2+20201114-2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncursesw6|6.2+20201114-2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncurses-dev|6.2+20201114-2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncurses6|6.2+20201114-2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncursesw6|6.2+20201114-2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-45346|libsqlite3-0|3.34.1-3||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|libss2|1.46.2-2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1210|libtiff5|4.2.0-1+deb11u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libtinfo6|6.2+20201114-2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1354|libtiff5|4.2.0-1+deb11u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1355|libtiff5|4.2.0-1+deb11u1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libtinfo6|6.2+20201114-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2013-7445|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-19378|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-19449|linux-libc-dev|5.10.106-1||
@@ -61,6 +70,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28389|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28390|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.106-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29582|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-16089|linux-libc-dev|5.10.106-1||
@@ -84,7 +94,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0400|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0480|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0494|linux-libc-dev|5.10.106-1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0812|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0854|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1016|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1184|linux-libc-dev|5.10.106-1||
@@ -93,9 +102,10 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1205|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1280|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1353|linux-libc-dev|5.10.106-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1508|linux-libc-dev|5.10.106-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|logsave|1.46.2-2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|ncurses-base|6.2+20201114-2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|ncurses-bin|6.2+20201114-2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-base|6.2+20201114-2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-bin|6.2+20201114-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
 
 ## Target: Node.js --- Class: lang-pkgs
@@ -127,3 +137,31 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20201221181555-eec23a3978ad|0.0.0-20220315160706-3147a52a75dd|
+
+## Target: srv/gitlab/public/assets/webpack/eks_cluster.7f512fa4.chunk.js --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/public/assets/webpack/monaco.b9594dac.chunk.js --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/app/models/integrations/prometheus.rb --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/config/gitlab.yml.example --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/config/secrets.yml --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/config/gitlab.yml --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/lib/api/helpers/integrations_helpers.rb --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
