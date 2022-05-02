@@ -7,6 +7,9 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3468|avahi-libs|0.7-20.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|curl|7.61.1-22.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|curl|7.61.1-22.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-45960|expat|2.2.5-4.el8_5.3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-46143|expat|2.2.5-4.el8_5.3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22822|expat|2.2.5-4.el8_5.3||
@@ -16,9 +19,14 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22826|expat|2.2.5-4.el8_5.3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22827|expat|2.2.5-4.el8_5.3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-25314|expat|2.2.5-4.el8_5.3||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27404|freetype|2.9.1-4.el8_3.1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27405|freetype|2.9.1-4.el8_3.1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27406|freetype|2.9.1-4.el8_3.1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.9-12.el8|1.9-13.el8_5|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-2388|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.302.b08-0.el8_4|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-35565|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.312.b07-1.el8_4|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-35567|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.312.b07-1.el8_4|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-21476|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.332.b09-1.el8_5|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-2163|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.292.b10-0.el8_3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-2341|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.302.b08-0.el8_4|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-2369|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.302.b08-0.el8_4|
@@ -41,10 +49,20 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21341|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.322.b06-2.el8_5|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21360|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.322.b06-2.el8_5|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21365|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.322.b06-2.el8_5|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21426|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.332.b09-1.el8_5|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21434|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.332.b09-1.el8_5|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21443|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.332.b09-1.el8_5|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-21496|java-1.8.0-openjdk-headless|1:1.8.0.282.b08-2.el8_3|1:1.8.0.332.b09-1.el8_5|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-17049|krb5-libs|1.18.2-14.el8||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-26280|libarchive|3.3.3-3.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-21674|libarchive|3.3.3-3.el8_5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libcom_err|1.45.6-2.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl|7.61.1-22.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl|7.61.1-22.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libgcc|8.5.0-4.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libgcc|8.5.0-4.el8_5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libgcc|8.5.0-4.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-12904|libgcrypt|1.8.5-6.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-40528|libgcrypt|1.8.5-6.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-2201|libjpeg-turbo|1.5.3-12.el8||
@@ -61,6 +79,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-44577|libsolv|0.7.19-1.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libstdc++|8.5.0-4.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libstdc++|8.5.0-4.el8_5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libstdc++|8.5.0-4.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-39537|ncurses-base|6.1-9.20180224.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-39537|ncurses-libs|6.1-9.20180224.el8||
@@ -71,7 +90,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-12401|nss-sysinit|3.67.0-7.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-12401|nss-util|3.67.0-7.el8_5||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|openssl-libs|1:1.1.1k-5.el8_5|1:1.1.1k-6.el8_5|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-23841|openssl-libs|1:1.1.1k-5.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3712|openssl-libs|1:1.1.1k-5.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-35937|python3-rpm|4.14.3-19.el8_5.2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-35938|python3-rpm|4.14.3-19.el8_5.2||
@@ -91,7 +109,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|systemd-libs|239-51.el8_5.5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20839|systemd-pam|239-51.el8_5.5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2005-2541|tar|2:1.30-5.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-25032|zlib|1.2.11-17.el8||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-17.el8||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -100,9 +118,8 @@
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-23463|com.h2database:h2|1.4.200|2.0.202|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42392|com.h2database:h2|1.4.200|2.0.206|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23221|com.h2database:h2|1.4.200|2.1.210|
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-0265|com.hazelcast:hazelcast|3.12.11|5.1|
-|![](https://img.shields.io/badge/-CRITICAL-red)|GHSA-v57x-gxfj-484q|com.hazelcast:hazelcast|3.12.11|4.2.4, 4.1.8, 4.0.5, 5.0.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-17521|org.codehaus.groovy:groovy-all|2.4.17|2.4.21, 2.5.14, 3.0.7|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22135|org.elasticsearch:elasticsearch|2.4.3|6.8.15|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22144|org.elasticsearch:elasticsearch|2.4.3|6.8.17, 7.13.3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-25633|org.jboss.resteasy:resteasy-client|3.15.3.Final|4.5.7.Final|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3827|org.keycloak:keycloak-saml-core|12.0.3|18.0.0|
