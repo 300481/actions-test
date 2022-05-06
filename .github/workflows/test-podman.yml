@@ -1,0 +1,12 @@
+name: test podman
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-podman:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test podman
+        run: |
+          podman version
