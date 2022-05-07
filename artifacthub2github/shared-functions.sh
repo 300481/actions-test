@@ -37,16 +37,6 @@ repo_url(){
     curl -s "https://artifacthub.io/api/v1/repositories/search?offset=0&limit=20&kind=0&user=${REPOSITORY_PUBLISHER}&org=${REPOSITORY_PUBLISHER}&name=${REPOSITORY_NAME}" | jq -r .[0].url
 }
 
-# install_render installs the render program
-install_render() {
-    [[ -f /usr/local/bin/render ]] && return
-    local version=$(curl -s https://github.com/VirtusLab/render/releases/latest | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]')
-    cd /tmp
-    wget -O render https://github.com/VirtusLab/render/releases/download/${version}/render-linux-amd64
-    sudo install render /usr/local/bin/render
-    cd -
-}
-
 # install_trivy installs the trivy program
 install_trivy() {
     podman run -d --rm --name trivy --entrypoint /bin/sleep docker.io/aquasec/trivy:latest 10

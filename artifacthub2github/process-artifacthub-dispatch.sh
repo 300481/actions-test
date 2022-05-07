@@ -14,7 +14,6 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 [[ -z "${TRIVY_TEMPLATE}" ]] && die 2 "ERROR: please set TRIVY_TEMPLATE"
 
 install_dependencies(){
-    install_render
     install_trivy
 }
 
