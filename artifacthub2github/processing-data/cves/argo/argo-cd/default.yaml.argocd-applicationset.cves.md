@@ -48,12 +48,14 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-9794|libsqlite3-0|3.35.5-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libss2|1.46.3-1ubuntu3||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|libssl1.1|1.1.1l-1ubuntu1.1|1.1.1l-1ubuntu1.2|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|libssl1.1|1.1.1l-1ubuntu1.1|1.1.1l-1ubuntu1.3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|libuuid1|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|libuuid1|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|logsave|1.46.3-1ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|mount|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|mount|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|openssl|1.1.1l-1ubuntu1.1|1.1.1l-1ubuntu1.2|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|openssl|1.1.1l-1ubuntu1.1|1.1.1l-1ubuntu1.3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-base|5.32.1-3ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-modules-5.32|5.32.1-3ubuntu3||
