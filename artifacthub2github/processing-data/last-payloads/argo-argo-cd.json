@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Document how to upgrade CRDs"
+        "[Fixed]: Use global imagePullSecret value for notfications deployment"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.8",
-      "version": "4.5.8"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.11",
+      "version": "4.5.11"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c00d4f38-fff2-4c43-a7b6-05017cacd86c",
+  "id": "97223ae7-ab01-4833-bda8-59cdeccb9c79",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
