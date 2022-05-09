@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Use global imagePullSecret value for notfications deployment"
+        "[Fixed]: Consider global securityContext for notifications and applicationset deployment"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.11",
-      "version": "4.5.11"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.12",
+      "version": "4.5.12"
     }
   },
   "datacontenttype": "application/json",
-  "id": "97223ae7-ab01-4833-bda8-59cdeccb9c79",
+  "id": "c2e0abbe-e5a1-4c77-a6d3-71380772f8da",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
