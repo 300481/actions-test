@@ -2,7 +2,9 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Consider global securityContext for notifications and applicationset deployment"
+        "[Added]: Metrics service name can now be changed",
+        "[Added]: ServiceMonitor now support tlsConfig",
+        "[Changed]: All metrics Service ports were renamed from 'metrics' to 'http-metrics' (istio compatibility)"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +14,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.5.12",
-      "version": "4.5.12"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.0",
+      "version": "4.6.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c2e0abbe-e5a1-4c77-a6d3-71380772f8da",
+  "id": "f6ba9f8d-c1a0-4458-9991-d98c86dc6cbf",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
