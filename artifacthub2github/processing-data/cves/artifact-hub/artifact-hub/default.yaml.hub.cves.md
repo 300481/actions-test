@@ -1,6 +1,9 @@
 # Trivy Vulnerability Report
 
-## Target: artifacthub/hub:v1.6.0 (alpine 3.15.0) --- Class: os-pkgs
+
+
+
+## Target: artifacthub/hub:v1.7.0 (alpine 3.15.4) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 

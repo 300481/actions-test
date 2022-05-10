@@ -1,0 +1,40 @@
+{
+  "data": {
+    "package": {
+      "changes": [
+        "Support for comparing Helm charts templates versions",
+        "Display cosign signature in container image packages",
+        "New screen breakpoint to UI",
+        "Display all channels pointing to a version in OLM pkgs",
+        "Migration mechanism for local storage data",
+        "CLOMonitor linter to CI workflow",
+        "CLOMonitor badges to readme file",
+        "Stop displaying production users links on package view",
+        "Updated supported keptn/kind annotation values",
+        "Upgrade backend and frontend dependencies",
+        "Bump Go to 1.18",
+        "Bump Trivy to 0.27.0",
+        "Bump OPM to 1.21.0",
+        "Issue getting default channel in OLM packages",
+        "Docker rate limit issue",
+        "Some spelling issues",
+        "Some bugs and other improvements"
+      ],
+      "containsSecurityUpdates": true,
+      "name": "artifact-hub",
+      "prerelease": false,
+      "repository": {
+        "kind": "helm",
+        "name": "artifact-hub",
+        "publisher": "artifacthub"
+      },
+      "url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub/1.7.0",
+      "version": "1.7.0"
+    }
+  },
+  "datacontenttype": "application/json",
+  "id": "eacb93fc-c5f7-4192-9381-d23032f0c510",
+  "source": "https://artifacthub.io",
+  "specversion": "1.0",
+  "type": "io.artifacthub.package.new-release"
+}

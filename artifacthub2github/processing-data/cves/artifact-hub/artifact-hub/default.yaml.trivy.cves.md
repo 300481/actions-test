@@ -1,17 +1,16 @@
 # Trivy Vulnerability Report
 
-## Target: aquasec/trivy:0.23.0 (alpine 3.15.0) --- Class: os-pkgs
+
+
+
+## Target: aquasec/trivy:0.27.0 (alpine 3.15.4) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|CRITICAL|CVE-2022-23852|expat|2.4.3-r0|2.4.4-r0|
-|CRITICAL|CVE-2022-23990|expat|2.4.3-r0|2.4.4-r0|
-|CRITICAL|CVE-2022-25235|expat|2.4.3-r0|2.4.5-r0|
-|CRITICAL|CVE-2022-25236|expat|2.4.3-r0|2.4.5-r0|
-|CRITICAL|CVE-2022-25315|expat|2.4.3-r0|2.4.5-r0|
-|HIGH|CVE-2022-25314|expat|2.4.3-r0|2.4.5-r0|
-|MEDIUM|CVE-2022-25313|expat|2.4.3-r0|2.4.5-r0|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl|7.80.0-r0|7.80.0-r1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl|7.80.0-r0|7.80.0-r1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl|7.80.0-r0|7.80.0-r1|
 
 ## Target: usr/local/bin/trivy --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|CRITICAL|CVE-2021-43816|github.com/containerd/containerd|v1.5.8|1.5.9|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20220208233918-bba287dce954|0.0.0-20220315160706-3147a52a75dd|
