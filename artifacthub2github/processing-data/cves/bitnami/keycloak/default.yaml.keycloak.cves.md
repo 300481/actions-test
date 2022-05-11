@@ -3,11 +3,16 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:16.1.1-debian-10-r85 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:17.0.1-debian-10-r0 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|curl|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|curl|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27781|curl|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-bin|2.28-10+deb10u1||
@@ -35,47 +40,53 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|libcom-err2|1.44.5-1+deb10u3||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27781|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libgcc1|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|libgcc1|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33560|libgcrypt20|1.8.4-5+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-13627|libgcrypt20|1.8.4-5+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.6.7-4+deb10u7||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncurses6|6.1+20181013-2+deb10u2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libncursesw6|6.1+20181013-2+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|libldap-2.4-2|2.4.47+dfsg-3+deb10u6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|libldap-common|2.4.47+dfsg-3+deb10u6||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncurses6|6.1+20181013-2+deb10u2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncursesw6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-14155|libpcre3|2:8.39-12||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-13115|libssh2-1|1.8.0-2.1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|libssl1.1|1.1.1n-0+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libstdc++6|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|libstdc++6|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libsystemd0|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libsystemd0|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libsystemd0|241-7~deb10u8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|libtinfo6|6.1+20181013-2+deb10u2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libtinfo6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libudev1|241-7~deb10u8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29458|ncurses-base|6.1+20181013-2+deb10u2||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-base|6.1+20181013-2+deb10u2||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|openssl|1.1.1n-0+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.12.6.1, 2.13.2.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.12.6.1, 2.13.2.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.3|2.12.6.1, 2.13.2.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.13.1|2.12.6.1, 2.13.2.1|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-23463|com.h2database:h2|1.4.197|2.0.202|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42392|com.h2database:h2|1.4.197|2.0.206|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23913|org.apache.activemq:artemis-commons|2.19.0|2.19.1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-13947|org.apache.activemq:artemis-server|2.19.0||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20323|org.keycloak:keycloak-core|16.1.1|17.0.0|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20323|org.keycloak:keycloak-services|16.1.1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1245|org.keycloak:keycloak-services|16.1.1|18.0.0|
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-0839|org.liquibase:liquibase-core|3.5.5|4.8.0|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-43859|com.thoughtworks.xstream:xstream|1.4.18|1.4.19|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24823|io.netty:netty-codec-http|4.1.74.Final|4.1.77.Final|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3827|org.keycloak:keycloak-saml-core|17.0.1|18.0.0|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3424|org.keycloak:keycloak-services|17.0.1|18.0.0|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1245|org.keycloak:keycloak-services|17.0.1|18.0.0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.2.25, 42.3.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.14|42.3.3|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-23437|xerces:xercesImpl|2.12.0.SP03|2.12.2|
 
 ## Target: opt/bitnami/common/bin/gosu --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -83,13 +94,5 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-43784|github.com/opencontainers/runc|v1.0.1|v1.0.3|
 
 ## Target: opt/bitnami/common/bin/wait-for-port --- Class: lang-pkgs
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: opt/bitnami/keycloak/themes/keycloak.v2/admin/resources/index.js --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: opt/bitnami/keycloak/themes/keycloak.v2/admin/resources/index.js.map --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
