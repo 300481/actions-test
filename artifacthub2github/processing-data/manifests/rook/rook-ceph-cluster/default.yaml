@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
 
   
 # imagePullSecrets:
@@ -31,7 +31,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
 
   
 # imagePullSecrets:
@@ -50,7 +50,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
 
   
 # imagePullSecrets:
@@ -81,7 +81,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
 
   
 # imagePullSecrets:
@@ -321,7 +321,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.2"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -344,6 +344,21 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: rook-ceph-osd
+    namespace: default # namespace:cluster
+---
+# Source: rook-ceph-cluster/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rook-ceph-rgw-psp
+  namespace: default # namespace:cluster
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: psp:rook
+subjects:
+  - kind: ServiceAccount
+    name: rook-ceph-rgw
     namespace: default # namespace:cluster
 ---
 # Source: rook-ceph-cluster/templates/rbac.yaml
@@ -374,6 +389,21 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: rook-ceph-cmd-reporter
+    namespace: default # namespace:cluster
+---
+# Source: rook-ceph-cluster/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rook-ceph-purge-osd-psp
+  namespace: default # namespace:cluster
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: psp:rook
+subjects:
+  - kind: ServiceAccount
+    name: rook-ceph-purge-osd
     namespace: default # namespace:cluster
 ---
 # Source: rook-ceph-cluster/templates/rbac.yaml
