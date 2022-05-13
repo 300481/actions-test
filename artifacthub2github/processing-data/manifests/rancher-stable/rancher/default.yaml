@@ -6,7 +6,7 @@ metadata:
   name: rancher
   labels:
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
 ---
@@ -17,7 +17,7 @@ metadata:
   name: rancher
   labels:
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
 subjects:
@@ -36,7 +36,7 @@ metadata:
   name: rancher
   labels:
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
 spec:
@@ -60,7 +60,7 @@ metadata:
   annotations:
   labels:
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
 spec:
@@ -106,7 +106,7 @@ spec:
           effect: "NoSchedule"
           operator: "Equal"
       containers:
-      - image: rancher/rancher:v2.6.4
+      - image: rancher/rancher:v2.6.5
         imagePullPolicy: IfNotPresent
         name: rancher
         ports:
@@ -146,7 +146,7 @@ metadata:
   name: rancher
   labels:
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -178,7 +178,7 @@ metadata:
   name: rancher
   labels:
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
 spec:
@@ -192,7 +192,7 @@ metadata:
   name: rancher-post-delete
   labels: 
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -231,7 +231,7 @@ metadata:
   namespace: default
   labels: 
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -247,7 +247,7 @@ metadata:
   namespace: default
   labels: 
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -261,11 +261,17 @@ data:
     set -e
     
     namespaces="${NAMESPACES}"
+    rancher_namespace="${RANCHER_NAMESPACE}"
     timeout="${TIMEOUT}"
     ignoreTimeoutError="${IGNORETIMEOUTERROR}"
     
     if [[ -z ${namespaces} ]]; then
       echo "No namespace is provided."
+      exit 1
+    fi
+    
+    if [[ -z ${rancher_namespace} ]]; then
+      echo "No rancher namespace is provided."
       exit 1
     fi
     
@@ -328,6 +334,9 @@ data:
       done
     done
     
+    echo "Removing Rancher bootstrap secret in the following namespace: ${rancher_namespace}"
+    kubectl --ignore-not-found=true delete secret bootstrap-secret -n "${rancher_namespace}"
+    
     echo "------ Summary ------"
     if [[ ${#succeeded[@]} -ne 0 ]]; then
       echo "Succeeded to uninstall the following apps:" "${succeeded[@]}"
@@ -349,7 +358,7 @@ metadata:
   name: rancher-post-delete
   labels: 
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -395,7 +404,7 @@ metadata:
   name: rancher-post-delete
   labels: 
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -419,7 +428,7 @@ metadata:
   namespace: default
   labels: 
     app: rancher
-    chart: rancher-2.6.4
+    chart: rancher-2.6.5
     heritage: Helm
     release: rancher
   annotations:
@@ -433,7 +442,7 @@ spec:
       name: rancher-post-delete
       labels: 
         app: rancher
-        chart: rancher-2.6.4
+        chart: rancher-2.6.5
         heritage: Helm
         release: rancher
     spec:
@@ -453,6 +462,8 @@ spec:
           env:
             - name: NAMESPACES
               value: "cattle-fleet-system cattle-system rancher-operator-system"
+            - name: RANCHER_NAMESPACE
+              value: default
             - name: TIMEOUT
               value: "120"
             - name: IGNORETIMEOUTERROR

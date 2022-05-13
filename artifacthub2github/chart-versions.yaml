@@ -118,7 +118,7 @@ repos:
     name: rancher-stable
     charts:
       rancher:
-        version: 2.6.4
+        version: 2.6.5
         name: rancher
   cert_manager:
     url: https://charts.jetstack.io
