@@ -10,12 +10,12 @@
         "name": "sonatype",
         "publisher": "sonatype"
       },
-      "url": "https://artifacthub.io/packages/helm/sonatype/nexus-repository-manager/38.1.1",
-      "version": "38.1.1"
+      "url": "https://artifacthub.io/packages/helm/sonatype/nexus-repository-manager/38.1.2",
+      "version": "38.1.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "3522b72c-d47c-433c-ac32-2c2aab26688c",
+  "id": "e871119e-023e-4fb6-be8e-87cffce9e196",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
