@@ -62,8 +62,8 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-13627|libgcrypt20|1.8.4-5+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.6.7-4+deb10u7||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-12290|libidn2-0|2.0.5-1+deb10u1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|libldap-2.4-2|2.4.47+dfsg-3+deb10u6||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|libldap-common|2.4.47+dfsg-3+deb10u6||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-29155|libldap-2.4-2|2.4.47+dfsg-3+deb10u6||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-29155|libldap-common|2.4.47+dfsg-3+deb10u6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncurses6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncursesw6|6.1+20181013-2+deb10u2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
@@ -74,7 +74,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-13631|libsqlite3-0|3.27.2-3+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-45346|libsqlite3-0|3.27.2-3+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-13115|libssh2-1|1.8.0-2.1||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|libssl1.1|1.1.1n-0+deb10u1||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1292|libssl1.1|1.1.1n-0+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libstdc++6|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|libstdc++6|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libsystemd0|241-7~deb10u8||
@@ -99,7 +99,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-10029|locales|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-27618|locales|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-base|6.1+20181013-2+deb10u2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|openssl|1.1.1n-0+deb10u1||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1292|openssl|1.1.1n-0+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
 ## Target: Java --- Class: lang-pkgs
