@@ -10,12 +10,12 @@
         "name": "rancher-stable",
         "publisher": "helm"
       },
-      "url": "https://artifacthub.io/packages/helm/rancher-stable/rancher/2.6.4",
-      "version": "2.6.4"
+      "url": "https://artifacthub.io/packages/helm/rancher-stable/rancher/2.6.5",
+      "version": "2.6.5"
     }
   },
   "datacontenttype": "application/json",
-  "id": "ab10ec36-9fba-4cd9-b826-6ac3542a5663",
+  "id": "5ea43943-eed6-4f6c-a6ca-96a4e9937446",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
