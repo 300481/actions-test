@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:17.0.1-debian-10-r0 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:18.0.0-debian-10-r0 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -45,6 +45,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27781|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2019-8457|libdb5.3|5.3.28+dfsg1-0.5||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libgcc1|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|libgcc1|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33560|libgcrypt20|1.8.4-5+deb10u1||
@@ -75,16 +76,11 @@
 ## Target: Java --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.12.1|2.12.6.1, 2.13.2.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.13.1|2.12.6.1, 2.13.2.1|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-36518|com.fasterxml.jackson.core:jackson-databind|2.11.4|2.12.6.1, 2.13.2.1|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-23463|com.h2database:h2|1.4.197|2.0.202|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42392|com.h2database:h2|1.4.197|2.0.206|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23221|com.h2database:h2|1.4.197|2.1.210|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-43859|com.thoughtworks.xstream:xstream|1.4.18|1.4.19|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24823|io.netty:netty-codec-http|4.1.74.Final|4.1.77.Final|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3827|org.keycloak:keycloak-saml-core|17.0.1|18.0.0|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3424|org.keycloak:keycloak-services|17.0.1|18.0.0|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1245|org.keycloak:keycloak-services|17.0.1|18.0.0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-21724|org.postgresql:postgresql|42.2.14|42.2.25, 42.3.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|GHSA-673j-qm5f-xpv8|org.postgresql:postgresql|42.2.14|42.3.3|
 
