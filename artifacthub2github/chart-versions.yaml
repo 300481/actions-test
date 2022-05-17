@@ -111,7 +111,7 @@ repos:
     name: gitea
     charts:
       gitea:
-        version: 5.0.7
+        version: 5.0.8
         name: gitea
   rancher_stable:
     url: https://releases.rancher.com/server-charts/stable

@@ -10,12 +10,12 @@
         "name": "gitea",
         "publisher": "gitea"
       },
-      "url": "https://artifacthub.io/packages/helm/gitea/gitea/5.0.7",
-      "version": "5.0.7"
+      "url": "https://artifacthub.io/packages/helm/gitea/gitea/5.0.8",
+      "version": "5.0.8"
     }
   },
   "datacontenttype": "application/json",
-  "id": "2065ede5-96c8-46ac-931b-8a76a1163105",
+  "id": "b13ca35b-1a39-494c-9072-e5f88b8dde51",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

@@ -3,7 +3,7 @@
 
 
 
-## Target: gitea/gitea:1.16.7 (alpine 3.13.10) --- Class: os-pkgs
+## Target: gitea/gitea:1.16.8 (alpine 3.13.10) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
