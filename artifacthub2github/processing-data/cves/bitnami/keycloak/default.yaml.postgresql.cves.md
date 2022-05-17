@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/postgresql:14.2.0-debian-10-r88 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/postgresql:14.3.0-debian-10-r1 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -56,6 +56,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27781|libcurl4|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|libcurl4|7.64.0-4+deb10u2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2019-8457|libdb5.3|5.3.28+dfsg1-0.5||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libgcc1|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|libgcc1|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33560|libgcrypt20|1.8.4-5+deb10u1||
