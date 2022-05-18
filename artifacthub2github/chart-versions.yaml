@@ -91,7 +91,7 @@ repos:
     name: jenkinsci
     charts:
       jenkins:
-        version: 3.12.1
+        version: 4.0.0
         name: jenkins
   elastic:
     url: https://helm.elastic.co
