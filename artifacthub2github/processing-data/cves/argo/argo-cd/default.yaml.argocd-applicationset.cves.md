@@ -21,6 +21,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libcom-err2|1.46.3-1ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl3-gnutls|7.74.0-1.3ubuntu2|7.74.0-1.3ubuntu2.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl3-gnutls|7.74.0-1.3ubuntu2|7.74.0-1.3ubuntu2.1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|libcurl3-gnutls|7.74.0-1.3ubuntu2|7.74.0-1.3ubuntu2.2|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-25235|libexpat1|2.4.1-2|2.4.1-2ubuntu0.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-25236|libexpat1|2.4.1-2|2.4.1-2ubuntu0.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-46143|libexpat1|2.4.1-2|2.4.1-2ubuntu0.1|
@@ -36,6 +37,12 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-25314|libexpat1|2.4.1-2|2.4.1-2ubuntu0.3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-25315|libexpat1|2.4.1-2|2.4.1-2ubuntu0.3|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libext2fs2|1.46.3-1ubuntu3||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libgssapi-krb5-2|1.18.3-6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libk5crypto3|1.18.3-6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libkrb5-3|1.18.3-6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-37750|libkrb5support0|1.18.3-6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|libldap-2.5-0|2.5.6+dfsg-1~exp1ubuntu1|2.5.6+dfsg-1~exp1ubuntu1.1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|libldap-common|2.5.6+dfsg-1~exp1ubuntu1|2.5.6+dfsg-1~exp1ubuntu1.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1271|liblzma5|5.2.5-2|5.2.5-2ubuntu0.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|libmount1|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|libmount1|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
