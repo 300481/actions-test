@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:18.0.0-debian-10-r0 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:18.0.0-debian-10-r1 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -59,7 +59,6 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-11080|libnghttp2-14|1.36.0-2+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-14155|libpcre3|2:8.39-12||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-13115|libssh2-1|1.8.0-2.1||
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1292|libssl1.1|1.1.1n-0+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|libstdc++6|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|libstdc++6|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libsystemd0|241-7~deb10u8||
@@ -70,7 +69,6 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-base|6.1+20181013-2+deb10u2||
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1292|openssl|1.1.1n-0+deb10u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.28.1-6+deb10u1||
 
 ## Target: Java --- Class: lang-pkgs
@@ -88,6 +86,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-43784|github.com/opencontainers/runc|v1.0.1|v1.0.3|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24769|github.com/opencontainers/runc|v1.0.1|v1.1.2|
 
 ## Target: opt/bitnami/common/bin/wait-for-port --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
