@@ -2,9 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Metrics service name can now be changed",
-        "[Added]: ServiceMonitor now support tlsConfig",
-        "[Changed]: All metrics Service ports were renamed from 'metrics' to 'http-metrics' (istio compatibility)"
+        "[Fixed]: Fix indent on 'additionalApplications'",
+        "[Fixed]: Fix indent on 'additionalProjects'"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -14,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.0",
-      "version": "4.6.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.1",
+      "version": "4.6.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "f6ba9f8d-c1a0-4458-9991-d98c86dc6cbf",
+  "id": "0bc052f6-bbc9-47e0-a315-846f358283d1",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
