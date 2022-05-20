@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update Argo CD to v2.3.4"
+        "[Added]: Add support for external issuers in server Certificate resource"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.2",
-      "version": "4.6.2"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.3",
+      "version": "4.6.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c1926bf0-311a-4ca9-a5d1-b137dcb238b6",
+  "id": "6072e2e7-5822-46b3-bec6-bd744287eef9",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
