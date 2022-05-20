@@ -28,6 +28,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|libretls|3.3.3p1-r2|3.3.3p1-r3|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|libssl1.1|1.1.1l-r0|1.1.1n-r0|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23308|libxml2|2.9.12-r1|2.9.13-r0|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29824|libxml2|2.9.12-r1|2.9.14-r0|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|openssl|1.1.1l-r0|1.1.1n-r0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|ssl_client|1.33.1-r3|1.33.1-r7|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42378|ssl_client|1.33.1-r3|1.33.1-r6|
@@ -52,6 +53,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-43784|github.com/opencontainers/runc|v1.0.2|v1.0.3|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24769|github.com/opencontainers/runc|v1.0.2|v1.1.2|
 
 ## Target: wait-shutdown --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
