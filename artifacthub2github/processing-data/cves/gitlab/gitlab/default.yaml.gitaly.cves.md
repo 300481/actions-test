@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitaly:v14.10.3 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitaly:v15.0.0 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -78,6 +78,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1012|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1247|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1679|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.113-1||
@@ -137,12 +138,12 @@
 ## Target: usr/local/bin/gitaly --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210711020723-a769d52b0f97|0.0.0-20220315160706-3147a52a75dd|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-backup --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210711020723-a769d52b0f97|0.0.0-20220315160706-3147a52a75dd|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-blackbox --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -155,7 +156,7 @@
 ## Target: usr/local/bin/gitaly-git2go-v14 --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210711020723-a769d52b0f97|0.0.0-20220315160706-3147a52a75dd|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-hooks --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -166,7 +167,7 @@
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2020-27955|github.com/git-lfs/git-lfs|v1.5.1-0.20210304194248-2e1d981afbe3|v2.12.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2017-17831|github.com/git-lfs/git-lfs|v1.5.1-0.20210304194248-2e1d981afbe3|2.1.1-0.20170519163204-f913f5f9c7c6|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210711020723-a769d52b0f97|0.0.0-20220315160706-3147a52a75dd|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-ssh --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -183,4 +184,4 @@
 ## Target: usr/local/bin/praefect --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210711020723-a769d52b0f97|0.0.0-20220315160706-3147a52a75dd|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|

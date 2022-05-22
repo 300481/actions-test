@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v14.10.3 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v15.0.0 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -64,6 +64,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1012|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1247|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1679|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.113-1||
@@ -118,7 +119,7 @@
 ## Target: usr/local/bin/gitlab-workhorse --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210711020723-a769d52b0f97|0.0.0-20220315160706-3147a52a75dd|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitlab-zip-cat --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

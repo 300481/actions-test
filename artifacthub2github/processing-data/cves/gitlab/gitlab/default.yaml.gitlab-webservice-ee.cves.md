@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.10.3 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.0 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -72,6 +72,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1012|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1247|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1679|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.113-1||
@@ -136,6 +137,10 @@
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20201221181555-eec23a3978ad|0.0.0-20220315160706-3147a52a75dd|
 
+## Target: srv/gitlab/app/models/integrations/prometheus.rb --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
 ## Target: srv/gitlab/config/gitlab.yml --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
@@ -149,9 +154,5 @@
 |--------|---------------|-------|----------------|------------|
 
 ## Target: srv/gitlab/lib/api/helpers/integrations_helpers.rb --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: srv/gitlab/app/models/integrations/prometheus.rb --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
