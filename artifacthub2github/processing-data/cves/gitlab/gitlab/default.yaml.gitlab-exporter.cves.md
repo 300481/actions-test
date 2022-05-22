@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:11.14.0 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:11.15.0 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -64,6 +64,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1012|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1247|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1679|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.113-1||

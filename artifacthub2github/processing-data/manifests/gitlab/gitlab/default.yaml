@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.10.3
+    chart: gitaly-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -26,7 +26,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -37,6 +37,25 @@ spec:
       app: gitlab-shell
       release: gitlab
 ---
+# Source: gitlab/charts/gitlab/charts/kas/templates/pdb.yaml
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: gitlab-kas
+  namespace: default
+  labels:
+    app: kas
+    chart: kas-6.0.0
+    release: gitlab
+    heritage: Helm
+    
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: kas
+      release: gitlab
+---
 # Source: gitlab/charts/gitlab/charts/sidekiq/templates/pdb.yaml
 apiVersion: policy/v1beta1
 kind: PodDisruptionBudget
@@ -45,7 +64,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.10.3
+    chart: sidekiq-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -66,7 +85,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -466,7 +485,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.10.3
+    chart: gitaly-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -509,6 +528,7 @@ data:
     token = <%= File.read('/etc/gitlab-secrets/gitaly/gitaly_token').strip.to_json %>
 
     [git]
+    use_bundled_binaries = true
 
     [gitaly-ruby]
     # The directory where gitaly-ruby is installed
@@ -545,7 +565,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.10.3
+    chart: gitlab-exporter-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -635,7 +655,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -795,7 +815,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -855,12 +875,54 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
 data:
-  "22": "default/gitlab-gitlab-shell:22"
+  "22": "default/gitlab-gitlab-shell:22::"
+---
+# Source: gitlab/charts/gitlab/charts/kas/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gitlab-kas
+  namespace: default
+  labels:
+    app: kas
+    chart: kas-6.0.0
+    release: gitlab
+    heritage: Helm
+    
+data:
+  # See https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent/-/blob/master/pkg/kascfg/config_example.yaml
+  config.yaml: |
+    agent:
+      kubernetes_api:
+        listen:
+          address: :8154
+        url_path_prefix: /k8s-proxy
+      listen:
+        address: :8150
+        websocket: true
+    api:
+      listen:
+        address: :8153
+        authentication_secret_file: /etc/kas/.gitlab_kas_secret
+    gitlab:
+      address: http://gitlab-webservice-default.default.svc:8181
+      authentication_secret_file: /etc/kas/.gitlab_kas_secret
+    observability:
+      listen:
+        address: :8151
+    private_api:
+      listen:
+        address: :8155
+        authentication_secret_file: /etc/kas/.gitlab_kas_private_api_secret
+    redis:
+      password_file: /etc/kas/redis/redis-password
+      server:
+        address: gitlab-redis-master.default.svc:6379
 ---
 # Source: gitlab/charts/gitlab/charts/migrations/templates/configmap.yaml
 apiVersion: v1
@@ -870,7 +932,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-5.10.3
+    chart: migrations-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -961,7 +1023,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.10.3
+    chart: sidekiq-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -1053,8 +1115,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-artifacts
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1069,8 +1129,6 @@ data:
         object_store:
           enabled: true
           remote_directory: git-lfs
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1085,8 +1143,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-uploads
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1101,8 +1157,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-packages
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1118,45 +1172,25 @@ data:
         object_store:
           enabled: false
           remote_directory: gitlab-mr-diffs
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       terraform_state:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-terraform-state
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       ci_secure_files:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-ci-secure-files
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       dependency_proxy:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-dependency-proxy
-          direct_upload: true
-          background_upload: false
           proxy_download: true
-      pseudonymizer:
-        manifest: config/pseudonymizer.yml
-        upload:
-          remote_directory: gitlab-pseudo
-          connection:
-            provider: AWS
-            region: us-east-1
-            aws_access_key_id: <%= File.read('/etc/gitlab/minio/accesskey').strip.to_json %>
-            aws_secret_access_key: <%= File.read('/etc/gitlab/minio/secretkey').strip.to_json %>
-            host: minio.example.com
-            endpoint: http://gitlab-minio-svc.default.svc:9000
-            path_style: true
       
       sentry:
         enabled: false
@@ -1228,7 +1262,11 @@ data:
           
       backup:
         path: "tmp/backups"   # Relative paths are relative to Rails.root (default: tmp/backups/)
-      
+      gitlab_kas:
+        enabled: true
+        secret_file: /etc/gitlab/kas/.gitlab_kas_secret
+        external_url: "wss://kas.example.com"
+        internal_url: "grpc://gitlab-kas.default.svc:8153"
       gitlab_shell:
         path: /home/git/gitlab-shell/
         hooks_path: /home/git/gitlab-shell/hooks/
@@ -1277,7 +1315,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-5.10.3
+    chart: toolbox-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -1357,8 +1395,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-artifacts
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1373,8 +1409,6 @@ data:
         object_store:
           enabled: true
           remote_directory: git-lfs
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1389,8 +1423,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-uploads
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1405,8 +1437,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-packages
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1422,45 +1452,25 @@ data:
         object_store:
           enabled: false
           remote_directory: gitlab-mr-diffs
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       terraform_state:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-terraform-state
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       ci_secure_files:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-ci-secure-files
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       dependency_proxy:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-dependency-proxy
-          direct_upload: true
-          background_upload: false
           proxy_download: true
-      pseudonymizer:
-        manifest: config/pseudonymizer.yml
-        upload:
-          remote_directory: gitlab-pseudo
-          connection:
-            provider: AWS
-            region: us-east-1
-            aws_access_key_id: <%= File.read('/etc/gitlab/minio/accesskey').strip.to_json %>
-            aws_secret_access_key: <%= File.read('/etc/gitlab/minio/secretkey').strip.to_json %>
-            host: minio.example.com
-            endpoint: http://gitlab-minio-svc.default.svc:9000
-            path_style: true
       
       sidekiq:
       
@@ -1526,7 +1536,11 @@ data:
           
       backup:
         path: "tmp/backups"   # Relative paths are relative to Rails.root (default: tmp/backups/)
-      
+      gitlab_kas:
+        enabled: true
+        secret_file: /etc/gitlab/kas/.gitlab_kas_secret
+        external_url: "wss://kas.example.com"
+        internal_url: "grpc://gitlab-kas.default.svc:8153"
       gitlab_shell:
         path: /home/git/gitlab-shell/
         hooks_path: /home/git/gitlab-shell/hooks/
@@ -1602,7 +1616,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -1694,8 +1708,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-artifacts
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1710,8 +1722,6 @@ data:
         object_store:
           enabled: true
           remote_directory: git-lfs
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1726,8 +1736,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-uploads
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1742,8 +1750,6 @@ data:
         object_store:
           enabled: true
           remote_directory: gitlab-packages
-          direct_upload: true
-          background_upload: false
           proxy_download: true
           connection:
             provider: AWS
@@ -1759,32 +1765,24 @@ data:
         object_store:
           enabled: false
           remote_directory: gitlab-mr-diffs
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       terraform_state:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-terraform-state
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       ci_secure_files:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-ci-secure-files
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       dependency_proxy:
         enabled: false
         object_store:
           enabled: false
           remote_directory: gitlab-dependency-proxy
-          direct_upload: true
-          background_upload: false
           proxy_download: true
       
       sentry:
@@ -1848,7 +1846,11 @@ data:
           
       backup:
         path: "tmp/backups"   # Relative paths are relative to Rails.root (default: tmp/backups/)
-      
+      gitlab_kas:
+        enabled: true
+        secret_file: /etc/gitlab/kas/.gitlab_kas_secret
+        external_url: "wss://kas.example.com"
+        internal_url: "grpc://gitlab-kas.default.svc:8153"
       gitlab_shell:
         path: /home/git/gitlab-shell/
         hooks_path: /home/git/gitlab-shell/hooks/
@@ -1912,7 +1914,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -2101,7 +2103,6 @@ data:
     createBucket gitlab-backups none false
     createBucket gitlab-packages none false
     createBucket tmp none false
-    createBucket gitlab-pseudo none false
     createBucket gitlab-mr-diffs none false
     createBucket gitlab-terraform-state none false
     createBucket gitlab-ci-secure-files none false
@@ -2287,7 +2288,7 @@ data:
     
   server-tokens: "false"
     
-  ssl-ciphers: "ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4"
+  ssl-ciphers: "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4"
     
   ssl-protocols: "TLSv1.3 TLSv1.2"
     
@@ -2762,13 +2763,13 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
 data:
-  gitlabVersion: "14.10.3"
-  gitlabChartVersion: "5.10.3"
+  gitlabVersion: "15.0.0"
+  gitlabChartVersion: "6.0.0"
 ---
 # Source: gitlab/templates/initdb-configmap.yaml
 apiVersion: v1
@@ -2778,7 +2779,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -20070,7 +20071,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.10.3
+    chart: gitaly-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -20099,7 +20100,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.10.3
+    chart: gitlab-exporter-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -20125,7 +20126,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -20143,6 +20144,44 @@ spec:
     app: gitlab-shell
     release: gitlab
 ---
+# Source: gitlab/charts/gitlab/charts/kas/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: gitlab-kas
+  namespace: default
+  labels:
+    app: kas
+    chart: kas-6.0.0
+    release: gitlab
+    heritage: Helm
+    
+    
+  annotations:
+    
+spec:
+  type: "ClusterIP"
+  ports:
+    - port: 8150
+      targetPort: 8150
+      protocol: TCP
+      name: tcp-kas-external-api
+    - port: 8153
+      targetPort: 8153
+      protocol: TCP
+      name: tcp-kas-internal-api
+    - port: 8154
+      targetPort: 8154
+      protocol: TCP
+      name: tcp-kas-k8s-api
+    - port: 8151
+      targetPort: http-metrics
+      protocol: TCP
+      name: http-metrics
+  selector:
+    app: kas
+    release: gitlab
+---
 # Source: gitlab/charts/gitlab/charts/webservice/templates/service.yaml
 apiVersion: v1
 kind: Service
@@ -20151,7 +20190,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -20832,7 +20871,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-5.10.3
+    chart: gitlab-exporter-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -20849,13 +20888,13 @@ spec:
     metadata:
       labels:
         app: gitlab-exporter
-        chart: gitlab-exporter-5.10.3
+        chart: gitlab-exporter-6.0.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 1c28a2e7605451170f834fe4226b53e803c497ce8bc2514306fe08e5b09fa394
+        checksum/config: ad9d8dd70c73ccdc54de0b282134d75aad4831c3119818edc8ffab867c1e6241
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "9168"
         gitlab.com/prometheus_path: /metrics
@@ -20893,6 +20932,7 @@ spec:
             value: "0.055"
           - name: RUBY_GC_HEAP_INIT_SLOTS
             value: "80000"
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -20913,6 +20953,7 @@ spec:
             value: "0.055"
           - name: RUBY_GC_HEAP_INIT_SLOTS
             value: "80000"
+          
           volumeMounts:
           
           
@@ -20931,7 +20972,7 @@ spec:
       containers:
         
         - name: gitlab-exporter
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:11.14.0"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-exporter:11.15.0"          
           env:
             - name: CONFIG_TEMPLATE_DIRECTORY
               value: '/var/opt/gitlab-exporter/templates'
@@ -20946,6 +20987,7 @@ spec:
               value: "0.055"
             - name: RUBY_GC_HEAP_INIT_SLOTS
               value: "80000"
+            
           ports:
           - containerPort: 9168
             name: http-metrics
@@ -21017,7 +21059,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -21033,14 +21075,14 @@ spec:
     metadata:
       labels:
         app: gitlab-shell
-        chart: gitlab-shell-5.10.3
+        chart: gitlab-shell-6.0.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 6dd81ca81c399cadbd239be80557e1d0138f86c801363a1289566ef251a5d0fd
-        checksum/config-sshd: 6d38cfbc791a5feed9d71057f869c95db968c56842d111796d7ede460d37e704
+        checksum/config: 968ff47cc1dcc1d2d8bc8237ac5fe4fa6b9c9a5ef0d1f4a70201b73a6d5bcd32
+        checksum/config-sshd: b2454fd9760abb6e78c2a85a7cf934c67b89ce11e2f97532db99041c4f3af5f0
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       initContainers:
@@ -21048,6 +21090,7 @@ spec:
         - name: certificates
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
+          
           
           volumeMounts:
           - name: etc-ssl-certs
@@ -21060,6 +21103,7 @@ spec:
           command: ['sh', '/config/configure']
           image: "registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox:latest"          
           env:
+          
           
           volumeMounts:
           
@@ -21093,7 +21137,7 @@ spec:
       containers:
         
         - name: gitlab-shell
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v13.25.1"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-shell:v14.3.0"          
           ports:
             - containerPort: 2222
               name: ssh
@@ -21108,6 +21152,7 @@ spec:
               value: '/etc/gitlab-secrets/ssh'
             - name: SSH_DAEMON
               value: "openssh"
+            
             
           volumeMounts:
             - name: shell-config
@@ -21172,6 +21217,147 @@ spec:
         emptyDir:
           medium: "Memory"
 ---
+# Source: gitlab/charts/gitlab/charts/kas/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitlab-kas
+  namespace: default
+  labels:
+    app: kas
+    chart: kas-6.0.0
+    release: gitlab
+    heritage: Helm
+    
+  annotations:
+    
+spec:
+  selector:
+    matchLabels:
+      app: kas
+      release: gitlab
+      
+  template:
+    metadata:
+      labels:
+        app: kas
+        chart: kas-6.0.0
+        release: gitlab
+        heritage: Helm
+        
+        
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+        gitlab.com/prometheus_scrape: "true"
+        gitlab.com/prometheus_port: "8151"
+        gitlab.com/prometheus_path: /metrics
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8151"
+        prometheus.io/path: /metrics
+    spec:
+      
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 1
+            podAffinityTerm:
+              topologyKey: "kubernetes.io/hostname"
+              labelSelector:
+                matchLabels:
+                  app: kas
+                  release: gitlab
+                  
+      securityContext:
+        runAsUser: 65532
+        runAsGroup: 65532
+        fsGroup: 65532      
+      initContainers:
+        - name: certificates
+          image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
+          env:
+          
+          
+          volumeMounts:
+          - name: etc-ssl-certs
+            mountPath: /etc/ssl/certs
+            readOnly: false
+          resources:
+            requests:
+              cpu: 50m
+      containers:
+        
+        - name: kas
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-kas:v15.0.0"          
+          args:
+            - "--configuration-file=/etc/kas/config.yaml"
+          env:
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+            - name: OWN_PRIVATE_API_URL
+              value: "grpc://$(POD_IP):8155"
+          ports:
+            - containerPort: 8150
+              name: kas
+            - containerPort: 8154
+              name: kas-k8s-api
+            - containerPort: 8155
+              name: kas-private-api
+            - containerPort: 8151
+              name: http-metrics
+          readinessProbe:
+            tcpSocket:
+              port: 8150
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: 8150
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: 100m
+              memory: 100M
+          volumeMounts:
+            - name: init-etc-kas
+              mountPath: /etc/kas
+              readOnly: true
+            
+            - name: etc-ssl-certs
+              mountPath: /etc/ssl/certs/
+              readOnly: true
+      volumes:
+      
+      
+      - name: etc-ssl-certs
+        emptyDir:
+          medium: "Memory"
+      - name: init-etc-kas
+        projected:
+          defaultMode: 0440
+          sources:
+            - configMap:
+                name: gitlab-kas
+            - secret:
+                name: "gitlab-gitlab-kas-secret"
+                items:
+                  - key: "kas_shared_secret"
+                    path: .gitlab_kas_secret
+            - secret:
+                name: "gitlab-kas-private-api"
+                items:
+                  - key: "kas_private_api_secret"
+                    path: .gitlab_kas_private_api_secret
+            
+            
+            - secret:
+                name: "gitlab-redis-secret"
+                items:
+                  - key: "secret"
+                    path: redis/redis-password
+---
 # Source: gitlab/charts/gitlab/charts/sidekiq/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -21180,7 +21366,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.10.3
+    chart: sidekiq-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -21198,14 +21384,14 @@ spec:
     metadata:
       labels:
         app: sidekiq
-        chart: sidekiq-5.10.3
+        chart: sidekiq-6.0.0
         release: gitlab
         heritage: Helm
         
         
         queue-pod-name: all-in-1
       annotations:
-        checksum/configmap: 4efce0e24e8d7e3b194dd43a3b01cbd66db5ae0d8417e55f397253304200b135
+        checksum/configmap: 605a01f4b6632f3e9c8b85274b187b9ed23aa972d0f606c623e8419f2a67fb10
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "3807"
@@ -21236,6 +21422,7 @@ spec:
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
           
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -21247,6 +21434,7 @@ spec:
           command: ['sh', '/config/configure']
           image: "registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox:latest"          
           env:
+          
           
           volumeMounts:
           
@@ -21266,7 +21454,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.10.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v15.0.0"          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21282,6 +21470,7 @@ spec:
               value: "25"
             - name: ENABLE_BOOTSNAP
               value: "1"
+            
             
           volumeMounts:
           
@@ -21305,7 +21494,7 @@ spec:
       containers:
         
         - name: sidekiq
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v14.10.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v15.0.0"          
           env:
             - name: prometheus_multiproc_dir
               value: /metrics
@@ -21441,7 +21630,12 @@ spec:
                 - key: "secret"
                   path: registry/notificationSecret
           
-          
+          # mount secret for kas
+          - secret:
+              name: "gitlab-gitlab-kas-secret"
+              items:
+                - key: "kas_shared_secret"
+                  path: kas/.gitlab_kas_secret
           # mount secret for minio
           - secret:
               name: "gitlab-minio-secret"
@@ -21460,7 +21654,6 @@ spec:
           # mount secret for ci_secure_files
           # mount secret for dependency_proxy
           # mount secret for pages
-          # mount secret for pseudonymizer
           # mount secrets for LDAP
           
       - name: sidekiq-secrets
@@ -21479,7 +21672,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-5.10.3
+    chart: toolbox-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -21498,13 +21691,13 @@ spec:
     metadata:
       labels:
         app: toolbox
-        chart: toolbox-5.10.3
+        chart: toolbox-6.0.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 604bb0073b5f8cf4b361333e8cb3a8ecafc7c2ae3881f9b547752ae186123730
+        checksum/config: 6fb5f787c0a8849f474c6a20844979270794f865460a08b72286d5b06596738d
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       securityContext:
@@ -21517,6 +21710,7 @@ spec:
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
           
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -21528,6 +21722,7 @@ spec:
           command: ['sh', '/config/configure']
           image: "registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox:latest"          
           env:
+          
           
           volumeMounts:
           
@@ -21562,7 +21757,7 @@ spec:
             - /bin/bash
             - -c
             - cp -v -r -L /etc/gitlab/.s3cfg $HOME/.s3cfg && while sleep 3600; do :; done # alpine sleep has no infinity
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.10.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.0"          
           env:
             - name: ARTIFACTS_BUCKET_NAME
               value: gitlab-artifacts
@@ -21596,6 +21791,7 @@ spec:
               value: '/var/opt/gitlab/templates'
             - name: CONFIG_DIRECTORY
               value: '/srv/gitlab/config'
+            
             
           volumeMounts:
             
@@ -21673,7 +21869,12 @@ spec:
                 - key: "secret"
                   path: registry/notificationSecret
           
-          
+          # mount secret for kas
+          - secret:
+              name: "gitlab-gitlab-kas-secret"
+              items:
+                - key: "kas_shared_secret"
+                  path: kas/.gitlab_kas_secret
           # mount secret for minio
           - secret:
               name: "gitlab-minio-secret"
@@ -21692,7 +21893,6 @@ spec:
           # mount secret for ci_secure_files
           # mount secret for dependency_proxy
           # mount secret for pages
-          # mount secret for pseudonymizer
           # mount secrets for LDAP
           
       - name: toolbox-secrets
@@ -21711,7 +21911,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -21732,7 +21932,7 @@ spec:
     metadata:
       labels:
         app: webservice
-        chart: webservice-5.10.3
+        chart: webservice-6.0.0
         release: gitlab
         heritage: Helm
         gitlab.com/webservice-name: default
@@ -21740,7 +21940,7 @@ spec:
         
         
       annotations:
-        checksum/config: 7b2f687c2170512f0b2e52800a7fc7da3a0cd8a14ca210d1f1614a2d56184023
+        checksum/config: cd7a3cb3b48d2473852aebd9cc8f026676e4df3e4158194aa9ba4919a847bb73
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "8083"
@@ -21772,6 +21972,7 @@ spec:
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
           
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -21784,6 +21985,7 @@ spec:
           args: [ '-c', 'sh -x /config-webservice/configure ; sh -x /config-workhorse/configure ; mkdir -p -m 3770 /tmp/gitlab']
           image: "registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox:latest"          
           env:
+            
             
           volumeMounts:
           
@@ -21811,7 +22013,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.10.3          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.0          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21825,6 +22027,7 @@ spec:
               value: "1"
             - name: ENABLE_BOOTSNAP
               value: "1"
+            
             
           volumeMounts:
             
@@ -21846,7 +22049,7 @@ spec:
       containers:
         
         - name: webservice
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.10.3          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.0          
           ports:
             - containerPort: 8080
               name: http-webservice
@@ -21886,6 +22089,7 @@ spec:
             
             - name: WORKHORSE_ARCHIVE_CACHE_DISABLED
               value: "true"
+            
             
           volumeMounts:
             - name: webservice-metrics
@@ -21928,10 +22132,10 @@ spec:
               path: /-/readiness
               port: 8080
             initialDelaySeconds: 0
-            periodSeconds: 10
+            periodSeconds: 5
             timeoutSeconds: 2
             successThreshold: 1
-            failureThreshold: 3
+            failureThreshold: 2
           lifecycle:
             preStop:
               exec:
@@ -21941,7 +22145,7 @@ spec:
               cpu: 300m
               memory: 2.5G
         - name: gitlab-workhorse
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v14.10.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v15.0.0"          
           ports:
             - containerPort: 8181
               name: http-workhorse
@@ -21958,6 +22162,7 @@ spec:
               value: '/var/opt/gitlab/templates'
             - name: CONFIG_DIRECTORY
               value: '/srv/gitlab/config'
+            
             
             
           volumeMounts:
@@ -22062,7 +22267,12 @@ spec:
                 - key: "shared_secret"
                   path: gitlab-workhorse/secret
           
-          
+          # mount secret for kas
+          - secret:
+              name: "gitlab-gitlab-kas-secret"
+              items:
+                - key: "kas_shared_secret"
+                  path: kas/.gitlab_kas_secret
           # mount secret for minio
           - secret:
               name: "gitlab-minio-secret"
@@ -22540,6 +22750,7 @@ spec:
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
           
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -22559,11 +22770,13 @@ spec:
             requests:
               cpu: 50m
           env:
+          
                 
       containers:
         - name: registry
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.39.0-gitlab"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-container-registry:v3.41.1-gitlab"          
           env:
+          
           
           volumeMounts:
           - name: registry-server-config
@@ -22641,7 +22854,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-5.10.3
+    chart: gitlab-shell-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -22658,6 +22871,31 @@ spec:
       name: cpu
       targetAverageValue: 100m
 ---
+# Source: gitlab/charts/gitlab/charts/kas/templates/hpa.yaml
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: gitlab-kas
+  namespace: default
+  labels:
+    app: kas
+    chart: kas-6.0.0
+    release: gitlab
+    heritage: Helm
+    
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: gitlab-kas
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageValue: 100m
+---
 # Source: gitlab/charts/gitlab/charts/sidekiq/templates/hpa.yaml
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
@@ -22666,7 +22904,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-5.10.3
+    chart: sidekiq-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -22691,7 +22929,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -22742,7 +22980,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-5.10.3
+    chart: gitaly-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -22759,13 +22997,13 @@ spec:
     metadata:
       labels:
         app: gitaly
-        chart: gitaly-5.10.3
+        chart: gitaly-6.0.0
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: edba12763ac0ec9757b04d9cede751dbdac3bc02208edb634e3cd1c2320f0dd4
+        checksum/config: 48b8b88deb9bd96f6de09dba172fe4524c033f3221b81d3670267e5596077d49
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "9236"
         gitlab.com/prometheus_path: /metrics
@@ -22780,6 +23018,7 @@ spec:
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
           
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -22791,6 +23030,7 @@ spec:
           command: ['sh', '/config/configure']
           image: "registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox:latest"          
           env:
+          
           
           volumeMounts:
           
@@ -22824,7 +23064,7 @@ spec:
       containers:
         
         - name: gitaly
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v14.10.3"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v15.0.0"          
           ports:
             - containerPort: 8075
               name: grpc-gitaly
@@ -22839,6 +23079,7 @@ spec:
               value: '/etc/gitaly/config.toml'
             - name: SSL_CERT_DIR
               value: '/etc/ssl/certs'
+            
             
             
           volumeMounts:
@@ -23261,7 +23502,7 @@ spec:
       restartPolicy: OnFailure      
       containers:
         - name: create-issuer
-          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:f0bc9adaccd131d993fdabf6aa39fe4ff0e22035c2deca20341074c9e2e40a5b"
+          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:8d27c191af306cafddba2f293c5613f8966363f779d79a5599ad0231e60069e4"
           command: ['/bin/bash', '/scripts/create-issuer', '/scripts/issuer.yml']          
           volumeMounts:
             - name: scripts
@@ -23282,7 +23523,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-5.10.3
+    chart: migrations-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -23293,7 +23534,7 @@ spec:
     metadata:
       labels:
         app: migrations
-        chart: migrations-5.10.3
+        chart: migrations-6.0.0
         release: gitlab
         heritage: Helm
         
@@ -23309,6 +23550,7 @@ spec:
           image: "registry.gitlab.com/gitlab-org/build/cng/alpine-certificates:20191127-r2@sha256:367d437d024d7647432d67fb2442e3e5723af5930bad77d3535f4f8f4f8630d9"  
           env:
           
+          
           volumeMounts:
           - name: etc-ssl-certs
             mountPath: /etc/ssl/certs
@@ -23320,6 +23562,7 @@ spec:
           command: ['sh', '/config/configure']
           image: "registry.gitlab.com/gitlab-org/cloud-native/mirror/images/busybox:latest"          
           env:
+          
           
           volumeMounts:
           
@@ -23341,7 +23584,7 @@ spec:
       containers:
         
         - name: migrations
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v14.10.3"
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.0"
           args:
             - /scripts/wait-for-deps
             - /scripts/db-migrate          
@@ -23354,6 +23597,7 @@ spec:
               value: 'true'
             - name: ENABLE_BOOTSNAP
               value: '1'
+            
             
           volumeMounts:
             - name: migrations-config
@@ -23389,6 +23633,7 @@ spec:
         projected:
           defaultMode: 0400
           sources:
+          
           - secret:
               name: "gitlab-rails-secret"
               items:
@@ -23502,6 +23747,41 @@ metadata:
 spec:
   controller: k8s.io/ingress-nginx
 ---
+# Source: gitlab/charts/gitlab/charts/kas/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gitlab-kas
+  namespace: default
+  labels:
+    app: kas
+    chart: kas-6.0.0
+    release: gitlab
+    heritage: Helm
+    
+  annotations:
+    kubernetes.io/ingress.class: gitlab-nginx
+    kubernetes.io/ingress.provider: "nginx"
+    cert-manager.io/issuer: "gitlab-issuer"
+spec:
+  
+  rules:
+    - host: kas.example.com
+      http:
+        paths:
+          - path: "/"
+            backend:
+              serviceName: gitlab-kas
+              servicePort: 8150
+          - path: "/k8s-proxy/"
+            backend:
+              serviceName: gitlab-kas
+              servicePort: 8154
+  tls:
+    - hosts:
+      - kas.example.com
+      secretName: gitlab-kas-tls
+---
 # Source: gitlab/charts/gitlab/charts/webservice/templates/ingress.yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -23510,7 +23790,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-5.10.3
+    chart: webservice-6.0.0
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -23747,7 +24027,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -23764,7 +24044,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -23804,7 +24084,7 @@ data:
     
       kubectl --namespace=$namespace label \
         --overwrite \
-        secret $secret_name app=gitlab chart=gitlab-5.10.3 release=gitlab heritage=Helm 
+        secret $secret_name app=gitlab chart=gitlab-6.0.0 release=gitlab heritage=Helm 
     }
     
     # Args: secretname, args
@@ -23874,6 +24154,11 @@ data:
     # GitLab Pages OAuth secret
     
     
+    # Gitlab-kas secret
+    generate_secret_if_needed "gitlab-gitlab-kas-secret" --from-literal="kas_shared_secret"=$(gen_random 'a-zA-Z0-9' 32 | base64)
+    
+    # Gitlab-kas private API secret
+    generate_secret_if_needed "gitlab-kas-private-api" --from-literal="kas_private_api_secret"=$(gen_random 'a-zA-Z0-9' 32 | base64)
     
     
     
@@ -23954,7 +24239,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -23995,8 +24280,8 @@ data:
         fi
       fi
     fi
-    MIN_VERSION=14.0
-    CHART_MIN_VERSION=5.0
+    MIN_VERSION=14.10
+    CHART_MIN_VERSION=5.10
     
     # Only run check for semver releases
     if ! awk 'BEGIN{exit(!(ARGV[1] ~ /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/))}' "$GITLAB_VERSION"; then
@@ -24035,7 +24320,7 @@ data:
       if ( ! greater_version $OLD_MINOR_VERSION $MIN_VERSION ) || ( ! greater_version $OLD_CHART_MINOR_VERSION $CHART_MIN_VERSION ); then
         notify "It seems you are upgrading the GitLab Helm Chart from ${OLD_CHART_VERSION_STRING} (GitLab ${OLD_VERSION_STRING}) to ${CHART_VERSION} (GitLab ${GITLAB_VERSION})."
         notify "It is required to upgrade to the latest ${CHART_MIN_VERSION}.x version first before proceeding."
-        notify "Please follow the upgrade documentation at https://docs.gitlab.com/charts/releases/5_0.html"
+        notify "Please follow the upgrade documentation at https://docs.gitlab.com/charts/releases/6_0.html"
         notify "and upgrade to GitLab Helm Chart version ${CHART_MIN_VERSION}.x before upgrading to ${CHART_VERSION}."
         exit 1
       fi
@@ -24073,7 +24358,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-5.10.3
+    chart: shared-secrets-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -24121,7 +24406,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-5.10.3
+    chart: shared-secrets-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -24142,7 +24427,7 @@ subjects:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gitlab-webservice-test-runner-bpuvb
+  name: gitlab-webservice-test-runner-0qsry
   namespace: default
   annotations:
     "helm.sh/hook": test
@@ -24150,7 +24435,7 @@ metadata:
 spec:
   containers:
   - name: test-runner
-    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v14.10.3
+    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.0
     command: ['sh', '/tests/test_login']
     volumeMounts:
       - name: tests
@@ -24221,11 +24506,11 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: gitlab-shared-secrets-1-hpx
+  name: gitlab-shared-secrets-1-nta
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -24237,7 +24522,7 @@ spec:
     metadata:
       labels:
         app: gitlab
-        chart: gitlab-5.10.3
+        chart: gitlab-6.0.0
         release: gitlab
         heritage: Helm
         
@@ -24253,7 +24538,7 @@ spec:
       
       containers:
         - name: gitlab
-          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:f0bc9adaccd131d993fdabf6aa39fe4ff0e22035c2deca20341074c9e2e40a5b"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:8d27c191af306cafddba2f293c5613f8966363f779d79a5599ad0231e60069e4"          
           command: ['/bin/bash', '/scripts/generate-secrets']
           volumeMounts:
             - name: scripts
@@ -24278,7 +24563,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-5.10.3
+    chart: gitlab-6.0.0
     release: gitlab
     heritage: Helm
     
@@ -24306,9 +24591,9 @@ spec:
           command: ['/bin/sh', '/scripts/runcheck']          
           env:
             - name: GITLAB_VERSION
-              value: '14.10.3'
+              value: '15.0.0'
             - name: CHART_VERSION
-              value: '5.10.3'
+              value: '6.0.0'
           volumeMounts:
             - name: chart-info
               mountPath: /chart-info

@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:f0bc9adaccd131d993fdabf6aa39fe4ff0e22035c2deca20341074c9e2e40a5b (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/kubectl:1.18.20@sha256:8d27c191af306cafddba2f293c5613f8966363f779d79a5599ad0231e60069e4 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
@@ -44,7 +44,6 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-41617|openssh-client|1:8.4p1-5||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1292|openssl|1.1.1n-0+deb11u1|1.1.1n-0+deb11u2|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-16156|perl-base|5.32.1-4+deb11u2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib1g|1:1.2.11.dfsg-2|1:1.2.11.dfsg-2+deb11u1|
 
 ## Target: usr/local/bin/yq --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
