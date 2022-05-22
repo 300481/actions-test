@@ -19,14 +19,14 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
+## Target: app/.venv/lib/python3.10/site-packages/google/auth/crypt/_python_rsa.py --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
 ## Target: app/.venv/lib/python3.10/site-packages/rsa/key.py --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
 ## Target: app/.venv/lib/python3.10/site-packages/rsa/pem.py --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: app/.venv/lib/python3.10/site-packages/google/auth/crypt/_python_rsa.py --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
