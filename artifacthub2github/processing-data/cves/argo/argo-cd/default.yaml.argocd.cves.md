@@ -46,42 +46,6 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/codecommit/create-repository.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/codecommit/get-repository.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/codecommit/batch-get-repositories.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-keys-and-certificate.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-provisioning-claim.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/opsworks/describe-commands.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/redshift/describe-cluster-snapshots.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/s3api/get-bucket-inventory-configuration.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/s3api/list-bucket-inventory-configurations.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
 ## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/create-network-interface-permission.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
@@ -91,30 +55,6 @@
 |--------|---------------|-------|----------------|------------|
 
 ## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/get-capacity-reservation-usage.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-device-definition-version.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-device-definition.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-core-definition-version.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-core-definition.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/create-members.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/get-findings.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
@@ -130,11 +70,19 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iam/update-access-key.rst --- Class: secret
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/create-members.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/lightsail/create-key-pair.rst --- Class: secret
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/get-findings.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-keys-and-certificate.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-provisioning-claim.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
@@ -142,6 +90,58 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/lightsail/create-key-pair.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/opsworks/describe-commands.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/redshift/describe-cluster-snapshots.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
 ## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/securityhub/list-organization-admin-accounts.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/codecommit/create-repository.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/codecommit/get-repository.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/codecommit/batch-get-repositories.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iam/update-access-key.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/s3api/get-bucket-inventory-configuration.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/s3api/list-bucket-inventory-configurations.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-core-definition-version.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-core-definition.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-device-definition-version.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/greengrass/create-device-definition.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
