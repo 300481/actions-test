@@ -10,12 +10,12 @@
         "name": "bitnami",
         "publisher": "bitnami"
       },
-      "url": "https://artifacthub.io/packages/helm/bitnami/keycloak/9.0.3",
-      "version": "9.0.3"
+      "url": "https://artifacthub.io/packages/helm/bitnami/keycloak/9.0.4",
+      "version": "9.0.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "95a705f9-ae65-48a0-b68b-8df2a2e8dba8",
+  "id": "6b594dd2-4ff3-41a2-b3a9-6a6f307a8a91",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

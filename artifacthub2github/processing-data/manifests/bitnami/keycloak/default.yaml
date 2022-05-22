@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.0.3
+    helm.sh/chart: keycloak-9.0.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -21,7 +21,7 @@ metadata:
   namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.2.4
+    helm.sh/chart: postgresql-11.2.6
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
 type: Opaque
@@ -38,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.0.3
+    helm.sh/chart: keycloak-9.0.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -63,7 +63,7 @@ metadata:
   namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.2.4
+    helm.sh/chart: postgresql-11.2.6
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
@@ -96,7 +96,7 @@ metadata:
   namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.2.4
+    helm.sh/chart: postgresql-11.2.6
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
@@ -121,7 +121,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.0.3
+    helm.sh/chart: keycloak-9.0.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -147,7 +147,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.0.3
+    helm.sh/chart: keycloak-9.0.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -180,7 +180,7 @@ metadata:
   namespace: "default"
   labels:
     app.kubernetes.io/name: postgresql
-    helm.sh/chart: postgresql-11.2.4
+    helm.sh/chart: postgresql-11.2.6
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: primary
@@ -201,7 +201,7 @@ spec:
       name: keycloak-postgresql
       labels:
         app.kubernetes.io/name: postgresql
-        helm.sh/chart: postgresql-11.2.4
+        helm.sh/chart: postgresql-11.2.6
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: primary
@@ -233,7 +233,7 @@ spec:
       initContainers:
       containers:
         - name: postgresql
-          image: docker.io/bitnami/postgresql:14.3.0-debian-10-r6
+          image: docker.io/bitnami/postgresql:14.3.0-debian-10-r8
           imagePullPolicy: "IfNotPresent"
           securityContext:
             runAsUser: 1001
@@ -345,7 +345,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.0.3
+    helm.sh/chart: keycloak-9.0.4
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -364,10 +364,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: 32c2c4db3b36fefda9a153a9cf9a36ca9b714651f81a4c22e171b4fb8c1a7f95
+        checksum/configmap-env-vars: 120731bc4d193f102ab67ee06096ff6273934eaec438d4b962903dbfb901918d
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-9.0.3
+        helm.sh/chart: keycloak-9.0.4
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
@@ -394,7 +394,7 @@ spec:
         fsGroup: 1001
       containers:
         - name: keycloak
-          image: docker.io/bitnami/keycloak:18.0.0-debian-10-r2
+          image: docker.io/bitnami/keycloak:18.0.0-debian-10-r3
           imagePullPolicy: IfNotPresent
           securityContext:
             runAsNonRoot: true
