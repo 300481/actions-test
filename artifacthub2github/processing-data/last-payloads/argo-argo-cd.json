@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Add support for external issuers in server Certificate resource"
+        "[Fixed]: Adjust api version of pod disruption budget by referring to k8s version"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.3",
-      "version": "4.6.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.4",
+      "version": "4.6.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "6072e2e7-5822-46b3-bec6-bd744287eef9",
+  "id": "59dcbae8-fe9a-4788-bcaa-62fa5941f87b",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
