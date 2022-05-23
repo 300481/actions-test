@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Adjust api version of pod disruption budget by referring to k8s version"
+        "[Changed]: Updated redis-ha dependency chart"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.4",
-      "version": "4.6.4"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.5",
+      "version": "4.6.5"
     }
   },
   "datacontenttype": "application/json",
-  "id": "59dcbae8-fe9a-4788-bcaa-62fa5941f87b",
+  "id": "61779a09-a6f1-4d16-b55d-c5bba6d63196",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
