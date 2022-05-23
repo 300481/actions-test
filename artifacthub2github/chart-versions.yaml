@@ -56,7 +56,7 @@ repos:
     name: sonatype
     charts:
       nexus_repository_manager:
-        version: 38.1.2
+        version: 39.0.0
         name: nexus-repository-manager
   bitnami:
     url: https://charts.bitnami.com/bitnami
