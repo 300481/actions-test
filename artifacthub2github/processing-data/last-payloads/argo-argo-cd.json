@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Updated redis-ha dependency chart"
+        "[Changed]: Updated redis-ha dependency chart to 4.16.0"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.6.5",
-      "version": "4.6.5"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.7.0",
+      "version": "4.7.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "61779a09-a6f1-4d16-b55d-c5bba6d63196",
+  "id": "966b7cf4-1cec-4cb8-9c4f-b7ae7d25ecce",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
