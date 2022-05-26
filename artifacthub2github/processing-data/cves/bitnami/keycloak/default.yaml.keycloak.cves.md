@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/keycloak:18.0.0-debian-10-r3 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/keycloak:18.0.0-debian-10-r6 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
