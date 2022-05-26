@@ -3,33 +3,26 @@
 
 
 
-## Target: quay.io/ceph/ceph:v16.2.7 (redhat 8.5) --- Class: os-pkgs
+## Target: quay.io/ceph/ceph:v16.2.9 (redhat 8.5) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3468|avahi-libs|0.7-20.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|curl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|curl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.61.1-22.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|curl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|e2fsprogs|1.45.6-4.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|e2fsprogs-libs|1.45.6-4.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-45960|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-46143|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22822|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22823|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22824|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22825|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22826|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22827|expat|2.2.5-8.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-25314|expat|2.2.5-8.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-25314|expat|2.2.5-9.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-0256|gdisk|1.0.3-11.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-0308|gdisk|1.0.3-11.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-17049|krb5-libs|1.18.2-17.el8||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-26280|libarchive|3.3.3-3.el8_5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-17049|krb5-libs|1.18.2-20.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-21674|libarchive|3.3.3-3.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libcom_err|1.45.6-4.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl|7.61.1-22.el8||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|libcurl|7.61.1-22.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20673|libgcc|8.5.0-13.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-42694|libgcc|8.5.0-13.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27943|libgcc|8.5.0-13.el8||
@@ -59,7 +52,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-17543|lz4-libs|1.8.3-3.el8_4||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-39537|ncurses-base|6.1-9.20180224.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-39537|ncurses-libs|6.1-9.20180224.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3580|nettle|3.4.1-7.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4048|openblas|0.3.15-3.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4048|openblas-threads|0.3.15-3.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29155|openldap|2.4.46-18.el8||
@@ -67,8 +59,8 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-41617|openssh|8.0p1-12.el8|8.0p1-13.el8|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-15778|openssh-clients|8.0p1-12.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-41617|openssh-clients|8.0p1-12.el8|8.0p1-13.el8|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3712|openssl-libs|1:1.1.1k-6.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1292|openssl-libs|1:1.1.1k-6.el8_5||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1434|openssl-libs|1:1.1.1k-6.el8_5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1586|pcre2|10.32-2.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29824|python3-libxml2|2.9.7-13.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-19787|python3-lxml|4.2.3-4.el8||
@@ -99,11 +91,9 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20839|systemd-pam|239-58.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2018-20839|systemd-udev|239-58.el8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2005-2541|tar|2:1.30-5.el8||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1616|vim-minimal|2:8.0.1763-16.el8_5.13||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1619|vim-minimal|2:8.0.1763-16.el8_5.13||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1621|vim-minimal|2:8.0.1763-16.el8_5.13||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1629|vim-minimal|2:8.0.1763-16.el8_5.13||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-18.el8_5||
 
 ## Target: Node.js --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -115,10 +105,10 @@
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2020-13092|scikit-learn|0.19.1|0.23.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-28975|scikit-learn|0.19.1|0.24.dev0|
 
-## Target: usr/lib64/python3.6/site-packages/cryptography/hazmat/primitives/serialization/ssh.py --- Class: secret
+## Target: usr/sbin/cephadm --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: usr/sbin/cephadm --- Class: secret
+## Target: usr/lib64/python3.6/site-packages/cryptography/hazmat/primitives/serialization/ssh.py --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
