@@ -12,7 +12,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.4"
 
   
 # imagePullSecrets:
@@ -31,7 +31,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.4"
 
   
 # imagePullSecrets:
@@ -50,7 +50,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.4"
 
   
 # imagePullSecrets:
@@ -81,7 +81,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.4"
 
   
 # imagePullSecrets:
@@ -321,7 +321,7 @@ metadata:
     app.kubernetes.io/part-of: rook-ceph-operator
     app.kubernetes.io/managed-by: helm
     app.kubernetes.io/created-by: helm
-    helm.sh/chart: "rook-ceph-cluster-v1.9.3"
+    helm.sh/chart: "rook-ceph-cluster-v1.9.4"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -537,13 +537,11 @@ metadata:
   name: default
 spec:
   monitoring:
-    createPrometheusRules: false
     enabled: false
-    rulesNamespaceOverride: null
 
   cephVersion:
     allowUnsupported: false
-    image: quay.io/ceph/ceph:v16.2.7
+    image: quay.io/ceph/ceph:v16.2.9
   cleanupPolicy:
     allowUninstallWithVolumes: false
     confirmation: ""
