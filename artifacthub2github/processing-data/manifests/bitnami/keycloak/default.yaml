@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.1.1
+    helm.sh/chart: keycloak-9.2.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -38,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.1.1
+    helm.sh/chart: keycloak-9.2.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -121,7 +121,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.1.1
+    helm.sh/chart: keycloak-9.2.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -147,17 +147,14 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.1.1
+    helm.sh/chart: keycloak-9.2.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
 spec:
   type: LoadBalancer
-  sessionAffinity: None
   externalTrafficPolicy: "Cluster"
-  loadBalancerSourceRanges:
-  
-    []
+  sessionAffinity: None
   ports:
     - name: http
       port: 80
@@ -345,7 +342,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.1.1
+    helm.sh/chart: keycloak-9.2.0
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -364,10 +361,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: f70811d30489ed8cfcc3586f439dcd1f04a08e8ab890a55c28e21edebd2ad64a
+        checksum/configmap-env-vars: 2f880c72b4cf64b594dfdea6a5907aecc3b6c72ee8e405e1be2f1c310ed25fae
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-9.1.1
+        helm.sh/chart: keycloak-9.2.0
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
