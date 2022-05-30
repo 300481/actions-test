@@ -8,6 +8,7 @@
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|bsdutils|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|bsdutils|2.36.1-8ubuntu2|2.36.1-8ubuntu2.2|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1664|dpkg|1.20.9ubuntu2|1.20.9ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|e2fsprogs|1.46.3-1ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24765|git|1:2.32.0-1ubuntu1|1:2.32.0-1ubuntu1.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24765|git-man|1:2.32.0-1ubuntu1|1:2.32.0-1ubuntu1.2|
@@ -73,5 +74,4 @@
 ## Target: usr/local/bin/applicationset-controller --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210817164053-32db794688a5|0.0.0-20220315160706-3147a52a75dd|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8554|k8s.io/kubernetes|v1.23.1||
