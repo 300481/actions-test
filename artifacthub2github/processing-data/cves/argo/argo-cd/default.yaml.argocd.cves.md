@@ -6,6 +6,7 @@
 ## Target: quay.io/argoproj/argocd:v2.3.4 (ubuntu 21.10) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1664|dpkg|1.20.9ubuntu2|1.20.9ubuntu2.2|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|e2fsprogs|1.46.3-1ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libcom-err2|1.46.3-1ubuntu3||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1304|libext2fs2|1.46.3-1ubuntu3||
@@ -25,14 +26,12 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20329|go.mongodb.org/mongo-driver|v1.1.2|1.5.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210817164053-32db794688a5|0.0.0-20220315160706-3147a52a75dd|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8554|k8s.io/kubernetes|v1.23.1||
 
 ## Target: usr/local/bin/helm --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-23648|github.com/containerd/containerd|v1.5.9|1.4.13, 1.5.10, 1.6.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20211117183948-ae814b36b871|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/kustomize --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -43,6 +42,54 @@
 |--------|---------------|-------|----------------|------------|
 
 ## Target: usr/local/aws-cli/v2/current/dist/awscli/botocore/data/organizations/2016-11-28/examples-1.json --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/create-network-interface-permission.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/describe-network-interface-permissions.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/get-capacity-reservation-usage.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/create-members.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/get-findings.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/get-master-account.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/list-invitations.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/list-members.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iam/update-access-key.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-keys-and-certificate.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-provisioning-claim.rst --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/redshift/describe-cluster-snapshots.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
@@ -74,7 +121,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iam/update-access-key.rst --- Class: secret
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/lightsail/create-key-pair.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
@@ -82,11 +129,7 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/lightsail/create-key-pair.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/redshift/describe-cluster-snapshots.rst --- Class: secret
+## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/opsworks/describe-commands.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
@@ -99,49 +142,5 @@
 |--------|---------------|-------|----------------|------------|
 
 ## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/securityhub/list-organization-admin-accounts.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/get-capacity-reservation-usage.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/create-network-interface-permission.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/ec2/describe-network-interface-permissions.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/get-findings.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/get-master-account.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/list-invitations.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/list-members.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/guardduty/create-members.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-keys-and-certificate.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/iot/create-provisioning-claim.rst --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
-## Target: usr/local/aws-cli/v2/current/dist/awscli/examples/opsworks/describe-commands.rst --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
