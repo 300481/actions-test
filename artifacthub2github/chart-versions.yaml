@@ -84,7 +84,7 @@ repos:
     name: artifact-hub
     charts:
       artifact_hub:
-        version: 1.7.0
+        version: 1.8.0
         name: artifact-hub
   jenkinsci:
     url: https://charts.jenkins.io/
