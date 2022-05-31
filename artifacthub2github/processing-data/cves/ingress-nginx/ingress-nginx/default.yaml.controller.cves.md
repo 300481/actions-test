@@ -3,16 +3,9 @@
 
 
 
-## Target: k8s.gcr.io/ingress-nginx/controller:v1.2.0@sha256:d8196e3bc1e72547c5dec66d6556c0ff92a23f6d0919b206be170bc90d5f9185 (alpine 3.14.6) --- Class: os-pkgs
+## Target: k8s.gcr.io/ingress-nginx/controller:v1.2.1@sha256:5516d103a9c2ecc4f026efbd4b40662ce22dc1f824fb129ed121460aaa5c47f8 (alpine 3.14.6) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|curl|7.79.1-r0|7.79.1-r1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|curl|7.79.1-r0|7.79.1-r1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.79.1-r0|7.79.1-r1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-22576|libcurl|7.79.1-r0|7.79.1-r1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27774|libcurl|7.79.1-r0|7.79.1-r1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|libcurl|7.79.1-r0|7.79.1-r1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29824|libxml2|2.9.13-r0|2.9.14-r0|
 
 ## Target: dbg --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -21,7 +14,6 @@
 ## Target: nginx-ingress-controller --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-24769|github.com/opencontainers/runc|v1.1.1|v1.1.2|
 
 ## Target: wait-shutdown --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|

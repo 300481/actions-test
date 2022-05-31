@@ -2,9 +2,14 @@
   "data": {
     "package": {
       "changes": [
-        "[8587](https://github.com/kubernetes/ingress-nginx/pull/8587) Add CAP_SYS_CHROOT to DS/PSP when needed",
-        "[8458](https://github.com/kubernetes/ingress-nginx/pull/8458) Add portNamePreffix Helm chart parameter",
-        "[8522](https://github.com/kubernetes/ingress-nginx/pull/8522) Add documentation for controller.service.loadBalancerIP in Helm chart"
+        "[8459](https://github.com/kubernetes/ingress-nginx/pull/8459) Update default allowed CORS headers",
+        "[8202](https://github.com/kubernetes/ingress-nginx/pull/8202) disable modsecurity on error page",
+        "[8178](https://github.com/kubernetes/ingress-nginx/pull/8178) Add header Host into mirror annotations",
+        "[8213](https://github.com/kubernetes/ingress-nginx/pull/8213) feat: always set auth cookie",
+        "[8548](https://github.com/kubernetes/ingress-nginx/pull/8548) Implement reporting status classes in metrics",
+        "[8612](https://github.com/kubernetes/ingress-nginx/pull/8612) move so files under /etc/nginx/modules",
+        "[8624](https://github.com/kubernetes/ingress-nginx/pull/8624) Add patch to remove root and alias directives",
+        "[8623](https://github.com/kubernetes/ingress-nginx/pull/8623) Improve path rule"
       ],
       "containsSecurityUpdates": false,
       "name": "ingress-nginx",
@@ -14,12 +19,12 @@
         "name": "ingress-nginx",
         "publisher": "kubernetes"
       },
-      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.1.2",
-      "version": "4.1.2"
+      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.1.3",
+      "version": "4.1.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "9af97a10-2bf2-45a8-b2c7-aad13e6fd09f",
+  "id": "5c39038f-ac92-4d8d-9860-c149d6aaaf71",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
