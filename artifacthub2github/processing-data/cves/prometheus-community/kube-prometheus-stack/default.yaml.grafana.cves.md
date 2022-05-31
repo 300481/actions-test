@@ -3,7 +3,7 @@
 
 
 
-## Target: grafana/grafana:8.5.0 (alpine 3.15.4) --- Class: os-pkgs
+## Target: grafana/grafana:8.5.3 (alpine 3.15.4) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
