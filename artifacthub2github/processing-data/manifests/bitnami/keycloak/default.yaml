@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.2.1
+    helm.sh/chart: keycloak-9.2.2
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -38,7 +38,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.2.1
+    helm.sh/chart: keycloak-9.2.2
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -121,7 +121,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.2.1
+    helm.sh/chart: keycloak-9.2.2
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -147,7 +147,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.2.1
+    helm.sh/chart: keycloak-9.2.2
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -342,7 +342,7 @@ metadata:
   namespace: default
   labels:
     app.kubernetes.io/name: keycloak
-    helm.sh/chart: keycloak-9.2.1
+    helm.sh/chart: keycloak-9.2.2
     app.kubernetes.io/instance: keycloak
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: keycloak
@@ -361,10 +361,10 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/configmap-env-vars: b1c6eb4ce62c443f95f2567c5090521d1545cb1a81eab1e59d43bcc4af350ce0
+        checksum/configmap-env-vars: cb4126fcf4947c835289d57b753a492e0446f0b70ce117fce7aebbe6660f6e5e
       labels:
         app.kubernetes.io/name: keycloak
-        helm.sh/chart: keycloak-9.2.1
+        helm.sh/chart: keycloak-9.2.2
         app.kubernetes.io/instance: keycloak
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: keycloak
