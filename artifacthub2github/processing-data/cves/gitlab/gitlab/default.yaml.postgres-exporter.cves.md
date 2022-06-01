@@ -21,6 +21,7 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.64.0-4+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27781|curl|7.64.0-4+deb10u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|curl|7.64.0-4+deb10u1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1664|dpkg|1.19.7|1.19.8|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1271|gzip|1.9-3|1.9-3+deb10u1|
@@ -129,9 +130,9 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-29361|libp11-kit0|0.23.15-2|0.23.15-2+deb10u1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2020-29363|libp11-kit0|0.23.15-2|0.23.15-2+deb10u1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-29362|libp11-kit0|0.23.15-2|0.23.15-2+deb10u1|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1586|libpcre2-8-0|10.32-5||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1587|libpcre2-8-0|10.32-5||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-20454|libpcre2-8-0|10.32-5||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1586|libpcre2-8-0|10.32-5||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1587|libpcre2-8-0|10.32-5||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-14155|libpcre3|2:8.39-12||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24407|libsasl2-2|2.1.27+dfsg-1+deb10u1|2.1.27+dfsg-1+deb10u2|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24407|libsasl2-modules-db|2.1.27+dfsg-1+deb10u1|2.1.27+dfsg-1+deb10u2|

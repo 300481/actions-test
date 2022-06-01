@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitaly:v15.0.0 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitaly:v15.0.1 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -18,6 +18,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42384|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42385|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42386|busybox|1:1.30.1-6||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-30065|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.74.0-1.3+deb11u1||
@@ -54,14 +55,14 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-4209|libgnutls30|3.7.1-5||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncurses6|6.2+20201114-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libncursesw6|6.2+20201114-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1586|libpcre2-16-0|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1587|libpcre2-16-0|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1586|libpcre2-32-0|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1587|libpcre2-32-0|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1586|libpcre2-8-0|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1587|libpcre2-8-0|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1586|libpcre2-posix2|10.36-2||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1587|libpcre2-posix2|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1586|libpcre2-16-0|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1587|libpcre2-16-0|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1586|libpcre2-32-0|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1587|libpcre2-32-0|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1586|libpcre2-8-0|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1587|libpcre2-8-0|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1586|libpcre2-posix2|10.36-2||
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1587|libpcre2-posix2|10.36-2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-45346|libsqlite3-0|3.34.1-3||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|libss2|1.46.2-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|libtinfo6|6.2+20201114-2||
@@ -79,6 +80,9 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1247|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1679|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1786|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1852|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1882|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.113-1||
@@ -106,8 +110,10 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-0854|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1184|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1280|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1462|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1508|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1652|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1789|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|logsave|1.46.2-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-base|6.2+20201114-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-bin|6.2+20201114-2||
@@ -127,23 +133,24 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|nokogiri|1.13.3|>= 1.13.4|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24836|nokogiri|1.13.3|>= 1.13.4|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24839|nokogiri|1.13.3|>= 1.13.4|
-|![](https://img.shields.io/badge/-HIGH-orange)|GHSA-cgx6-hpwq-fhv5|nokogiri|1.13.3|1.13.5|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29181|nokogiri|1.13.3|>= 1.13.6|
+|![](https://img.shields.io/badge/-HIGH-orange)|GHSA-cgx6-hpwq-fhv5|nokogiri|1.13.3|>= 1.13.5|
 |![](https://img.shields.io/badge/-HIGH-orange)|GHSA-gx8x-g87m-h5q6|nokogiri|1.13.3|1.13.4|
 |![](https://img.shields.io/badge/-HIGH-orange)|GHSA-v6gp-9mmm-c6p5|nokogiri|1.13.3|1.13.4|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-23437|nokogiri|1.13.3|>= 1.13.4|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|GHSA-xxx9-3xcr-gjj3|nokogiri|1.13.3|1.13.4|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-30123|rack|2.2.3|~> 2.0.9, >= 2.0.9.1, ~> 2.1.4, >= 2.1.4.1, >= 2.2.3.1|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-30122|rack|2.2.3|~> 2.0.9, >= 2.0.9.1, ~> 2.1.4, >= 2.1.4.1, >= 2.2.3.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-31799|rdoc|6.2.1.1|>= 6.3.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-28965|rexml|3.2.3.1|>= 3.2.5|
 
 ## Target: usr/local/bin/gitaly --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-backup --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-blackbox --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -156,7 +163,6 @@
 ## Target: usr/local/bin/gitaly-git2go-v14 --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-hooks --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -167,7 +173,6 @@
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2020-27955|github.com/git-lfs/git-lfs|v1.5.1-0.20210304194248-2e1d981afbe3|v2.12.1|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2017-17831|github.com/git-lfs/git-lfs|v1.5.1-0.20210304194248-2e1d981afbe3|2.1.1-0.20170519163204-f913f5f9c7c6|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
 
 ## Target: usr/local/bin/gitaly-ssh --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
@@ -184,4 +189,3 @@
 ## Target: usr/local/bin/praefect --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220315160706-3147a52a75dd|
