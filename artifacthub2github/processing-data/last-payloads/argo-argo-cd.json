@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Can specify log format for Argo-CD Notifications component"
+        "[Added]: Support separate imagePullSecrets"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.8.0",
-      "version": "4.8.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.8.2",
+      "version": "4.8.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "f1e83100-4e77-476e-8ba1-587112d8221d",
+  "id": "50f2f241-4fea-4e40-a1ca-a27440629162",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
