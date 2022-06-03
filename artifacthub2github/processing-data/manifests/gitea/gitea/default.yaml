@@ -25,7 +25,7 @@ metadata:
   namespace: default
 type: Opaque
 data:
-  postgresql-postgres-password: "am4wbjA5dzk5cQ=="
+  postgresql-postgres-password: "dTRBdDIyaDB5dg=="
   postgresql-password: "Z2l0ZWE="
 ---
 # Source: gitea/templates/gitea/config.yaml
@@ -34,7 +34,7 @@ kind: Secret
 metadata:
   name: gitea-inline-config
   labels:
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
@@ -74,7 +74,7 @@ kind: Secret
 metadata:
   name: gitea
   labels:
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
@@ -239,7 +239,7 @@ kind: Secret
 metadata:
   name: gitea-init
   labels:
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
@@ -389,7 +389,7 @@ kind: Service
 metadata:
   name: gitea-http
   labels:
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
@@ -415,7 +415,7 @@ kind: Service
 metadata:
   name: gitea-ssh
   labels:
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
@@ -678,7 +678,7 @@ metadata:
   name: gitea
   annotations:
   labels:
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
@@ -695,9 +695,9 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config: c1654a81fd12592753e23c3abf28c802e849b432bba7cf2163a095e8efed84e3
+        checksum/config: 5f8091113d145ebcb9326daa21eb746f42568487991a48935def04575d20953e
       labels:
-        helm.sh/chart: gitea-5.0.8
+        helm.sh/chart: gitea-5.0.9
         app: gitea
         app.kubernetes.io/name: gitea
         app.kubernetes.io/instance: gitea
@@ -862,7 +862,7 @@ metadata:
   name: "gitea-test-connection"
   labels:
 
-    helm.sh/chart: gitea-5.0.8
+    helm.sh/chart: gitea-5.0.9
     app: gitea
     app.kubernetes.io/name: gitea
     app.kubernetes.io/instance: gitea
