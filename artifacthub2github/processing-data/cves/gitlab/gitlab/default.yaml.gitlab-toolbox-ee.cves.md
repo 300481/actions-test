@@ -3,7 +3,7 @@
 
 
 
-## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.1 (debian 11.3) --- Class: os-pkgs
+## Target: registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.2 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-42377|busybox|1:1.30.1-6||
@@ -18,7 +18,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42384|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42385|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-42386|busybox|1:1.30.1-6||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-30065|busybox|1:1.30.1-6||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-30065|busybox|1:1.30.1-6||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-22945|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.74.0-1.3+deb11u1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-22947|curl|7.74.0-1.3+deb11u1||
@@ -72,10 +72,9 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1012|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1247|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1679|linux-libc-dev|5.10.113-1||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1786|linux-libc-dev|5.10.113-1||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1852|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1882|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1966|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28893|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15213|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2019-15794|linux-libc-dev|5.10.113-1||
@@ -106,7 +105,11 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1462|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1508|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1652|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1729|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1789|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1852|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1974|linux-libc-dev|5.10.113-1||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1975|linux-libc-dev|5.10.113-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|logsave|1.46.2-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-base|6.2+20201114-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-29458|ncurses-bin|6.2+20201114-2||
@@ -147,15 +150,15 @@
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
-## Target: srv/gitlab/config/gitlab.yml.example --- Class: secret
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-
 ## Target: srv/gitlab/config/secrets.yml --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
 ## Target: srv/gitlab/config/gitlab.yml --- Class: secret
+|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
+|--------|---------------|-------|----------------|------------|
+
+## Target: srv/gitlab/config/gitlab.yml.example --- Class: secret
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
