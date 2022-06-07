@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-6.0.1
+    chart: gitaly-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -26,7 +26,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -45,7 +45,7 @@ metadata:
   namespace: default
   labels:
     app: kas
-    chart: kas-6.0.1
+    chart: kas-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -64,7 +64,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-6.0.1
+    chart: sidekiq-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -85,7 +85,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -482,7 +482,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-6.0.1
+    chart: gitaly-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -562,7 +562,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-6.0.1
+    chart: gitlab-exporter-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -652,7 +652,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -812,7 +812,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -872,7 +872,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -887,7 +887,7 @@ metadata:
   namespace: default
   labels:
     app: kas
-    chart: kas-6.0.1
+    chart: kas-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -929,7 +929,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-6.0.1
+    chart: migrations-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -1020,7 +1020,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-6.0.1
+    chart: sidekiq-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -1312,7 +1312,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-6.0.1
+    chart: toolbox-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -1613,7 +1613,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -1911,7 +1911,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -2760,13 +2760,13 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
 data:
-  gitlabVersion: "15.0.1"
-  gitlabChartVersion: "6.0.1"
+  gitlabVersion: "15.0.2"
+  gitlabChartVersion: "6.0.2"
 ---
 # Source: gitlab/templates/initdb-configmap.yaml
 apiVersion: v1
@@ -2776,7 +2776,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20068,7 +20068,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-6.0.1
+    chart: gitaly-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20097,7 +20097,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-6.0.1
+    chart: gitlab-exporter-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20123,7 +20123,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20149,7 +20149,7 @@ metadata:
   namespace: default
   labels:
     app: kas
-    chart: kas-6.0.1
+    chart: kas-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20187,7 +20187,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20836,7 +20836,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-exporter
-    chart: gitlab-exporter-6.0.1
+    chart: gitlab-exporter-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -20853,13 +20853,13 @@ spec:
     metadata:
       labels:
         app: gitlab-exporter
-        chart: gitlab-exporter-6.0.1
+        chart: gitlab-exporter-6.0.2
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 759a67898f03a827aadd24d3b013c9b83386bf4618c33074e5015aff2f8e3c9d
+        checksum/config: 616a456a8a475e45d3dab5ea862c1bc0948ce82ac910dbe206dd2ac653149f3d
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "9168"
         gitlab.com/prometheus_path: /metrics
@@ -21024,7 +21024,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -21040,14 +21040,14 @@ spec:
     metadata:
       labels:
         app: gitlab-shell
-        chart: gitlab-shell-6.0.1
+        chart: gitlab-shell-6.0.2
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: 937758ba5c3118c5455a37dc49f6e800d7a592aca1433776934321930043b711
-        checksum/config-sshd: e11d7636f4ea8a4d1857b34184ffba0060fcf4cf25fc0ade6c3f4ae1a0d598ce
+        checksum/config: 44d138bd8862479c608e25325ef95d72fc098b406e1771aba13553f34e504ab9
+        checksum/config-sshd: ba5655dda866d081a78f96b5b67a79339c38e957315ca504593f305bf58d5a68
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       initContainers:
@@ -21190,7 +21190,7 @@ metadata:
   namespace: default
   labels:
     app: kas
-    chart: kas-6.0.1
+    chart: kas-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -21206,7 +21206,7 @@ spec:
     metadata:
       labels:
         app: kas
-        chart: kas-6.0.1
+        chart: kas-6.0.2
         release: gitlab
         heritage: Helm
         
@@ -21331,7 +21331,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-6.0.1
+    chart: sidekiq-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -21349,14 +21349,14 @@ spec:
     metadata:
       labels:
         app: sidekiq
-        chart: sidekiq-6.0.1
+        chart: sidekiq-6.0.2
         release: gitlab
         heritage: Helm
         
         
         queue-pod-name: all-in-1
       annotations:
-        checksum/configmap: 851cd7c3814e5234dcab7580e8eb24c4ed0532dca20170e79829dcfd375de9c4
+        checksum/configmap: 3771296b7a5fb293d377c1312fb8982bf79f0a387caa9a8f8c026e4f8df0d330
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "3807"
@@ -21419,7 +21419,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v15.0.1"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v15.0.2"          
           args:
             - /scripts/wait-for-deps
           env:
@@ -21459,7 +21459,7 @@ spec:
       containers:
         
         - name: sidekiq
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v15.0.1"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-sidekiq-ee:v15.0.2"          
           env:
             - name: prometheus_multiproc_dir
               value: /metrics
@@ -21637,7 +21637,7 @@ metadata:
   namespace: default
   labels:
     app: toolbox
-    chart: toolbox-6.0.1
+    chart: toolbox-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -21656,13 +21656,13 @@ spec:
     metadata:
       labels:
         app: toolbox
-        chart: toolbox-6.0.1
+        chart: toolbox-6.0.2
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: f41fa3ef37f16d626f897c46141f2f91155018a0d4a09b055223292f6f7a95fe
+        checksum/config: 533118006e3f6aa900357fd665a21f42bb74b69761609c17a49f3e227d0e75a1
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     spec:
       securityContext:
@@ -21722,7 +21722,7 @@ spec:
             - /bin/bash
             - -c
             - cp -v -r -L /etc/gitlab/.s3cfg $HOME/.s3cfg && while sleep 3600; do :; done # alpine sleep has no infinity
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.1"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.2"          
           env:
             - name: ARTIFACTS_BUCKET_NAME
               value: gitlab-artifacts
@@ -21876,7 +21876,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -21897,7 +21897,7 @@ spec:
     metadata:
       labels:
         app: webservice
-        chart: webservice-6.0.1
+        chart: webservice-6.0.2
         release: gitlab
         heritage: Helm
         gitlab.com/webservice-name: default
@@ -21905,7 +21905,7 @@ spec:
         
         
       annotations:
-        checksum/config: 56343328ce52a0e213e732fee472fe88fd74976948ab328989e5b6a6d69e493f
+        checksum/config: 4d72bbb28831a5bec6ad591c9ed454ac1fdff208328f90ebe182f0ae6ffdecf6
         cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "8083"
@@ -21978,7 +21978,7 @@ spec:
             requests:
               cpu: 50m
         - name: dependencies
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.1          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.2          
           args:
             - /scripts/wait-for-deps
           env:
@@ -22014,7 +22014,7 @@ spec:
       containers:
         
         - name: webservice
-          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.1          
+          image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.2          
           ports:
             - containerPort: 8080
               name: http-webservice
@@ -22110,7 +22110,7 @@ spec:
               cpu: 300m
               memory: 2.5G
         - name: gitlab-workhorse
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v15.0.1"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v15.0.2"          
           ports:
             - containerPort: 8181
               name: http-workhorse
@@ -22819,7 +22819,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab-shell
-    chart: gitlab-shell-6.0.1
+    chart: gitlab-shell-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -22844,7 +22844,7 @@ metadata:
   namespace: default
   labels:
     app: kas
-    chart: kas-6.0.1
+    chart: kas-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -22869,7 +22869,7 @@ metadata:
   namespace: default
   labels:
     app: sidekiq
-    chart: sidekiq-6.0.1
+    chart: sidekiq-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -22894,7 +22894,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -22945,7 +22945,7 @@ metadata:
   namespace: default
   labels:
     app: gitaly
-    chart: gitaly-6.0.1
+    chart: gitaly-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -22962,13 +22962,13 @@ spec:
     metadata:
       labels:
         app: gitaly
-        chart: gitaly-6.0.1
+        chart: gitaly-6.0.2
         release: gitlab
         heritage: Helm
         
         
       annotations:
-        checksum/config: f3dda85abddde09d65bb43b8a865fb03909954c1afc131f8b1fe4509434fbc61
+        checksum/config: 570825925c6be878f3295b48063dc35974fb58ae33204dedf693df76a8b64503
         gitlab.com/prometheus_scrape: "true"
         gitlab.com/prometheus_port: "9236"
         gitlab.com/prometheus_path: /metrics
@@ -23029,7 +23029,7 @@ spec:
       containers:
         
         - name: gitaly
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v15.0.1"          
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitaly:v15.0.2"          
           ports:
             - containerPort: 8075
               name: grpc-gitaly
@@ -23488,7 +23488,7 @@ metadata:
   namespace: default
   labels:
     app: migrations
-    chart: migrations-6.0.1
+    chart: migrations-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -23499,7 +23499,7 @@ spec:
     metadata:
       labels:
         app: migrations
-        chart: migrations-6.0.1
+        chart: migrations-6.0.2
         release: gitlab
         heritage: Helm
         
@@ -23549,7 +23549,7 @@ spec:
       containers:
         
         - name: migrations
-          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.1"
+          image: "registry.gitlab.com/gitlab-org/build/cng/gitlab-toolbox-ee:v15.0.2"
           args:
             - /scripts/wait-for-deps
             - /scripts/db-migrate          
@@ -23720,7 +23720,7 @@ metadata:
   namespace: default
   labels:
     app: kas
-    chart: kas-6.0.1
+    chart: kas-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -23755,7 +23755,7 @@ metadata:
   namespace: default
   labels:
     app: webservice
-    chart: webservice-6.0.1
+    chart: webservice-6.0.2
     release: gitlab
     heritage: Helm
     gitlab.com/webservice-name: default
@@ -23992,7 +23992,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24009,7 +24009,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24049,7 +24049,7 @@ data:
     
       kubectl --namespace=$namespace label \
         --overwrite \
-        secret $secret_name app=gitlab chart=gitlab-6.0.1 release=gitlab heritage=Helm 
+        secret $secret_name app=gitlab chart=gitlab-6.0.2 release=gitlab heritage=Helm 
     }
     
     # Args: secretname, args
@@ -24204,7 +24204,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24323,7 +24323,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-6.0.1
+    chart: shared-secrets-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24371,7 +24371,7 @@ metadata:
   namespace: default
   labels:
     app: shared-secrets
-    chart: shared-secrets-6.0.1
+    chart: shared-secrets-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24392,7 +24392,7 @@ subjects:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gitlab-webservice-test-runner-xnl3k
+  name: gitlab-webservice-test-runner-fzxkn
   namespace: default
   annotations:
     "helm.sh/hook": test
@@ -24400,7 +24400,7 @@ metadata:
 spec:
   containers:
   - name: test-runner
-    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.1
+    image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.0.2
     command: ['sh', '/tests/test_login']
     volumeMounts:
       - name: tests
@@ -24471,11 +24471,11 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: gitlab-shared-secrets-1-eth
+  name: gitlab-shared-secrets-1-le2
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24487,7 +24487,7 @@ spec:
     metadata:
       labels:
         app: gitlab
-        chart: gitlab-6.0.1
+        chart: gitlab-6.0.2
         release: gitlab
         heritage: Helm
         
@@ -24528,7 +24528,7 @@ metadata:
   namespace: default
   labels:
     app: gitlab
-    chart: gitlab-6.0.1
+    chart: gitlab-6.0.2
     release: gitlab
     heritage: Helm
     
@@ -24556,9 +24556,9 @@ spec:
           command: ['/bin/sh', '/scripts/runcheck']          
           env:
             - name: GITLAB_VERSION
-              value: '15.0.1'
+              value: '15.0.2'
             - name: CHART_VERSION
-              value: '6.0.1'
+              value: '6.0.2'
           volumeMounts:
             - name: chart-info
               mountPath: /chart-info
