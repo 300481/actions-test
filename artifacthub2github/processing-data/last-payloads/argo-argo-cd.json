@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Support separate imagePullSecrets"
+        "[Added]: Support annotations in argocd-configs secrets"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.8.2",
-      "version": "4.8.2"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.8.3",
+      "version": "4.8.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "50f2f241-4fea-4e40-a1ca-a27440629162",
+  "id": "c44e9c40-cc45-4f06-bf7e-c93db7b52049",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
