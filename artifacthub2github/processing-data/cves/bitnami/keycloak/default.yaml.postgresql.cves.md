@@ -3,7 +3,7 @@
 
 
 
-## Target: docker.io/bitnami/postgresql:14.3.0-debian-10-r8 (debian 10.12) --- Class: os-pkgs
+## Target: docker.io/bitnami/postgresql:14.3.0-debian-10-r22 (debian 10.12) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-22946|curl|7.64.0-4+deb10u2||
@@ -13,7 +13,6 @@
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27776|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27781|curl|7.64.0-4+deb10u2||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-27782|curl|7.64.0-4+deb10u2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1664|dpkg|1.19.7|1.19.8|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-12886|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-15847|gcc-8-base|8.3.0-6||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|libc-bin|2.28-10+deb10u1||
@@ -83,9 +82,8 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3843|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2019-3844|libudev1|241-7~deb10u8||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3997|libudev1|241-7~deb10u8||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2017-16932|libxml2|2.9.4+dfsg1-7+deb10u3||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2016-9318|libxml2|2.9.4+dfsg1-7+deb10u3||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29824|libxml2|2.9.4+dfsg1-7+deb10u3|2.9.4+dfsg1-7+deb10u4|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2017-16932|libxml2|2.9.4+dfsg1-7+deb10u4||
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2016-9318|libxml2|2.9.4+dfsg1-7+deb10u4||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-33574|locales|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2021-35942|locales|2.28-10+deb10u1||
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-23218|locales|2.28-10+deb10u1||
