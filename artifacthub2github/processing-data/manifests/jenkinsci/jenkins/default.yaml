@@ -7,7 +7,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -20,13 +20,13 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
 type: Opaque
 data:
-  jenkins-admin-password: "MlE4eVFEbnB5dFYxMXhKWnNWd0dCUg=="
+  jenkins-admin-password: "N2huTWV2eVZ5Q1NSSEU1RmJrdll2bQ=="
   jenkins-admin-user: "YWRtaW4="
 ---
 # Source: jenkins/templates/config.yaml
@@ -75,7 +75,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": jenkins
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -169,7 +169,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -189,7 +189,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -211,7 +211,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -230,7 +230,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -251,7 +251,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -272,7 +272,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -294,7 +294,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -316,7 +316,7 @@ metadata:
   namespace: default
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-4.1.4"
+    "helm.sh/chart": "jenkins-4.1.6"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -382,6 +382,8 @@ spec:
             runAsUser: 1000
           args: [ "--httpPort=8080"]
           env:
+            - name: SECRETS
+              value: /run/secrets/additional
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -441,13 +443,8 @@ spec:
               readOnly: false
             - name: sc-config-volume
               mountPath: /var/jenkins_home/casc_configs
-            - name: admin-secret
-              mountPath: /run/secrets/chart-admin-username
-              subPath: jenkins-admin-user
-              readOnly: true
-            - name: admin-secret
-              mountPath: /run/secrets/chart-admin-password
-              subPath: jenkins-admin-password
+            - name: jenkins-secrets
+              mountPath: /run/secrets/additional
               readOnly: true
             - name: jenkins-cache
               mountPath: /var/jenkins_cache
@@ -492,6 +489,16 @@ spec:
           name: jenkins
       - name: plugin-dir
         emptyDir: {}
+      - name: jenkins-secrets
+        projected:
+          sources:
+          - secret:
+              name: jenkins
+              items:
+                - key: jenkins-admin-user
+                  path: chart-admin-username
+                - key: jenkins-admin-password
+                  path: chart-admin-password
       - name: jenkins-cache
         emptyDir: {}
       - name: jenkins-home
@@ -501,9 +508,6 @@ spec:
         emptyDir: {}
       - name: tmp-volume
         emptyDir: {}
-      - name: admin-secret
-        secret:
-          secretName: jenkins
 ---
 # Source: jenkins/templates/tests/test-config.yaml
 apiVersion: v1
@@ -523,7 +527,7 @@ data:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-sgs8p"
+  name: "jenkins-ui-test-ztsb1"
   namespace: default
   annotations:
     "helm.sh/hook": test-success

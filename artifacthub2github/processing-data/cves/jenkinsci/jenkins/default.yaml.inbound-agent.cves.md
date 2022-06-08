@@ -8,7 +8,7 @@
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3995|bsdutils|2.36.1-8|2.36.1-8+deb11u1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-3996|bsdutils|2.36.1-8|2.36.1-8+deb11u1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-1664|dpkg|1.20.9|1.20.10|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1664|dpkg|1.20.9|1.20.10|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-1304|e2fsprogs|1.46.2-2||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24765|git|1:2.30.2-1||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-24765|git-man|1:2.30.2-1||
