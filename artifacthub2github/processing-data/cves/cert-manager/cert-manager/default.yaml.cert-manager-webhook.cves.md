@@ -3,7 +3,7 @@
 
 
 
-## Target: quay.io/jetstack/cert-manager-webhook:v1.8.0 (debian 11.2) --- Class: os-pkgs
+## Target: quay.io/jetstack/cert-manager-webhook:v1.8.1 (debian 11.3) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
