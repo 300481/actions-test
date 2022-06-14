@@ -2,7 +2,11 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Support annotations in argocd-configs secrets"
+        "[Changed]: Update Argo CD to v2.4.0",
+        "[Added]: Specify logs RBAC enforcement config in server",
+        "[Changed]: Remove ksonnet and helm 2 support from Application and applicationSet CRDs",
+        "[Changed]: Use applicationset binary on the upstream image",
+        "[Changed]: Upgrade redis to 7.0.0"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +16,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.8.3",
-      "version": "4.8.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.0",
+      "version": "4.9.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c44e9c40-cc45-4f06-bf7e-c93db7b52049",
+  "id": "6ed70c76-f0aa-4a6d-8ac7-3c3cb33e6ecb",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
