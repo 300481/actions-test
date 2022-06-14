@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Support annotations in argocd-configs secrets"
+        "[Fixed]: Extend K8s RBAC when using UI exec feature"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.8.3",
-      "version": "4.8.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.1",
+      "version": "4.9.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c44e9c40-cc45-4f06-bf7e-c93db7b52049",
+  "id": "13acb7c1-413e-47c2-a44c-f8cba76429f8",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

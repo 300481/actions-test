@@ -3,6 +3,6 @@
 
 
 
-## Target: redis:6.2.6-alpine (alpine 3.15.4) --- Class: os-pkgs
+## Target: redis:7.0.0-alpine (alpine 3.16.0) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
