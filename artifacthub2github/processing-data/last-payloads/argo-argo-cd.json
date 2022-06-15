@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Extend K8s RBAC when using UI exec feature"
+        "[Changed]: Use latest URLs"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.1",
-      "version": "4.9.1"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.2",
+      "version": "4.9.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "13acb7c1-413e-47c2-a44c-f8cba76429f8",
+  "id": "f3e98d1a-03fe-4e8c-9589-768542a4ac07",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
