@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Long release names cause invalid app controller statefulset resource"
+        "[Fixed]: Use correct version in upgrade instructions (README.md)"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.3",
-      "version": "4.9.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.4",
+      "version": "4.9.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "ebec2f03-f7c2-4b54-bd61-f9350aac1c4d",
+  "id": "09ac6b4f-d4a1-425d-8d50-8ed35196510e",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
