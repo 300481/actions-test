@@ -2,7 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Support clusterResourceBlacklist"
+        "[Fixed]: fix ArgoCD notifications config map name in role",
+        "[Fixed]: fix ArgoCD notifications secret name in role"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.6",
-      "version": "4.9.6"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.7",
+      "version": "4.9.7"
     }
   },
   "datacontenttype": "application/json",
-  "id": "d46d4d9a-eeda-488a-9f9f-87877a676582",
+  "id": "319c60a1-10ae-4a00-8aac-5db66b35adbb",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
