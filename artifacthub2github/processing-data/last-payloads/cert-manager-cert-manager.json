@@ -10,12 +10,12 @@
         "name": "cert-manager",
         "publisher": "cert-manager"
       },
-      "url": "https://artifacthub.io/packages/helm/cert-manager/cert-manager/1.8.1",
-      "version": "1.8.1"
+      "url": "https://artifacthub.io/packages/helm/cert-manager/cert-manager/1.8.2",
+      "version": "1.8.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "614f797d-3f22-47a2-92ae-d0f8cc4ff056",
+  "id": "302b56b4-8f7e-4321-8b45-a511fcc070a0",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
