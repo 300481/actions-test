@@ -26,3 +26,4 @@
 ## Target: usr/local/bin/kustomize --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-38561|golang.org/x/text|v0.3.4|0.3.7|
