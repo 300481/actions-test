@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: fix doc of how to upgrade CRD"
+        "[Changed]: Update to app version 2.4.7"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.8",
-      "version": "4.9.8"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.15",
+      "version": "4.9.15"
     }
   },
   "datacontenttype": "application/json",
-  "id": "47e103b1-aabd-44d1-8228-62f9dfed23f1",
+  "id": "4032b97b-627d-48b5-8115-b172540f2e65",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
