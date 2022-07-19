@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update to app version 2.4.7"
+        "[Fixed]: Fix ArgoCD notification metrics unmarshal error"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.15",
-      "version": "4.9.15"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.16",
+      "version": "4.9.16"
     }
   },
   "datacontenttype": "application/json",
-  "id": "4032b97b-627d-48b5-8115-b172540f2e65",
+  "id": "69c3dfa1-4f93-4a88-92da-15c0b3bfb181",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
