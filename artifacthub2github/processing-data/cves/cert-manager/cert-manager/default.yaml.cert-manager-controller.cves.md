@@ -3,7 +3,7 @@
 
 
 
-## Target: quay.io/jetstack/cert-manager-controller:v1.9.0 (debian 11.4) --- Class: os-pkgs
+## Target: quay.io/jetstack/cert-manager-controller:v1.9.1 (debian 11.4) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
