@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Fix ArgoCD notification metrics unmarshal error"
+        "[Fixed]: Drop all `~` keys from redis-ha because they cause error on kustomize and cannot document via helm-docs"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.9.16",
-      "version": "4.9.16"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.10.2",
+      "version": "4.10.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "69c3dfa1-4f93-4a88-92da-15c0b3bfb181",
+  "id": "36fea30b-c9d4-472c-9cc1-e00ae65f3e89",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
