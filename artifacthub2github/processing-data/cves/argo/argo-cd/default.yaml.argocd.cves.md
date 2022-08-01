@@ -3,13 +3,11 @@
 
 
 
-## Target: quay.io/argoproj/argocd:v2.4.7 (ubuntu 22.04) --- Class: os-pkgs
+## Target: quay.io/argoproj/argocd:v2.4.8 (ubuntu 22.04) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|libperl5.34|5.34.0-3ubuntu1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-9794|libsqlite3-0|3.37.2-2||
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-46828|libtirpc-common|1.3.2-2build1|1.3.2-2ubuntu0.1|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-46828|libtirpc3|1.3.2-2build1|1.3.2-2ubuntu0.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl|5.34.0-3ubuntu1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-base|5.34.0-3ubuntu1||
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-16156|perl-modules-5.34|5.34.0-3ubuntu1||

@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: update redis to 7.0.4 for avoiding CVE-2022-30065"
+        "[Changed]: Update to app version 2.4.8"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.10.3",
-      "version": "4.10.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.10.4",
+      "version": "4.10.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "fe2f2e8e-c4a7-4aba-85da-e2386e45e8cb",
+  "id": "a9cdbdfd-d22e-4e58-9da4-6f7643f70aa0",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
