@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update to app version 2.4.8"
+        "[Changed]: Update to app version 2.4.9"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.10.4",
-      "version": "4.10.4"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.10.6",
+      "version": "4.10.6"
     }
   },
   "datacontenttype": "application/json",
-  "id": "a9cdbdfd-d22e-4e58-9da4-6f7643f70aa0",
+  "id": "b42db062-981b-42e7-a765-2bba72369a16",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

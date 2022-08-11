@@ -16,6 +16,7 @@
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-2097|openssl|1.1.1l-r0|1.1.1q-r0|
 |![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-28391|ssl_client|1.33.1-r6|1.33.1-r7|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-r3|1.2.12-r0|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-37434|zlib|1.2.11-r3|1.2.12-r2|
 
 ## Target: usr/local/bin/dex --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
