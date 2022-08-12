@@ -1,0 +1,39 @@
+---
+# Source: shield/templates/daemonset.yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: shield
+  labels:
+    helm.sh/chart: shield-0.3.0
+    app.kubernetes.io/name: shield
+    app.kubernetes.io/instance: shield
+    app.kubernetes.io/version: "0.3.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: shield
+      app.kubernetes.io/instance: shield
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: shield
+        app.kubernetes.io/instance: shield
+    spec:
+      hostNetwork: true
+      containers:
+        - name: shield
+          securityContext:
+            privileged: true
+          image: "300481/shield:0.3.0"
+          imagePullPolicy: IfNotPresent
+          resources:
+            {}
+          env:
+            - name: PORTSCAN
+              value: "21,22,23,135,389,636,1433,3306,5432,8086,10000,25565"
+            - name: INTERFACE
+              value: "eth0"
+            - name: SSH_PORT
+              value: "65000"
