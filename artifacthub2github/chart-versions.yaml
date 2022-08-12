@@ -29,6 +29,9 @@ repos:
       seafile:
         version: 0.5.0
         name: seafile
+      shield:
+        version: 0.3.0
+        name: shield
     url: https://300481.github.io/charts/
   ebrianne:
     name: ebrianne
