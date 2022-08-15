@@ -10,12 +10,12 @@
         "name": "dr300481",
         "publisher": "300481"
       },
-      "url": "https://artifacthub.io/packages/helm/dr300481/shield/0.3.0",
-      "version": "0.3.0"
+      "url": "https://artifacthub.io/packages/helm/dr300481/shield/0.3.1",
+      "version": "0.3.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "f5453204-6c4c-457d-9f35-eec0fd1bac6c",
+  "id": "4f182678-ca37-4260-ad55-782d4c819d58",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

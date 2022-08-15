@@ -5,10 +5,10 @@ kind: DaemonSet
 metadata:
   name: shield
   labels:
-    helm.sh/chart: shield-0.3.0
+    helm.sh/chart: shield-0.3.1
     app.kubernetes.io/name: shield
     app.kubernetes.io/instance: shield
-    app.kubernetes.io/version: "0.3.0"
+    app.kubernetes.io/version: "0.3.1"
     app.kubernetes.io/managed-by: Helm
 spec:
   selector:
@@ -26,7 +26,7 @@ spec:
         - name: shield
           securityContext:
             privileged: true
-          image: "300481/shield:0.3.0"
+          image: "300481/shield:0.3.1"
           imagePullPolicy: IfNotPresent
           resources:
             {}
