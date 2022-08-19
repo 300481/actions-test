@@ -16,7 +16,7 @@
 ## Target: usr/local/bin/argocd --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1996|github.com/emicklei/go-restful|v2.9.5+incompatible|v3.8.0|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1996|github.com/emicklei/go-restful|v2.9.5+incompatible|2.16.0|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-21698|github.com/prometheus/client_golang|v1.11.0|1.11.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-20329|go.mongodb.org/mongo-driver|v1.1.2|1.5.1|
 |![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8554|k8s.io/kubernetes|v1.23.1||
