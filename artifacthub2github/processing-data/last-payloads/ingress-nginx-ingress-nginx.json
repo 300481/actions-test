@@ -2,7 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[8896](https://github.com/kubernetes/ingress-nginx/pull/8896) updated to new images built today"
+        "[8896](https://github.com/kubernetes/ingress-nginx/pull/8896) updated to new images built today",
+        "fix permissions about configmap"
       ],
       "containsSecurityUpdates": false,
       "name": "ingress-nginx",
@@ -12,12 +13,12 @@
         "name": "ingress-nginx",
         "publisher": "kubernetes"
       },
-      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.2.2",
-      "version": "4.2.2"
+      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.2.3",
+      "version": "4.2.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "b2193e64-0a04-4c9e-a76f-ac1182e431df",
+  "id": "5bc146ab-2504-4707-a3fd-82cf25e227d3",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
