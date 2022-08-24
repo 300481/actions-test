@@ -2,7 +2,9 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update to app version 2.4.11"
+        "[Removed]: Legacy support to run controller as a Deployment",
+        "[Removed]: Legacy support to use old format of repository secrets",
+        "[Removed]: Parameters server.additionalApplications and server.additionalProjects are moved to a separate chart - argocd-apps"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +14,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/4.10.9",
-      "version": "4.10.9"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.0.0",
+      "version": "5.0.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "e4edda50-f621-4966-82ba-f51e5ac9e189",
+  "id": "df86a4eb-5c9b-4844-9b6c-338125b64b2f",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
