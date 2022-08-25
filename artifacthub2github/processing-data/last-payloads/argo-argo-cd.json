@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Ability to customize HPAs spec.behavior field"
+        "[Changed]: manage CRD by Helm"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.1.0",
-      "version": "5.1.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.2.0",
+      "version": "5.2.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "955f321e-6267-4fdc-be1c-212dace32d86",
+  "id": "63a56c25-a10a-4efe-bc00-a987af34bdff",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
