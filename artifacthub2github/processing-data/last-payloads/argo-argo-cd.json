@@ -2,7 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Ability to customize HPAs spec.behavior field"
+        "[Added]: Global configuration for logging",
+        "[Added]: ApplicationSet configuration for logging"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.1.0",
-      "version": "5.1.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.0",
+      "version": "5.3.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "955f321e-6267-4fdc-be1c-212dace32d86",
+  "id": "9d3c7ab3-630b-4b5a-8694-7f51c74bea1d",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
