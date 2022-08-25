@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Ability to customize HPAs spec.behavior field"
+        "[Changed]: Env variable ARGOCD_CONTROLLER_REPLICAS is now automatically set by replica count"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.1.0",
-      "version": "5.1.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.1",
+      "version": "5.3.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "955f321e-6267-4fdc-be1c-212dace32d86",
+  "id": "caff2179-a8f6-42c3-a95f-07b4fea63bdb",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
