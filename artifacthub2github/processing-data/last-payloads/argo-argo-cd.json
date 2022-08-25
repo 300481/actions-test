@@ -2,7 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Ability to customize HPAs spec.behavior field"
+        "[Changed]: Move notification configs to config folder",
+        "[Changed]: Use default names for notification configs"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.1.0",
-      "version": "5.1.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.2.2",
+      "version": "5.2.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "955f321e-6267-4fdc-be1c-212dace32d86",
+  "id": "651d2aa0-4c6c-4b4f-bd41-775aee64ea2a",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
