@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Ability to customize HPAs spec.behavior field"
+        "[Changed]: Update redis-ha"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.1.0",
-      "version": "5.1.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.2.1",
+      "version": "5.2.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "955f321e-6267-4fdc-be1c-212dace32d86",
+  "id": "a4ea6be2-fd11-4e50-84d3-1ca4dc7cb395",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
