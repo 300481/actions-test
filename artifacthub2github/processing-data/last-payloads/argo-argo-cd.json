@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Helm chart maintainers standardized to argoproj"
+        "[Added]: Add appHardResyncPeriod option for application controller"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.4",
-      "version": "5.3.4"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.6",
+      "version": "5.3.6"
     }
   },
   "datacontenttype": "application/json",
-  "id": "a032953d-98fe-4be2-b2be-64608bb51c38",
+  "id": "b901ba8d-04fc-4128-b1fa-dc589996f1c2",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
