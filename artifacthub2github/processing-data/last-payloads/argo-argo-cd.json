@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Removal of duplicate mapping key annotations in crds"
+        "[Changed]: Helm chart maintainers standardized to argoproj"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.3",
-      "version": "5.3.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.4",
+      "version": "5.3.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "6e9d8b65-2b1b-4741-b4af-0750b97005b0",
+  "id": "a032953d-98fe-4be2-b2be-64608bb51c38",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
