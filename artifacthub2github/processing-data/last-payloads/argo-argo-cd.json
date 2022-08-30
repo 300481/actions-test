@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Add appHardResyncPeriod option for application controller"
+        "[Changed]: Remove version labels to avoid invalid characters"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.3.6",
-      "version": "5.3.6"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.0",
+      "version": "5.4.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "b901ba8d-04fc-4128-b1fa-dc589996f1c2",
+  "id": "a07de622-5923-44a6-b70f-9ec7b3b63df4",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
