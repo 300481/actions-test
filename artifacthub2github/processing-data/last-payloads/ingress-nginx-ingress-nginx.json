@@ -13,12 +13,12 @@
         "name": "ingress-nginx",
         "publisher": "kubernetes"
       },
-      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.2.4",
-      "version": "4.2.4"
+      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.2.5",
+      "version": "4.2.5"
     }
   },
   "datacontenttype": "application/json",
-  "id": "b4594be0-92f9-4090-917c-b8be70035272",
+  "id": "94dca46d-3ea5-423d-a07d-bbdc11625356",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
