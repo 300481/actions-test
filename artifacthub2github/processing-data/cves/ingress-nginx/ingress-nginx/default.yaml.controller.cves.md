@@ -3,14 +3,6 @@
 
 
 
-## Target: registry.k8s.io/ingress-nginx/controller:v1.3.0@sha256:d1707ca76d3b044ab8a28277a2466a02100ee9f58a86af1535a3edf9323ea1b5 (alpine 3.16.0) --- Class: os-pkgs
+## Target: registry.k8s.io/ingress-nginx/controller:v1.3.1@sha256:54f7fe2c6c5a9db9a0ebf1131797109bb7a4d91f56b9b362bde2abd237dd1974 (alpine 3.16.2) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-30065|busybox|1.35.0-r14|1.35.0-r15|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-30065|ssl_client|1.35.0-r14|1.35.0-r15|
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-37434|zlib|1.2.12-r1|1.2.12-r2|
-
-## Target: nginx-ingress-controller --- Class: lang-pkgs
-|Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
-|--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-1996|github.com/emicklei/go-restful|v2.9.5+incompatible|2.16.0|
