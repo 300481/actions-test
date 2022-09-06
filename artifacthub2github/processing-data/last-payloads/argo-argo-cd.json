@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Remove version labels to avoid invalid characters"
+        "[Added]: Add priorityClassName to notifications controller"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.0",
-      "version": "5.4.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.2",
+      "version": "5.4.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "a07de622-5923-44a6-b70f-9ec7b3b63df4",
+  "id": "8720c1ad-c47f-4dcd-b8bb-cd5fa3b0dd7c",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

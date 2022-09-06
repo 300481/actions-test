@@ -31,6 +31,7 @@
 ## Target: usr/local/bin/gomplate --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8911|github.com/aws/aws-sdk-go|v1.36.31||
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20201221181555-eec23a3978ad|0.0.0-20220314234659-1baeb1ce4c0b|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33194|golang.org/x/net|v0.0.0-20201202161906-c7110b5ffcbb|0.0.0-20210520170846-37e1c6afe023|
 |![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-44716|golang.org/x/net|v0.0.0-20201202161906-c7110b5ffcbb|0.0.0-20211209124913-491a49abca63|
