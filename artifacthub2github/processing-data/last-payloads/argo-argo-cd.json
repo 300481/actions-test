@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Add priorityClassName to notifications controller"
+        "[Fixed]: Additional initContainers are handled correctly in the dex deployment"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.2",
-      "version": "5.4.2"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.3",
+      "version": "5.4.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "8720c1ad-c47f-4dcd-b8bb-cd5fa3b0dd7c",
+  "id": "2d553ea5-3278-4fdd-9a17-f4c50a6b1bb6",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
