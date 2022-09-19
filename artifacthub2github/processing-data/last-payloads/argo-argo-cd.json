@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Additional initContainers are handled correctly in the dex deployment"
+        "[Changed]: Update Dex image to v2.32.0"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.3",
-      "version": "5.4.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.6",
+      "version": "5.4.6"
     }
   },
   "datacontenttype": "application/json",
-  "id": "2d553ea5-3278-4fdd-9a17-f4c50a6b1bb6",
+  "id": "814980d6-a08b-4fd5-8392-8b47ba91e4da",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"

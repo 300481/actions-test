@@ -3,38 +3,27 @@
 
 
 
-## Target: ghcr.io/dexidp/dex:v2.30.2 (alpine 3.14.3) --- Class: os-pkgs
+## Target: ghcr.io/dexidp/dex:v2.32.0 (alpine 3.16.0) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28391|busybox|1.33.1-r6|1.33.1-r7|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|libcrypto1.1|1.1.1l-r0|1.1.1n-r0|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-2097|libcrypto1.1|1.1.1l-r0|1.1.1q-r0|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|libretls|3.3.3p1-r2|3.3.3p1-r3|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|libssl1.1|1.1.1l-r0|1.1.1n-r0|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-2097|libssl1.1|1.1.1l-r0|1.1.1q-r0|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-0778|openssl|1.1.1l-r0|1.1.1n-r0|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-2097|openssl|1.1.1l-r0|1.1.1q-r0|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-28391|ssl_client|1.33.1-r6|1.33.1-r7|
-|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-37434|zlib|1.2.11-r3|1.2.12-r2|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2018-25032|zlib|1.2.11-r3|1.2.12-r0|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-30065|busybox|1.35.0-r13|1.35.0-r15|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-2097|libcrypto1.1|1.1.1o-r0|1.1.1q-r0|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-2097|libssl1.1|1.1.1o-r0|1.1.1q-r0|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-30065|ssl_client|1.35.0-r13|1.35.0-r15|
+|![](https://img.shields.io/badge/-CRITICAL-red)|CVE-2022-37434|zlib|1.2.12-r1|1.2.12-r2|
 
 ## Target: usr/local/bin/dex --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-21698|github.com/prometheus/client_golang|v1.11.0|1.11.1|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210322153248-0c34fe9e7dc2|0.0.0-20220314234659-1baeb1ce4c0b|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33194|golang.org/x/net|v0.0.0-20210503060351-7fd8e65b6420|0.0.0-20210520170846-37e1c6afe023|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-44716|golang.org/x/net|v0.0.0-20210503060351-7fd8e65b6420|0.0.0-20211209124913-491a49abca63|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29526|golang.org/x/sys|v0.0.0-20210630005230-0f9fa26af87c|0.0.0-20220412211240-33da011f77ad|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-38561|golang.org/x/text|v0.3.6|0.3.7|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20220208050332-20e1d8d225ab|0.0.0-20220314234659-1baeb1ce4c0b|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27664|golang.org/x/net|v0.0.0-20220607020251-c690dde0001d|0.0.0-20220906165146-f3363e06e74c|
 
 ## Target: usr/local/bin/gomplate --- Class: lang-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8911|github.com/aws/aws-sdk-go|v1.36.31||
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20201221181555-eec23a3978ad|0.0.0-20220314234659-1baeb1ce4c0b|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-33194|golang.org/x/net|v0.0.0-20201202161906-c7110b5ffcbb|0.0.0-20210520170846-37e1c6afe023|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-44716|golang.org/x/net|v0.0.0-20201202161906-c7110b5ffcbb|0.0.0-20211209124913-491a49abca63|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2021-31525|golang.org/x/net|v0.0.0-20201202161906-c7110b5ffcbb|0.0.0-20210428140749-89ef3d95e781|
-|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29526|golang.org/x/sys|v0.0.0-20210124154548-22da62e12c0c|0.0.0-20220412211240-33da011f77ad|
-|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-38561|golang.org/x/text|v0.3.4|0.3.7|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2020-8911|github.com/aws/aws-sdk-go|v1.40.49||
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-43565|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20211202192323-5770296d904e|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27191|golang.org/x/crypto|v0.0.0-20210921155107-089bfa567519|0.0.0-20220314234659-1baeb1ce4c0b|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2021-44716|golang.org/x/net|v0.0.0-20210924151903-3ad01bbaa167|0.0.0-20211209124913-491a49abca63|
+|![](https://img.shields.io/badge/-HIGH-orange)|CVE-2022-27664|golang.org/x/net|v0.0.0-20210924151903-3ad01bbaa167|0.0.0-20220906165146-f3363e06e74c|
+|![](https://img.shields.io/badge/-MEDIUM-yellow)|CVE-2022-29526|golang.org/x/sys|v0.0.0-20210923061019-b8560ed6a9b7|0.0.0-20220412211240-33da011f77ad|
