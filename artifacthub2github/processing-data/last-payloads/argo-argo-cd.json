@@ -2,9 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: New configuration section `configs.params` for command line parameters",
-        "[Deprecated]: Command line arguments in `args` sections",
-        "[Deprecated]: Options `logFormat` and `logLevel` for core components"
+        "[Fixed]: Argo CD server returns 404 due to invalid default value"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -14,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.0",
-      "version": "5.5.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.2",
+      "version": "5.5.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "5e2b7f9a-64aa-4c42-8c76-1b955b26d58e",
+  "id": "fbd25cb1-299f-415c-a538-b4ef02e55348",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
