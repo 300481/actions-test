@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update Dex image to v2.32.0"
+        "[Changed]: Cleanup of config files to keep them DRY"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.6",
-      "version": "5.4.6"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.8",
+      "version": "5.4.8"
     }
   },
   "datacontenttype": "application/json",
-  "id": "814980d6-a08b-4fd5-8392-8b47ba91e4da",
+  "id": "ec4cbe11-7867-455c-9fa6-7d84f9cc328f",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
