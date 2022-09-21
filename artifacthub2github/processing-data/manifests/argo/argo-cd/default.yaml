@@ -6,7 +6,7 @@ automountServiceAccountToken: true
 metadata:
   name: argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -20,7 +20,7 @@ automountServiceAccountToken:
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -34,7 +34,7 @@ automountServiceAccountToken:
 metadata:
   name: argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -48,7 +48,7 @@ automountServiceAccountToken: true
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -62,7 +62,7 @@ automountServiceAccountToken: true
 metadata:
   name: argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -76,7 +76,7 @@ automountServiceAccountToken: true
 metadata:
   name: argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -89,7 +89,7 @@ kind: Secret
 metadata:
   name: argocd-notifications-secret
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -104,7 +104,7 @@ kind: Secret
 metadata:
   name: argocd-secret
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-secret
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -118,7 +118,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -131,13 +131,51 @@ data:
   server.rbac.log.enforce.enable: "false"
   url: ""
 ---
+# Source: argo-cd/templates/argocd-configs/argocd-cmd-params-cm.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cmd-params-cm
+  labels:
+    helm.sh/chart: argo-cd-5.5.0
+    app.kubernetes.io/name: argocd-cmd-params-cm
+    app.kubernetes.io/instance: argo-cd
+    app.kubernetes.io/component: server
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/part-of: argocd
+data:
+  controller.log.format: "text"
+  controller.log.level: "info"
+  controller.operation.processors: "10"
+  controller.repo.server.timeout.seconds: "60"
+  controller.self.heal.timeout.seconds: "5"
+  controller.status.processors: "20"
+  otlp.address: ""
+  redis.server: "argo-cd-argocd-redis:6379"
+  repo.server: "argo-cd-argocd-repo-server:8081"
+  reposerver.log.format: "text"
+  reposerver.log.level: "info"
+  reposerver.parallelism.limit: "0"
+  server.basehref: "/"
+  server.dex.server: "http://argo-cd-argocd-dex-server:5556"
+  server.disable.auth: "false"
+  server.enable.gzip: "false"
+  server.insecure: "false"
+  server.log.format: "text"
+  server.log.level: "info"
+  server.rootpath: "/"
+  server.staticassets: "/shared/app"
+  server.x.frame.options: "sameorigin"
+  timeout.hard.reconciliation: "0"
+  timeout.reconciliation: "180"
+---
 # Source: argo-cd/templates/argocd-configs/argocd-gpg-keys-cm.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: argocd-gpg-keys-cm
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-gpg-keys-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/managed-by: Helm
@@ -149,7 +187,7 @@ kind: ConfigMap
 metadata:
   name: argocd-notifications-cm
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -165,7 +203,7 @@ kind: ConfigMap
 metadata:
   name: argocd-rbac-cm
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-rbac-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -178,7 +216,7 @@ kind: ConfigMap
 metadata:
   name: argocd-ssh-known-hosts-cm
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-ssh-known-hosts-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -202,7 +240,7 @@ kind: ConfigMap
 metadata:
   name: argocd-tls-certs-cm
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-tls-certs-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9316,7 +9354,7 @@ kind: ClusterRole
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9340,7 +9378,7 @@ kind: ClusterRole
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9375,7 +9413,7 @@ kind: ClusterRoleBinding
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9396,7 +9434,7 @@ kind: ClusterRoleBinding
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9417,7 +9455,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9460,7 +9498,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9550,7 +9588,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -9599,7 +9637,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -9613,7 +9651,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9660,7 +9698,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -9683,7 +9721,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9704,7 +9742,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9725,7 +9763,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -9746,7 +9784,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -9767,7 +9805,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9788,7 +9826,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -9809,7 +9847,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9830,7 +9868,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9850,7 +9888,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -9873,7 +9911,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9900,7 +9938,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -9926,7 +9964,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-redis
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-redis
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: redis
@@ -9947,7 +9985,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9962,7 +10000,7 @@ spec:
   template:
     metadata:
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-applicationset-controller
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: applicationset-controller
@@ -10036,7 +10074,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -10052,7 +10090,7 @@ spec:
   template:
     metadata:
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-notifications-controller
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: notifications-controller
@@ -10103,7 +10141,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -10118,8 +10156,10 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        checksum/cmd-params: fa0df5b043d6e47bbfc8d17220677e5e8062e94da69ae08be1e89ae26e32fa77
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-repo-server
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: repo-server
@@ -10135,20 +10175,115 @@ spec:
         - entrypoint.sh
         args:
         - argocd-repo-server
-        - --redis
-        - argo-cd-argocd-redis:6379
-        - --logformat
-        - text
-        - --loglevel
-        - info
         env:
-        - name: HELM_CACHE_HOME
-          value: /helm-working-dir
-        - name: HELM_CONFIG_HOME
-          value: /helm-working-dir
-        - name: HELM_DATA_HOME
-          value: /helm-working-dir
-        
+          - name: ARGOCD_RECONCILIATION_TIMEOUT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cm
+                key: timeout.reconciliation
+                optional: true
+          - name: ARGOCD_REPO_SERVER_LOGFORMAT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.log.format
+                optional: true
+          - name: ARGOCD_REPO_SERVER_LOGLEVEL
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.log.level
+                optional: true
+          - name: ARGOCD_REPO_SERVER_PARALLELISM_LIMIT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.parallelism.limit
+                optional: true
+          - name: ARGOCD_REPO_SERVER_DISABLE_TLS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.disable.tls
+                optional: true
+          - name: ARGOCD_TLS_MIN_VERSION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.tls.minversion
+                optional: true
+          - name: ARGOCD_TLS_MAX_VERSION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.tls.maxversion
+                optional: true
+          - name: ARGOCD_TLS_CIPHERS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.tls.ciphers
+                optional: true
+          - name: ARGOCD_REPO_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.repo.cache.expiration
+                optional: true
+          - name: REDIS_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: redis.server
+                optional: true
+          - name: REDISDB
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: redis.db
+                optional: true
+          - name: REDIS_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: argo-cd-argocd-redis
+                key: redis-username
+                optional: true
+          - name: REDIS_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: argo-cd-argocd-redis
+                key: redis-password
+                optional: true
+          - name: ARGOCD_DEFAULT_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.default.cache.expiration
+                optional: true
+          - name: ARGOCD_REPO_SERVER_OTLP_ADDRESS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: otlp.address
+                optional: true
+          - name: ARGOCD_REPO_SERVER_MAX_COMBINED_DIRECTORY_MANIFESTS_SIZE
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.max.combined.directory.manifests.size
+                optional: true
+          - name: ARGOCD_REPO_SERVER_PLUGIN_TAR_EXCLUSIONS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: reposerver.plugin.tar.exclusions
+                optional: true
+          - name: HELM_CACHE_HOME
+            value: /helm-working-dir
+          - name: HELM_CONFIG_HOME
+            value: /helm-working-dir
+          - name: HELM_DATA_HOME
+            value: /helm-working-dir
         volumeMounts:
         - mountPath: /app/config/gpg/source
           name: gpg-keys
@@ -10187,8 +10322,6 @@ spec:
           timeoutSeconds: 1
           successThreshold: 1
           failureThreshold: 3
-        resources:
-          {}
       serviceAccountName: argo-cd-argocd-repo-server
       volumes:
       - name: gpg-keys
@@ -10230,8 +10363,6 @@ spec:
         image: quay.io/argoproj/argocd:v2.4.12
         imagePullPolicy: IfNotPresent
         name: copyutil
-        resources:
-          {}
         volumeMounts:
         - mountPath: /var/run/argocd
           name: var-files
@@ -10242,7 +10373,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -10257,8 +10388,10 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        checksum/cmd-params: fa0df5b043d6e47bbfc8d17220677e5e8062e94da69ae08be1e89ae26e32fa77
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-server
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: server
@@ -10271,20 +10404,181 @@ spec:
         imagePullPolicy: IfNotPresent
         command:
         - argocd-server
-        
-        - --staticassets
-        - /shared/app
-        
-        - --repo-server
-        - argo-cd-argocd-repo-server:8081
-        - --dex-server
-        - http://argo-cd-argocd-dex-server:5556
-        - --logformat
-        - text
-        - --loglevel
-        - info
-        - --redis
-        - argo-cd-argocd-redis:6379
+        env:
+          - name: ARGOCD_SERVER_INSECURE
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.insecure
+                optional: true
+          - name: ARGOCD_SERVER_BASEHREF
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.basehref
+                optional: true
+          - name: ARGOCD_SERVER_ROOTPATH
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.rootpath
+                optional: true
+          - name: ARGOCD_SERVER_LOGFORMAT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.log.format
+                optional: true
+          - name: ARGOCD_REPO_SERVER_LOGLEVEL
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.log.level
+                optional: true
+          - name: ARGOCD_SERVER_REPO_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: repo.server
+                optional: true
+          - name: ARGOCD_SERVER_DEX_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.dex.server
+                optional: true
+          - name: ARGOCD_SERVER_DISABLE_AUTH
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.disable.auth
+                optional: true
+          - name: ARGOCD_SERVER_ENABLE_GZIP
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.enable.gzip
+                optional: true
+          - name: ARGOCD_SERVER_REPO_SERVER_TIMEOUT_SECONDS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.repo.server.timeout.seconds
+                optional: true
+          - name: ARGOCD_SERVER_X_FRAME_OPTIONS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.x.frame.options
+                optional: true
+          - name: ARGOCD_SERVER_CONTENT_SECURITY_POLICY
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.content.security.policy
+                optional: true
+          - name: ARGOCD_SERVER_REPO_SERVER_PLAINTEXT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.repo.server.plaintext
+                optional: true
+          - name: ARGOCD_SERVER_REPO_SERVER_STRICT_TLS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.repo.server.strict.tls
+                optional: true
+          - name: ARGOCD_TLS_MIN_VERSION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.tls.minversion
+                optional: true
+          - name: ARGOCD_TLS_MAX_VERSION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.tls.maxversion
+                optional: true
+          - name: ARGOCD_TLS_CIPHERS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.tls.ciphers
+                optional: true
+          - name: ARGOCD_SERVER_CONNECTION_STATUS_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.connection.status.cache.expiration
+                optional: true
+          - name: ARGOCD_SERVER_OIDC_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.oidc.cache.expiration
+                optional: true
+          - name: ARGOCD_SERVER_LOGIN_ATTEMPTS_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.login.attempts.expiration
+                optional: true
+          - name: ARGOCD_SERVER_STATIC_ASSETS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.staticassets
+                optional: true
+          - name: ARGOCD_APP_STATE_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.app.state.cache.expiration
+                optional: true
+          - name: REDIS_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: redis.server
+                optional: true
+          - name: REDISDB
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: redis.db
+                optional: true
+          - name: REDIS_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: argo-cd-argocd-redis
+                key: redis-username
+                optional: true
+          - name: REDIS_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: argo-cd-argocd-redis
+                key: redis-password
+                optional: true
+          - name: ARGOCD_DEFAULT_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.default.cache.expiration
+                optional: true
+          - name: ARGOCD_MAX_COOKIE_NUMBER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: server.http.cookie.maxnumber
+                optional: true
+          - name: ARGOCD_SERVER_OTLP_ADDRESS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: otlp.address
+                optional: true
         volumeMounts:
         - mountPath: /app/config/ssh
           name: ssh-known-hosts
@@ -10319,8 +10613,6 @@ spec:
           timeoutSeconds: 1
           successThreshold: 1
           failureThreshold: 3
-        resources:
-          {}
       serviceAccountName: argocd-server
       volumes:
       - emptyDir: {}
@@ -10351,7 +10643,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -10364,8 +10656,10 @@ spec:
       app.kubernetes.io/instance: argo-cd
   template:
     metadata:
+      annotations:
+        checksum/cmd-params: fa0df5b043d6e47bbfc8d17220677e5e8062e94da69ae08be1e89ae26e32fa77
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-dex-server
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: dex-server
@@ -10386,13 +10680,23 @@ spec:
         volumeMounts:
         - mountPath: /shared
           name: static-files
+        - mountPath: /tmp
+          name: dexconfig
       containers:
       - name: dex-server
         image: ghcr.io/dexidp/dex:v2.32.0
         imagePullPolicy: IfNotPresent
         command:
         - /shared/argocd-dex
+        args:
         - rundex
+        env:
+          - name: ARGOCD_DEX_SERVER_DISABLE_TLS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: dexserver.disable.tls
+                optional: true
         ports:
         - name: http
           containerPort: 5556
@@ -10404,18 +10708,31 @@ spec:
           containerPort: 5558
           protocol: TCP
         volumeMounts:
-        - mountPath: /tmp
-          name: tmp-dir
-        - mountPath: /shared
-          name: static-files
+        - name: static-files
+          mountPath: /shared
+        - name: dexconfig
+          mountPath: /tmp
+        - name: argocd-dex-server-tls
+          mountPath: /tls
         resources:
           {}
       serviceAccountName: argocd-dex-server
       volumes:
-      - emptyDir: {}
-        name: tmp-dir
-      - emptyDir: {}
-        name: static-files
+      - name: static-files
+        emptyDir: {}
+      - name: dexconfig
+        emptyDir: {}
+      - name: argocd-dex-server-tls
+        secret:
+          secretName: argocd-dex-server-tls
+          optional: true
+          items:
+          - key: tls.crt
+            path: tls.crt
+          - key: tls.key
+            path: tls.key
+          - key: ca.crt
+            path: ca.crt
 ---
 # Source: argo-cd/templates/redis/deployment.yaml
 apiVersion: apps/v1
@@ -10423,7 +10740,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-redis
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-redis
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: redis
@@ -10436,7 +10753,7 @@ spec:
   template:
     metadata:
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-redis
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: redis
@@ -10469,7 +10786,7 @@ kind: StatefulSet
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.4.8
+    helm.sh/chart: argo-cd-5.5.0
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -10485,8 +10802,10 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        checksum/cmd-params: fa0df5b043d6e47bbfc8d17220677e5e8062e94da69ae08be1e89ae26e32fa77
       labels:
-        helm.sh/chart: argo-cd-5.4.8
+        helm.sh/chart: argo-cd-5.5.0
         app.kubernetes.io/name: argocd-application-controller
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: application-controller
@@ -10496,33 +10815,126 @@ spec:
       containers:
       - command:
         - argocd-application-controller
-        - --status-processors
-        - "20"
-        - --operation-processors
-        - "10"
-        - --app-resync
-        - "180"
-        - --app-hard-resync
-        - "0"
-        - --self-heal-timeout-seconds
-        - "5"
-        - --repo-server
-        - argo-cd-argocd-repo-server:8081
-        - --repo-server-timeout-seconds
-        - "60"
-        - --logformat
-        - text
-        - --loglevel
-        - info
-        - --redis
-        - argo-cd-argocd-redis:6379
         image: quay.io/argoproj/argocd:v2.4.12
         imagePullPolicy: IfNotPresent
         name: application-controller
         env:
           - name: ARGOCD_CONTROLLER_REPLICAS
             value: "1"
-          
+          - name: ARGOCD_RECONCILIATION_TIMEOUT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cm
+                key: timeout.reconciliation
+                optional: true
+          - name: ARGOCD_HARD_RECONCILIATION_TIMEOUT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cm
+                key: timeout.hard.reconciliation
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_REPO_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: repo.server
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_REPO_SERVER_TIMEOUT_SECONDS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.repo.server.timeout.seconds
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_STATUS_PROCESSORS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.status.processors
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_OPERATION_PROCESSORS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.operation.processors
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_LOGFORMAT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.log.format
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_LOGLEVEL
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.log.level
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_METRICS_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.metrics.cache.expiration
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_SELF_HEAL_TIMEOUT_SECONDS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.self.heal.timeout.seconds
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_REPO_SERVER_PLAINTEXT
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.repo.server.plaintext
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_REPO_SERVER_STRICT_TLS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.repo.server.strict.tls
+                optional: true
+          - name: ARGOCD_APP_STATE_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.app.state.cache.expiration
+                optional: true
+          - name: REDIS_SERVER
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: redis.server
+                optional: true
+          - name: REDISDB
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: redis.db
+                optional: true
+          - name: REDIS_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: argo-cd-argocd-redis
+                key: redis-username
+                optional: true
+          - name: REDIS_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: argo-cd-argocd-redis
+                key: redis-password
+                optional: true
+          - name: ARGOCD_DEFAULT_CACHE_EXPIRATION
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: controller.default.cache.expiration
+                optional: true
+          - name: ARGOCD_APPLICATION_CONTROLLER_OTLP_ADDRESS
+            valueFrom:
+              configMapKeyRef:
+                name: argocd-cmd-params-cm
+                key: otlp.address
+                optional: true
         ports:
         - name: controller
           containerPort: 8082

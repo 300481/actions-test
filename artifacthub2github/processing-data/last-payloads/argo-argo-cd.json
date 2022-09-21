@@ -2,7 +2,9 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Cleanup of config files to keep them DRY"
+        "[Added]: New configuration section `configs.params` for command line parameters",
+        "[Deprecated]: Command line arguments in `args` sections",
+        "[Deprecated]: Options `logFormat` and `logLevel` for core components"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +14,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.4.8",
-      "version": "5.4.8"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.0",
+      "version": "5.5.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "ec4cbe11-7867-455c-9fa6-7d84f9cc328f",
+  "id": "5e2b7f9a-64aa-4c42-8c76-1b955b26d58e",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
