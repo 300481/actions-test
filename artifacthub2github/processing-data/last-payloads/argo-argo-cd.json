@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Node selector for repoServer was not rendered correctly"
+        "[Fixed]: Clarified documentation around CRD upgrades"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.3",
-      "version": "5.5.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.4",
+      "version": "5.5.4"
     }
   },
   "datacontenttype": "application/json",
-  "id": "a963b740-2f83-40fd-b95a-a91b69d2f943",
+  "id": "27df92eb-22b5-49d7-9b33-c122a8cf5027",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
