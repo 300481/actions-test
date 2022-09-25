@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Node selector for repoServer was not rendered correctly"
+        "[Fixed]: Add missing templating for some service labels"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.3",
-      "version": "5.5.3"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.5",
+      "version": "5.5.5"
     }
   },
   "datacontenttype": "application/json",
-  "id": "a963b740-2f83-40fd-b95a-a91b69d2f943",
+  "id": "93769158-d739-4993-a758-a5893eaadb98",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
