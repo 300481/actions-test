@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Source code section inside chart README"
+        "[Fixed]: v5.5.0 Upgrade guide heading in README"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.6",
-      "version": "5.5.6"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.7",
+      "version": "5.5.7"
     }
   },
   "datacontenttype": "application/json",
-  "id": "3b5079d7-198a-4dd6-89c7-72d79276dbb1",
+  "id": "1b1c6a49-1e38-4f5f-a483-96c6b5d5918f",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
