@@ -2,8 +2,10 @@
   "data": {
     "package": {
       "changes": [
-        "[8896](https://github.com/kubernetes/ingress-nginx/pull/8896) updated to new images built today",
-        "fix permissions about configmap"
+        "[8890](https://github.com/kubernetes/ingress-nginx/pull/8890) migrate to endpointslices",
+        "[9059](https://github.com/kubernetes/ingress-nginx/pull/9059) kubewebhookcertgen sha change after go1191",
+        "[9046](https://github.com/kubernetes/ingress-nginx/pull/9046) Parameterize metrics port name",
+        "[9104](https://github.com/kubernetes/ingress-nginx/pull/9104) Fix yaml formatting error with multiple annotations"
       ],
       "containsSecurityUpdates": false,
       "name": "ingress-nginx",
@@ -13,12 +15,12 @@
         "name": "ingress-nginx",
         "publisher": "kubernetes"
       },
-      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.2.5",
-      "version": "4.2.5"
+      "url": "https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.3.0",
+      "version": "4.3.0"
     }
   },
   "datacontenttype": "application/json",
-  "id": "94dca46d-3ea5-423d-a07d-bbdc11625356",
+  "id": "f1686b46-617d-4fe0-a038-e73eb933ba74",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
