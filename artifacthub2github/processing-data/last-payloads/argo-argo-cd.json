@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: v5.5.0 Upgrade guide heading in README"
+        "[Fixed]: Upgrade Dex to v2.35.0 to avoid CVE-2022-39222 and update app version to v2.4.13"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.7",
-      "version": "5.5.7"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.8",
+      "version": "5.5.8"
     }
   },
   "datacontenttype": "application/json",
-  "id": "1b1c6a49-1e38-4f5f-a483-96c6b5d5918f",
+  "id": "84e75bdc-8e38-4abd-9b0c-3a9902d6ff75",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
