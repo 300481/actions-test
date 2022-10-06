@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Upgrade Dex to v2.35.0 to avoid CVE-2022-39222 and update app version to v2.4.13"
+        "[Added]: Allow labels to be set on service accounts"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.8",
-      "version": "5.5.8"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.9",
+      "version": "5.5.9"
     }
   },
   "datacontenttype": "application/json",
-  "id": "84e75bdc-8e38-4abd-9b0c-3a9902d6ff75",
+  "id": "c30af8fb-d178-4565-8ee9-093dbff38764",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
