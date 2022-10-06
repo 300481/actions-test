@@ -3,7 +3,7 @@
 
 
 
-## Target: ghcr.io/dexidp/dex:v2.35.0-distroless (debian 11.5) --- Class: os-pkgs
+## Target: ghcr.io/dexidp/dex:v2.35.1-distroless (debian 11.5) --- Class: os-pkgs
 |Severity|VulnerabilityID|PkgName|InstalledVersion|FixedVersion|
 |--------|---------------|-------|----------------|------------|
 
