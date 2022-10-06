@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Allow labels to be set on service accounts"
+        "[Changed]: Update to app version 2.4.14"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.9",
-      "version": "5.5.9"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.10",
+      "version": "5.5.10"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c30af8fb-d178-4565-8ee9-093dbff38764",
+  "id": "cbbd26fa-023f-4ac4-9d6a-c117f4eaca02",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
