@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Allow labels to be set on service accounts"
+        "[Changed]: Updated example PrometheusRule expression for missing apps"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.9",
-      "version": "5.5.9"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.11",
+      "version": "5.5.11"
     }
   },
   "datacontenttype": "application/json",
-  "id": "c30af8fb-d178-4565-8ee9-093dbff38764",
+  "id": "a1db8320-2451-419b-86ce-9fc55127be53",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
