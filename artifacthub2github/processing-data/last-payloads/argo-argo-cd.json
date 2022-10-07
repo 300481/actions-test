@@ -2,7 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Updated example PrometheusRule expression for missing apps"
+        "[Added]: Added `envFrom` field to the notifications-controller.",
+        "[Changed]: Templating the `env` field in the same way as in the argocd-server."
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.11",
-      "version": "5.5.11"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.12",
+      "version": "5.5.12"
     }
   },
   "datacontenttype": "application/json",
-  "id": "a1db8320-2451-419b-86ce-9fc55127be53",
+  "id": "f51b5df9-a111-4d92-8835-bcf0bffe1632",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
