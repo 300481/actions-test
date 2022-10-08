@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Updated Redis to 7.0.5 for fixing CVE-2022-35951."
+        "[Fixed]: Incorrectly placed timeout.reconciliation and timeout.hard.reconciliation"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.13",
-      "version": "5.5.13"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.14",
+      "version": "5.5.14"
     }
   },
   "datacontenttype": "application/json",
-  "id": "48886375-f27a-4e7a-af59-d30c7b235852",
+  "id": "15e38a03-f8ab-421f-86f9-629509a29bbe",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
