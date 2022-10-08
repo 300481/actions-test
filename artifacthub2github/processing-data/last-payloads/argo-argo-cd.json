@@ -2,8 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Added `envFrom` field to the notifications-controller.",
-        "[Changed]: Templating the `env` field in the same way as in the argocd-server."
+        "[Changed]: Updated Redis to 7.0.5 for fixing CVE-2022-35951."
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -13,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.12",
-      "version": "5.5.12"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.13",
+      "version": "5.5.13"
     }
   },
   "datacontenttype": "application/json",
-  "id": "f51b5df9-a111-4d92-8835-bcf0bffe1632",
+  "id": "48886375-f27a-4e7a-af59-d30c7b235852",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
