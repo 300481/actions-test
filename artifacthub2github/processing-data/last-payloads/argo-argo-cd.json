@@ -2,7 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: Make labels for repoServer and notification service accounts configurable"
+        "[Fixed]: Notification controller strategy must be always Recreate",
+        "[Removed]: Notification controller securityContext in favor of global.securityContext"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.15",
-      "version": "5.5.15"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.16",
+      "version": "5.5.16"
     }
   },
   "datacontenttype": "application/json",
-  "id": "fdffc644-c4e0-489a-973a-024bfd68c9cb",
+  "id": "5d6a278c-cfab-4af3-8367-d3aa4e76d971",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
