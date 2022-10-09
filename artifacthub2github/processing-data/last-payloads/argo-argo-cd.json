@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Incorrectly placed timeout.reconciliation and timeout.hard.reconciliation"
+        "[Added]: Make labels for repoServer and notification service accounts configurable"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.14",
-      "version": "5.5.14"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.15",
+      "version": "5.5.15"
     }
   },
   "datacontenttype": "application/json",
-  "id": "15e38a03-f8ab-421f-86f9-629509a29bbe",
+  "id": "fdffc644-c4e0-489a-973a-024bfd68c9cb",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
