@@ -6,7 +6,7 @@ automountServiceAccountToken: true
 metadata:
   name: argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -20,7 +20,7 @@ automountServiceAccountToken:
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -34,7 +34,7 @@ automountServiceAccountToken:
 metadata:
   name: argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -48,7 +48,7 @@ automountServiceAccountToken: true
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -62,7 +62,7 @@ automountServiceAccountToken: true
 metadata:
   name: argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -76,7 +76,7 @@ automountServiceAccountToken: true
 metadata:
   name: argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -89,7 +89,7 @@ kind: Secret
 metadata:
   name: argocd-notifications-secret
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -104,7 +104,7 @@ kind: Secret
 metadata:
   name: argocd-secret
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-secret
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -118,7 +118,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -139,7 +139,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cmd-params-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-cmd-params-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -175,7 +175,7 @@ kind: ConfigMap
 metadata:
   name: argocd-gpg-keys-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-gpg-keys-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/managed-by: Helm
@@ -187,7 +187,7 @@ kind: ConfigMap
 metadata:
   name: argocd-notifications-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -203,7 +203,7 @@ kind: ConfigMap
 metadata:
   name: argocd-rbac-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-rbac-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -216,7 +216,7 @@ kind: ConfigMap
 metadata:
   name: argocd-ssh-known-hosts-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-ssh-known-hosts-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -240,7 +240,7 @@ kind: ConfigMap
 metadata:
   name: argocd-tls-certs-cm
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-tls-certs-cm
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9354,7 +9354,7 @@ kind: ClusterRole
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9378,7 +9378,7 @@ kind: ClusterRole
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9413,7 +9413,7 @@ kind: ClusterRoleBinding
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9434,7 +9434,7 @@ kind: ClusterRoleBinding
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9455,7 +9455,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9498,7 +9498,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9588,7 +9588,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -9637,7 +9637,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -9651,7 +9651,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9698,7 +9698,7 @@ kind: Role
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -9721,7 +9721,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9742,7 +9742,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9763,7 +9763,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -9784,7 +9784,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -9805,7 +9805,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9826,7 +9826,7 @@ kind: RoleBinding
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -9847,7 +9847,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -9868,7 +9868,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -9888,7 +9888,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -9911,7 +9911,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -9938,7 +9938,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -9964,7 +9964,7 @@ kind: Service
 metadata:
   name: argo-cd-argocd-redis
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-redis
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: redis
@@ -9985,7 +9985,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-applicationset-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-applicationset-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: applicationset-controller
@@ -10000,7 +10000,7 @@ spec:
   template:
     metadata:
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-applicationset-controller
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: applicationset-controller
@@ -10074,7 +10074,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-notifications-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-notifications-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: notifications-controller
@@ -10090,7 +10090,7 @@ spec:
   template:
     metadata:
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-notifications-controller
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: notifications-controller
@@ -10139,7 +10139,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-repo-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-repo-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: repo-server
@@ -10155,9 +10155,9 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/cmd-params: 0e00ab2afd39c44ef49a5786460777b1e87e53a023c78a6fa67955594194e791
+        checksum/cmd-params: 6c148f0d025c07efcc975d11e1bc5de5348b55a392efc62c3ddfe2d5dc94efe8
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-repo-server
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: repo-server
@@ -10371,7 +10371,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: server
@@ -10387,9 +10387,9 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/cmd-params: 0e00ab2afd39c44ef49a5786460777b1e87e53a023c78a6fa67955594194e791
+        checksum/cmd-params: 6c148f0d025c07efcc975d11e1bc5de5348b55a392efc62c3ddfe2d5dc94efe8
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-server
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: server
@@ -10641,7 +10641,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-dex-server
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-dex-server
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: dex-server
@@ -10655,9 +10655,9 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/cmd-params: 0e00ab2afd39c44ef49a5786460777b1e87e53a023c78a6fa67955594194e791
+        checksum/cmd-params: 6c148f0d025c07efcc975d11e1bc5de5348b55a392efc62c3ddfe2d5dc94efe8
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-dex-server
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: dex-server
@@ -10738,7 +10738,7 @@ kind: Deployment
 metadata:
   name: argo-cd-argocd-redis
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-redis
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: redis
@@ -10751,7 +10751,7 @@ spec:
   template:
     metadata:
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-redis
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: redis
@@ -10784,7 +10784,7 @@ kind: StatefulSet
 metadata:
   name: argo-cd-argocd-application-controller
   labels:
-    helm.sh/chart: argo-cd-5.5.16
+    helm.sh/chart: argo-cd-5.5.19
     app.kubernetes.io/name: argocd-application-controller
     app.kubernetes.io/instance: argo-cd
     app.kubernetes.io/component: application-controller
@@ -10801,9 +10801,9 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/cmd-params: 0e00ab2afd39c44ef49a5786460777b1e87e53a023c78a6fa67955594194e791
+        checksum/cmd-params: 6c148f0d025c07efcc975d11e1bc5de5348b55a392efc62c3ddfe2d5dc94efe8
       labels:
-        helm.sh/chart: argo-cd-5.5.16
+        helm.sh/chart: argo-cd-5.5.19
         app.kubernetes.io/name: argocd-application-controller
         app.kubernetes.io/instance: argo-cd
         app.kubernetes.io/component: application-controller

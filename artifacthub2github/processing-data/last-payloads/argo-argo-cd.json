@@ -2,8 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Notification controller strategy must be always Recreate",
-        "[Removed]: Notification controller securityContext in favor of global.securityContext"
+        "[Changed]: Moved specific cloud provider resources to sub-folders"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -13,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.16",
-      "version": "5.5.16"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.19",
+      "version": "5.5.19"
     }
   },
   "datacontenttype": "application/json",
-  "id": "5d6a278c-cfab-4af3-8367-d3aa4e76d971",
+  "id": "e1f573d1-05cc-4d33-b679-79e6f319e234",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
