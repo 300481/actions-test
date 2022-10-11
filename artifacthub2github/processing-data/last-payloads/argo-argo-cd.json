@@ -2,8 +2,8 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Notification controller strategy must be always Recreate",
-        "[Removed]: Notification controller securityContext in favor of global.securityContext"
+        "[Fixed]: Init container for repo-server should use main container resources",
+        "[Removed]: Section repoServer.copyutil that is no longer needed"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -13,12 +13,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.16",
-      "version": "5.5.16"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.21",
+      "version": "5.5.21"
     }
   },
   "datacontenttype": "application/json",
-  "id": "5d6a278c-cfab-4af3-8367-d3aa4e76d971",
+  "id": "b566c1f3-2527-4281-b167-73c5ad6dfeee",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
