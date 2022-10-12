@@ -2,7 +2,11 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Synced ApplicationSet deployment with upstream manifest"
+        "[Added]: PDB for Application Set controller",
+        "[Added]: PDB for Notifications controller",
+        "[Added]: PDB for Slack bot",
+        "[Fixed]: PDB for Redis is not created if redis-ha is enabled",
+        "[Changed]: Documentation for PDB usage"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +16,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.22",
-      "version": "5.5.22"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.24",
+      "version": "5.5.24"
     }
   },
   "datacontenttype": "application/json",
-  "id": "5bf1da4b-8fbb-4fe1-99fa-1356dab12e1a",
+  "id": "571662ae-f4ea-4057-bf08-ec0305afb028",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
