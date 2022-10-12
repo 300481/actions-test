@@ -2,8 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Fixed]: Init container for repo-server should use main container resources",
-        "[Removed]: Section repoServer.copyutil that is no longer needed"
+        "[Changed]: Synced ApplicationSet deployment with upstream manifest"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -13,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.21",
-      "version": "5.5.21"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.22",
+      "version": "5.5.22"
     }
   },
   "datacontenttype": "application/json",
-  "id": "b566c1f3-2527-4281-b167-73c5ad6dfeee",
+  "id": "5bf1da4b-8fbb-4fe1-99fa-1356dab12e1a",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
