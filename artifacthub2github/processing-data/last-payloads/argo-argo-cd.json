@@ -2,11 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: PDB for Application Set controller",
-        "[Added]: PDB for Notifications controller",
-        "[Added]: PDB for Slack bot",
-        "[Fixed]: PDB for Redis is not created if redis-ha is enabled",
-        "[Changed]: Documentation for PDB usage"
+        "[Fixed]: Leader election permissions for ApplicationSet controller"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -16,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.24",
-      "version": "5.5.24"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.25",
+      "version": "5.5.25"
     }
   },
   "datacontenttype": "application/json",
-  "id": "571662ae-f4ea-4057-bf08-ec0305afb028",
+  "id": "3dcda8d3-1861-4ed6-9386-900488786a3b",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
