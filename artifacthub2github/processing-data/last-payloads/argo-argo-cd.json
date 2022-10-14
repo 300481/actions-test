@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Moved Argo Extension resource to argocd-apps chart"
+        "[Fixed]: Leader election permissions for ApplicationSet controller"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.0",
-      "version": "5.6.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.5.25",
+      "version": "5.5.25"
     }
   },
   "datacontenttype": "application/json",
-  "id": "df66d722-3465-4712-be2c-21c0cb5af286",
+  "id": "3dcda8d3-1861-4ed6-9386-900488786a3b",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
