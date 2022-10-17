@@ -128,5 +128,5 @@ repos:
     name: cert-manager
     charts:
       cert_manager:
-        version: 1.9.1
+        version: 1.10.0
         name: cert-manager
