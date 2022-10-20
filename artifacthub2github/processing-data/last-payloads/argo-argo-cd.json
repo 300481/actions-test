@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Moved Argo Extension resource to argocd-apps chart"
+        "[Changed]: Update to app version 2.4.15"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.0",
-      "version": "5.6.0"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.1",
+      "version": "5.6.1"
     }
   },
   "datacontenttype": "application/json",
-  "id": "df66d722-3465-4712-be2c-21c0cb5af286",
+  "id": "e9e10e3c-f63d-4e7a-8068-94b9db62e560",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
