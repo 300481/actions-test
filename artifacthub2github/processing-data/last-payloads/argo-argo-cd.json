@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Changed]: Update to app version 2.4.15"
+        "[Added]: ServiceMonitor resources are able to be annotated"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.1",
-      "version": "5.6.1"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.2",
+      "version": "5.6.2"
     }
   },
   "datacontenttype": "application/json",
-  "id": "e9e10e3c-f63d-4e7a-8068-94b9db62e560",
+  "id": "7bedad51-2491-4094-acb5-0f9a98e5176e",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
