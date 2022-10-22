@@ -2,7 +2,7 @@
   "data": {
     "package": {
       "changes": [
-        "[Added]: ServiceMonitor resources are able to be annotated"
+        "[Changed]: Renamed metrics service templates to metrics.yaml"
       ],
       "containsSecurityUpdates": false,
       "name": "argo-cd",
@@ -12,12 +12,12 @@
         "name": "argo",
         "publisher": "argoproj"
       },
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.2",
-      "version": "5.6.2"
+      "url": "https://artifacthub.io/packages/helm/argo/argo-cd/5.6.3",
+      "version": "5.6.3"
     }
   },
   "datacontenttype": "application/json",
-  "id": "7bedad51-2491-4094-acb5-0f9a98e5176e",
+  "id": "63c296bd-0ae0-410c-bdee-323f67486479",
   "source": "https://artifacthub.io",
   "specversion": "1.0",
   "type": "io.artifacthub.package.new-release"
